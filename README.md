@@ -3,4 +3,4 @@
 ### :speech_balloon: 0 
 ### :hibiscus: 403 
 ### :alarm_clock: 2024-10-25 19:18:52 
-### Powered by :heart: [见善如不及,见不善如探汤。](https://github.com/Meekdai/Gmeek)
+###  :heart: [见善如不及,见不善如探汤。](https://github.com/Meekdai/Gmeek)
