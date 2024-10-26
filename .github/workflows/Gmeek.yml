@@ -5,7 +5,7 @@ on:
   issues:
     types: [opened, edited]
   schedule:
-    - cron: "12 9 * * *"
+    - cron: "13 9 * * *"
     
 jobs:
   build:
