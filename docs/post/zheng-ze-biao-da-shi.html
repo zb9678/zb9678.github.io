@@ -10,297 +10,43 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="<!DOCTYPE html>
-    <html lang='zh-CN'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  
-    <title>🚨正则式</title>
-  
-    <style>
-      
-          * {
-            margin: 0;
-            padding: 0;        
-            }
-                        
-        .b  {
-            white-space: nowrap; /* 防止换行 */
-            overflow: hidden;    /* 隐藏溢出内容 */
-            text-overflow: ellipsis; /* 添加省略号表示溢出 */
-            display: inline-block; /* 使其适应内容宽度 */
-            font-family: KaiTi;
-            font-size: 24px;
-            color: #00e500;
-            }
-
-    .highlight {
-            color: red;
-            font-weight: bold;
-            }
-
- .video-container{
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            height: 100vh;
-            }
-      
-        body {
-            background-color: #282A36;
-            padding-top: 60px; /* 根据工具栏的高度调整 */
-            color: #f5f5f5;
-            line-height: 1.6;
-            margin-left: 350px;
-            margin-right: 200px; /* 根据目录宽度调整 */
-            font-family: Arial, sans-serif;
-            counter-reset: section;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* 所有内容左对齐 */
-            }
-      
-    h1, h2, h3 {
-            color: #4592af;
-            margin-left: 2px;
-            white-space: nowrap;     /* 防止换行 */
-            overflow: hidden;        /* 隐藏溢出内容 */
-            text-overflow: ellipsis; /* 添加省略号表示溢出 */
-            margin-top: 2px;
-            margin-bottom: -1px;
-            display: block;          /* 确保是块级元素 */
-            font-size: 24px; /* 根据需要调整 */
-            }
-
-        #toc {
-            position: fixed;
-            top: 5px;
-            left: 5px;
-            max-height: 90vh; /* 设置最大高度为视口高度的80% */
-            max-width: 45vh;
-            overflow-y: auto; /* 添加垂直滚动条 */
-            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-                    font-size: 14px; /* 根据需要调整 */
-            }
-
-       #toc ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            counter-reset: section; /* 重置计数器 */
-            }
-
-      #toc li {
-            counter-increment: section;
-            }
-
- #toc li::before {
-            content: counter(section) '. ';
-            color: #FF0000;
-            }
-
-       #toc a {
-            color: #4592af;
-            text-decoration: none;
-            }
-
-   #toc a:hover {
-            text-decoration: underline;
-            }
-
-     body > h2 {
-            counter-increment: section;
-            }
-
-body > h2::before{
-            content: counter(section) '. ';
-            color: #ff461f;
-            }
-          .code {
-        font-family: monospace;
-        background-color: #f4f4f4;
-        padding: 5px;
-        border: 1px solid #ccc;
-        white-space: pre-wrap; /* 保持格式 */
-    }
-         </style>
-  
-  
-    </head>
-<body>
-          <marquee loop='99999' style='width: 100px;color:#d908a1;' >
-        正则表达式  
-            <input type='text' value='初级概念性知识' style='width: 100px; color:#0033fa;'>
-            <input type='text' value='高级语法及应用' style='width: 100px; color:#08d971;'>            
-        </marquee>
-  
-  
-    <div id='toc'>
-        <!--<h2>目录</h2>-->
-        <ul id='toc-list'>
-            <!-- 目录项将由JavaScript生成 -->
-        </ul>
-    </div>
-
-  
-  
-  
-  
-  
-  
-  <h2 id='section1'>【回车】和【换行】</h2>
+<meta name="description" content="  <h2 id='section3'>匹配以abc为开头,并且最后一个字母不为数字的字符串:</h2>
     <p>
-        在机械英文打字机上，有一个部件叫'字车'（carriage），每打一个单词，'字车'就前进一格。">
+        <span style='font-family:KaiTi; font-size:24px; color: #00e500'>abc[^0-9]</span><br>
+        匹配结果<br>
+        abcd<br>
+        \d  数字字符，等价于[0-9] <br>
+        \D  非数字字符，等价于[^0-9] <br>
+        <span style='font-family:KaiTi; font-size:24px; color: #00e500'>abc(\D)*</span> <br>
+        <span class='highlight'>abcf</span>11we <br>
+        <span style='color: #ff461f; font-size:18px'>abcerewsdfsggddd</span>2xss <br>
+        匹配到数字11和2时，匹配终止 <br>        
+    </p>
+  
+
+      <h2 id='section4'>匹配一组字符</h2>
+    <p>
+        [ ] 定义一个字符集合<br>
+        0-9、a-z 定义了一个字符区间，区间使用 ASCI 码来确定，字符区间在 [ ] 中使用。">
 <meta property="og:title" content="正则表达式">
-<meta property="og:description" content="<!DOCTYPE html>
-    <html lang='zh-CN'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  
-    <title>🚨正则式</title>
-  
-    <style>
-      
-          * {
-            margin: 0;
-            padding: 0;        
-            }
-                        
-        .b  {
-            white-space: nowrap; /* 防止换行 */
-            overflow: hidden;    /* 隐藏溢出内容 */
-            text-overflow: ellipsis; /* 添加省略号表示溢出 */
-            display: inline-block; /* 使其适应内容宽度 */
-            font-family: KaiTi;
-            font-size: 24px;
-            color: #00e500;
-            }
-
-    .highlight {
-            color: red;
-            font-weight: bold;
-            }
-
- .video-container{
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            height: 100vh;
-            }
-      
-        body {
-            background-color: #282A36;
-            padding-top: 60px; /* 根据工具栏的高度调整 */
-            color: #f5f5f5;
-            line-height: 1.6;
-            margin-left: 350px;
-            margin-right: 200px; /* 根据目录宽度调整 */
-            font-family: Arial, sans-serif;
-            counter-reset: section;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* 所有内容左对齐 */
-            }
-      
-    h1, h2, h3 {
-            color: #4592af;
-            margin-left: 2px;
-            white-space: nowrap;     /* 防止换行 */
-            overflow: hidden;        /* 隐藏溢出内容 */
-            text-overflow: ellipsis; /* 添加省略号表示溢出 */
-            margin-top: 2px;
-            margin-bottom: -1px;
-            display: block;          /* 确保是块级元素 */
-            font-size: 24px; /* 根据需要调整 */
-            }
-
-        #toc {
-            position: fixed;
-            top: 5px;
-            left: 5px;
-            max-height: 90vh; /* 设置最大高度为视口高度的80% */
-            max-width: 45vh;
-            overflow-y: auto; /* 添加垂直滚动条 */
-            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-                    font-size: 14px; /* 根据需要调整 */
-            }
-
-       #toc ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            counter-reset: section; /* 重置计数器 */
-            }
-
-      #toc li {
-            counter-increment: section;
-            }
-
- #toc li::before {
-            content: counter(section) '. ';
-            color: #FF0000;
-            }
-
-       #toc a {
-            color: #4592af;
-            text-decoration: none;
-            }
-
-   #toc a:hover {
-            text-decoration: underline;
-            }
-
-     body > h2 {
-            counter-increment: section;
-            }
-
-body > h2::before{
-            content: counter(section) '. ';
-            color: #ff461f;
-            }
-          .code {
-        font-family: monospace;
-        background-color: #f4f4f4;
-        padding: 5px;
-        border: 1px solid #ccc;
-        white-space: pre-wrap; /* 保持格式 */
-    }
-         </style>
-  
-  
-    </head>
-<body>
-          <marquee loop='99999' style='width: 100px;color:#d908a1;' >
-        正则表达式  
-            <input type='text' value='初级概念性知识' style='width: 100px; color:#0033fa;'>
-            <input type='text' value='高级语法及应用' style='width: 100px; color:#08d971;'>            
-        </marquee>
-  
-  
-    <div id='toc'>
-        <!--<h2>目录</h2>-->
-        <ul id='toc-list'>
-            <!-- 目录项将由JavaScript生成 -->
-        </ul>
-    </div>
-
-  
-  
-  
-  
-  
-  
-  <h2 id='section1'>【回车】和【换行】</h2>
+<meta property="og:description" content="  <h2 id='section3'>匹配以abc为开头,并且最后一个字母不为数字的字符串:</h2>
     <p>
-        在机械英文打字机上，有一个部件叫'字车'（carriage），每打一个单词，'字车'就前进一格。">
+        <span style='font-family:KaiTi; font-size:24px; color: #00e500'>abc[^0-9]</span><br>
+        匹配结果<br>
+        abcd<br>
+        \d  数字字符，等价于[0-9] <br>
+        \D  非数字字符，等价于[^0-9] <br>
+        <span style='font-family:KaiTi; font-size:24px; color: #00e500'>abc(\D)*</span> <br>
+        <span class='highlight'>abcf</span>11we <br>
+        <span style='color: #ff461f; font-size:18px'>abcerewsdfsggddd</span>2xss <br>
+        匹配到数字11和2时，匹配终止 <br>        
+    </p>
+  
+
+      <h2 id='section4'>匹配一组字符</h2>
+    <p>
+        [ ] 定义一个字符集合<br>
+        0-9、a-z 定义了一个字符区间，区间使用 ASCI 码来确定，字符区间在 [ ] 中使用。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/zheng-ze-biao-da-shi.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/180062094?v=4">
@@ -371,157 +117,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody">
-<pre class="notranslate"><code class="notranslate">&lt;html lang="zh-CN"&gt;
-</code></pre>
-
-    
-    
-<pre class="notranslate"><code class="notranslate">&lt;title&gt;🚨正则式&lt;/title&gt;
-
-&lt;style&gt;
-  
-      * {
-        margin: 0;
-        padding: 0;        
-        }
-                    
-    .b  {
-        white-space: nowrap; /* 防止换行 */
-        overflow: hidden;    /* 隐藏溢出内容 */
-        text-overflow: ellipsis; /* 添加省略号表示溢出 */
-        display: inline-block; /* 使其适应内容宽度 */
-        font-family: KaiTi;
-        font-size: 24px;
-        color: #00e500;
-        }
-
-.highlight {
-        color: red;
-        font-weight: bold;
-        }
-</code></pre>
-<p>.video-container{<br>
-display: flex;<br>
-justify-content: right;<br>
-align-items: center;<br>
-height: 100vh;<br>
-}</p>
-<pre class="notranslate"><code class="notranslate">    body {
-        background-color: #282A36;
-        padding-top: 60px; /* 根据工具栏的高度调整 */
-        color: #f5f5f5;
-        line-height: 1.6;
-        margin-left: 350px;
-        margin-right: 200px; /* 根据目录宽度调整 */
-        font-family: Arial, sans-serif;
-        counter-reset: section;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* 所有内容左对齐 */
-        }
-  
-h1, h2, h3 {
-        color: #4592af;
-        margin-left: 2px;
-        white-space: nowrap;     /* 防止换行 */
-        overflow: hidden;        /* 隐藏溢出内容 */
-        text-overflow: ellipsis; /* 添加省略号表示溢出 */
-        margin-top: 2px;
-        margin-bottom: -1px;
-        display: block;          /* 确保是块级元素 */
-        font-size: 24px; /* 根据需要调整 */
-        }
-
-    #toc {
-        position: fixed;
-        top: 5px;
-        left: 5px;
-        max-height: 90vh; /* 设置最大高度为视口高度的80% */
-        max-width: 45vh;
-        overflow-y: auto; /* 添加垂直滚动条 */
-        background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-                font-size: 14px; /* 根据需要调整 */
-        }
-
-   #toc ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        counter-reset: section; /* 重置计数器 */
-        }
-
-  #toc li {
-        counter-increment: section;
-        }
-</code></pre>
-<p>#toc li::before {<br>
-content: counter(section) ". ";<br>
-color: #FF0000;<br>
-}</p>
-<pre class="notranslate"><code class="notranslate">   #toc a {
-        color: #4592af;
-        text-decoration: none;
-        }
-</code></pre>
-<p>#toc a:hover {<br>
-text-decoration: underline;<br>
-}</p>
-<pre class="notranslate"><code class="notranslate"> body &gt; h2 {
-        counter-increment: section;
-        }
-</code></pre>
-<p>body &gt; h2::before{<br>
-content: counter(section) ". ";<br>
-color: #ff461f;<br>
-}<br>
-.code {<br>
-font-family: monospace;<br>
-background-color: #f4f4f4;<br>
-padding: 5px;<br>
-border: 1px solid #ccc;<br>
-white-space: pre-wrap; /* 保持格式 */<br>
-}<br>
-&lt;/style&gt;</p>
-<pre class="notranslate"><code class="notranslate">&lt;/head&gt;
-</code></pre>
-
-          
-        正则表达式  
-            
-                        
-        
-<pre class="notranslate"><code class="notranslate">&lt;div id="toc"&gt;
-    &lt;!--&lt;h2&gt;目录&lt;/h2&gt;--&gt;
-    &lt;ul id="toc-list"&gt;
-        &lt;!-- 目录项将由JavaScript生成 --&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-  <h2 id="user-content-section1">【回车】和【换行】</h2>
-    <p>
-        在机械英文打字机上，有一个部件叫"字车"（carriage），每打一个单词，"字车"就前进一格。<br>
-        当打满一行字符后，打字者就得推动"字车"到起始位置，这时打字机会有两个动作响应：<br>
-        一是："字车"被归位（carriage return，回到最左端），这个推动"字车"的动作叫"回车"（carriage return）。<br>
-        二是：滚筒上卷一行（line feed），以便开始输入下一行。<br>
-        所以合并起来就是CRLF = Carriage Return &amp; Line Feed。<br>        
-    </p>
-  <h2 id="user-content-section2">EmEditor</h2>
-    <p>
-        通常，<br>
-        CR+LF (\r\n) 被用在 Windows 操作系统中，<br>
-        CR (\r) 被用在 Macintosh 上，<br>
-        LF (\n) 被用于 Unix。<br>
-        \r    回车符  <br>
-        \n   换行符  <br>
-        <span>\r\n\r\n</span>可以匹配Windows下的空白行，因为它将匹配两个连续的行尾标签，而这正是两条记录之间的空白行；<br>
-    </p>
-<pre class="notranslate"><code class="notranslate">&lt;!-- 添加更多章节 --&gt;  
-</code></pre>
-  <h2 id="user-content-section3">匹配以abc为开头,并且最后一个字母不为数字的字符串:</h2>
+<div class="markdown-body" id="postBody">  <h2 id="user-content-section3">匹配以abc为开头,并且最后一个字母不为数字的字符串:</h2>
     <p>
         <span>abc[^0-9]</span><br>
         匹配结果<br>
@@ -533,15 +129,14 @@ white-space: pre-wrap; /* 保持格式 */<br>
         <span>abcerewsdfsggddd</span>2xss <br>
         匹配到数字11和2时，匹配终止 <br>        
     </p>
-<pre class="notranslate"><code class="notranslate">&lt;!-- 继续添加其他章节 --&gt;
+<pre class="notranslate"><code class="notranslate">  &lt;h2 id="section4"&gt;匹配一组字符&lt;/h2&gt;
+&lt;p&gt;
+    [ ] 定义一个字符集合&lt;br&gt;
+    0-9、a-z 定义了一个字符区间，区间使用 ASCI 码来确定，字符区间在 [ ] 中使用。&lt;br&gt;
+    -只有在[]之间才是元字符，在[]之外就是一个普通字符；&lt;br&gt;
+    ^ 在 [ ] 中是取非操作。&lt;br&gt;        
+&lt;/p&gt;
 </code></pre>
-  <h2 id="user-content-section4">匹配一组字符</h2>
-    <p>
-        [ ] 定义一个字符集合<br>
-        0-9、a-z 定义了一个字符区间，区间使用 ASCI 码来确定，字符区间在 [ ] 中使用。<br>
-        -只有在[]之间才是元字符，在[]之外就是一个普通字符；<br>
-        ^ 在 [ ] 中是取非操作。<br>        
-    </p>
   <h2 id="user-content-section5">各种语言注释的方法</h2>
     <p>
         CSS注释：     /* 这是一个CSS注释 */       <br>
@@ -980,28 +575,7 @@ white-space: pre-wrap; /* 保持格式 */<br>
       <span></span><br>
 </p><p align="center"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kevzcr/picx-images-hosting/raw/master/4/image.86tlzdf7ii.jpg"><img src="https://github.com/kevzcr/picx-images-hosting/raw/master/4/image.86tlzdf7ii.jpg" style="max-width: 100%;"></a>
     </p>         
-  
-  &lt;script&gt;
-        document.addEventListener("DOMContentLoaded", function() {
-            const tocList = document.getElementById("toc-list");
-            const headers = document.querySelectorAll("body &gt; h2");
-
-            headers.forEach((header, index) =&gt; {
-                const id = "section" + (index + 1);
-                header.setAttribute("id", id);
-
-                const li = document.createElement("li");
-                const a = document.createElement("a");
-                a.setAttribute("href", "#" + id);
-                a.textContent = header.textContent;
-
-                li.appendChild(a);
-                tocList.appendChild(li);
-            });
-        });
-    &lt;/script&gt;
-
-</div>
+  </div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
