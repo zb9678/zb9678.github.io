@@ -1,0 +1,21 @@
+name: build Gmeek
+
+on:
+  push:
+    branches:
+      - main  # 根据需要修改为目标分支
+  workflow_dispatch:  # 允许手动触发工作流
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Auto commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "自动提交更改"
+          branch: main  # 根据需要修改为目标分支
