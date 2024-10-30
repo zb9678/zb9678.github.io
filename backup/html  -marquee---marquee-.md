@@ -1,10 +1,10 @@
-    <marquee loop="100" bgcolor="red">
-        文字能跑了。
-        <input type="password">
-    </marquee>
-    <input type="">
+    <marquee loop="100" bgcolor="red"><br><br>
+        文字能跑了。<br><br>
+        <input type="password"><br><br>
+    </marquee><br><br>
+    <input type=""><br><br>
 
-![image](https://github.com/user-attachments/assets/e5ef225f-dbda-4566-be7f-0047c71fde74)
+<p align = "center"><img src="https://zcr07.github.io/picx-images-hosting/1/image.2ver1tiaz2.png" style="width:400px;"><br><br>
 
-![image](https://github.com/user-attachments/assets/e3c963e3-66a2-48e5-bbb0-b8a1f49f9329)
+<p align = "center"><img src="https://zcr07.github.io/picx-images-hosting/1/image.7w6ttdrhws.jpg" style="width:400px;"><br><br>
 
