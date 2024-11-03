@@ -27,3 +27,5 @@ command := SoundVolumeViewPath . " /SetDefault """ . devices[currentIndex] . """
 
 # sound_volume_view　下载地址
 https://www.nirsoft.net/utils/sound_volume_view.html
+# realtek 下载地址
+https://www.realtek.com/Download/Overview?menu_id=355
