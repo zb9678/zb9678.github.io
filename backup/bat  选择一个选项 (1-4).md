@@ -10,7 +10,7 @@ echo 2. 禁用 Recall 功能
 echo 3. 启用 Recall 功能
 echo 4. 退出
 echo.
-set /p choice="请@echo off
+set /p choice="请选择一个选项 (1-4): "
 :menu
 cls
 echo ===========================================

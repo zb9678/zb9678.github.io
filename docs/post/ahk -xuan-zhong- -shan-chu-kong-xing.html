@@ -10,75 +10,85 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="`@echo off
-:menu
-cls
-echo ===========================================
-echo        Recall 功能管理脚本
-echo ===========================================
-echo.
-echo 1. 查看 Recall 功能状态
-echo 2. 禁用 Recall 功能
-echo 3. 启用 Recall 功能
-echo 4. 退出
-echo.
-set /p choice='请选择一个选项 (1-4): '
-:menu
-cls
-echo ===========================================
-echo        Recall 功能管理脚本
-echo ===========================================
-echo.
-echo 1. 查看 Recall 功能状态
-echo 2. 禁用 Recall 功能
-echo 3. 启用 Recall 功能
-echo 4. 退出
-echo.
-set /p choice='请选择一个选项 (1-4): '
+<meta name="description" content="`F6 & 2::
+SetWorkingDir, %A_ScriptDir%  ; 设置工作目录
 
-if '%choice%'=='1' goto check
-if '%choice%'=='2' goto disable
-if '%choice%'=='3' goto enable
-if '%choice%'=='4' goto exit
+; 复制内容到剪贴板
+Send, ^c
+ClipWait, 2
+sleep, 200
+if ErrorLevel
+{
+    MsgBox, 复制失败或超时
+    return
+}
 
-echo 无效的选择。">
-<meta property="og:title" content="bat  选择一个选项 (1-4)">
-<meta property="og:description" content="`@echo off
-:menu
-cls
-echo ===========================================
-echo        Recall 功能管理脚本
-echo ===========================================
-echo.
-echo 1. 查看 Recall 功能状态
-echo 2. 禁用 Recall 功能
-echo 3. 启用 Recall 功能
-echo 4. 退出
-echo.
-set /p choice='请选择一个选项 (1-4): '
-:menu
-cls
-echo ===========================================
-echo        Recall 功能管理脚本
-echo ===========================================
-echo.
-echo 1. 查看 Recall 功能状态
-echo 2. 禁用 Recall 功能
-echo 3. 启用 Recall 功能
-echo 4. 退出
-echo.
-set /p choice='请选择一个选项 (1-4): '
+; 处理剪贴板内容
+text := Clipboard
+text := StrReplace(text, '`r')  ; 移除所有回车符
 
-if '%choice%'=='1' goto check
-if '%choice%'=='2' goto disable
-if '%choice%'=='3' goto enable
-if '%choice%'=='4' goto exit
+; 使用数组存储非空行
+lines := StrSplit(text, '`n')
+output := ''
 
-echo 无效的选择。">
+for index, line in lines
+{
+    if (line != '') {  ; 忽略空行
+        output .= line . '`n'
+    }
+}
+
+; 移除最后一个换行符
+output := RTrim(output, '`n')
+
+; 将结果写回剪贴板
+Clipboard := output
+Send, ^v
+
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F6 & 2  选中 删除空行   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 13-2706`。">
+<meta property="og:title" content="ahk 选中 删除空行">
+<meta property="og:description" content="`F6 & 2::
+SetWorkingDir, %A_ScriptDir%  ; 设置工作目录
+
+; 复制内容到剪贴板
+Send, ^c
+ClipWait, 2
+sleep, 200
+if ErrorLevel
+{
+    MsgBox, 复制失败或超时
+    return
+}
+
+; 处理剪贴板内容
+text := Clipboard
+text := StrReplace(text, '`r')  ; 移除所有回车符
+
+; 使用数组存储非空行
+lines := StrSplit(text, '`n')
+output := ''
+
+for index, line in lines
+{
+    if (line != '') {  ; 忽略空行
+        output .= line . '`n'
+    }
+}
+
+; 移除最后一个换行符
+output := RTrim(output, '`n')
+
+; 将结果写回剪贴板
+Clipboard := output
+Send, ^v
+
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F6 & 2  选中 删除空行   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 13-2706`。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zb9678.github.io/post/bat%20%20-xuan-ze-yi-ge-xuan-xiang-%20%281-4%29.html">
+<meta property="og:url" content="https://zb9678.github.io/post/ahk%20-xuan-zhong-%20-shan-chu-kong-xing.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/180062094?v=4">
-<title>bat  选择一个选项 (1-4)</title>
+<title>ahk 选中 删除空行</title>
 
 
 
@@ -111,7 +121,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">bat  选择一个选项 (1-4)</h1>
+<h1 class="postTitle">ahk 选中 删除空行</h1>
 <div class="title-right">
     <a href="https://zb9678.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -119,7 +129,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/zb9678/zb9678.github.io/issues/26" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/29" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -135,87 +145,36 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>`@echo off<br>
-:menu<br>
-cls<br>
-echo ===========================================<br>
-echo        Recall 功能管理脚本<br>
-echo ===========================================<br>
-echo.<br>
-echo 1. 查看 Recall 功能状态<br>
-echo 2. 禁用 Recall 功能<br>
-echo 3. 启用 Recall 功能<br>
-echo 4. 退出<br>
-echo.<br>
-set /p choice="请选择一个选项 (1-4): "<br>
-:menu<br>
-cls<br>
-echo ===========================================<br>
-echo        Recall 功能管理脚本<br>
-echo ===========================================<br>
-echo.<br>
-echo 1. 查看 Recall 功能状态<br>
-echo 2. 禁用 Recall 功能<br>
-echo 3. 启用 Recall 功能<br>
-echo 4. 退出<br>
-echo.<br>
-set /p choice="请选择一个选项 (1-4): "</p>
-<p>if "%choice%"=="1" goto check<br>
-if "%choice%"=="2" goto disable<br>
-if "%choice%"=="3" goto enable<br>
-if "%choice%"=="4" goto exit</p>
-<p>echo 无效的选择。请选择一个有效的选项。<br>
-pause<br>
-goto menu</p>
-<p>:check<br>
-cls<br>
-echo 正在检查 Recall 功能状态...<br>
-Dism /Online /Get-FeatureInfo /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:disable<br>
-cls<br>
-echo 正在禁用 Recall 功能...<br>
-Dism /Online /Disable-Feature /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:enable<br>
-cls<br>
-echo 正在启用 Recall 功能...<br>
-Dism /Online /Enable-Feature /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:exit<br>
-exit<br>
-(1-4): "</p>
-<p>if "%choice%"=="1" goto check<br>
-if "%choice%"=="2" goto disable<br>
-if "%choice%"=="3" goto enable<br>
-if "%choice%"=="4" goto exit</p>
-<p>echo 无效的选择。请选择一个有效的选项。<br>
-pause<br>
-goto menu</p>
-<p>:check<br>
-cls<br>
-echo 正在检查 Recall 功能状态...<br>
-Dism /Online /Get-FeatureInfo /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:disable<br>
-cls<br>
-echo 正在禁用 Recall 功能...<br>
-Dism /Online /Disable-Feature /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:enable<br>
-cls<br>
-echo 正在启用 Recall 功能...<br>
-Dism /Online /Enable-Feature /FeatureName:Recall<br>
-pause<br>
-goto menu</p>
-<p>:exit<br>
-exit<br>
-`</p></div>
+<div class="markdown-body" id="postBody"><p>`F6 &amp; 2::<br>
+SetWorkingDir, %A_ScriptDir%  ; 设置工作目录</p>
+<p>; 复制内容到剪贴板<br>
+Send, ^c<br>
+ClipWait, 2<br>
+sleep, 200<br>
+if ErrorLevel<br>
+{<br>
+MsgBox, 复制失败或超时<br>
+return<br>
+}</p>
+<p>; 处理剪贴板内容<br>
+text := Clipboard<br>
+text := StrReplace(text, "`r")  ; 移除所有回车符</p>
+<p>; 使用数组存储非空行<br>
+lines := StrSplit(text, "`n")<br>
+output := ""</p>
+<p>for index, line in lines<br>
+{<br>
+if (line != "") {  ; 忽略空行<br>
+output .= line . "`n"<br>
+}<br>
+}</p>
+<p>; 移除最后一个换行符<br>
+output := RTrim(output, "`n")</p>
+<p>; 将结果写回剪贴板<br>
+Clipboard := output<br>
+Send, ^v</p>
+<p>return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F6 &amp; 2  选中 删除空行   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 13-2706`</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
