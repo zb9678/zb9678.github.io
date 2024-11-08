@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 08 Nov 2024 10:20:47 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>winget upgrade   更新</title><link>https://zb9678.github.io/post/winget%20upgrade%20%20%20-geng-xin.html</link><description>## winget upgrade&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 08 Nov 2024 10:36:59 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>winget upgrade   更新</title><link>https://zb9678.github.io/post/winget%20upgrade%20%20%20-geng-xin.html</link><description>## winget upgrade&#13;
 查看需要更新的软件&#13;
 &#13;
 ## winget upgrade 软件ID&#13;
 开始更新&#13;
+&#13;
+## 如需中止，按 ctrl+c命令&#13;
 &#13;
 一定是复制软件ID&#13;
 1.使用Winget安装、升级、卸载软件的常用命令&#13;

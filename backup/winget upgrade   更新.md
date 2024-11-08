@@ -4,6 +4,8 @@
 ## winget upgrade 软件ID
 开始更新
 
+## 如需中止，按 ctrl+c命令
+
 一定是复制软件ID
 1.使用Winget安装、升级、卸载软件的常用命令
 winget list    | 查看已安装的软件 |
