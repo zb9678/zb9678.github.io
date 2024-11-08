@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 08 Nov 2024 06:35:35 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>AHK cmd运行剪贴板或文件</title><link>https://zb9678.github.io/post/AHK%20cmd-yun-xing-jian-tie-ban-huo-wen-jian.html</link><description>^F9   &#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 08 Nov 2024 06:47:29 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>AHK cmd运行剪贴板或文件</title><link>https://zb9678.github.io/post/AHK%20cmd-yun-xing-jian-tie-ban-huo-wen-jian.html</link><description>^F9   &#13;
 ping  www.my69777.com&#13;
 my69777.com&#13;
 ^F10&#13;
@@ -142,7 +142,7 @@ for /f 'delims=' %%a in ('netsh wlan show profile name^='%*' key^=clear ^| finds
 &#13;
 ) &gt;  D:\$RECYCLE&#13;
 goto :eof  &#13;
-`。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20wifi.html</guid><pubDate>Thu, 07 Nov 2024 11:38:26 +0000</pubDate></item><item><title>bat Win10资源管理器 管理员</title><link>https://zb9678.github.io/post/bat%20Win10-zi-yuan-guan-li-qi-%20-guan-li-yuan.html</link><description>`@echo off&#13;
+`。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20wifi.html</guid><pubDate>Thu, 07 Nov 2024 11:38:26 +0000</pubDate></item><item><title>bat 换成Win10资源管理器 管理员运行</title><link>https://zb9678.github.io/post/bat%20-huan-cheng-Win10-zi-yuan-guan-li-qi-%20-guan-li-yuan-yun-xing.html</link><description>`@echo off&#13;
 setlocal enabledelayedexpansion&#13;
 &#13;
 echo 请选择文件资源管理器样式:&#13;
@@ -181,7 +181,7 @@ if /i '%restart%'=='y' (&#13;
 &#13;
 endlocal&#13;
 pause&#13;
-`。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20Win10-zi-yuan-guan-li-qi-%20-guan-li-yuan.html</guid><pubDate>Thu, 07 Nov 2024 11:34:51 +0000</pubDate></item><item><title>bat  选择一个选项 (1-4)</title><link>https://zb9678.github.io/post/bat%20%20-xuan-ze-yi-ge-xuan-xiang-%20%281-4%29.html</link><description>`@echo off&#13;
+`。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20-huan-cheng-Win10-zi-yuan-guan-li-qi-%20-guan-li-yuan-yun-xing.html</guid><pubDate>Thu, 07 Nov 2024 11:34:51 +0000</pubDate></item><item><title>bat  选择一个选项 (1-4)</title><link>https://zb9678.github.io/post/bat%20%20-xuan-ze-yi-ge-xuan-xiang-%20%281-4%29.html</link><description>`@echo off&#13;
 :menu&#13;
 cls&#13;
 echo ===========================================&#13;
