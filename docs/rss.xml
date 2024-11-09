@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 08 Nov 2024 10:36:59 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>winget upgrade   更新</title><link>https://zb9678.github.io/post/winget%20upgrade%20%20%20-geng-xin.html</link><description>## winget upgrade&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 09 Nov 2024 09:13:46 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>AHK   *#n::  *号的作用</title><link>https://zb9678.github.io/post/AHK%20%20%20-%23n--%20%20--hao-de-zuo-yong.html</link><description>&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/L11.09:17:05:40.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20%20%20-%23n--%20%20--hao-de-zuo-yong.html</guid><pubDate>Sat, 09 Nov 2024 09:09:55 +0000</pubDate></item><item><title>AHK 热字符串</title><link>https://zb9678.github.io/post/AHK%20-re-zi-fu-chuan.html</link><description>## ` :o:   ` &#13;
+` :o:a111::ā    　结果　ā后无空格 `&#13;
+o 即 omit　忽略空格不输出空格，但需空格触发 &#13;
+&#13;
+## :*:     &#13;
+ :*:a111::ā     　结果　ā后无空格&#13;
+自动触发转换，而且也不输出空格　&#13;
+&#13;
+==========================================&#13;
+##  :?:　　可有前缀&#13;
+:?:a1::ā       &#13;
+sa1 空格完成替换　即a1前面可有字符。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20-re-zi-fu-chuan.html</guid><pubDate>Sat, 09 Nov 2024 07:15:14 +0000</pubDate></item><item><title>winget upgrade   更新</title><link>https://zb9678.github.io/post/winget%20upgrade%20%20%20-geng-xin.html</link><description>## winget upgrade&#13;
 查看需要更新的软件&#13;
 &#13;
 ## winget upgrade 软件ID&#13;
