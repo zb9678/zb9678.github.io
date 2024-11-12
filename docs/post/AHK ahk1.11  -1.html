@@ -11,7 +11,8 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="`
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+
 #Requires AutoHotkey v1.1.36                             ; -----------------------------------V1版本
 Menu, Tray, Icon, D:\ahk1.0\Lib\0\Library.ico       ;--------------------------------- 脚本图标
 Menu , tray , tip , Ahk1.1                                       ;---------------------------- 鼠标悬浮提示
@@ -26,10 +27,11 @@ SetWorkingDir, %A_ScriptDir%                            ;----------- 脚本所�
 SetTitleMatchMode fast
 SetBatchLines, -1                                               ; 脚本快速执行,减少 CPU 占用,  使用10ms -1
 Process,priority, , high                                         ;------------------------脚本进程优先级为高
-#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。">
+;#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。">
 <meta property="og:title" content="AHK ahk1.11  -1">
 <meta property="og:description" content="`
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+
 #Requires AutoHotkey v1.1.36                             ; -----------------------------------V1版本
 Menu, Tray, Icon, D:\ahk1.0\Lib\0\Library.ico       ;--------------------------------- 脚本图标
 Menu , tray , tip , Ahk1.1                                       ;---------------------------- 鼠标悬浮提示
@@ -44,7 +46,7 @@ SetWorkingDir, %A_ScriptDir%                            ;----------- 脚本所�
 SetTitleMatchMode fast
 SetBatchLines, -1                                               ; 脚本快速执行,减少 CPU 占用,  使用10ms -1
 Process,priority, , high                                         ;------------------------脚本进程优先级为高
-#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。">
+;#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/AHK%20ahk1.11%20%20-1.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/180062094?v=4">
@@ -116,8 +118,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p>`<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ<br>
-#Requires AutoHotkey v1.1.36                             ; -----------------------------------V1版本<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+<p>#Requires AutoHotkey v1.1.36                             ; -----------------------------------V1版本<br>
 Menu, Tray, Icon, D:\ahk1.0\Lib\0\Library.ico       ;--------------------------------- 脚本图标<br>
 Menu , tray , tip , Ahk1.1                                       ;---------------------------- 鼠标悬浮提示<br>
 #NoEnv                                                                 ;--------------------------------- 改善性能<br>
@@ -131,10 +133,10 @@ SetWorkingDir, %A_ScriptDir%                            ;----------- 脚本所�
 SetTitleMatchMode fast<br>
 SetBatchLines, -1                                               ; 脚本快速执行,减少 CPU 占用,  使用10ms -1<br>
 Process,priority, , high                                         ;------------------------脚本进程优先级为高<br>
-#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。设为 0 时则总是超时 (修饰键总是不会被推回到按下的状态).<br>
-DetectHiddenWindows, On<br>
-SetTitleMatchMode, 2 ; 设置标题匹配模式<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+;#HotkeyModifierTimeout 0  ;影响热键修饰符的行为：^!#+。设为 0 时则总是超时 (修饰键总是不会被推回到按下的状态).<br>
+;DetectHiddenWindows, On<br>
+;SetTitleMatchMode, 2     ; 2 窗口标题部分匹配. 3 要求标题必须准确匹配<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
 <p>; 获取当前脚本的修改时间<br>
 FileGetTime, ScriptStartModTime, %A_ScriptFullPath%<br>
 SetTimer, CheckScriptUpdate, 100  ; 每100毫秒检查一次脚本修改</p>
@@ -157,8 +159,17 @@ if (curModTime != ScriptStartModTime) {
 }
 </code></pre>
 <p>}<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  保存后  自动刷新脚本 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ<br>
-#include *i %A_ScriptDir%\Lib\ImagePut.ahk%A_TrayMenu%.ahk<br>
+;-----------------------------------------------------------------------------------<br>
+#Persistent<br>
+#SingleInstance ignore<br>
+SetTimer, zvv, % ((1000<em>60</em>10) * 1)<br>
+return<br>
+zvv:<br>
+reload<br>
+return<br>
+;-----------------------------------------------------------------60分运行1次刷新<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  保存后  自动刷新脚本 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 01-45</p>
+<p>#include *i %A_ScriptDir%\Lib\ImagePut.ahk%A_TrayMenu%.ahk<br>
 #Include *i %A_ScriptDir%\Lib\ImagePut.ahk<br>
 #Include *i %A_ScriptDir%\Lib\BTT.ahk<br>
 #Include *i %A_ScriptDir%\Lib\Gdip_All.ahk<br>
@@ -166,23 +177,12 @@ if (curModTime != ScriptStartModTime) {
 #Include *i %A_ScriptDir%\Lib\TrayIcon.ahk<br>
 #Include *i %A_ScriptDir%\Lib\StdOutToVar.ahk<br>
 #Include *i %A_ScriptDir%\Lib\ahk777.ahk</p>
-<p>; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
 <p>;🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫    基本   设置   🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫</p>
-<p>OnClipboardChange:<br>
-{<br>
-SoundBeep, 10000, 1<br>
-btt(Clipboard,,,,"Style8")<br>
-sleep, 700<br>
-btt()​<br>
-;FileAppend, %clipboard% `n, c:\6           ;----------------  剪贴板历史记录保存<br>
-return<br>
-}<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ     复制后通知    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 2</p>
 <p>#SingleInstance Off<br>
 ;MsgBox, 4096,, % A_Now<br>
 return<br>
-OnlyOne(flag="")<br>
-{<br>
+OnlyOne(flag="") {<br>
 static init:=OnlyOne("001")<br>
 DetectHiddenWindows, % (bak:=A_DetectHiddenWindows) ? "On":"On"<br>
 mypid:=DllCall("GetCurrentProcessId")<br>
@@ -202,8 +202,8 @@ WinWaitClose<br>
 WinGet, list, List, %flag% ahk_class AutoHotkeyGUI<br>
 IfNotEqual, list, 1, ExitApp<br>
 DetectHiddenWindows, %bak%<br>
-}<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    限制单进程运行   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00</p>
+}</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   限制单进程运行   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
 <p>;🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫    基本   设置   🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫🎫<br>
 ;🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁    复制   粘贴   🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁</p>
 <p>global MyClipData<br>
@@ -266,16 +266,16 @@ return<br>
 0::<br>
 nume1:=0<br>
 Gosub copytt(nume1)<br>
-return<br>
-copytt(nume1):<br>
+return</p>
+<p>copytt(nume1):<br>
 {<br>
 i:=nume1<br>
 Clipboard:=MyClipData[i:=(page-1)*10+10+i]<br>
 Send ^v<br>
 return<br>
 }<br>
-#IfWinExist</p>
-<p>;-------- 下面是函数 --------<br>
+#IfWinExist<br>
+;-------- 下面是函数 --------<br>
 批量复制粘贴工具(s:="", Cmd:="")<br>
 {<br>
 static<br>
@@ -343,18 +343,18 @@ Menu, Tray, Default, %A_ThisFunc%<br>
 Menu, Tray, Click, 1<br>
 }<br>
 Loop, 10<br>
-{<br>
-Menu, Tray, Click, 1<br>
-i:=A_Index, v:=MyClipData[(page-1)*10+i]<br>
-v:=(v="" ? v : "[" StrLen(v) "] " SubStr(v,1,50))<br>
-v:=RegExReplace(v, "s+", " ")<br>
-GuiControl, MyClip: , bt%i%, %v%<br>
-}<br>
+{    Menu, Tray, Click, 1</p>
+<pre class="notranslate"><code class="notranslate">i:=A_Index, v:=MyClipData[(page-1)*10+i]
+v:=(v="" ? v : "[" StrLen(v) "] " SubStr(v,1,50))
+v:=RegExReplace(v, "s+", " ")
+GuiControl, MyClip: , bt%i%, %v%
+</code></pre>
+<p>}<br>
 GuiControl, MyClip: , bt12, % clear ? "点选条目":"+删除条目+"<br>
 Gui, MyClip: Show, NA<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ art+q 批量复制粘贴  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 01</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ art+q 批量复制粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 04-249</p>
 <p>#Persistent<br>
 Copy(clipboardID)<br>
 {<br>
@@ -427,7 +427,7 @@ return<br>
 !,::Paste(4)<br>
 ;-----------------------------------------------------------------------------------<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ &gt;! 2345sdf复制  wertxcv 粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 02</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ &gt;! 2345sdf复制  wertxcv 粘贴  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 05-322</p>
 </blockquote>
 <blockquote>
 <p>^c::<br>
@@ -465,14 +465,14 @@ ToReturn .= A_Desktop "" A_LoopField "<code class="notranslate">n" } else if (cl
 }<br>
 return Trim(ToReturn,"`n")<br>
 }<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^c 复制文件名 &gt;^x 获取路径   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 03</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^c 复制文件名 &gt;^x 获取路径  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 06-369</p>
 <blockquote>
 <p>^v::<br>
 send, {F2}<br>
 sleep, 200<br>
 send, {ctrl down}v{ctrl up}{enter}<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^v 对文件夹文件粘贴文件名   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 04</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^v 对文件夹文件粘贴文件名  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 07-376</p>
 </blockquote>
 <p>;🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁    复制   操作   🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁<br>
 ;🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆    截图   操作   🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆</p>
@@ -486,27 +486,27 @@ Run, nircmd  savescreenshot "C:\oneD\OneDrive\desktop~$currdate.yyyyMMdd$-~$curr
 return                                                                   ;-----------------------截全屏<br>
 ;ImagePutClipboard(ImagePutFile("A", "C:\oneD\OneDrive\desktop"))        ;-- 只截窗口 存剪<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  全屏截存桌面选格式 Appskey &amp; 1   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 001</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; 1  全屏截存桌面选格式   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 001-392</p>
 <p>Appskey &amp; 6::<br>
 Imageshow("a")                                                                      ;------------------截图并贴图<br>
 ImagePutFile(Image)                                           ;----------- 将图片存入剪贴板<br>
 ImagePutClipboard(ImagePutFile("A", "C:\oneD\OneDrive\desktop"))     ; 存desktop<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 当前窗口 截图并贴图 Appskey &amp; 6  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 009</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; 6 当前窗口 截图并贴图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 002-399</p>
 <p>Appskey &amp; 2::<br>
 Run "D:\ahk1.0\Lib\0 tool\窗口隐藏工具\窗口隐藏工具.exe"<br>
 Run c:\3\4\Gif123.exe<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Appskey &amp; 2  录屏gif   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 002</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Appskey &amp; 2  录屏gif    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 003-405</p>
 <p>Appskey &amp; 3::<br>
 Run "D:\ahk1.0\Lib\0 tool\窗口隐藏工具\窗口隐藏工具.exe"<br>
 Run c:\3\9ZDSoftScnRec\ScnRecPortable.exe<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Appskey &amp; 3 录屏MP4   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 003<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Appskey &amp; 3 录屏MP4    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 004-411<br>
 Appskey &amp; 4::<br>
-file := ImagePutFile(clip, "C:\oneD\OneDrive\desktop" )<br>
+file := ImagePutFile(clip, "C:\Users\z\Desktop" )<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞ  剪贴板中截图保存于desktop  Appskey &amp; 4   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 004</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞ  Appskey &amp; 4  剪贴板中截图保存于desktop  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 005-415</p>
 <p>#SingleInstance force<br>
 isRunning := false                                                ;---- 用于跟踪脚本是否在运行<br>
 timerRunning := false                                          ;-- 用于跟踪定时器是否在运行</p>
@@ -521,7 +521,7 @@ timerRunning := false                             ;------------- 更新定时器
 }<br>
 else<br>
 {<br>
-Run, c:\3\9 FSCapture97\FSCapture.exe , , min ;--- 如果程序没运行则启动它<br>
+Run, c:\3\9 FSCapture97\FSCapture.exe , , min   ;---- 如果程序没运行则启动它<br>
 Sleep, 30<br>
 click                                                　　  ;------------- 这个点击动作可以在截图时不显示输入法指示<br>
 Sleep, 1200<br>
@@ -541,15 +541,50 @@ Process, Close, FSCapture.exe                ;----------- 自动关闭截图软�
 isRunning := false                                   ;----------- 更新状态为未运行<br>
 timerRunning := false                             ;---- 更新定时器状态为未运行<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; v  FSCapture.exe  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 005</p>
-<p>Appskey &amp; 5::                                ;---- 后台截图　6000 为间隔6秒  共运行5 次<br>
-run, nircmd  loop 5 6000 savescreenshot "C:\oneD\OneDrive\desktop~$currtime.HHmm_ss$ ~$loopcount$.png"<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; v  FSCapture.exe   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 006-452</p>
+<p>#SingleInstance force<br>
+isRunning := false                                                ;---- 用于跟踪脚本是否在运行<br>
+timerRunning := false                                          ;-- 用于跟踪定时器是否在运行</p>
+<p>F5 &amp; n::<br>
+Process, Exist, Umi-OCR.exe                   ; --------检查程序是否在运行<br>
+if (ErrorLevel)<br>
+{<br>
+Process, Close, Umi-OCR.exe                 ;---- 如果程序在运行则关闭它<br>
+isRunning := false                                  ;----------- 更新状态为未运行<br>
+SetTimer, AutoCloseUmi-OCR, Off        ;------------------ 关闭定时器<br>
+timerRunning := false                            ;------------- 更新定时器状态<br>
+}<br>
+else<br>
+{<br>
+Run, "D:\ahk1.0\Lib\0 tool\Umi-OCR\Umi-OCR.exe"<br>
+Sleep, 1700<br>
+Send, +^!z                                             ;-------------截图快捷键 +^!z<br>
+isRunning := true                                   ;--------  更新状态为正在运行</p>
+<pre class="notranslate"><code class="notranslate">    	if (!timerRunning)                                   ;----------- 如果定时器未运行
+   {                                          
+        	SetTimer, AutoCloseUmi-OCR, -11000  ; --------------------------设置一个11秒的单次定时器
+        	timerRunning := true                             ;---- 更新定时器状态为运行中
+   }
+</code></pre>
+<p>}<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  后台间隔截图 全屏 Appskey &amp; 5  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 006m</p>
+;----------------------------------------------------------------------------定时器<br>
+AutoCloseUmi-OCR:<br>
+Process, Close, Umi-OCR.exe                ;------------自动关闭截图软件<br>
+isRunning := false                                  ;----------- 更新状态为未运行<br>
+timerRunning := false                            ;---- 更新定时器状态为未运行<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; n  Umi-OCR.exe    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-487</p>
+<p>Appskey &amp; 5::                                ;---- 后台截图　4000 为间隔4秒  共运行3 次<br>
+run, nircmd  loop 3 4000 savescreenshot "C:\Users\z\Desktop~$currtime.HHmm_ss$ ~$loopcount$.png"<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; 5  后台间隔截图 全屏  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 008-492</p>
 <p>;  shift+alt+a      框选画中画       Mouselnc<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  框选画中画 shift+alt+a ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007m</p>
-<p>;  win+Esc           框选OCR         Mouselnc<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  框选OCR win+Esc ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 008</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ shift+alt+a  框选画中画   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 009-495</p>
+<p>;  win+Esc     ahk777 替换 win+shift+Esc    框选OCR         Mouselnc　<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ win+Esc  框选OCR   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 010-498</p>
+<p>; shift+alt+S  截图存剪<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  shift+alt+S  截图存剪   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 010-499</p>
 <p>$+#s::                                        ;-------------------系统自带加了一个保存在桌面<br>
 clipboard =<br>
 clipboard = clipboardALL<br>
@@ -557,9 +592,10 @@ Send, {PrintScreen}<br>
 sleep,5000<br>
 file := ImagePutFile(clip, "C:\oneD\OneDrive\desktop" )<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  截图  剪贴板 desktop  +#s  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 010</p>
-<p>&lt;!esc::                                     ;------------------------------------ OCR 或截图<br>
-send, !j                        ;---------------------------------- 暂时关闭 VPN<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  +#s  截图  剪贴板 desktop   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 011-507</p>
+<p>&lt;!esc::                                      ;------------------------------------ OCR 或截图<br>
+send, !j                        ;----------------------------------暂时关闭 VPN<br>
+Click, 1400,170                        ;---------------------------防止截图时显示光标等<br>
 run "D:\ahk1.0\Lib\0 tool\SGScreencapture\screencapture.exe"<br>
 SetTimer, ReEnableVPN, -14000            ;----------------------------- 设置一个14秒的单次定时器<br>
 return</p>
@@ -567,7 +603,7 @@ return</p>
 	send, !u                       ;---------------------------------- 重新启用 VPN
 return
 </code></pre>
-<p>; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  截图 OCR &lt;!esc ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ &lt;!esc  截图 OCR  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012-518</p>
 <p>;#SingleInstance Force<br>
 ;#NoEnv<br>
 displayNum := 0<br>
@@ -635,9 +671,9 @@ height%id% := ""<br>
 Gui, Destroy<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+9 贴图  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 013<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Shift+鼠标滚动   改变粘贴的透明度  ΞΞΞΞΞΞΞΞΞΞ<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    鼠标滚轮改变贴图大小 双击关闭  ΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+9 贴图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 013-588<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Shift+鼠标滚动   改变粘贴的透明度   ΞΞΞΞΞΞΞΞΞΞ 014-588<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    鼠标滚轮改变贴图大小 双击关闭   ΞΞΞΞΞΞΞΞΞΞΞΞΞ015-588</p>
 <p>F9 &amp; 0::<br>
 toggleVisibleState()<br>
 {<br>
@@ -665,7 +701,7 @@ visibleState := true<br>
 }<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+0 隐藏或显示所有粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 014</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+0 隐藏或显示所有粘贴    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 016-619</p>
 <p>F9 &amp; -::<br>
 destroyAllPaste()<br>
 {<br>
@@ -677,24 +713,24 @@ SendMessage, 0x203,,,, ahk_id %this_id%<br>
 }<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+- 关闭贴图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 015</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+- 关闭贴图    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 017-632</p>
 <p>F9 &amp; =::<br>
 FileSelectFile, imgFile, 3, C:\oneD\OneDrive\desktop<br>
 hBitmap := LoadPicture(imgFile)<br>
 displayImg(hBitmap)<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+= 打开图并设置为贴图  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 016</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F9+= 打开图并设置为贴图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 018-639</p>
 <p>F9 &amp; 8::<br>
 Imageshow({image: %clipboardAll%, scale: ["auto", 600]})  ;长自动，宽600<br>
 ;Imageshow({image: %clipboardAll%, scale: 2.25})   ; 放大到2.25倍<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    剪贴板内容贴在桌面 放大到1.25倍    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 017</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F9 &amp; 8 剪贴板贴图 放大到1.25倍   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 019-645</p>
 <p>;🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆    截图   操作   🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆<br>
 ;🎟🎟🎟🎟🎟🎟🎟🎟🎟🎟    显隐   操作   🎟🎟🎟🎟🎟🎟🎟🎟🎟🎟🎟</p>
 <p>F1 &amp; y::<br>
 send,&lt;!{Enter}<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; y 右键属性   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0001</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; y 右键属性    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0001-653</p>
 <p>F5 &amp; 1::<br>
 HideShowTaskbar()<br>
 {<br>
@@ -719,7 +755,7 @@ WinMove, % "ahk_id" . List%A_Index%,, 0, 0, A_ScreenWidth, A_ScreenHeight - !b</
 }<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 1  隐藏任务栏   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  0002</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 1  隐藏任务栏   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0002-679</p>
 <p>F5 &amp; 2::<br>
 ControlGet, q, Hwnd,, SysListView321, ahk_class Progman<br>
 If q =<br>
@@ -729,9 +765,9 @@ WinHide, ahk_id %q%<br>
 Else<br>
 WinShow, ahk_id %q%<br>
 Return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 2  隐藏桌面图标    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0003</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 2  隐藏桌面图标   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0003-690</p>
 <p>toggle := false           ; ---------------------定义一个变量来跟踪状态</p>
-<p>F5 &amp; -::<br>
+<p>F5 &amp; 3::<br>
 if (toggle)             ;检查当前状态，如果为 true，则显示；如果为 false，则隐藏。<br>
 {<br>
 run, nircmd.exe win show class progman                    ; 显示桌面图标<br>
@@ -742,8 +778,8 @@ run, nircmd.exe win hide class progman                      ; 隐藏桌面图标
 }</p>
 <p>toggle := !toggle              ;---切换状态使得下次按下 F5.. 时能够执行相反的操作。<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; -  隐.显桌面   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0004</p>
-<p>F5 &amp; x::          ;;显示文件<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 3  隐.显桌面   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0004-706</p>
+<p>F5 &amp; =::          ;;显示文件<br>
 RegRead,value,HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, Hidden<br>
 If(value=1)<br>
 value = 2<br>
@@ -753,7 +789,7 @@ RegWrite, REG_DWORD, HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion
 RegWrite, REG_DWORD, HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, ShowSuperHidden, %Value%-1<br>
 PostMessage,0x111,0x7103,0,SHELLDLL_DefView1,A<br>
 return</p>
-<p>F5 &amp; k::           ;;显示文件扩展名<br>
+<p>F5 &amp; -::           ;;显示文件扩展名<br>
 RegRead,Value,HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,HideFileExt<br>
 If(value=0)<br>
 value = 1<br>
@@ -762,8 +798,8 @@ value = 0<br>
 RegWrite, REG_DWORD,HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,HideFileExt, %Value%<br>
 PostMessage,0x111,0x7103,0,SHELLDLL_DefView1,A<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; k 显示扩展名 F5 &amp; x 显隐文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0005</p>
-<p>F5 &amp; r::<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; - 显示扩展名 F5 &amp; = 显隐文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0005-728</p>
+<p>F5 &amp; 4::<br>
 ; 设置注册表路径和值名称<br>
 regPath := "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"<br>
 valueName := "IconsOnly"</p>
@@ -785,11 +821,11 @@ if (window.FullName != "")  ; 检查是否是有效的资源管理器窗口<br>
 window.Refresh()<br>
 }<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; r  缩略图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0006</p>
-<p>F5 &amp; t::<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 4  缩略图   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0006-757</p>
+<p>F5 &amp; 5::<br>
 Send, &lt;!p<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  显示预览窗格   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0007</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F5 &amp; 5 显示预览窗格  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0007-762</p>
 <p>F5 &amp; 6::<br>
 WinGetActiveTitle, Title<br>
 Title := StrReplace(Title, "Ξ置顶 Ξ")<br>
@@ -808,7 +844,7 @@ WinSetTitle, , ,Ξ 置顶 Ξ<br>
 SoundPlay, D:\ahk1.0\Lib\0\2.mp3<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 6  窗口置顶   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0008</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 6  窗口置顶    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0008-782</p>
 <p>;🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁    显隐   操作   🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁<br>
 ;🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆    打开   操作   🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆</p>
 <p>F5 &amp; e::<br>
@@ -820,15 +856,15 @@ SendInput {alt down}s{alt up}<br>
 sleep, 50<br>
 SendInput {ctrl down}v{ctrl up}{Enter}<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; e  帮助文档   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00001</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; e  帮助文档    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00001-796</p>
 <p>F5 &amp; 9::<br>
 Imageshow("D:\ahk1.0\1\1.png")<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 9  快捷键目录  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00002</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 9  快捷键目录   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00002-801</p>
 <p>F5 &amp; 0::<br>
 Imageshow("D:\ahk1.0\1\2.png")<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 0  快捷键目录  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00003</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 0  快捷键目录   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00003-806</p>
 <p>F1 &amp; k::<br>
 {<br>
 ; 保存当前剪贴板内容<br>
@@ -858,22 +894,14 @@ MsgBox, 当前剪贴板内容不是有效的快捷方式。<br>
 Clipboard := clipboardBackup<br>
 return<br>
 }<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; k 打开快捷方式的文件夹   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00004</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; k 打开快捷方式的文件夹    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00004-838</p>
 <p>^+z::<br>
 WinGet, processID, PID, A                      ;--获取当前活动窗口的进程ID<br>
 WinGet, exePath, ProcessPath, ahk_pid %processID%    ; 获取可执行文件路径<br>
 SplitPath, exePath, , fileDir            ; 提取文件夹路径<br>
 Run, %fileDir%            ; 打开文件夹<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   打开当前活动窗口的文件夹位置  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00005</p>
-<p>F5 &amp; 8::<br>
-o=C:\0　　tool\EmEditor\EmEditor.exe<br>
-1=D:\ahk1.0\Lib\ahk777.ahk<br>
-2=D:\ahk1.0\Ahk1.1.ahk<br>
-;3=D:\ahk1.0\Lib\ahk2.ahk</p>
-<p>Run,%o% "%1%" "%2%" "%3%"<br>
-return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F5 &amp; 8   EmEditor打开3文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00006</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  ^+z 打开当前活动窗口的文件夹   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00005-846</p>
 <p>#SingleInstance force                                                          ; 强制加载新的脚本<br>
 isRunning := false                  ; 状态变量: isRunning 用于跟踪脚本是否正在运行<br>
 Rctrl &amp; 5::<br>
@@ -902,13 +930,13 @@ Run, C:\3\v2rayN-With-Core\v2rayN.exe , , min<br>
 keywait, 5<br>
 }<br>
 Return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Rctrl &amp; 5 打开 v2rayN   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00007</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Rctrl &amp; 5 打开 v2rayN   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00007-887</p>
 <p>Rctrl &amp; t::<br>
 TrayIcon_Button("v2rayN.exe", "L")<br>
 sleep, 100<br>
 send, !l<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Rctrl &amp; t 打开托盘 v2rayN  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00008</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    Rctrl &amp; t 打开托盘 v2rayN   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00008-894</p>
 <p>DetectHiddenWindows, On                                 ;------ 启用对隐藏窗口的检测<br>
 SetTitleMatchMode, 2                                         ;----------- 设置标题匹配模式</p>
 <p>F9 &amp; [::<br>
@@ -929,10 +957,10 @@ return<br>
 F9 &amp; ]::<br>
 WinClose, SnoMouse.ahk ahk_class AutoHotkey<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; [ 启动 F1 &amp; ] 退出 SnoMouse  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00009</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; [ 启动 F1 &amp; ] 退出 SnoMouse  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00009-917</p>
 <p>#SingleInstance force      ; 强制加载新的脚本<br>
 isRunning := false         ; 状态变量: isRunning 用于跟踪脚本是否正在运行。<br>
-F5 &amp; b::<br>
+F5 &amp; c::<br>
 Process, Exist, ZoomIt64.exe       ; 检查程序是否已经在运行<br>
 if (ErrorLevel)      ;根据 ErrorLevel 的值来决定是关闭程序还是启动程序，而不再依赖于 isRunning 状态变量。这可以避免因状态更新不及时而导致的需要按两次热键的问题。<br>
 {<br>
@@ -949,92 +977,94 @@ send, ^2<br>
 isRunning := true      ; 更新状态为正在运行<br>
 }<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; b 启动 / 关闭ZoomIt64.exe  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00010</p>
-<p>#WinActivateForce<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; c[ 启动 / 关闭ZoomIt64.exe  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00010-938</p>
+<p>#Persistent                     ;确保脚本常驻：保证脚本不因长时间未使用而自动退出。<br>
 Rctrl &amp; 1::<br>
-; 获取当前鼠标位置<br>
-MouseGetPos, originalX, originalY</p>
-<pre class="notranslate"><code class="notranslate">; 执行鼠标点击
-SendEvent {click, 1250, 0}
-IfWinNotExist ahk_exe chrome.exe
+KeyWait, Rctrl, D  ; 确保释放 Rctrl 键后再执行操作</p>
+<pre class="notranslate"><code class="notranslate">; 检查 chrome.exe 是否已存在
+IfWinNotExist, ahk_exe chrome.exe
 {
-;Run "C:\Users\D\AppData\Local\Google\Chrome\Application\chrome.exe", ,max
-Run "C:\Program Files\Google\Chrome\Application\chrome.exe", ,max
-    WinActivate
-</code></pre>
-<p>;keywait, Rctrl<br>
-}<br>
-Else IfWinNotActive ahk_exe chrome.exe<br>
-{<br>
-WinActivate<br>
-;keywait, Rctrl<br>
-;sleep,1000<br>
-;Run, nircmd  savescreenshot "C:\Users\D\Desktop~$currdate.yyyyMMdd$-~$currtime.HHmmss$.png"<br>
-}<br>
-Else<br>
-{<br>
-WinMinimize<br>
-;keywait, Rctrl<br>
-}<br>
-; 将鼠标移动回原来的位置<br>
-MouseMove, originalX, originalY<br>
-Return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  打开 chrome  Rctrl &amp; 1 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00011</p>
-<p>Rctrl &amp; 2::<br>
-; 获取当前鼠标位置<br>
-MouseGetPos, originalX, originalY</p>
-<pre class="notranslate"><code class="notranslate">; 执行鼠标点击
-SendEvent {click, 1250, 0}
-
-; 检查 EmEditor 是否存在
-IfWinNotExist ahk_exe EmEditor.exe
-{
-    Run "C:\0　　tool\EmEditor\EmEditor.exe", , max
-    WinActivate
-    KeyWait, Rctrl
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe", , max
+    WinWait, ahk_exe chrome.exe, , 5  ; 最多等待 5 秒
 }
-Else IfWinNotActive ahk_exe EmEditor.exe
+Else IfWinNotActive, ahk_exe chrome.exe
+{
+    WinActivate  ; 激活窗口
+}
+Else
+{
+    ; 检查窗口是否已最小化
+    IfWinExist, ahk_exe chrome.exe
+    {
+        WinGet, MinimizedState, MinMax, ahk_exe chrome.exe
+        if (MinimizedState = -1)  ; 如果窗口已最小化
+            WinRestore  ; 还原窗口
+        else
+            WinMinimize  ; 否则最小化窗口
+    }
+}
+</code></pre>
+<p>Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Rctrl &amp; 1  打开 chrome  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00011-969</p>
+<p>F5 &amp; 8::<br>
+o=D:\ahk1.0\Lib\0 tool\EmEditor\EmEditor.exe<br>
+1=D:\ahk1.0\Lib\ahk777.ahk<br>
+2=D:\ahk1.0\Ahk1.1.ahk<br>
+;3=D:\ahk1.0\Lib\ahk2.ahk</p>
+<p>Run,%o% "%1%" "%2%" "%3%"<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; 8    EmEditor 打开2文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00006-856</p>
+<p>#Persistent                     ;确保脚本常驻：保证脚本不因长时间未使用而自动退出。<br>
+Rctrl &amp; 2::<br>
+KeyWait, Rctrl, D  ; 确保释放 Rctrl 键后再执行操作</p>
+<pre class="notranslate"><code class="notranslate">; 检查 EmEditor.exe 是否已存在
+IfWinNotExist, ahk_exe EmEditor.exe
+{
+    Run "C:\0　　tool\EmEditor\EmEditor.exe"
+    WinWait, ahk_exe EmEditor.exe, , 5  ; 最多等待 5 秒
+}
+Else IfWinNotActive, ahk_exe EmEditor.exe
+{
+    WinActivate  ; 激活窗口
+}
+Else
+{
+    ; 检查窗口是否已最小化
+    IfWinExist, ahk_exe EmEditor.exe
+    {
+        WinGet, MinimizedState, MinMax, ahk_exe EmEditor.exe
+        if (MinimizedState = -1)  ; 如果窗口已最小化
+            WinRestore  ; 还原窗口
+        else
+            WinMinimize  ; 否则最小化窗口
+    }
+}
+</code></pre>
+<p>Return</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Rctrl &amp; 2   打开 EmEditor  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00012-999</p>
+<p>Rctrl &amp; 3::<br>
+KeyWait, Rctrl, D  ; 确保释放 Rctrl 键后再执行操作</p>
+<pre class="notranslate"><code class="notranslate">IfWinNotExist, ahk_class CabinetWClass
+{
+    Run, "C:\Windows\explorer.exe"
+    WinWait, ahk_class CabinetWClass, , 5  ; 最多等待 5 秒
+    If !ErrorLevel  ; 确保窗口确实已存在
+    {
+        Sleep, 100  ; 短暂延时确保稳定
+        WinActivate
+    }
+}
+Else IfWinNotActive, ahk_class CabinetWClass
 {
     WinActivate
-    ; KeyWait, Rctrl
 }
 Else
 {
     WinMinimize
-    ; KeyWait, Rctrl
 }
-
-; 将鼠标移动回原来的位置
-MouseMove, originalX, originalY
 </code></pre>
-<p>Return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   打开 EmEditor  Rctrl &amp; 2 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00012</p>
-<p>Rctrl &amp; 3::<br>
-; 获取当前鼠标位置<br>
-MouseGetPos, originalX, originalY</p>
-<pre class="notranslate"><code class="notranslate">; 执行鼠标点击
-SendEvent {click, 1250, 0}
-IfWinNotExist ahk_class CabinetWClass
-{
-    Run "C:\Windows\explorer.exe"
-    WinActivate
-</code></pre>
-<p>;keywait, Rctrl<br>
-}<br>
-Else IfWinNotActive ahk_class CabinetWClass<br>
-{<br>
-WinActivate<br>
-;keywait, Rctrl<br>
-}<br>
-Else<br>
-{<br>
-WinMinimize<br>
-;keywait, Rctrl<br>
-}<br>
-; 将鼠标移动回原来的位置<br>
-MouseMove, originalX, originalY<br>
-Return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  打开 资源处理器  Rctrl &amp; 3  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00013</p>
+<p>Return</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Rctrl &amp; 3  打开 资源处理器   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00013-1026</p>
 <p>CoordMode, Mouse, Window<br>
 Rctrl &amp; 4::<br>
 WeChat:="ahk_class WeChatMainWndForPC"<br>
@@ -1043,11 +1073,6 @@ WeChat_path:="C:\Program Files\Tencent\WeChat\WeChat.exe" ，max</p>
 {<br>
 Run, %WeChat_path%<br>
 WinWait, ahk_class WeChatLoginWndForPC<br>
-click, 180, 350<br>
-sleep, 4000<br>
-click, 180, 350<br>
-sleep, 4000<br>
-click, 180, 350<br>
 }<br>
 else<br>
 {<br>
@@ -1067,16 +1092,40 @@ return</p>
 Process, Exist,% exe<br>
 return ErrorLevel<br>
 }<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  打开 微信  Rctrl &amp; 4   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014</p>
-<p>F5 &amp; /::<br>
-Run, "C:\Users\kev07\AppData\Local\Programs\Microsoft VS Code\Code.exe"  , , max<br>
-return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; /  VS Code  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00015</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Rctrl &amp; 4  打开 微信    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014-1062</p>
+<p>#Persistent<br>
+Rctrl &amp; 7::<br>
+KeyWait, Rctrl, D  ; 确保释放 Rctrl 键后再执行操作</p>
+<pre class="notranslate"><code class="notranslate">; 检查 Vs Code.exe 是否已存在
+IfWinNotExist, ahk_exe Code.exe
+{
+    Run "C:\Users\z\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    WinWait, ahk_exe Code.exe, , 5  ; 最多等待 5 秒
+}
+Else IfWinNotActive, ahk_exe Code.exe
+{
+    WinActivate  ; 激活窗口
+}
+Else
+{
+    ; 检查窗口是否已最小化
+    IfWinExist, ahk_exe Code.exe
+    {
+        WinGet, MinimizedState, MinMax, ahk_exe Code.exe
+        if (MinimizedState = -1)  ; 如果窗口已最小化
+            WinRestore  ; 还原窗口
+        else
+            WinMinimize  ; 否则最小化窗口
+    }
+}
+</code></pre>
+<p>Return</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  Rctrl &amp; 7 Vs Code.exe ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00015-1067</p>
 <p>;🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆    打开   操作   🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆<br>
 ; 💢⭐💢⭐💢⭐💢⭐💢⭐💢⭐    杂类   操作   ⭐💢⭐💢⭐💢⭐💢⭐💢⭐💢⭐💢</p>
-<p>F5 &amp; 5::AltTab<br>
+<p>F5 &amp; F4::AltTab<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ     F5 &amp; 5  AltTab     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000001</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ     F5 &amp; F4  AltTab   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000001-1074</p>
 <p>F6 &amp; d::<br>
 Clip(Format("{:" GetNextCaseFormat() "}", Clip()), true)<br>
 GetNextCaseFormat()<br>
@@ -1125,11 +1174,11 @@ Clip:<br>
 Return Clip()<br>
 }<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F6 &amp; d 大小写 首字母大写  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000002</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F6 &amp; d 大小写 首字母大写  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000002-1124</p>
 <p>F5 &amp; ,::<br>
 run D:\ahk1.0\Lib\diskeys.ahk<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   锁键盘鼠标 F5 &amp; ,   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000003</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F5 &amp; ,   锁键盘鼠标  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000003-1129</p>
 <p>~Shift &amp; Wheelup::<br>
 ; 透明度调整，增加。<br>
 WinGet, Transparent, Transparent,A<br>
@@ -1172,20 +1221,20 @@ SetTimer, RemoveToolTip_transparent_Lwin__2016.09.20, Off<br>
 return<br>
 ;---------------shift+滚轮down +10透明度<br>
 ;--------------------------------shift+滚轮up -10透明度<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  shift+中键按下 复原   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000003</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  shift+中键按下 复原   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000004-1176</p>
 <p>NumpadEnter::reload<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   重启脚本 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000006</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  NumpadEnter 重启脚本 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000005-1180</p>
 <p>+appskey::<br>
 send {Tab}<br>
 loop,4<br>
 SoundBeep, 12000, 20<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  +appskey   Tab  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000007</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  +appskey   Tab  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000006-1187</p>
 <p>&lt;^!z::<br>
 send, ^y<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;^!z   撤消    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000008</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;^!z   撤消    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000007-1192</p>
 <p>;#NoEnv<br>
 ;SendMode Input<br>
 ;SetWorkingDir %A_ScriptDir%<br>
@@ -1251,7 +1300,7 @@ WinMove, %WinTitle%,, %XNew%, %TopNew%, %WNew%, %HNew%
 <p>&lt;!z::<br>
 MoveCycle(-1)<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  窗口左半，右半切换 &lt;!z   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000004</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ &lt;!z  窗口左半，右半切换   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000008-1261</p>
 <p>;#NoEnv<br>
 ; SendMode Input<br>
 ; SetWorkingDir %A_ScriptDir%<br>
@@ -1317,7 +1366,7 @@ WinMove, %WinTitle%,, %XNew%, %TopNew%, %WNew%, %HNew%
 MoveCycle2(-1)
 return
 </code></pre>
-<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt; !x  切换窗口  70%·····100%    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000010</p>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt; !x  切换窗口  70%·····100%    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000009-1329</p>
 <p>if !A_IsAdmin &amp;&amp; !RegExMatch(<em>:=DllCall("GetCommandLineW", "Str"), " /restart(?!\S)")<br>
 RunWait % "*RunAs " RegExReplace(</em>, "^"".<em>?""\K|^\S</em>\K", " /restart")<br>
 F5 &amp; 7::<br>
@@ -1327,7 +1376,7 @@ run D:\ahk1.0\Lib\二维码.ahk<br>
 sleep, 400<br>
 click 122,233<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  二维码  F5 &amp; 7  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000011</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; 7  二维码  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000010-1340</p>
 <p>!LButton::    ;-- 【Win+鼠标左键】任意移动窗口位置<br>
 #LButton::    ;-- 【Win+鼠标右键】任意调整窗口大小<br>
 Critical<br>
@@ -1349,7 +1398,7 @@ else<br>
 WinMove,,,,, x3-x1+w2, y3-y1+h2<br>
 }<br>
 return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  !+左键 移窗口 #+左键 调窗口大小   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000012</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  !+左键 移窗口 #+左键 调窗口大小   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000011-1363</p>
 <pre class="notranslate"><code class="notranslate">; Windows messages to monitor
 msg_WM_WTSSESSION_CHANGE = 0x2b1
 msg_WM_POWERBROADCAST    = 0x218
@@ -1448,7 +1497,7 @@ tSetMouseButtons:<br>
 RegRead, buttonState, %reg_KeyName%, %reg_ValueName%<br>
 tmpInt := DllCall("user32.dll\SwapMouseButton", "UInt", buttonState)<br>
 Return<br>
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; . 切换鼠标左右键   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000013</p>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; . 切换鼠标左右键    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000012-1467</p>
 <blockquote>
 <p>^b::<br>
 if wincc_presses &gt; 0 ; SetTimer 已经启动, 所以我们记录键击.<br>
@@ -1488,7 +1537,7 @@ send, {enter}<br>
 }<br>
 wincc_presses = 0<br>
 return<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞ   &gt;^b  单 新建文件夹 双 TxT文件  名为剪贴板   ΞΞΞΞΞΞΞΞΞΞΞΞΞ 000005<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞ   &gt;^b  单 新建文件夹 双 TxT文件  名为剪贴板    ΞΞΞΞΞΞΞΞΞΞΞΞΞ 000013-1506<br>
 F5 &amp; u::<br>
 Clipboard =<br>
 Send, ^c<br>
@@ -1513,8 +1562,960 @@ sleep, 300<br>
 send ^+{space}<br>
 return<br>
 ; 耳机,扬声器状态都能录，但中途不要切换音频设备。开Vpn也没关系。如失败，不要操作别的，再按一次F5 &amp; u就可以了。<br>
-; ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; u  文字转语音   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000006</p>
-<p>`</p></div>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; u  文字转语音    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000014-1531</p>
+<p>b105(timeout = 400)<br>
+{<br>
+tout := timeout/1000<br>
+key := RegExReplace(A_ThisHotKey,"[*~$#+!^]")<br>
+Loop<br>
+{<br>
+t := A_TickCount<br>
+KeyWait %key%<br>
+Pattern .= A_TickCount-t &gt; timeout<br>
+KeyWait %key%,DT%tout%<br>
+If (ErrorLevel)<br>
+Return Pattern<br>
+}<br>
+}<br>
+;-----------------------------------------------------------------------------------<br>
++F12::<br>
+p := b105()</p>
+<pre class="notranslate"><code class="notranslate">      If (p = "0")
+Run ms-settings:network-proxy            ;------------------------- 代理 1
+</code></pre>
+<p>Else If (p = "00")<br>
+Run control.exe sysdm.cpl<code class="notranslate">,</code>,3               ;---------------------环境变量 2</p>
+<p>Else If (p = "000")<br>
+;Run compMgmtLauncher                      ;------------------ 计算机管理 3<br>
+Run compmgmt.msc<br>
+Else If (p = "0000")<br>
+run devmgmt.msc                                  ;------------------ 设备管理器 4</p>
+<p>Else If (p = "1")　<br>
+Run mmc</p>
+<p>Else<br>
+{<br>
+Run dcomcnfg                                    ;------------------------组件服务 6  次数5次以上<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F12  代理 变量 管理 控制台 组件服务    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000015-1571<br>
++F11::<br>
+p := b105()</p>
+<pre class="notranslate"><code class="notranslate">      If (p = "0")
+Run control                                            ;---------------------控制面板 1
+</code></pre>
+<p>Else If (p = "00")<br>
+Run, %A_ComSpec% /k ipconfig  ; 打开 CMD 并直接运行 ipconfig   ; ipconfig 2</p>
+<p>Else If (p = "000")　　<br>
+Run gpedit.msc                                      ;-----------------------组策略 3</p>
+<p>Else If (p = "0000")<br>
+Run ncpa.cpl                                          ;---------------------网络连接 4</p>
+<p>Else If (p = "1")　　<br>
+{<br>
+Run shrpubw<br>
+Run fsmgmt.msc                                    ;-------------------共享文件夹   长按<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F11 控制面板 IP 组策略 网络连接 共享  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000016-1593</p>
+<p>#Persistent<br>
+SetWorkingDir %A_ScriptDir%</p>
+<p>~CapsLock::<br>
+if (A_PriorHotkey != "CapsLock" or A_TimeSincePriorHotkey &gt; 400)<br>
+{<br>
+; 这是第一次点击<br>
+KeyWait, CapsLock<br>
+KeyWait, CapsLock, D T0.4   ;等待400毫秒看是否会有第二次点击<br>
+if (ErrorLevel)<br>
+{<br>
+Send, !p                                                        ;------------------------- 单击<br>
+Sleep, 100<br>
+Send, s<br>
+}<br>
+else<br>
+{<br>
+; 可能是双击或三击 双击后有轻微的延迟，等1小段时间来确定是否有第3次点击<br>
+KeyWait, CapsLock<br>
+KeyWait, CapsLock, D T0.4<br>
+if (ErrorLevel)<br>
+{<br>
+Send, !p                                                    ;------------------------- 双击<br>
+Sleep, 100<br>
+Send, 9<br>
+}<br>
+else<br>
+{<br>
+KeyWait, CapsLock                                  ;------------------------- 三击<br>
+Send, !p<br>
+Sleep, 100<br>
+Send, 0<br>
+}<br>
+}<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ CapsLock  浏览器  1全局 2auto 3直连   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000017-1631</p>
+<blockquote>
+<p>^q::<br>
+ControlGetFocus, control, A<br>
+SendMessage, 0x115, 2, , %control%, A<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^q 上一页   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000018-1637</p>
+</blockquote>
+<blockquote>
+<p>^e::<br>
+ControlGetFocus, control, A<br>
+SendMessage, 0x115, 3, , %control%, A<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^e 下一页   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000019-1643<br>
+F4 &amp; 0::<br>
+loop,10<br>
+{<br>
+var := 0<br>
+InputBox, time, KevZ:计时器 请输入一个时间__分钟<br>
+time := time*60000<br>
+Sleep,%time%<br>
+loop,26<br>
+{<br>
+var += 180<br>
+SoundBeep, var, 900<br>
+;SoundPlay, %A_WinDir%\Media\Ring10.wav<br>
+}<br>
+msgbox 时间到！！！! ! ! ! ! ! !<br>
+return<br>
+}<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F4 &amp; 0  计时器   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000020-1660</p>
+</blockquote>
+<p>#IfWinActive ahk_class WindowsForms10.Window.8.app.0.2bf8098_r6_ad1<br>
+:*b:++::610712一2550800一122一018{Bs 13}{left 2}{Bs}{left 4}{Bs 4}{Enter}   ;BS 回退13，left 左移 Enter确认 输入+2成功替换<br>
+#IfWinActive<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   ++ keepast    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000001-1665</p>
+<p>; 💢⭐💢⭐💢⭐💢⭐💢⭐💢⭐    杂类   操作   ⭐💢⭐💢⭐💢⭐💢⭐💢⭐💢⭐💢<br>
+; ➰➰➰➰➰➰➰➰➰➰   选行   选段   ➰➰➰➰➰➰➰➰➰➰➰</p>
+<p>&lt;!1::<br>
+send, {home}{shiftdown}{end}{shiftup}^c<br>
+Return<br>
+&lt;!q::<br>
+Send +{Home}^c<br>
+Return<br>
+&lt;!a::<br>
+Send {shift down}{End down}{End up}{shift up}^c<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;!1 复整行　&lt;!q 到行首  &lt;!a 到行尾   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000002-1679</p>
+<p>&lt;!2::<br>
+send, {home}{shiftdown}{end}{shiftup}^v<br>
+Return<br>
+&lt;!w::<br>
+Send +{Home}^v<br>
+Return<br>
+&lt;!s::<br>
+Send {shift down}{End down}{End up}{shift up}^v<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;!2 粘整行  &lt;!w 光标前 &lt;!s 光标后     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000003-1690</p>
+<p>&lt;!3::<br>
+send, {home}{shiftdown}{end}{shiftup}^x<br>
+Return<br>
+&lt;!e::<br>
+Send +{Home}^x<br>
+Return<br>
+&lt;!d::<br>
+Send {shift down}{End down}{End up}{shift up}^x<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;!3 剪整行  &lt;!e 光标前   &lt;!d 光标后    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000004-1701</p>
+<p>&lt;#1::<br>
+send, {home}{shift down}{end}{shift up}<br>
+Return<br>
+&lt;#q::<br>
+Send +{Home}<br>
+Return<br>
+&lt;#a::<br>
+Send {shift down}{End down}{End up}{shift up}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;#1选整行　&lt;#q到行首 &lt;#a到行尾    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000005-1712</p>
+<p>&lt;#2::<br>
+send !{End}+!{home}<br>
+Return<br>
+&lt;#w::<br>
+Send ^+{home}<br>
+Return<br>
+&lt;#s::<br>
+Send ^+{End}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;#2 选整段  &lt;#w光标前 &lt;#s光标后    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000006-1723</p>
+<p>&lt;#3::<br>
+send, {home}{shiftdown}{end}{shiftup}{delete}<br>
+Return<br>
+#If (WinActive("ahk_class XLMAIN") or WinActive("ahk_class OpusApp") or WinActive("ahk_exe Notepad3.exe") or WinActive("ahk_exe EmEditor.exe") or WinActive("ahk_class Chrome_WidgetWin_1"))<br>
+&lt;#e::<br>
+Send +{Home}{delete}<br>
+Return<br>
+#IfWinActive<br>
+&lt;#d::<br>
+Send {shift down}{End down}{End up}{shift up}{delete}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &lt;#3 删整行 &lt;#e 光标前 &lt;#d 光标后   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000007-1736</p>
+<p>; ➰➰➰➰➰➰➰➰➰➰   选行   选段   ➰➰➰➰➰➰➰➰➰➰➰<br>
+; 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵   滚动   速度   🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵</p>
+<p>#If ( WinActive("ahk_exe chrome.exe")  or WinActive("ahk_exe WeChatAppEx.exe")  or WinActive("ahk_exe Typora.exe") or WinActive("ahk_exe Notepad3.exe") or WinActive("ahk_exe EmEditor.exe") or WinActive("ahk_exe Joplin.exe"))<br>
+www=0<br>
+F2 &amp; F1::<br>
+{<br>
+www:=!www<br>
+If(www=0)<br>
+{<br>
+SetTimer, aaaa, Off<br>
+SetTimer, bba, Off</p>
+<p>}<br>
+ELSE<br>
+{<br>
+SetTimer, aaaa, 50	 ;滚动速度<br>
+}<br>
+}<br>
+Return<br>
+aaaa:<br>
+{<br>
+ControlGetFocus, control, A<br>
+SendMessage, 0x115, 0, 0, %control%, A<br>
+;SendMessage, 0x115, 2, , %control%, A<br>
+}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F2 &amp; F1 快速向上滚动   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000001-1765</p>
+<p>F2 &amp; F3::<br>
+{<br>
+www:=!www<br>
+If(www=0)<br>
+{<br>
+SetTimer, bba, Off<br>
+SetTimer, aaaa, Off<br>
+}<br>
+ELSE<br>
+{<br>
+SetTimer, bba, 50	;滚动速度<br>
+}<br>
+}<br>
+Return<br>
+bba:<br>
+{<br>
+ControlGetFocus, control, A<br>
+SendMessage, 0x115, 1, 0, %control%, A<br>
+;SendMessage, 0x115, 3, , %control%, A<br>
+}<br>
+Return<br>
+#IfWinActive<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F2 &amp; F3 快速向下滚动   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000002-1789</p>
+<p>F2 &amp; Esc::<br>
+{<br>
+www:=!www<br>
+If(www=0)<br>
+{<br>
+SetTimer, aaa, Off<br>
+SetTimer, bb, Off<br>
+}<br>
+ELSE<br>
+{<br>
+SetTimer, aaa, 1000	 ;滚动速度<br>
+}<br>
+}<br>
+Return<br>
+aaa:<br>
+{<br>
+ControlGetFocus, fcontrol, A<br>
+Loop 1                                                          ; 行数<br>
+SendMessage, 0x115, 0, 0, %fcontrol%, A<br>
+}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F2 &amp; Esc 缓慢向上滚动  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000003-1812</p>
+<p>#ifwinactive<br>
+www=0</p>
+<p>F2 &amp; F4::<br>
+{<br>
+www:=!www<br>
+If(www=0)<br>
+{<br>
+SetTimer, bb, Off<br>
+SetTimer, aaa, Off<br>
+}<br>
+ELSE<br>
+{<br>
+SetTimer, bb, 1000	;滚动速度<br>
+}<br>
+}<br>
+Return<br>
+bb:<br>
+{<br>
+ControlGetFocus, fcontrol, A<br>
+Loop 1                                     ; 行数<br>
+SendMessage, 0x115, 1, 0, %fcontrol%, A<br>
+}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F2 &amp; F4 缓慢向下滚动   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000004-1838</p>
+<p>; 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵   滚动   速度   🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵<br>
+;🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵    颜色   坐标   🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵</p>
+<p>F5 &amp; o::<br>
+MouseGetPos, mouseX, mouseY<br>
+PixelGetColor, color, %mouseX%, %mouseY%, RGB ; 调用 PixelGetColor 函数，获得 RGB 值，并赋值给 color<br>
+StringRight color,color,6    ; 截取 color（第二个 color）右边的6个字符，因为获得的值是这样的：0x8700FF，一般我们只需要 8700FF 部分。把截取到的值再赋给 color（第一个 color）。</p>
+<pre class="notranslate"><code class="notranslate">clipboard = #%color%        ;--------------------------------- 添加了 #
+tooltip, %clipboard%          ;--------------- 把 color 的值发送到剪贴板
+sleep 2000
+tooltip,
+return
+</code></pre>
+<p>;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; o 获得 RGB 值    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000001-1853</p>
+<p>F5 &amp; P::<br>
+ClipSaved := ClipboardAll        ; ------------------保存当前剪贴板内容<br>
+Clipboard := ""                         ;-- 清空剪贴板以确保后续操作的准确性<br>
+Send ^c<br>
+ClipWait                                    ; ------------------等待剪贴板内容更新<br>
+color := Clipboard                    ;------------------ 获取剪贴板中的色值<br>
+;Clipboard := ClipSaved           ;----------------------- 恢复剪贴板内容</p>
+<pre class="notranslate"><code class="notranslate">; 检查颜色格式并转换为 RGB
+if (SubStr(color, 1, 1) = "#") {
+    color := SubStr(color, 2)  ; 去掉 "#"
+}
+
+if (StrLen(color) = 6) {
+    ; 使用 AutoHotkey 内置的十六进制转换
+    r := "0x" SubStr(color, 1, 2)
+    g := "0x" SubStr(color, 3, 2)
+    b := "0x" SubStr(color, 5, 2)
+</code></pre>
+<p>Gui, New, +Escape +AlwaysOnTop, Color Preview          ; 创建 GUI 窗口以显示颜色，并启用 Esc 关闭功能<br>
+Gui, Color, % "0x" color  ; 设置背景颜色为获取的颜色</p>
+<pre class="notranslate"><code class="notranslate">    	Gui, Add, Text, Center, #%color%）
+    	Gui, Font, s14 Bold  ; 设置字体大小和样式
+</code></pre>
+<p>Gui, Show, w200 h200, Color Preview    ; 设置窗口大小为正方形 200x200 像素<br>
+}<br>
+else<br>
+{<br>
+MsgBox, Invalid color format. Please use #RRGGBB.<br>
+}<br>
+return<br>
+GuiClose:<br>
+GuiEscape:<br>
+Gui, Destroy<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp; p 显示颜色  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000002-1890</p>
+<pre class="notranslate"><code class="notranslate">autostart:=1
+autostartLnk:=A_StartupCommon . "D:\ahk1.0\Lib\se.ahk"
+</code></pre>
+<p>F5 &amp; [::</p>
+<pre class="notranslate"><code class="notranslate">if(autostart)
+</code></pre>
+<p>{<br>
+IfExist, % autostartLnk<br>
+{<br>
+FileGetShortcut, %autostartLnk%, lnkTarget<br>
+if(lnkTarget!=A_ScriptFullPath)<br>
+FileCreateShortcut, %A_ScriptFullPath%, %autostartLnk%, %A_WorkingDir%<br>
+}<br>
+else<br>
+{<br>
+FileCreateShortcut, %A_ScriptFullPath%, %autostartLnk%, %A_WorkingDir%<br>
+}<br>
+}<br>
+else<br>
+{<br>
+IfExist, % autostartLnk<br>
+{<br>
+FileDelete, %autostartLnk%<br>
+}<br>
+}<br>
+;----------------------------------------------------------------------------------<br>
+WinMoveZ(hWnd, C, X, Y, W, H, Redraw:=0)<br>
+{ ;  WinMoveZ v0.5 by SKAN on D35V/D361 @ tiny.cc/winmovez<br>
+Local V:=VarSetCapacity(R,48,0), A:=&amp;R+16, S:=&amp;R+24, E:=&amp;R, NR:=&amp;R+32, TPM_WORKAREA:=0x10000<br>
+C:=( C:=Abs(C) ) ? DllCall("SetRect", "Ptr",&amp;R, "Int",X-C, "Int",Y-C, "Int",X+C, "Int",Y+C) : 0<br>
+DllCall("SetRect", "Ptr",&amp;R+16, "Int",X, "Int",Y, "Int",W, "Int",H)<br>
+DllCall("CalculatePopupWindowPosition", "Ptr",A, "Ptr",S, "UInt",TPM_WORKAREA, "Ptr",E, "Ptr",NR)<br>
+X:=NumGet(NR+0,"Int"),  Y:=NumGet(NR+4,"Int")<br>
+Return DllCall("MoveWindow", "Ptr",hWnd, "Int",X, "Int",Y, "Int",W, "Int",H, "Int",Redraw)<br>
+}<br>
+;----------------------------------------------------------------------------------<br>
+#NoEnv<br>
+#SingleInstance, Force<br>
+CoordMode, Mouse, Screen<br>
+CoordMode, Pixel, Screen</p>
+<p>Gui New, -Caption  +Escape +Border +hWndhWnd +Disabled +AlwaysOnTop<br>
+Gui, Margin, 15, 70         ; ----------------------------------宽度与高度<br>
+Gui, Add, Edit, w50 Center  yellow   ;文字左右居中 Center, yellow  加上逗号则上下居中<br>
+Gui, Show<br>
+WinGetPos, X, Y, W, H, ahk_id %hWnd%<br>
+PX:=X, PY:=Y<br>
+Loop<br>
+{<br>
+MouseGetPos, X, Y<br>
+If ! (X=PX and Y=PY)<br>
+{<br>
+WinMoveZ(hWnd, 96, X, Y, W, H), PX:=X, PY:=Y<br>
+PixelGetColor, C, %X%, %Y%, RGB<br>
+Gui, Color, % PC:=C<br>
+GuiControl,,Edit1, % Format("{:06X}",C)<br>
+}<br>
+Sleep 50<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; [  颜色值 鼠标跟随  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000003-1951</p>
+<p>F5 &amp; ]::<br>
+MouseGetPos, xpos, ypos<br>
+clipboard = %xpos%,%ypos%<br>
+a = %xpos%_%ypos% 	;-------------------------a = 鼠标位置<code class="notranslate">(X,Y</code>)<br>
+tooltip, %a%<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F5 &amp; ] 获取当前鼠标指针的坐标   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000004-1959</p>
+<p>;🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵    颜色   坐标   🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵<br>
+; 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧🚧    上传   图库   🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧🚧</p>
+<p>F1 &amp; s::<br>
+; 显示上传中提示<br>
+Text := "⭕ 上传图片中 ⭕"<br>
+btt(Text, 600, 0, , "Style4")<br>
+; 运行 upgit 上传命令，将 URL 复制到剪贴板<br>
+Run "D:\ahk1.0\Lib\0 tool\picgo-croe\upgit.exe" :clipboard -o clipboard,, hide      ; -f markdown<br>
+; 等待上传完成<br>
+Sleep, 5000<br>
+; 关闭上传提示<br>
+btt()<br>
+; 获取上传后的剪贴板内容<br>
+Clip := Clipboard<br>
+; 确保剪贴板不为空<br>
+if (Clip != "") {<br>
+; 删除第 22 到 27 位的子字符串<br>
+StringReplace, Clip, Clip, % SubStr(Clip, 22, 6), , All<br>
+; 将修改后的内容格式化为 HTML 并更新到剪贴板<br>
+Clipboard := "</p><p align="center">&lt;img src=""" Clip """ style='width:400px;'&gt;<br><br>"<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; s  上传截图到github/img   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000001-1984</p>
+<p>F1 &amp; a::<br>
+Text= ⭕       上传图片中     ⭕<br>
+btt(Text,600,0,,"Style4")<br>
+RunWait, cmd /c "picgo u",, hide<br>
+Sleep, 4000<br>
+btt()<br>
+return</p>
+<p>; 获取上传后的剪贴板内容并删除换行符<br>
+;Clip := StrReplace(Clipboard, "<code class="notranslate">n", "")                  ;没有这２步剪贴板中的html分换行成２段． ;Clip := StrReplace(Clip, "</code>r", "")<br>
+; 确保剪贴板不为空<br>
+;if (Clip != "")<br>
+; 将修改后的内容格式化为 HTML 并更新到剪贴板<br>
+; Clipboard := "</p><p align="center">&lt;img src=""" Clip """ style='width:400px;'&gt;<br><br>"</p>
+<p>;现将此改为安装插件　C:\Users\z.picgo  一定要在此目录下安装　　                 npm i picgo-plugin-autocopy   目的：剪贴板中复制网址<br>
+;设置此插件 进入D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份               picgo set plugin autocopy     　目的：改网址为html<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; a  上传截图到github/img   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000002-2000</p>
+<p>F1 &amp; d::<br>
+run, <a href="https://picx.xpoet.cn/#/upload" rel="nofollow">https://picx.xpoet.cn/#/upload</a>    ;需要先在浏览器上将窗口设为67%<br>
+sleep, 4000<br>
+click, 1400, 255<br>
+sleep, 1000<br>
+send, ^v<br>
+Sleep, 100<br>
+send, ^s<br>
+Sleep, 3000<br>
+clipboard = </p><p align="center"><a target="_blank" rel="noopener noreferrer" href="%clipboard%"><img src="%clipboard%" style="max-width: 100%;"></a><br><br><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; d  上传截图到图库     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000003-2013</p>
+<p>F1 &amp; f::<br>
+run, <a href="https://tuku.zbb07.us.kg" rel="nofollow">https://tuku.zbb07.us.kg</a><br>
+;run, <a href="https://tuku.zcr07.us.kg" rel="nofollow">https://tuku.zcr07.us.kg</a><br>
+;run, <a href="https://tu.k07.us.kg" rel="nofollow">https://tu.k07.us.kg</a>         ;需要先在浏览器上将窗口设为67%<br>
+;run, <a href="https://tu.w07.us.kg" rel="nofollow">https://tu.w07.us.kg</a><br>
+;run, <a href="https://tu.n06.us.kg" rel="nofollow">https://tu.n06.us.kg</a><br>
+;run, <a href="https://tu.z07.us.kg" rel="nofollow">https://tu.z07.us.kg</a><br>
+sleep, 7000<br>
+Click, 320, 370, 1, 6, ahk_class Chrome_WidgetWin_1  ; 点击左键<br>
+Sleep, 1000<br>
+send, ^v<br>
+Sleep, 1000<br>
+ControlClick, x1160 y505, ahk_class Chrome_WidgetWin_1<br>
+Sleep, 9500</p>
+<pre class="notranslate"><code class="notranslate">; 使用 ControlClick 模拟鼠标点击特定位置
+ControlClick, x480 y609, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+</code></pre>
+<p>clipboard = </p><p align="center"><a target="_blank" rel="noopener noreferrer" href="%clipboard%"><img src="%clipboard%" style="max-width: 100%;"></a></p>
+<p>return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; f  上传截图到图库     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000004-2037</p>
+<p>F1 &amp; g::<br>
+Text= ⭕       上传图片中     ⭕<br>
+btt(Text,600,0,,"Style4")<br>
+send ^c<br>
+sleep, 2000<br>
+RunWait, cmd /c "picgo u"<br>
+,, hide<br>
+return<br>
+sleep, 9000<br>
+btt()​<br>
+clipboard = </p><p align="center"><a target="_blank" rel="noopener noreferrer" href="%clipboard%"><img src="%clipboard%" style="max-width: 100%;"></a><br><br><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; g  上传剪贴板中的文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000005-2051</p>
+<p>F1 &amp; h::                                                                  ;---------------------文件上传<br>
+clipboard = youapig<br>
+send, {F2}<br>
+sleep, 100           ;------------------因为文件名不能带中文所以先改名为youapig<br>
+send, {ctrl down}v{ctrl up}{enter}<br>
+sleep, 100<br>
+Send, {ctrl down}c{ctrl up}<br>
+sleep, 100<br>
+RunWait, "upgit.exe" :clipboard-files<br>
+, ,hide<br>
+sleep, 100<br>
+send, ^z<br>
+;Run, cmd /c D:\ahk1.0\Lib\0 tool\picgo-croe\upgit.exe :clipboard-files<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; h  上传剪贴板中的文件   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000006-2067</p>
+<p>; 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧  上传   图库    🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧<br>
+; 🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞  光标   操作    🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞</p>
+<p>AppsKey &amp; w::Send {Up}<br>
+AppsKey &amp; s::Send {Down}<br>
+AppsKey &amp; a::Send {Left}<br>
+AppsKey &amp; d::Send {Right}<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    adws 上 下 左 右   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000001-2076</p>
+<p>AppsKey &amp; q:: Send, {Bs}<br>
+AppsKey &amp; e:: Send, {delete}<br>
+AppsKey &amp; f:: Send, {Enter}<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    q 退格 e 删除 f 回车    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000002-2081</p>
+<p>AppsKey &amp; g::<br>
+Send {End}<br>
+Send {Enter}<br>
+Return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    AppsKey &amp; g 任意位置回     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 0000003-2087</p>
+<p>; 🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞  光标 鼠标  🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞<br>
+; 🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞 快捷  搜索  🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞</p>
+<p>F1 &amp; 1::<br>
+send,{ctrl down}c{ctrl up}<br>
+sleep,200<br>
+ClipWait</p>
+<pre class="notranslate"><code class="notranslate">Run, "C:\3\Everything-1.5.0.1356a.x64\Everything64.exe"  -s "%clipboard%"
+</code></pre>
+<p>return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; 1 用Evething搜索选中的文字    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000001-2102</p>
+<p>/*<br>
+#IfWinActive ahk_exe chrome.exe or ahk_exe EmEditor.exe     ;只对chrome  EmEditor 起作用<br>
+F1::return                                         ; 覆盖单独按下 F1 的功能，不执行任何操作<br>
+F1 &amp; 2::                                            ; 打开谷歌翻译，回车激活切换中英<br>
+Click, 1400,170  , Right<br>
+Click Right<br>
+Send {T}{enter}<br>
+Click, 1400,170<br>
+return<br>
+#IfWinActive                                     ; 结束限制<br>
+*/<br>
+;-----------------------------------------------------------------------------------</p>
+<p>#If (WinActive("ahk_exe chrome.exe") or WinActive("ahk_exe EmEditor.exe"))<br>
+F1::return  ; 禁用 F1 的单独功能<br>
+F1 &amp; 2::<br>
+Click, 1400,170  , Right<br>
+Click Right<br>
+Send {T}{enter}<br>
+Click, 1400,170<br>
+return<br>
+#If  ; 结束限制<br>
+;如果你的条件比较简单且仅仅是检查窗口，#IfWinActive 完全可以满足需求。<br>
+;如果你需要更复杂的条件判断，下面这种  #If 更加灵活且强大。<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ F1 &amp; 2   谷歌翻译  中/ 英   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000002 -2128</p>
+<p>F1 &amp; 3::<br>
+; 复制当前选中的文本<br>
+send, ^c<br>
+sleep, 100</p>
+<p>; 启动 Mobipocket Reader，如果已经运行则激活窗口<br>
+if WinExist("ahk_class MobiDesktopReader")<br>
+{<br>
+WinActivate<br>
+}<br>
+else<br>
+{<br>
+run, "C:\3\4\9 MobipocketReader_6.2.exe"<br>
+}</p>
+<p>; 等待 Mobipocket Reader 窗口存在，最多等待10秒<br>
+WinWait, ahk_class MobiDesktopReader, , 10000<br>
+if ErrorLevel<br>
+{<br>
+MsgBox, 程序未能在10秒内启动。<br>
+return<br>
+}</p>
+<p>; 等待窗口激活<br>
+WinWaitActive, ahk_class MobiDesktopReader, , 1000<br>
+if ErrorLevel<br>
+{<br>
+MsgBox, 窗口未能在1秒内激活。<br>
+return<br>
+}</p>
+<p>; 将焦点设置到搜索框控件<br>
+ControlFocus, Edit1, ahk_class MobiDesktopReader<br>
+sleep, 100  ; 等待焦点设置生效</p>
+<p>; 模拟鼠标点击搜索框<br>
+ControlClick, Edit1, ahk_class MobiDesktopReader<br>
+sleep, 100  ; 等待点击生效</p>
+<p>; 清空搜索框内容<br>
+ControlSetText, Edit1,, ahk_class MobiDesktopReader<br>
+sleep, 100  ; 等待清空生效</p>
+<p>; 确保剪贴板内容是干净的<br>
+clipboard := Trim(clipboard)</p>
+<p>; 使用 ControlSend 粘贴剪贴板内容并发送 Enter 按键<br>
+ControlSend, Edit1, ^v, ahk_class MobiDesktopReader<br>
+sleep, 100  ; 等待粘贴生效</p>
+<p>; 发送 Enter 按键进行搜索<br>
+ControlSend, Edit1, {Enter}, ahk_class MobiDesktopReader<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; 3 Mobi    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000003-2183</p>
+<p>F1 &amp; 4::<br>
+Send, {ctrl down}c{ctrl up}<br>
+KeyWait F1<br>
+Run <a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=%clipboard%" rel="nofollow">https://www.baidu.com/s?ie=UTF-8&amp;wd=%clipboard%</a><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; 4 用百度搜索选中的文字   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000004-2190</p>
+<p>F1 &amp; 5::<br>
+Send, {ctrl down}c{ctrl up}<br>
+KeyWait F1<br>
+Run <a href="http://www.google.com.tw/search?hl=zh-TW&amp;q=%Clipboard%" rel="nofollow">http://www.google.com.tw/search?hl=zh-TW&amp;q=%Clipboard%</a><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; 5 用谷歌搜索选中的文字   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000005-2197</p>
+<p>F1 &amp; 6::<br>
+send, ^c<br>
+sleep,100<br>
+run, "C:\3\4\9 MobipocketReader_6.2.exe"<br>
+WinWait, ahk_class MobiDesktopReader, , 15000   ; 等待 Mobipocket Reader 窗口存在，最多等待15秒<br>
+if ErrorLevel<br>
+{<br>
+MsgBox, 程序未能在15秒内启动。<br>
+return<br>
+}<br>
+send, {NumpadUp}<br>
+WinWaitActive, ahk_class MobiDesktopReader, , 4000     ; 等待窗口激活<br>
+if ErrorLevel<br>
+{<br>
+MsgBox, 窗口未能在1秒内激活。<br>
+return<br>
+}<br>
+send, {enter}<br>
+sleep, 100<br>
+send, ^v{enter}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; 6 Mobi    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000006-2220</p>
+<p>F1 &amp; 7::<br>
+Send, {ctrl down}c{ctrl up}<br>
+Runwait <a href="https://transmart.qq.com/zh-CN/index?sourcelang=en&amp;targetlang=zh&amp;source=%clipboard%" rel="nofollow">https://transmart.qq.com/zh-CN/index?sourcelang=en&amp;targetlang=zh&amp;source=%clipboard%</a><br>
+WinWait, ahk_class Chrome_WidgetWin_1, , 15000<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F1 &amp; 7 腾讯翻译    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000007-2227</p>
+<p>F1 &amp; 8::<br>
+Send, {ctrl down}c{ctrl up}<br>
+KeyWait F1<br>
+sleep,20<br>
+Run  <a href="http://youtube.com/results?q=%clipboard%" rel="nofollow">http://youtube.com/results?q=%clipboard%</a><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; 8  youtube   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000008-2235</p>
+<p>F1 &amp; 0::<br>
+Send, {ctrl down}c{ctrl up}<br>
+Runwait <a href="https://fanyi.baidu.com/mtpe-individual/multimodal?aldtype=23#/en/zh/%clipboard%" rel="nofollow">https://fanyi.baidu.com/mtpe-individual/multimodal?aldtype=23#/en/zh/%clipboard%</a><br>
+WinWait, ahk_class Chrome_WidgetWin_1, , 15000<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F1 &amp; 0 百度翻译  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000009-2242</p>
+<p>F1 &amp; =::<br>
+Send, {ctrl down}c{ctrl up}<br>
+sleep, 400<br>
+KeyWait F1<br>
+Runwait <a href="https://transmart.qq.com/zh-CN/index" rel="nofollow">https://transmart.qq.com/zh-CN/index</a><br>
+sleep, 3000<br>
+Send, {ctrl down}v{ctrl up}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F1 &amp; = 腾讯翻译   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000009-2252</p>
+<p>F1 &amp; 9::<br>
+Send, {ctrl down}c{ctrl up}<br>
+KeyWait F1<br>
+sleep,20<br>
+Run  <a href="https://zh.wikipedia.org/wiki/Special:Search/%clipboard%" rel="nofollow">https://zh.wikipedia.org/wiki/Special:Search/%clipboard%</a><br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; 9  wiki    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000010-2260</p>
+<p>F1 &amp; -::<br>
+Send, {ctrl down}c{ctrl up}<br>
+send, #!/<br>
+KeyWait F1<br>
+;sleep,2000<br>
+Run <a href="https://www.deepl.com/translator?q=Adds%20shortcuts%20to%20increase%2Fdecrease%20font%20size#en/zh/%clipboard%" rel="nofollow">https://www.deepl.com/translator?q=Adds%20shortcuts%20to%20increase%2Fdecrease%20font%20size#en/zh/%clipboard%</a><br>
+sleep,16000<br>
+send, #!/<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; -  DeepL    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000010-2261</p>
+<p>; 🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞 快捷  搜索  🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞🎞<br>
+; 🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼 关机  重启  🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼</p>
+<p>F4 &amp; z::<br>
+Run, nircmd speak text "确定注销，请点是" 0 90<br>
+Run, nircmd.exe cmdwait 100 qboxcom ".............注  销............." "  注意：保存文件" exitwin logoff<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; z 注销     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000001-2280<br>
+F4 &amp; c::<br>
+Run, nircmd speak text "确定重启 请点是" 0 90<br>
+Run, nircmd.exe  cmdwait 100 qboxcom ".............重  启............." "  注意：保存文件" exitwin reboot<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; c 重启     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000002-2285</p>
+<p>F4 &amp; g::<br>
+Run, nircmd speak text "确定关机 请点是" 0 90<br>
+Run, nircmd.exe cmdwait 100 qboxcom ".............关  机............." "  注意：保存文件" exitwin poweroffr<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; g 关机    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000003-2291</p>
+<p>F4 &amp; d::<br>
+Run, nircmd speak text "进入待机 请点是" 0 90<br>
+Run, nircmd.exe cmdwait 100 qboxcom ".............待　机............" "  睡眠：注意保存文件" standby<br>
+sleep, 5000<br>
+send, y<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; d 待机    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000004-2299</p>
+<p>F4 &amp; x::<br>
+Run, nircmd speak text "确定休眠 请点是" 0 90<br>
+Run, nircmd.exe cmdwait 100 qboxcom ".............休　眠............." "  注意：保存文件" hibernate<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; q 重启资源管理器    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000005-2305</p>
+<p>F4 &amp; q::<br>
+Run, nircmd speak text "重启资源管理器" 0 90<br>
+sleep, 2000<br>
+process,close,explorer.exe<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; q 重启资源管理器    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000006-2312</p>
+<p>F4 &amp; p::<br>
+Run, nircmd speak text "关屏" 0 90<br>
+Run, nircmd.exe cmdwait 2000 monitor off<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; p 关屏    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000007-2318</p>
+<p>; 🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼 关机  重启  🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼🎼<br>
+; 🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️ 文档  编辑  🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️<br>
+/*<br>
+;     ::a111::ā        a111按下空格后　ā 　　ā后有１个空格    sa111 空格无法替换　　　不能有前缀<br>
+;     :?:a111::ā       a111按下空格后　ā 　    ā后有１个空格     sa111 空格完成替换　　  可有前缀</p>
+<p>;     ⭕     ⭕a111::ā      a111按下空格后　ā   　   ā后无空格           sa111 空格无法替换        非自动　去除后面的空格  o omit　即忽略空格，但不能自动触发<br>
+;     :<em>:      :</em>:a111::ā       a111自动替换为　ā　　  ā后无空格           sa111 空格无法替换　　　自动　 去除后面的空格   *  无需空格,就能自动触发</p>
+<p>;      :c:　输入时需要区分大小写　　  :c:Gu::xxx   只有输入的是是Gu才能输出xxx　　gu　GU　gU　　都无法输出xxx</p>
+<p>;      :r:　原样输出　:r:dc::{enter}　原样输出 {enter} 　而不会转义成按下回车</p>
+<p>;      :b0:              :b0:</p><li>::</li>{left 5}　　在输入内容后添加::后的内容　<li></li><p></p>
+<p>;      <g-emoji class="g-emoji" alias="b">🅱️</g-emoji>              <g-emoji class="g-emoji" alias="b">🅱️</g-emoji></p><li>::</li>{left 5}　　输出 　然后光标移至最左边　<p></p>
+<p>#IfWinActive ahk_class EmEditorMainFrame3<br>
+::,t1::xxx<br>
+#IfWinActive<br>
+*/</p>
+<p>:<em>?:a111::ā<br>
+:</em>?:a222::á<br>
+:<em>?:a333::ǎ<br>
+:</em>?:a444::à<br>
+:<em>?:e111::ē<br>
+:</em>?:e222::é<br>
+:<em>?:e333::ě<br>
+:</em>?:e444::è<br>
+:<em>?:o111::ō<br>
+:</em>?:o222::ó<br>
+:<em>?:o333::ǒ<br>
+:</em>?:o444::ò<br>
+:<em>?:i111::ī<br>
+:</em>?:i222::í<br>
+:<em>?:i333::ǐ<br>
+:</em>?:i444::ì<br>
+:<em>?:u111::ū<br>
+:</em>?:u222::ú<br>
+:<em>?:u333::ǔ<br>
+:</em>?:u444::ù<br>
+:<em>?:v111::ǖ<br>
+:</em>?:v222::ǘ<br>
+:<em>?:v333::ǚ<br>
+:</em>?:v444::ǜ<br>
+:*?:v555::ü<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  3个12345  aoeiuü    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 01-2354</p>
+<p>:*?:<code class="notranslate">m::&lt;br&gt; :?*:m</code>::&lt;&gt;{left}</p>
+<p>:?<em>:9'::(){left}<br>
+:?</em>:0'::（）{left}</p>
+<p>:?<em>:['::[]{left}<br>
+:?</em>:]'::{{}{}}{left}</p>
+<p>:?<em>:-'::【】{left}<br>
+:?</em>:='::〖〗{left}<br>
+:?*:8'::《》{left}<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   `m::<br>  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 02-2368</p>
+<p>:<em>:.'::。<br>
+:</em>:,'::，</p>
+<p>:<em>::'::：<br>
+:</em>:`;'::；</p>
+<p>:*:`/<code class="notranslate">::、   :*:.</code>:: •{space}</p>
+<p>:*:,``::……<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   。，：；、 • ……    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 03 -2380</p>
+<p>; 🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️ 文档  编辑  🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️🕸️<br>
+;🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁  颜色  处理  🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁</p>
+<p>{<br>
+; F6 &amp; R 红色        ;ROYGQBP WETUI<br>
+F6 &amp; r::b205("#f20c00")</p>
+<pre class="notranslate"><code class="notranslate">; F6 &amp; O 橙色                       
+F6 &amp; o::b205("#ec6800")
+</code></pre>
+<p>; F6 &amp; y 暗红色<br>
+F6 &amp; y::b205("#fff143")</p>
+<p>; F6 &amp; g 亮绿色<br>
+F6 &amp; g::b205("#00e500")</p>
+<p>; F6 &amp; q 兰绿色<br>
+F6 &amp; q::b205("#177cb0")</p>
+<pre class="notranslate"><code class="notranslate">; F6 &amp; B 浅蓝色
+F6 &amp; b::b205("#44cef6")
+</code></pre>
+<p>; F6 &amp; p 暗紫色<br>
+F6 &amp; p::b205("#b61aae")</p>
+<p>; F6 &amp; w 绿色<br>
+F6 &amp; w::b205("#bce672")</p>
+<p>; F6 &amp; e 绿色<br>
+F6 &amp; e::b205("#955539")</p>
+<p>; F6 &amp; t 兰绿色</p>
+<pre class="notranslate"><code class="notranslate">F6 &amp; t::b205("#d7003a")
+</code></pre>
+<p>; F6 &amp; u 深紫色<br>
+F6 &amp; u::b205("#ff0097")</p>
+<p>; F6 &amp; i 紫色<br>
+F6 &amp; i::b205("#ff461f")<br>
+}</p>
+<p>; 快捷增加字体颜色<br>
+b205(s){<br>
+clipboard := ""<br>
+SendInput,^x<br>
+sleep,100<br>
+clipboard = <span>%clipboard%</span><br>
+SendInput {ctrl down}v{ctrl up}<br>
+;Send {Left 7} ; 光标跟随到文本<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; O 橙色   joplin字体颜色  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 04 -2434</p>
+<p>{<br>
+; F7 &amp; q 兰绿色<br>
+F7 &amp; q::b204("#177cb0")</p>
+<p>; F7 &amp; w 绿色<br>
+F7 &amp; w::b204("#bce672")</p>
+<p>; F7 &amp; e 绿色<br>
+F7 &amp; e::b204("#955539")</p>
+<p>; F7 &amp; R 红色<br>
+F7 &amp; r::b204("#f20c00")</p>
+<p>; F7 &amp; t 兰绿色<br>
+F7 &amp; t::b204("#d7003a")</p>
+<p>; F7 &amp; y 暗红色<br>
+F7 &amp; y::b204("#fff143")</p>
+<p>; F7 &amp; u 深紫色<br>
+F7 &amp; u::b204("#ff0097")</p>
+<p>; F7 &amp; i 紫色<br>
+F7 &amp; i::b204("#ff461f")</p>
+<p>; F7 &amp; O 橙色      ; ORBPYGMST<br>
+F7 &amp; o::b204("#ec6800")</p>
+<p>; F7 &amp; p 暗紫色<br>
+F7 &amp; p::b204("#b61aae")</p>
+<p>; F7 &amp; B 浅蓝色<br>
+F7 &amp; b::b204("#44cef6")</p>
+<p>; F7 &amp; G 亮绿色<br>
+F7 &amp; g::b204("#00e500")<br>
+}</p>
+<p>; 快捷增加字体颜色<br>
+b204(s){<br>
+clipboard := ""<br>
+SendInput,^x<br>
+sleep,100<br>
+clipboard = <span>%clipboard%</span><br>
+SendInput {ctrl down}v{ctrl up}<br>
+;Send {Left 7} ; 光标跟随到文本<br>
+}<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F7 &amp; O 橙色   joplin字体颜色  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 05-2484</p>
+<pre class="notranslate"><code class="notranslate">; F8 &amp; q 兰绿色       ;   QWERTYUIOP  BG
+F8 &amp; q::b203("#177cb0")
+</code></pre>
+<p>; F8 &amp; w 绿色<br>
+F8 &amp; w::b203("#426666")</p>
+<p>; F8 &amp; e 绿色<br>
+F8 &amp; e::b203("#955539")</p>
+<pre class="notranslate"><code class="notranslate">; F8 &amp; R 红色
+F8 &amp; r::b203("#f20c00")
+</code></pre>
+<p>; F8 &amp; t 兰绿色<br>
+F8 &amp; t::b203("#d7003a")</p>
+<p>; F8 &amp; y 暗红色<br>
+F8 &amp; y::b203("#fff143")</p>
+<p>; F8 &amp; u 兰绿色<br>
+F8 &amp; u::b203("#ff0097")</p>
+<p>; F8 &amp; i 紫色<br>
+F8 &amp; i::b203("#ff461f")</p>
+<pre class="notranslate"><code class="notranslate">; F8 &amp; O 橙色
+F8 &amp; o::b203("#ec6800")
+</code></pre>
+<p>; F8 &amp; p 暗紫色<br>
+F8 &amp; p::b203("#b61aae")</p>
+<pre class="notranslate"><code class="notranslate">; F8 &amp; B 浅蓝色
+F8 &amp; b::b203("#44cef6")
+</code></pre>
+<p>; F8 &amp; g 暗绿色<br>
+F8 &amp; g::b203("#00e500")</p>
+<p>; 快捷增加字体颜色<br>
+b203(s)<br>
+{<br>
+clipboard := ""<br>
+SendInput,^x<br>
+sleep,100<br>
+SendInput, {TEXT}<span>%clipboard%</span><br>
+Send {Left 25}{home}<br>
+}                                             ;  ------------------------------------- r t y o p     g b     m s<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F8 &amp; O 橙色 Tyora 背景色    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 06 -2532</p>
+<p>; F9 &amp; q 兰绿色       ;   QWERTYUIOP  BG<br>
+F9 &amp; q::b202("#177cb0")</p>
+<p>; F9 &amp; w 绿色<br>
+F9 &amp; w::b202("#426666")</p>
+<p>; F9 &amp; e 绿色<br>
+F9 &amp; e::b202("#955539")</p>
+<pre class="notranslate"><code class="notranslate">; F9 &amp; R 红色
+F9 &amp; r::b202("#f20c00")
+</code></pre>
+<p>; F9 &amp; t 兰绿色<br>
+F9 &amp; t::b202("#d7003a")</p>
+<p>; F9 &amp; y 暗红色<br>
+F9 &amp; y::b202("#000000")</p>
+<p>; F9 &amp; u 兰绿色<br>
+F9 &amp; u::b202("#ff0097")</p>
+<p>; F9 &amp; i 紫色<br>
+F9 &amp; i::b202("#ff461f")</p>
+<pre class="notranslate"><code class="notranslate">; F9 &amp; O 橙色
+F9 &amp; o::b202("#ec6800")
+</code></pre>
+<p>; F9 &amp; p 暗紫色<br>
+F9 &amp; p::b202("#b61aae")</p>
+<pre class="notranslate"><code class="notranslate">; F9 &amp; B 浅蓝色
+F9 &amp; b::b202("#44cef6")
+</code></pre>
+<p>; F9 &amp; g 暗绿色<br>
+F9 &amp; g::b202("#00e500")</p>
+<p>; 快捷增加字体颜色<br>
+b202(s)<br>
+{<br>
+clipboard := ""<br>
+SendInput ^x<br>
+sleep,100<br>
+SendInput, {TEXT}</p><markdown-accessiblity-table><table role="table"><tbody><tr><td>%clipboard%</td><td></td></tr></tbody></table></markdown-accessiblity-table><br>
+a := "1"<br>
+;Send {Left 8}%a%{Left 20}{home}-{Space}<br>
+Send {Left 8}%a%{home}{up}-{Space}<br>
+}                                             ;  ------------------------------------- r t y o p     g b     m s<br>
+return<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F9 &amp; O 橙色 Tyora 背景色    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 07-2582<p></p>
+<p>F7 &amp; 1::b201(12)<br>
+F7 &amp; 2::b201(14)<br>
+F7 &amp; 3::b201(16)<br>
+F7 &amp; 4::b201(18)<br>
+F7 &amp; 5::b201(20)<br>
+F7 &amp; 6::b201(22)<br>
+F7 &amp; 7::b201(24)</p>
+<p>b201(size)<br>
+{<br>
+clipboard := ""          ; 清空剪贴板<br>
+SendInput ^x             ; 剪切选中的文本<br>
+Sleep, 100               ; 等待剪贴板有内容<br>
+ClipWait                 ; 等待剪贴板内容更新<br>
+; 设置新的剪贴板内容<br>
+clipboard := "<span>" clipboard "</span>"<br>
+; 等待剪贴板内容更新    color: #d7003a;<br>
+ClipWait<br>
+; 粘贴新的内容<br>
+SendInput ^v<br>
+; 光标左移 7 次<br>
+Send {Left 7}<br>
+}<br>
+return<br>
+#IfWinActive<br>
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F7 &amp; 1-7  Tyora 字号    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 08-2609<br>
+`</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
