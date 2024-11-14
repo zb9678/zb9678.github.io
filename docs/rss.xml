@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 13 Nov 2024 15:41:06 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>bat  choices</title><link>https://zb9678.github.io/post/bat%20%20choices.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Thu, 14 Nov 2024 01:59:54 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>图床 修改默认为58img</title><link>https://zb9678.github.io/post/tu-chuang-%20-xiu-gai-mo-ren-wei-58img.html</link><description>&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/20241114094702.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/L11.14:09:48:52.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/20241114094930.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/L11.14:09:50:56.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/L11.14:09:53:54.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+。</description><guid isPermaLink="true">https://zb9678.github.io/post/tu-chuang-%20-xiu-gai-mo-ren-wei-58img.html</guid><pubDate>Thu, 14 Nov 2024 01:54:12 +0000</pubDate></item><item><title>bat  choices</title><link>https://zb9678.github.io/post/bat%20%20choices.html</link><description>&#13;
 CHOICE /T 10 /C YNC /D Y /M '按是(Y)、否(N)、取消(C).'&#13;
 if errorlevel==3 goto CANCEL&#13;
 if errorlevel==2 goto NO&#13;
