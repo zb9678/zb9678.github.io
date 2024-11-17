@@ -1,44 +1,51 @@
-## 首先安装
-node-v20.15.0-x64.msi
+## 首先安装 Node.js
+- Node.js 是一个免费、开源、跨平台的 JavaScript 运行时环境，它让开发人员能够创建服务器、Web 应用、命令行工具和脚本。
+- https://nodejs.org/zh-cn/
+- node-v22.11.0-x64.msi
+
 ================================================
 
-## 全局安装
-                   进入    C:\Users\z\AppData\Roaming\picgo
-右键cmder
-                     npm install picgo -g
+## 全局安装 picgo
+- 进入    C:\Users\z\AppData\Roaming\picgo
+- 右键cmder
+- - npm install picgo -g
+
 ================================================
 
-## 安装 自动复制插件
-- https://www.npmjs.com/package/picgo-plugin-autocopy
+## 安装插件 autocopy
 - 上传后自动将 URL 复制到剪贴板的插件
-C:\Users\z\.picgo  一定要在此目录下安装
-　　　　　npm i picgo-plugin-autocopy
+- https://www.npmjs.com/package/picgo-plugin-autocopy
+- C:\Users\z\\.picgo  一定要在此目录下安装
+- - npm i picgo-plugin-autocopy
+
 ================================================
 
-## 将上面复制的 URL改为 html 格式
-进入D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
-右键　cmders Here
+## 将上面复制的 URL改为 html  (自定)格式
+- D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
+- 右键cmder
 
-D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
-λ                             picgo set plugin autocopy
+---------------------------------------------------
+λ        picgo set plugin autocopy
 ? template:
   markdown
   HTML
   URL
   UBB
 > Custom  回车
-
-D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
-λ picgo set plugin autocopy
+----------------------------------------------------
+λ         picgo set plugin autocopy
 ? template: Custom
-? Please place the $url to where you want. ($url)　　直接在后面粘贴<p align='center'><img src="$url" style='width:400px;'><br><br>
+? Please place the $url to where you want. ($url)　　直接在后面粘贴
+`<p align='center'><img src="$url" style='width:400px;'><br><br>`
 如下
-? Please place the $url to where you want. ($url)<p align='center'><img src="$url" style='width:400px;'><br><br>
+? Please place the $url to where you want. ($url)
+`<p align='center'><img src="$url" style='width:400px;'><br><br>`
 再回车
 D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 λ picgo set plugin autocopy
 ? template: Custom
-? Please place the $url to where you want. <p align='center'><img src="$url" style='width:400px;'><br><br>
+? Please place the $url to where you want. 
+`<p align='center'><img src="$url" style='width:400px;'><br><br>`
 [PicGo SUCCESS]: Configure config successfully!
 [PicGo INFO]: If you want to use this config, please run 'picgo use plugins'
 
@@ -46,6 +53,9 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 λ
 设置完成
 
+
 上传后　剪贴板中内容将如下
+`<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'>`
+
 <p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
