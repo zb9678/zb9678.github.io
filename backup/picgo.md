@@ -24,7 +24,8 @@
 ================================================
 
 ## 将上面复制的 URL改为 html  (自定)格式
-- D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
+- C:\Users\z\\.picgo
+- D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份(不用此地址了)
 - 右键cmder
 
 ---------------------------------------------------
@@ -117,11 +118,11 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
       "repo": "zcr07/img",
       "branch": "main",
       "path": "images/",
-      "customUrl": "https://img.r08.us.kg/img/main",
-      "token": "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",
+      "customUrl": "",
+      "token": "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",
       "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
       "_createdAt": 1730352442411,
-      "_updatedAt": 1730352442411
+      "_updatedAt": 1731827109676
     }
   },
   "settings": {
@@ -133,7 +134,7 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
         "label": "QUICK_UPLOAD"
       }
     },
-    "showUpdateTip": false,
+    "showUpdateTip": true,
     "autoStart": false,
     "autoRename": true,
     "encodeOutputURL": false,
@@ -165,11 +166,11 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
           "repo": "zcr07/img",
           "branch": "main",
           "path": "images/",
-          "customUrl": "https://img.r08.us.kg/img/main",
-          "token": "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",
+          "customUrl": "",
+          "token": "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",
           "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
           "_createdAt": 1730352442411,
-          "_updatedAt": 1730352442411
+          "_updatedAt": 1731827109676
         }
       ],
       "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
