@@ -118,11 +118,11 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
       "repo": "zcr07/img",
       "branch": "main",
       "path": "images/",
-      "customUrl": "",
-      "token": "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",
+      "customUrl": "https://img.r08.us.kg/img/main",
+      "token": "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",
       "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
       "_createdAt": 1730352442411,
-      "_updatedAt": 1731827109676
+      "_updatedAt": 1731831404089
     }
   },
   "settings": {
@@ -134,7 +134,7 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
         "label": "QUICK_UPLOAD"
       }
     },
-    "showUpdateTip": true,
+    "showUpdateTip": false,
     "autoStart": false,
     "autoRename": true,
     "encodeOutputURL": false,
@@ -166,11 +166,11 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
           "repo": "zcr07/img",
           "branch": "main",
           "path": "images/",
-          "customUrl": "",
-          "token": "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",
+          "customUrl": "https://img.r08.us.kg/img/main",
+          "token": "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",
           "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
           "_createdAt": 1730352442411,
-          "_updatedAt": 1731827109676
+          "_updatedAt": 1731831404089
         }
       ],
       "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
@@ -197,3 +197,13 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165750.png" style='width:400px;'><br><br>
 
+=================================================
+
+## cloudflare 设置
+
+<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241117173656.png" style='width:400px;'><br><br>
+
+
+- https://dash.cloudflare.com/addfe9fc56c06acb158fd7b4883b478f/workers/services/edit/imgpic/production
+
+<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241117173446.png" style='width:400px;'><br><br>
