@@ -68,6 +68,12 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ================================================
 
 ## 配置文件内容
+- 注意有２条要改
+- "customUrl": "",
+- "token": "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",
+
+- "customUrl": "https://img.r08.us.kg/img/main",
+- "token": "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",
 
 `{
   "picBed": {
@@ -194,6 +200,9 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ## github　申请Tokey 日期最多只能为一年
 
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165357.png" style='width:400px;'><br><br>
+
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117202252.png" style='width:400px;'><br><br>
+
 
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165750.png" style='width:400px;'><br><br>
 
