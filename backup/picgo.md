@@ -191,4 +191,9 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 <p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
 
+## github　申请Tokey 日期最多只能为一年
+
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165357.png" style='width:400px;'><br><br>
+
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165750.png" style='width:400px;'><br><br>
+
