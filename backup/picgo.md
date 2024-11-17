@@ -190,3 +190,5 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ## 效果
 <p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
+
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165357.png" style='width:400px;'><br><br>
