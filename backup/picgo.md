@@ -6,9 +6,12 @@
 ================================================
 
 ## 全局安装 picgo
+- https://picgo.github.io/PicGo-Core-Doc/zh/guide/getting-started.html#%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85
 - 进入    C:\Users\z\AppData\Roaming\picgo
 - 右键cmder
 - - **npm install picgo -g**
+
+<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241117122231.png" style='width:400px;'><br><br>
 
 ================================================
 
