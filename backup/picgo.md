@@ -8,7 +8,7 @@
 ## 全局安装 picgo
 - 进入    C:\Users\z\AppData\Roaming\picgo
 - 右键cmder
-- - npm install picgo -g
+- - **npm install picgo -g**
 
 ================================================
 
@@ -16,7 +16,7 @@
 - 上传后自动将 URL 复制到剪贴板的插件
 - https://www.npmjs.com/package/picgo-plugin-autocopy
 - C:\Users\z\\.picgo  一定要在此目录下安装
-- - npm i picgo-plugin-autocopy
+- - **npm i picgo-plugin-autocopy**
 
 ================================================
 
@@ -25,7 +25,8 @@
 - 右键cmder
 
 ---------------------------------------------------
-λ        picgo set plugin autocopy
+
+λ        **picgo set plugin autocopy**
 ? template:
   markdown
   HTML
@@ -33,29 +34,31 @@
   UBB
 > Custom  回车
 ----------------------------------------------------
-λ         picgo set plugin autocopy
+
+λ         **picgo set plugin autocopy**
 ? template: Custom
 ? Please place the $url to where you want. ($url)　　直接在后面粘贴
 `<p align='center'><img src="$url" style='width:400px;'><br><br>`
 如下
-? Please place the $url to where you want. ($url)
-`<p align='center'><img src="$url" style='width:400px;'><br><br>`
+? Please place the $url to where you want. ($url)`<p align='center'><img src="$url" style='width:400px;'><br><br>`
+
 再回车
+
 D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
-λ picgo set plugin autocopy
+λ **picgo set plugin autocopy**
 ? template: Custom
-? Please place the $url to where you want. 
-`<p align='center'><img src="$url" style='width:400px;'><br><br>`
+? Please place the $url to where you want. `<p align='center'><img src="$url" style='width:400px;'><br><br>`
 [PicGo SUCCESS]: Configure config successfully!
 [PicGo INFO]: If you want to use this config, please run 'picgo use plugins'
-
 D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 λ
-设置完成
 
+至此，全部设置完成
+================================================
 
-上传后　剪贴板中内容将如下
+## 上传后　剪贴板中内容将如下
 `<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'>`
 
+## 效果
 <p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
