@@ -1,0 +1,33 @@
+name: Sync to GitLab
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    env:
+      GITLAB_USERNAME: ${{ secrets.GITLAB_USERNAME }}
+      GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
+      GITLAB_PAT: ${{ secrets.GITLAB_PAT }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.1.1
+      with:
+        fetch-depth: 0
+
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+
+    - name: Add GitLab remote
+      run: git remote add gitlab https://${{ env.GITLAB_USERNAME }}:${{ env.GITLAB_PAT }}@gitlab.com/${{ env.GITLAB_USERNAME }}/${{ env.GITLAB_REPO }}.git
+
+    - name: Force push to GitLab
+      run: git push gitlab main --force
