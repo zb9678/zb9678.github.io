@@ -213,10 +213,12 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ================================================
 
 ## 上传后　剪贴板中内容将如下
+
 `<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'>`
 
 ## 效果
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241109175935.png" style='width:400px;'><br><br>
+
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
 
 ## github　申请Tokey 日期最多只能为一年
@@ -238,4 +240,4 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 
 - https://dash.cloudflare.com/addfe9fc56c06acb158fd7b4883b478f/workers/services/edit/imgpic/production
 
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241117173446.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117173446.png" style='width:400px;'><br><br>
