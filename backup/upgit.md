@@ -45,6 +45,30 @@ username = "zcr07"
 
 ---------------------------------------------------------
 
+## 无需翻墙
+
+```
+rename = "im2/z{month}.{day}:{hour}:{minute}:{second}{ext}"
+default_uploader = "github"
+[replacements]
+"raw.githubusercontent.com" = "im.zb9.us.kg"
+
+[output_formats]
+"bbcode" = "[img]{url}[/img]"
+"html" = '<img src="{url}" />'
+"markdown" = "![]({url})"
+"ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
+
+[uploaders.github]
+# 保存文件的分支，例如 master 或 main
+branch = "main"
+pat = "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"
+repo = "img"
+username = "zb9678"
+```
+
+-----------------------------------------------------------------------------------
+
 - 注意： "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"  
 - 有效期
 - Expiration  选　No expiration
