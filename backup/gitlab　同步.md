@@ -86,3 +86,9 @@ jobs:
     - name: Force push to GitLab
       run: git push gitlab main --force
 ```
+
+## gitlab 删库
+
+<p align="center"><img src="https://raw.githubusercontent.com/zb9678/img/main/im2/z11.19:17:41:41.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/zb9678/img/main/im2/z11.19:17:43:32.png" style="width:400px;"></p>
