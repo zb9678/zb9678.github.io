@@ -279,6 +279,52 @@ async function handleRequest(request) {
 }
 </code></pre>
 <p>===================================================</p>
+<h2></h2>
+<pre class="notranslate"><code class="notranslate">addEventListener('fetch', event =&gt; {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+  const path = url.pathname
+  
+  // 定义环境变量 GITHUB_USERNAME 和 GITHUB_PAT
+   const GITHUB_USERNAME = 'zb9678' // 替换为你的 GitHub 用户名
+   const GITHUB_PAT = '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' // 替换为你的 GitHub PAT，只开放 repo 权限即可
+  
+  // 构建 GitHub raw 内容的 URL
+  const githubUrl = `https://raw.githubusercontent.com/${path}`
+  
+  // 创建新的请求，添加必要的头部
+  const modifiedRequest = new Request(githubUrl, {
+    method: request.method,
+    headers: {
+      ...request.headers,
+      'Authorization': `token ${GITHUB_PAT}`,
+      'Accept': 'application/vnd.github.v3.raw'
+    }
+  })
+  
+  // 发送请求并返回响应
+  try {
+    const response = await fetch(modifiedRequest)
+    
+    // 如果响应不成功，抛出错误
+    if (!response.ok) {
+      throw new Error(`GitHub API responded with ${response.status}: ${response.statusText}`)
+    }
+    
+    // 创建新的响应，保留原始内容但移除敏感头部
+    const newResponse = new Response(response.body, response)
+    newResponse.headers.delete('Authorization')
+    
+    return newResponse
+  } catch (error) {
+    return new Response(`Error: ${error.message}`, { status: 500 })
+  }
+}
+</code></pre>
+<p>==================================================</p>
 <h2>gitlab　同步</h2>
 <ul>
 <li><a href="https://gitlab.com/zcr071225/img" rel="nofollow">https://gitlab.com/zcr071225/img</a></li>
