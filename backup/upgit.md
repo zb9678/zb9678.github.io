@@ -92,8 +92,8 @@ async function handleRequest(request) {
   const path = url.pathname
   
   // 定义环境变量 GITHUB_USERNAME 和 GITHUB_PAT
-   const GITHUB_USERNAME = 'zcr07' // 替换为你的 GitHub 用户名
-   const GITHUB_PAT = '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' // 替换为你的 GitHub PAT，只开放 repo 权限即可
+   const GITHUB_USERNAME = 'zb9678' // 替换为你的 GitHub 用户名
+   const GITHUB_PAT = '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' // 替换为你的 GitHub PAT，只开放 repo 权限即可
   
   // 构建 GitHub raw 内容的 URL
   const githubUrl = `https://raw.githubusercontent.com/${path}`
@@ -126,6 +126,7 @@ async function handleRequest(request) {
     return new Response(`Error: ${error.message}`, { status: 500 })
   }
 }
+
 ```
 
 ===================================================
