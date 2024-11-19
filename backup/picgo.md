@@ -235,7 +235,7 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ## cloudflare 设置
 注意：如果已将 upgit 的Token输入了，就不要再改动了。
 
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241117173656.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117173656.png" style='width:400px;'><br><br>
 
 
 - https://dash.cloudflare.com/addfe9fc56c06acb158fd7b4883b478f/workers/services/edit/imgpic/production
