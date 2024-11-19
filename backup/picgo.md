@@ -92,10 +92,16 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 - 注意有２条要改
 - "customUrl": "",
 - "token": "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",
+- 
 
 - "customUrl": "https://img.r08.us.kg/img/main",
 - "token": "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",
+```
 
+## raw.githubusercontent.com
+- https://raw.githubusercontent.com/zcr07/img/main/im2/20241119213553.png
+
+```
 {
   "picBed": {
     "current": "github",
@@ -210,7 +216,141 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 }
 ```
 
+## img.r08.us.kg
+- https://img.r08.us.kg/img/main/im2/20241119215535.png
+
+```
+{
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "tcyun",
+        "name": "腾讯云COS",
+        "visible": false
+      },
+      {
+        "type": "aliyun",
+        "name": "阿里云OSS",
+        "visible": false
+      },
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      },
+      {
+        "type": "qiniu",
+        "name": "七牛云",
+        "visible": false
+      },
+      {
+        "type": "imgur",
+        "name": "Imgur",
+        "visible": false
+      },
+      {
+        "type": "upyun",
+        "name": "又拍云",
+        "visible": false
+      }
+    ],
+    "github": {
+      "_configName": "img",
+      "repo": "zcr07/img",
+      "branch": "main",
+      "path": "im2/",
+      "customUrl": "https://img.r08.us.kg/img/main",
+      "token": "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",
+      "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+      "_createdAt": 1730352442411,
+      "_updatedAt": 1731836528133
+    }
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "autoStart": false,
+    "autoRename": true,
+    "encodeOutputURL": false,
+    "privacyEnsure": true,
+    "pasteStyle": "URL"
+  },
+  "needReload": false,
+  "picgoPlugins": {
+    "picgo-plugin-compress-next": true,
+    "picgo-plugin-autocopy": true
+  },
+  "picgo-plugin-compress-next": {
+    "Compress Type": "tinypng",
+    "Gif compress Type": "webp-converter",
+    "Auto Refresh TinyPng Key Across Months": true,
+    "TinyPng API Key": "scHQZ2CmlQDdRJnMQ9SjXKVfByCwY3YD"
+  },
+  "uploader": {
+    "github": {
+      "configList": [
+        {
+          "_configName": "Default",
+          "_id": "d4b75295-a443-4075-ad2e-73caf72e078c",
+          "_createdAt": 1730352070049,
+          "_updatedAt": 1730352070049
+        },
+        {
+          "_configName": "img",
+          "repo": "zcr07/img",
+          "branch": "main",
+          "path": "im2/",
+          "customUrl": "https://img.r08.us.kg/img/main",
+          "token": "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",
+          "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+          "_createdAt": 1730352442411,
+          "_updatedAt": 1731836528133
+        }
+      ],
+      "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
+    }
+  },
+  "picgo-plugin-autocopy": {
+    "template": "Custom",
+    "customLink": "<p align='center'><img src=\"$url\" style='width:400px;'><br><br>"
+  }
+}
+```
+
 ================================================
+
+- https://github.com/zcr07/img/tree/main
+- img.r08.us.kg
+
+## 2种链接的区别
+
+- 不稳定，但不用翻墙
+
+- https://img.r08.us.kg/img/main/im2/20241119220301.png
+
+- 稳定，但要翻墙
+
+- https://raw.githubusercontent.com/zb9678/img/main/im2/z11.19:21:36:21.png
+
+
+==================================================
 
 ## 上传后　剪贴板中内容将如下
 
@@ -221,7 +361,7 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241109175935.png" style='width:400px;'><br><br>
 ================================================
 
-## github　申请Tokey 日期最多只能为一年
+## github　申请Tokey 
 
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117165357.png" style='width:400px;'><br><br>
 
@@ -241,9 +381,58 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 
 <p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/main/images/20241117173446.png" style='width:400px;'><br><br>
 
+## worker.js
 
-- https://github.com/zcr07/img/tree/main
-- img.r08.us.kg
+```
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+  const path = url.pathname
+  
+  // 定义环境变量 GITHUB_USERNAME 和 GITHUB_PAT
+   const GITHUB_USERNAME = 'zcr07' // 替换为你的 GitHub 用户名
+   const GITHUB_PAT = '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' // 替换为你的 GitHub PAT，只开放 repo 权限即可
+  
+  // 构建 GitHub raw 内容的 URL
+  const githubUrl = `https://raw.githubusercontent.com/${GITHUB_USERNAME}${path}`
+  
+  // 创建新的请求，添加必要的头部
+  const modifiedRequest = new Request(githubUrl, {
+    method: request.method,
+    headers: {
+      ...request.headers,
+      'Authorization': `token ${GITHUB_PAT}`,
+      'Accept': 'application/vnd.github.v3.raw'
+    }
+  })
+  
+  // 发送请求并返回响应
+  try {
+    const response = await fetch(modifiedRequest)
+    
+    // 如果响应不成功，抛出错误
+    if (!response.ok) {
+      throw new Error(`GitHub API responded with ${response.status}: ${response.statusText}`)
+    }
+    
+    // 创建新的响应，保留原始内容但移除敏感头部
+    const newResponse = new Response(response.body, response)
+    newResponse.headers.delete('Authorization')
+    
+    return newResponse
+  } catch (error) {
+    return new Response(`Error: ${error.message}`, { status: 500 })
+  }
+}
+```
+
+=========================================================
+
+
+
 
 
 
