@@ -205,3 +205,12 @@ repo = "img"
 username = "zcr07"`
 ```
 ===============================================
+
+## Token 出问题就申请
+
+- https://github.com/settings/tokens
+
+<p align='center'><img src="https://img.r08.us.kg/img/main/im2/20241119223034.png" style='width:400px;'><br><br>
+
+<p align='center'><img src="https://img.r08.us.kg/img/main/im2/20241119223219.png" style='width:400px;'><br><br>
+
