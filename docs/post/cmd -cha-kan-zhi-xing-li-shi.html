@@ -30,6 +30,25 @@ C:\Users\z\Desktop>doskey /h
 dir
 doskey /h
 type 1.bat
+
+## 将执行过的命令输出到 1.cmd 文件中
+
+### 先制作 1.bat
+
+@echo off
+doskey /h > C:\Users\z\Desktop\1.cmd
+echo %CD% | clip
+// 将路径输出到剪贴板
+
+### 执行 1.bat
+c:\Users\z\Desktop>s
+
+### 查看 1.cmd 中的输出内容
+c:\Users\z\Desktop>type 1.cmd
+
+`cd c:\users\z\desktop
+h
+s`
 。">
 <meta property="og:title" content="cmd 查看执行历史">
 <meta property="og:description" content="## 运行 cmd
@@ -52,6 +71,25 @@ C:\Users\z\Desktop>doskey /h
 dir
 doskey /h
 type 1.bat
+
+## 将执行过的命令输出到 1.cmd 文件中
+
+### 先制作 1.bat
+
+@echo off
+doskey /h > C:\Users\z\Desktop\1.cmd
+echo %CD% | clip
+// 将路径输出到剪贴板
+
+### 执行 1.bat
+c:\Users\z\Desktop>s
+
+### 查看 1.cmd 中的输出内容
+c:\Users\z\Desktop>type 1.cmd
+
+`cd c:\users\z\desktop
+h
+s`
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/cmd%20-cha-kan-zhi-xing-li-shi.html">
@@ -128,7 +166,18 @@ C:\Users\z\Desktop&gt;doskey /h</p>
 <h3>显示出执行过的命令历史</h3>
 <p>dir<br>
 doskey /h<br>
-type 1.bat</p></div>
+type 1.bat</p>
+<h2>将执行过的命令输出到 1.cmd 文件中</h2>
+<h3>先制作 1.bat</h3>
+<p><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/echo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/echo">@echo</a> off<br>
+doskey /h &gt; C:\Users\z\Desktop\1.cmd<br>
+echo %CD% | clip<br>
+// 将路径输出到剪贴板</p>
+<h3>执行 1.bat</h3>
+<p>c:\Users\z\Desktop&gt;s</p>
+<h3>查看 1.cmd 中的输出内容</h3>
+<p>c:\Users\z\Desktop&gt;type 1.cmd</p>
+<p><code class="notranslate">cd c:\users\z\desktop h s</code></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
