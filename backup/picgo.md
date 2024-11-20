@@ -85,8 +85,130 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
 ```
 
 ================================================
+## 配置文件内容 1
 
-## 配置文件内容
+```
+<p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241121000947.png" style='width:400px;'><br><br>
+```
+
+```
+{
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "tcyun",
+        "name": "腾讯云COS",
+        "visible": false
+      },
+      {
+        "type": "aliyun",
+        "name": "阿里云OSS",
+        "visible": false
+      },
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      },
+      {
+        "type": "qiniu",
+        "name": "七牛云",
+        "visible": false
+      },
+      {
+        "type": "imgur",
+        "name": "Imgur",
+        "visible": false
+      },
+      {
+        "type": "upyun",
+        "name": "又拍云",
+        "visible": false
+      }
+    ],
+    "github": {
+      "_configName": "img",
+      "repo": "zcr07/img",
+      "branch": "main",
+      "path": "im2/",
+      "customUrl": "https://cdn.jsdelivr.net/gh/zcr07/img@main",
+      "token": "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",
+      "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+      "_createdAt": 1730352442411,
+      "_updatedAt": 1731836528133
+    }
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "autoStart": false,
+    "autoRename": true,
+    "encodeOutputURL": false,
+    "privacyEnsure": true,
+    "pasteStyle": "URL"
+  },
+  "needReload": false,
+  "picgoPlugins": {
+    "picgo-plugin-compress-next": true,
+    "picgo-plugin-autocopy": true
+  },
+  "picgo-plugin-compress-next": {
+    "Compress Type": "tinypng",
+    "Gif compress Type": "webp-converter",
+    "Auto Refresh TinyPng Key Across Months": true,
+    "TinyPng API Key": "scHQZ2CmlQDdRJnMQ9SjXKVfByCwY3YD"
+  },
+  "uploader": {
+    "github": {
+      "configList": [
+        {
+          "_configName": "Default",
+          "_id": "d4b75295-a443-4075-ad2e-73caf72e078c",
+          "_createdAt": 1730352070049,
+          "_updatedAt": 1730352070049
+        },
+        {
+          "_configName": "img",
+          "repo": "zcr07/img",
+          "branch": "main",
+          "path": "im2/",
+          "customUrl": "https://cdn.jsdelivr.net/gh/zcr07/img@main",
+          "token": "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",
+          "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+          "_createdAt": 1730352442411,
+          "_updatedAt": 1731836528133
+        }
+      ],
+      "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
+    }
+  },
+  "picgo-plugin-autocopy": {
+    "template": "Custom",
+    "customLink": "<p align='center'><img src=\"$url\" style='width:400px;'><br><br>"
+  }
+}
+```
+
+--------------------------------------------------------------------------------------------
+
+## 配置文件内容 2
 
 ```
 - 注意有２条要改
@@ -215,6 +337,8 @@ D:\ahk1.0\Lib\0 tool\picgo-croe\picgo   config备份
   }
 }
 ```
+
+----------------------------------------------------------------------------------------
 
 ## img.r08.us.kg
 - https://img.r08.us.kg/img/main/im2/20241119215535.png
