@@ -8,6 +8,8 @@ c:\Users\z\Desktop>
 ```
 
 ## 查看桌面文件 h.bat 的内容
+
+- /history可以使用/h取代
 ```
 C:\Users\z\Desktop>type h.bat
 doskey /h
