@@ -237,7 +237,7 @@ username = "zcr07"`
 
 - https://github.com/settings/tokens
 
-<p align='center'><img src="https://img.r08.us.kg/img/main/im2/20241119223034.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241119223034.png" style='width:400px;'><br><br>
 
-<p align='center'><img src="https://img.r08.us.kg/img/main/im2/20241119223219.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241119223219.png" style='width:400px;'><br><br>
 
