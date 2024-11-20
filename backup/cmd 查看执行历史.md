@@ -34,6 +34,8 @@ c:\Users\z\Desktop>s
 ### 查看 1.cmd 中的输出内容
 c:\Users\z\Desktop>type 1.cmd
 
-`cd c:\users\z\desktop
+```
+cd c:\users\z\desktop
 h
-s`
+s
+```
