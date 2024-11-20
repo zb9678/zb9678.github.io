@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 20 Nov 2024 00:55:57 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cmd 查看执行历史</title><link>https://zb9678.github.io/post/cmd%20-cha-kan-zhi-xing-li-shi.html</link><description>## 运行 cmd&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 20 Nov 2024 01:03:28 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cmd 转到并显示新目录下的exe文件</title><link>https://zb9678.github.io/post/cmd%20-zhuan-dao-bing-xian-shi-xin-mu-lu-xia-de-exe-wen-jian.html</link><description>&#13;
+`c:\Users\z\Desktop&gt;cd /d d:\3 &amp;&amp; dir *.exe`&#13;
+&#13;
+ ```&#13;
+驱动器 D 中的卷是 d&#13;
+ 卷的序列号是 D2DD-FBCA&#13;
+&#13;
+ d:\3 的目录&#13;
+&#13;
+11.05 周二  20:11         7,782,400 9OneDrive for Business 直链生成工具 v1.2.0.0.exe&#13;
+11.05 周二  20:11         1,017,528 IP地址修改器 V5.0.6.1.exe&#13;
+11.05 周二  20:11         88,157,191 zlibrary-setup-portable-latest.exe&#13;
+11.05 周二  20:11        196,608 个人文件转移工具 v2.0.exe&#13;
+11.05 周二  20:11        3,268,973 文件改名-ReNamerPro_7.5_V2.exe&#13;
+12.12 周二  17:34        31,719,930 极限投屏-0.0.6.8.exe&#13;
+               6 个文件      132,142,630 字节&#13;
+               0 个目录      114,321,457,152 可用字节&#13;
+```。</description><guid isPermaLink="true">https://zb9678.github.io/post/cmd%20-zhuan-dao-bing-xian-shi-xin-mu-lu-xia-de-exe-wen-jian.html</guid><pubDate>Wed, 20 Nov 2024 00:57:47 +0000</pubDate></item><item><title>cmd 查看执行历史</title><link>https://zb9678.github.io/post/cmd%20-cha-kan-zhi-xing-li-shi.html</link><description>## 运行 cmd&#13;
 `C:\Users\z&gt;`&#13;
 &#13;
 ## 进入桌面&#13;
