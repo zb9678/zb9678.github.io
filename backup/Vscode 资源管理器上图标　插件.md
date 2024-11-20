@@ -1,1 +1,1 @@
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/L11.01:23:17:29.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/refs/heads/main/images/L11.01_23_17_29.png" style='width:400px;'><br><br>
