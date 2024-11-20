@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 20 Nov 2024 16:47:14 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cmd 转到并显示新目录下的exe文件</title><link>https://zb9678.github.io/post/cmd%20-zhuan-dao-bing-xian-shi-xin-mu-lu-xia-de-exe-wen-jian.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 20 Nov 2024 16:48:57 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cmd 转到并显示新目录下的exe文件</title><link>https://zb9678.github.io/post/cmd%20-zhuan-dao-bing-xian-shi-xin-mu-lu-xia-de-exe-wen-jian.html</link><description>&#13;
 `c:\Users\z\Desktop&gt;cd /d d:\3 &amp;&amp; dir *.exe`&#13;
 &#13;
  ```&#13;
@@ -535,10 +535,9 @@ GuiEscape:&#13;
 GuiClose:&#13;
     ExitApp&#13;
 &#13;
-。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20vbs%20ahk%20%20-ruan-jian-qi-dong-cai-dan.html</guid><pubDate>Wed, 13 Nov 2024 05:25:52 +0000</pubDate></item><item><title>AHK 关闭多个相同标题的窗口</title><link>https://zb9678.github.io/post/AHK%20-guan-bi-duo-ge-xiang-tong-biao-ti-de-chuang-kou.html</link><description>&#13;
-&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/20241112085429.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+。</description><guid isPermaLink="true">https://zb9678.github.io/post/bat%20vbs%20ahk%20%20-ruan-jian-qi-dong-cai-dan.html</guid><pubDate>Wed, 13 Nov 2024 05:25:52 +0000</pubDate></item><item><title>AHK 关闭多个相同标题的窗口</title><link>https://zb9678.github.io/post/AHK%20-guan-bi-duo-ge-xiang-tong-biao-ti-de-chuang-kou.html</link><description>&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zcr07/img@main/images/20241112085429.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
 &#13;
-&lt;p align='center'&gt;&lt;img src='https://img.r08.us.kg/img/main/images/L11.12:09:15:55.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
+&lt;p align='center'&gt;&lt;img src='https://raw.githubusercontent.com/zcr07/img/refs/heads/main/images/L11.12_09_15_55.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
 &#13;
 #SingleInstance Force&#13;
 SetTitleMatchMode 2&#13;

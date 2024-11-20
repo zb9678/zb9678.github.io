@@ -1,7 +1,6 @@
+<p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/images/20241112085429.png" style='width:400px;'><br><br>
 
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/20241112085429.png" style='width:400px;'><br><br>
-
-<p align='center'><img src="https://img.r08.us.kg/img/main/images/L11.12:09:15:55.png" style='width:400px;'><br><br>
+<p align='center'><img src="https://raw.githubusercontent.com/zcr07/img/refs/heads/main/images/L11.12_09_15_55.png" style='width:400px;'><br><br>
 
 #SingleInstance Force
 SetTitleMatchMode 2
