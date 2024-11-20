@@ -43,9 +43,36 @@ repo = "img"
 username = "zcr07"
 ```
 
----------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 ## 无需翻墙
+
+```
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.21:00:12:44.png" style="width:400px;"></p>
+```
+
+
+```
+rename = "cdn/B{month}.{day}:{hour}:{minute}:{second}{ext}"
+default_uploader = "github"
+[replacements]
+"raw.githubusercontent.com" = "cdn.jsdelivr.net/gh"
+"/main" = "@main"
+
+[output_formats]
+"bbcode" = "[img]{url}[/img]"
+"html" = '<img src="{url}" />'
+"markdown" = "![]({url})"
+"ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
+
+[uploaders.github]
+# 保存文件的分支，例如 master 或 main
+branch = "main"
+pat = "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"
+repo = "img"
+username = "zb9678"
+```
+--------------------------------------------------------------------------------------------------
 
 ```
 rename = "im2/z{month}.{day}:{hour}:{minute}:{second}{ext}"
