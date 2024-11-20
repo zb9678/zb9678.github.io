@@ -1,5 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 19 Nov 2024 13:46:17 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>gitlab　同步</title><link>https://zb9678.github.io/post/gitlab%E3%80%80-tong-bu.html</link><description>##  gitlab 登录&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 20 Nov 2024 00:15:42 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cmd 查看执行历史</title><link>https://zb9678.github.io/post/cmd%20-cha-kan-zhi-xing-li-shi.html</link><description>## 运行 cmd&#13;
+C:\Users\z&gt;&#13;
+&#13;
+## 进入桌面&#13;
+C:\Users\z&gt;cd c:\users\z\desktop&#13;
+c:\Users\z\Desktop&gt;&#13;
+&#13;
+## 查看桌面文件 h.bat 的内容&#13;
+C:\Users\z\Desktop&gt;type h.bat&#13;
+doskey /h&#13;
+&#13;
+## 执行 h.bat&#13;
+C:\Users\z\Desktop&gt;h&#13;
+相当于执行了下面&#13;
+C:\Users\z\Desktop&gt;doskey /h&#13;
+&#13;
+### 显示出执行过的命令历史&#13;
+dir&#13;
+doskey /h&#13;
+type 1.bat&#13;
+。</description><guid isPermaLink="true">https://zb9678.github.io/post/cmd%20-cha-kan-zhi-xing-li-shi.html</guid><pubDate>Wed, 20 Nov 2024 00:15:16 +0000</pubDate></item><item><title>gitlab　同步</title><link>https://zb9678.github.io/post/gitlab%E3%80%80-tong-bu.html</link><description>##  gitlab 登录&#13;
 &#13;
 - https://gitlab.com/users/sign_in&#13;
 &#13;
