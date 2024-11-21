@@ -10,23 +10,21 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="
-```
+<meta name="description" content="```
 #Persistent
 #SingleInstance ignore
 
-; 设置8分钟自动刷新当前脚本
-SetTimer, ReloadCurrentScript, % ((1000 * 60 * 8) * 1)
+; 设置定时器
+SetTimer, ReloadCurrentScript, % ((1000 * 60 * 15) * 1)  ; 15分钟自动重载当前脚本
+SetTimer, ReloadCl3Script, % ((1000 * 60 * 10) * 1)  ; 10分钟自动重载 cl3.ahk
 
-; 设置8分钟自动刷新 cl3.ahk
-SetTimer, ReloadCl3Script, % ((1000 * 60 * 8) * 1)
+; 定义 cl3.ahk 的路径
+Cl3ScriptPath := 'D:\ahk1.0\CL3-1.106\cl3.ahk'  ; 替换为 cl3.ahk 的实际路径
+AutoHotkeyPath := 'C:\Program Files\AutoHotkey\AutoHotkey.exe'  ; 替换为 AutoHotkey.exe 的完整路径
 
 ; 初始化当前脚本的修改时间
 FileGetTime, ScriptStartModTime, %A_ScriptFullPath%
-SetTimer, CheckScriptUpdate, 100  ; 每100毫秒检查一次脚本修改
-
-; 定义 cl3.ahk 的路径
-Cl3ScriptPath := 'C:\Path\To\cl3.ahk'  ; 替换为 cl3.ahk 的实际路径
+SetTimer, CheckScriptUpdate, 500  ; 每500毫秒检查一次当前脚本的修改时间
 
 return
 
@@ -38,39 +36,25 @@ return
 ; 定时刷新 cl3.ahk
 ReloadCl3Script:
 if FileExist(Cl3ScriptPath) {
-    Run, % 'AutoHotkey.exe ' . Cl3ScriptPath
-}
-return
-
-; 检查当前脚本的修改
-CheckScriptUpdate() {
-    global ScriptStartModTime
-    ; 获取当前的修改时间
-    FileGetTime, curModTime, %A_ScriptFullPath%
-    if (curModTime != ScriptStartModTime) {
-        SetTimer, CheckScriptUpdate, Off  ; 关闭定时器，防止重复触发
-        Reload
-    }
-}
-```。">
+    Run, % AutoHotkeyPath . ' ' . Cl3ScriptPath
+} else {
+    MsgBox, 找不到 cl3.ahk 文件，请检查路径。">
 <meta property="og:title" content="AHK 定时重载及修改ahk1.1后才重载">
-<meta property="og:description" content="
-```
+<meta property="og:description" content="```
 #Persistent
 #SingleInstance ignore
 
-; 设置8分钟自动刷新当前脚本
-SetTimer, ReloadCurrentScript, % ((1000 * 60 * 8) * 1)
+; 设置定时器
+SetTimer, ReloadCurrentScript, % ((1000 * 60 * 15) * 1)  ; 15分钟自动重载当前脚本
+SetTimer, ReloadCl3Script, % ((1000 * 60 * 10) * 1)  ; 10分钟自动重载 cl3.ahk
 
-; 设置8分钟自动刷新 cl3.ahk
-SetTimer, ReloadCl3Script, % ((1000 * 60 * 8) * 1)
+; 定义 cl3.ahk 的路径
+Cl3ScriptPath := 'D:\ahk1.0\CL3-1.106\cl3.ahk'  ; 替换为 cl3.ahk 的实际路径
+AutoHotkeyPath := 'C:\Program Files\AutoHotkey\AutoHotkey.exe'  ; 替换为 AutoHotkey.exe 的完整路径
 
 ; 初始化当前脚本的修改时间
 FileGetTime, ScriptStartModTime, %A_ScriptFullPath%
-SetTimer, CheckScriptUpdate, 100  ; 每100毫秒检查一次脚本修改
-
-; 定义 cl3.ahk 的路径
-Cl3ScriptPath := 'C:\Path\To\cl3.ahk'  ; 替换为 cl3.ahk 的实际路径
+SetTimer, CheckScriptUpdate, 500  ; 每500毫秒检查一次当前脚本的修改时间
 
 return
 
@@ -82,21 +66,9 @@ return
 ; 定时刷新 cl3.ahk
 ReloadCl3Script:
 if FileExist(Cl3ScriptPath) {
-    Run, % 'AutoHotkey.exe ' . Cl3ScriptPath
-}
-return
-
-; 检查当前脚本的修改
-CheckScriptUpdate() {
-    global ScriptStartModTime
-    ; 获取当前的修改时间
-    FileGetTime, curModTime, %A_ScriptFullPath%
-    if (curModTime != ScriptStartModTime) {
-        SetTimer, CheckScriptUpdate, Off  ; 关闭定时器，防止重复触发
-        Reload
-    }
-}
-```。">
+    Run, % AutoHotkeyPath . ' ' . Cl3ScriptPath
+} else {
+    MsgBox, 找不到 cl3.ahk 文件，请检查路径。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/AHK%20-ding-shi-zhong-zai-ji-xiu-gai-ahk1.1-hou-cai-zhong-zai.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/180062094?v=4">
@@ -170,18 +142,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">#Persistent
 #SingleInstance ignore
 
-; 设置8分钟自动刷新当前脚本
-SetTimer, ReloadCurrentScript, % ((1000 * 60 * 8) * 1)
+; 设置定时器
+SetTimer, ReloadCurrentScript, % ((1000 * 60 * 15) * 1)  ; 15分钟自动重载当前脚本
+SetTimer, ReloadCl3Script, % ((1000 * 60 * 10) * 1)  ; 10分钟自动重载 cl3.ahk
 
-; 设置8分钟自动刷新 cl3.ahk
-SetTimer, ReloadCl3Script, % ((1000 * 60 * 8) * 1)
+; 定义 cl3.ahk 的路径
+Cl3ScriptPath := "D:\ahk1.0\CL3-1.106\cl3.ahk"  ; 替换为 cl3.ahk 的实际路径
+AutoHotkeyPath := "C:\Program Files\AutoHotkey\AutoHotkey.exe"  ; 替换为 AutoHotkey.exe 的完整路径
 
 ; 初始化当前脚本的修改时间
 FileGetTime, ScriptStartModTime, %A_ScriptFullPath%
-SetTimer, CheckScriptUpdate, 100  ; 每100毫秒检查一次脚本修改
-
-; 定义 cl3.ahk 的路径
-Cl3ScriptPath := "C:\Path\To\cl3.ahk"  ; 替换为 cl3.ahk 的实际路径
+SetTimer, CheckScriptUpdate, 500  ; 每500毫秒检查一次当前脚本的修改时间
 
 return
 
@@ -193,20 +164,25 @@ return
 ; 定时刷新 cl3.ahk
 ReloadCl3Script:
 if FileExist(Cl3ScriptPath) {
-    Run, % "AutoHotkey.exe " . Cl3ScriptPath
+    Run, % AutoHotkeyPath . " " . Cl3ScriptPath
+} else {
+    MsgBox, 找不到 cl3.ahk 文件，请检查路径。
 }
 return
 
-; 检查当前脚本的修改
+; 检查当前脚本是否已修改
 CheckScriptUpdate() {
     global ScriptStartModTime
     ; 获取当前的修改时间
     FileGetTime, curModTime, %A_ScriptFullPath%
     if (curModTime != ScriptStartModTime) {
+        ; 如果检测到修改，重载脚本
         SetTimer, CheckScriptUpdate, Off  ; 关闭定时器，防止重复触发
         Reload
     }
 }
+
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  保存后  自动刷新脚本  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 01-45
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
