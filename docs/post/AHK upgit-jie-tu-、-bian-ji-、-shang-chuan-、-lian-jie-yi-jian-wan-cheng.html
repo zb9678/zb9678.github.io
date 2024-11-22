@@ -131,7 +131,88 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; s  上传截图到github/img   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000001-1984
 </code></pre>
 <h2>图示</h2>
-<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7b3828d89fbcc452b1248b1adcd534a07631a80ad061a8cf9530a12bbaa84d82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32323a31363a33333a31332e706e67"><img src="https://camo.githubusercontent.com/7b3828d89fbcc452b1248b1adcd534a07631a80ad061a8cf9530a12bbaa84d82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32323a31363a33333a31332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.22:16:33:13.png" style="max-width: 100%;"></a></p></div>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7b3828d89fbcc452b1248b1adcd534a07631a80ad061a8cf9530a12bbaa84d82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32323a31363a33333a31332e706e67"><img src="https://camo.githubusercontent.com/7b3828d89fbcc452b1248b1adcd534a07631a80ad061a8cf9530a12bbaa84d82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32323a31363a33333a31332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.22:16:33:13.png" style="max-width: 100%;"></a></p>
+<h2>配置文件 config.json</h2>
+<ul>
+<li>位于 C:\Users\z.picgo\config.json</li>
+</ul>
+<pre class="notranslate"><code class="notranslate">{
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      }
+    ],
+    "github": {
+      "_configName": "img",
+      "repo": "zcr07/img",
+      "branch": "main",
+      "path": "im2/",
+      "customUrl": "https://cdn.jsdelivr.net/gh/zcr07/img@main",
+      "token": "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",
+      "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+      "_createdAt": 1730352442411,
+      "_updatedAt": 1731836528133
+    }
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "autoStart": false,
+    "autoRename": true,
+    "encodeOutputURL": false,
+    "privacyEnsure": true,
+    "pasteStyle": "URL"
+  },
+  "needReload": false,
+  "picgoPlugins": {
+    "picgo-plugin-compress-next": true,
+    "picgo-plugin-autocopy": true
+  },
+  "picgo-plugin-compress-next": {
+    "Compress Type": "tinypng",
+    "Gif compress Type": "webp-converter",
+    "Auto Refresh TinyPng Key Across Months": true,
+    "TinyPng API Key": "scHQZ2CmlQDdRJnMQ9SjXKVfByCwY3YD"
+  },
+  "uploader": {
+    "github": {
+      "configList": [
+        {
+          "_configName": "Default",
+          "_id": "d4b75295-a443-4075-ad2e-73caf72e078c",
+          "_createdAt": 1730352070049,
+          "_updatedAt": 1730352070049
+        }
+      ],
+      "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
+    }
+  },
+  "picgo-plugin-autocopy": {
+    "template": "Custom",
+    "customLink": "&lt;p align='center'&gt;&lt;img src=\"$url\" style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;"
+  }
+}
+</code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
