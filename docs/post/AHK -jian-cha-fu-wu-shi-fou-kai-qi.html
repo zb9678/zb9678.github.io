@@ -76,7 +76,6 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><ul>
 <li>检查运行的应用有几种方法，例如 #IfWinActive, ahk_exe, wt 或 if WinActive("wt") 等。</li>
 <li>要检查运行的服务则要用到 sc.exe</li>
-<li></li>
 </ul>
 <h2>sc.exe</h2>
 <ul>
@@ -86,17 +85,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>command: query - 查詢服務的狀態，或列舉服務類型的狀態</li>
 </ul>
 <p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/94b2d81010f37807695a291f2f21520dfcf7a5010f4aaf1fdc9e8edd1b9d0685/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f31312e32383a32303a30323a31372e706e67"><img src="https://camo.githubusercontent.com/94b2d81010f37807695a291f2f21520dfcf7a5010f4aaf1fdc9e8edd1b9d0685/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f31312e32383a32303a30323a31372e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.28:20:02:17.png" style="max-width: 100%;"></a></p>
-<h2>启动服务</h2>
+<h2>启动服务 start_service.bat</h2>
 <ul>
 <li>可以用 net.exe 或 sc start 命令。</li>
 </ul>
-<p>net start ADEsvc</p>
+<p>net start gitea</p>
 <h2>ahk</h2>
 <p>`;; chk-is-running  服務名稱 系統目錄  啟動批次檔名<br>
-;; chk-is-running gitea z:\test\gitea start_service.bat<br>
+;; chk-is-running gitea c:\test\gitea start_service.bat<br>
 #SingleInstance Force</p>
 <p>ServiceName = %1%    ;; "gitea"<br>
-ServiceDir = %2%  ;;"z:\test\gitea"   ;; 系統目錄<br>
+ServiceDir = %2%  ;;"c:\test\gitea"   ;; 系統目錄<br>
 StartBat = %3%  ;;"start_service.bat"  ;; 啟動服務的批次檔</p>
 <p>ServiceChk = sc query "%ServiceName%" &gt; %ServiceDir%\chk-is-running.txt<br>
 runwait, %COMSPEC% /C %ServiceChk%, ,Hide</p>
