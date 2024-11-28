@@ -90,7 +90,31 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <ul>
 <li>可以用 net.exe 或 sc start 命令。</li>
 </ul>
-<p>net start ADEsvc</p></div>
+<p>net start ADEsvc</p>
+<h2>ahk</h2>
+<p>`;; chk-is-running  服務名稱 系統目錄  啟動批次檔名<br>
+;; chk-is-running gitea z:\test\gitea start_service.bat<br>
+#SingleInstance Force</p>
+<p>ServiceName = %1%    ;; "gitea"<br>
+ServiceDir = %2%  ;;"z:\test\gitea"   ;; 系統目錄<br>
+StartBat = %3%  ;;"start_service.bat"  ;; 啟動服務的批次檔</p>
+<p>ServiceChk = sc query "%ServiceName%" &gt; %ServiceDir%\chk-is-running.txt<br>
+runwait, %COMSPEC% /C %ServiceChk%, ,Hide</p>
+<p>FileRead, FileContent, %ServiceDir%\chk-is-running.txt<br>
+Loop, Parse, FileContent, <code class="notranslate">n,</code>r<br>
+{<br>
+FileLine = %A_LoopField%<br>
+Lookfor = STATE<br>
+IfInString, FileLine, %LookFor%<br>
+{<br>
+StringGetPos, pointer, FileLine, :<br>
+StringRight, ServerStatus, FileLine, StrLen(FileLine) - pointer - 5<br>
+if (ServerStatus == "RUNNING") {<br>
+FileAppend, % PID . " " . A_YYYY . "-" . A_MM . "-" . A_DD . " " . A_Hour . ":" . A_Min . ":" . A_Sec . " " . ServiceName . " is running " . " <code class="notranslate">n", %ServiceDir%\chk-is-running.log } else { Run, %ServiceDir%\%StartBat% , %ServiceDir%, Hide|UseErrorLevel, PID ;;MsgBox %ErrorLevel% FileAppend, % PID . " " . A_YYYY . "-" . A_MM . "-" . A_DD . " " . A_Hour . ":" . A_Min . ":" . A_Sec . " After net start " . ErrorLevel . " </code>n", %ServiceDir%\chk-is-running.log<br>
+}<br>
+}<br>
+}<br>
+Return`</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
