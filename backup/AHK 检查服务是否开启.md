@@ -9,3 +9,9 @@
 - command: query - 查詢服務的狀態，或列舉服務類型的狀態
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.28:20:02:17.png" style="width:400px;"></p>
+
+## 启动服务
+
+- 可以用 net.exe 或 sc start 命令。
+
+net start ADEsvc
