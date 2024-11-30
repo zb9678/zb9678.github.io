@@ -4,7 +4,6 @@
 - ctrl+`  进入终端
 - 右侧+号位置选择 Git bash 
 -  git clone git@github.com:zb9678/zb9678.github.io.git
-```
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.30:08:53:04.png" style="width:400px;"></p>
 
