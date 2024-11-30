@@ -8,6 +8,7 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.30:08:53:04.png" style="width:400px;"></p>
 
+```
 z@k MINGW64 ~/Desktop
 $  git clone git@github.com:zb9678/zb9678.github.io.git
 ```
