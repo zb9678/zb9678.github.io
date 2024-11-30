@@ -10,8 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="
-CHOICE /T 10 /C YNC /D Y /M '按是(Y)、否(N)、取消(C).'
+<meta name="description" content="CHOICE /T 10 /C YNC /D Y /M '按是(Y)、否(N)、取消(C).'
 if errorlevel==3 goto CANCEL
 if errorlevel==2 goto NO
 if errorlevel==1 goto YES
@@ -39,8 +38,7 @@ CHOICE [/C choices] [/N] [/CS] [/T timeout /D choice] [/M text]
 描述:
     该工具允许用户从选择列表选择一个项目并返回所选项目的索引。">
 <meta property="og:title" content="bat  choices">
-<meta property="og:description" content="
-CHOICE /T 10 /C YNC /D Y /M '按是(Y)、否(N)、取消(C).'
+<meta property="og:description" content="CHOICE /T 10 /C YNC /D Y /M '按是(Y)、否(N)、取消(C).'
 if errorlevel==3 goto CANCEL
 if errorlevel==2 goto NO
 if errorlevel==1 goto YES

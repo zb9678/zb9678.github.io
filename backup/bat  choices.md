@@ -1,4 +1,3 @@
-
 CHOICE /T 10 /C YNC /D Y /M "按是(Y)、否(N)、取消(C)."
 if errorlevel==3 goto CANCEL
 if errorlevel==2 goto NO
