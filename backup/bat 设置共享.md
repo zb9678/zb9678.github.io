@@ -1,4 +1,3 @@
-
 @echo off
 color 2f
 mode con cols=50 lines=30
