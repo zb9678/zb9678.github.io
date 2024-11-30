@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 30 Nov 2024 08:11:12 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>git 相关</title><link>https://zb9678.github.io/post/git%20-xiang-guan.html</link><description>## 在桌面克隆zb9678/    zb9678.github.io&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 30 Nov 2024 08:15:53 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>git 相关</title><link>https://zb9678.github.io/post/git%20-xiang-guan.html</link><description>## 在桌面克隆zb9678/    zb9678.github.io&#13;
 &#13;
 - Vscode 文件/打开文件夹/桌面&#13;
 - ctrl+`  进入终端&#13;
@@ -774,8 +774,7 @@ SetTitleMatchMode 2&#13;
   while WinExist(sTitle)　　　　　　　　　　　　　while多少满足条件　　此处为数个记事本&#13;
                                                 if WinExist(sTitle)          if　 单个满足条件　　单个记事本&#13;
     WinClose&#13;
-  Return。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20-guan-bi-duo-ge-xiang-tong-biao-ti-de-chuang-kou.html</guid><pubDate>Tue, 12 Nov 2024 00:56:25 +0000</pubDate></item><item><title>AHK 中英文输入法切换</title><link>https://zb9678.github.io/post/AHK%20-zhong-ying-wen-shu-ru-fa-qie-huan.html</link><description>&#13;
-Rctrl::&#13;
+  Return。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20-guan-bi-duo-ge-xiang-tong-biao-ti-de-chuang-kou.html</guid><pubDate>Tue, 12 Nov 2024 00:56:25 +0000</pubDate></item><item><title>AHK 中英文输入法切换</title><link>https://zb9678.github.io/post/AHK%20-zhong-ying-wen-shu-ru-fa-qie-huan.html</link><description>Rctrl::&#13;
 loop,1&#13;
 SoundBeep, 9000, 20&#13;
 Send #{Space}&#13;

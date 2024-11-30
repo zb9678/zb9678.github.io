@@ -1,4 +1,3 @@
-
 Rctrl::
 loop,1
 SoundBeep, 9000, 20
