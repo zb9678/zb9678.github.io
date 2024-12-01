@@ -14,13 +14,49 @@
 Global ClipboardLock := false
 Rctrl & s::
     ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
-    clipboard := '测试密码' ; 修改剪贴板内容。">
+    clipboard := '测试密码' ; 修改剪贴板内容
+
+
+
+; 定义全局标志变量
+Global ClipboardLock := false
+Rctrl & d::
+    ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
+    clipboard := '密码' ; 修改剪贴板内容
+
+## 例子
+
+send, zcr071225@gmail.com
+sleep, 100
+send, {tab}
+sleep, 200
+KeyWait, d , D
+send, sdeb85
+Return。">
 <meta property="og:title" content="不显示剪贴板">
 <meta property="og:description" content="; 定义全局标志变量
 Global ClipboardLock := false
 Rctrl & s::
     ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
-    clipboard := '测试密码' ; 修改剪贴板内容。">
+    clipboard := '测试密码' ; 修改剪贴板内容
+
+
+
+; 定义全局标志变量
+Global ClipboardLock := false
+Rctrl & d::
+    ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
+    clipboard := '密码' ; 修改剪贴板内容
+
+## 例子
+
+send, zcr071225@gmail.com
+sleep, 100
+send, {tab}
+sleep, 200
+KeyWait, d , D
+send, sdeb85
+Return。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/bu-xian-shi-jian-tie-ban.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/180062094?v=4">
@@ -85,7 +121,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 Global ClipboardLock := false<br>
 Rctrl &amp; s::<br>
 ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控<br>
-clipboard := "测试密码" ; 修改剪贴板内容</p></div>
+clipboard := "测试密码" ; 修改剪贴板内容</p>
+<p>; 定义全局标志变量<br>
+Global ClipboardLock := false<br>
+Rctrl &amp; d::<br>
+ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控<br>
+clipboard := "密码" ; 修改剪贴板内容</p>
+<h2>例子</h2>
+<p>send, <a href="mailto:zcr071225@gmail.com">zcr071225@gmail.com</a><br>
+sleep, 100<br>
+send, {tab}<br>
+sleep, 200<br>
+KeyWait, d , D<br>
+send, sdeb85<br>
+Return</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
