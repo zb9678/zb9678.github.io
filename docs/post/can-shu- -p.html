@@ -120,7 +120,10 @@ RunWait 的特点是暂停当前脚本的执行，直到被调用的外部程序
 <p>运行：RunWait, "C:\AutoHotkey\v1\AutoHotkey.exe" "GetPassword.ahk" /p</p>
 <p>弹出消息框：传递的参数是：/p</p>
 <h2>如果改为：RunWait, "C:\AutoHotkey\v1\AutoHotkey.exe" "GetPassword.ahk"</h2>
-<p>弹出消息框：没有传递任何参数</p></div>
+<p>弹出消息框：没有传递任何参数</p>
+<p>/p 是命令行参数，脚本会通过 A_Args 变量接收它。<br>
+它的实际作用完全由脚本 GetPassword.ahk 决定，通常用来触发某种模式或动态调整脚本行为。<br>
+使用 RunWait 时，将参数附加到脚本路径后面，用空格分隔即可传递。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
