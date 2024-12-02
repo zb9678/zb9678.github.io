@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Mon, 02 Dec 2024 00:20:20 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>避免ahk脚本使用明密码</title><link>https://zb9678.github.io/post/bi-mian-ahk-jiao-ben-shi-yong-ming-mi-ma.html</link><description>## 打开系统属性/高级/环境变量/系统变量&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Mon, 02 Dec 2024 01:30:24 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>目标程序关闭后弹出提示框</title><link>https://zb9678.github.io/post/mu-biao-cheng-xu-guan-bi-hou-dan-chu-ti-shi-kuang.html</link><description>##&#13;
+&#13;
+```&#13;
+Run, %A_WinDir%\notepad.exe&#13;
+Process, WaitClose, notepad.exe&#13;
+MsgBox, Notepad 已关闭，继续执行脚本！&#13;
+```&#13;
+&#13;
+运行逻辑&#13;
+Run：启动记事本程序。</description><guid isPermaLink="true">https://zb9678.github.io/post/mu-biao-cheng-xu-guan-bi-hou-dan-chu-ti-shi-kuang.html</guid><pubDate>Mon, 02 Dec 2024 01:29:57 +0000</pubDate></item><item><title>避免ahk脚本使用明密码</title><link>https://zb9678.github.io/post/bi-mian-ahk-jiao-ben-shi-yong-ming-mi-ma.html</link><description>## 打开系统属性/高级/环境变量/系统变量&#13;
 &#13;
 - 运行 control.exe sysdm.cpl&#13;
 &#13;
