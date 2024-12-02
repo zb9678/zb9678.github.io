@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Mon, 02 Dec 2024 00:19:35 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>KeePassPassword</title><link>https://zb9678.github.io/post/KeePassPassword.html</link><description>## 打开系统属性/高级/环境变量/系统变量&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Mon, 02 Dec 2024 00:20:20 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>避免ahk脚本使用明密码</title><link>https://zb9678.github.io/post/bi-mian-ahk-jiao-ben-shi-yong-ming-mi-ma.html</link><description>## 打开系统属性/高级/环境变量/系统变量&#13;
 &#13;
 - 运行 control.exe sysdm.cpl&#13;
 &#13;
@@ -38,7 +38,7 @@ return&#13;
 在脚本中设置 clipboard := 'o0o0o0' 是为了迷惑监控程序&#13;
 &#13;
 避免剪贴板暴露密码：&#13;
-替代 clipboard := password 然后 ^v 粘贴，使用 SendInput，直接将密码键入，避免在剪贴板中留下痕迹。</description><guid isPermaLink="true">https://zb9678.github.io/post/KeePassPassword.html</guid><pubDate>Mon, 02 Dec 2024 00:19:09 +0000</pubDate></item><item><title>不显示剪贴板</title><link>https://zb9678.github.io/post/bu-xian-shi-jian-tie-ban.html</link><description>; 定义全局标志变量&#13;
+替代 clipboard := password 然后 ^v 粘贴，使用 SendInput，直接将密码键入，避免在剪贴板中留下痕迹。</description><guid isPermaLink="true">https://zb9678.github.io/post/bi-mian-ahk-jiao-ben-shi-yong-ming-mi-ma.html</guid><pubDate>Mon, 02 Dec 2024 00:19:09 +0000</pubDate></item><item><title>不显示剪贴板</title><link>https://zb9678.github.io/post/bu-xian-shi-jian-tie-ban.html</link><description>; 定义全局标志变量&#13;
 Global ClipboardLock := false&#13;
 Rctrl &amp; s::&#13;
     ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控&#13;
