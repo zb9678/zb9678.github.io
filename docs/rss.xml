@@ -1,7 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 03 Dec 2024 13:18:49 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>匹配IP地址 正确与错误</title><link>https://zb9678.github.io/post/pi-pei-IP-di-zhi-%20-zheng-que-yu-cuo-wu.html</link><description>## (\d+\.)+\d+&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 03 Dec 2024 13:19:42 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>匹配IP地址 正确与错误</title><link>https://zb9678.github.io/post/pi-pei-IP-di-zhi-%20-zheng-que-yu-cuo-wu.html</link><description>## 错误方法&#13;
+(\d+\.)+\d+&#13;
 &#13;
 ![06](https://github.com/user-attachments/assets/c0cc6397-d6cb-468c-b217-69976937bf20)&#13;
+&#13;
+## 正确方法&#13;
+&#13;
+![07](https://github.com/user-attachments/assets/715b2203-5dcd-4c0a-b09f-cf53e22967c5)&#13;
+&#13;
+&#13;
 。</description><guid isPermaLink="true">https://zb9678.github.io/post/pi-pei-IP-di-zhi-%20-zheng-que-yu-cuo-wu.html</guid><pubDate>Tue, 03 Dec 2024 13:16:10 +0000</pubDate></item><item><title>explorer  chrome PDFXEdit 翻页</title><link>https://zb9678.github.io/post/explorer%20%20chrome%20PDFXEdit%20-fan-ye.html</link><description>## #n前 #b后 explorer  chrome PDFXEdit&#13;
 &#13;
 ```&#13;
