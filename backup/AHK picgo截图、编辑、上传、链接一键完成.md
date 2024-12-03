@@ -38,7 +38,7 @@ btt(Text,600,0,,"Style4")
 
 <p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241122171454.png" style='width:400px;'><br><br>
 
-## config.json
+## config node-1.json
 
 ```
 {
@@ -178,4 +178,253 @@ btt(Text,600,0,,"Style4")
 
 <p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241122170215.png" style='width:400px;'><br><br>
 
+## config jsdelivr.json
 
+```
+{
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      }
+    ],
+    "github": {
+      "_configName": "img",
+      "repo": "zcr07/img",
+      "branch": "main",
+      "path": "images/",
+      "customUrl": "https://cdn.jsdelivr.net/gh/zcr07/img@main",
+      "token": "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",
+      "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+      "_createdAt": 1730352442411,
+      "_updatedAt": 1731836528133
+    }
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "autoStart": false,
+    "autoRename": true,
+    "encodeOutputURL": false,
+    "privacyEnsure": true,
+    "pasteStyle": "URL"
+  },
+  "needReload": false,
+  "picgoPlugins": {
+    "picgo-plugin-compress-next": true,
+    "picgo-plugin-autocopy": true
+  },
+  "picgo-plugin-compress-next": {
+    "Compress Type": "tinypng",
+    "Gif compress Type": "webp-converter",
+    "Auto Refresh TinyPng Key Across Months": true,
+    "TinyPng API Key": "scHQZ2CmlQDdRJnMQ9SjXKVfByCwY3YD"
+  },
+  "uploader": {
+    "github": {
+      "configList": [
+        {
+          "_configName": "Default",
+          "_id": "d4b75295-a443-4075-ad2e-73caf72e078c",
+          "_createdAt": 1730352070049,
+          "_updatedAt": 1730352070049
+        },
+        {
+          "_configName": "img",
+          "repo": "zcr07/img",
+          "branch": "main",
+          "path": "images/",
+          "customUrl": "https://cdn.jsdelivr.net/gh/zcr07/img@main",
+          "token": "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",
+          "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+          "_createdAt": 1730352442411,
+          "_updatedAt": 1731836528133
+        },
+        {
+          "_configName": "node-1",
+          "repo": "zcr07/node-1",
+          "branch": "main",
+          "token": "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",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "_id": "dc6c8cac-b260-49d1-b260-8832960dd53d",
+          "_createdAt": 1732321803260,
+          "_updatedAt": 1732321803260
+        },
+        {
+          "_configName": "node-2",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "token": "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",
+          "branch": "main",
+          "repo": "zcr07/node-2",
+          "_id": "f2e24856-c89e-4f09-9ef8-670e975cbb5d",
+          "_createdAt": 1732321905575,
+          "_updatedAt": 1732321905575
+        },
+        {
+          "_configName": "node-3",
+          "repo": "zcr07/node-3",
+          "branch": "main",
+          "token": "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",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "_id": "00642892-c82e-4b88-b522-37bb09467a17",
+          "_createdAt": 1732321935850,
+          "_updatedAt": 1732321935850
+        }
+      ],
+      "defaultId": "9b921d00-95f0-47dd-9524-aea7e9ec70e4"
+    }
+  },
+  "picgo-plugin-autocopy": {
+    "template": "Custom",
+    "customLink": "<p align='center'><img src=\"$url\" style='width:400px;'><br><br>"
+  }
+}
+```
+
+## config node-3.json
+
+```
+{
+  "picBed": {
+    "current": "github",
+    "uploader": "github",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      }
+    ],
+    "github": {
+      "_configName": "node-3",
+      "repo": "zcr07/node-3",
+      "branch": "main",
+      "token": "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",
+      "path": "imgss/",
+      "customUrl": "https://node.r08.us.kg",
+      "_id": "00642892-c82e-4b88-b522-37bb09467a17",
+      "_createdAt": 1732321935850,
+      "_updatedAt": 1732321935850
+    },
+    "transformer": "compress-next"
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "showUpdateTip": false,
+    "autoStart": false,
+    "autoRename": true,
+    "encodeOutputURL": false,
+    "privacyEnsure": true,
+    "pasteStyle": "URL"
+  },
+  "needReload": false,
+  "picgoPlugins": {
+    "picgo-plugin-compress-next": true,
+    "picgo-plugin-autocopy": true
+  },
+  "picgo-plugin-compress-next": {
+    "Compress Type": "tinypng",
+    "Gif compress Type": "webp-converter",
+    "Auto Refresh TinyPng Key Across Months": true,
+    "TinyPng API Key": "scHQZ2CmlQDdRJnMQ9SjXKVfByCwY3YD"
+  },
+  "uploader": {
+    "github": {
+      "configList": [
+        {
+          "_configName": "Default",
+          "_id": "d4b75295-a443-4075-ad2e-73caf72e078c",
+          "_createdAt": 1730352070049,
+          "_updatedAt": 1730352070049
+        },
+        {
+          "_configName": "img",
+          "repo": "zcr07/img",
+          "branch": "main",
+          "path": "images/",
+          "customUrl": "",
+          "token": "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",
+          "_id": "9b921d00-95f0-47dd-9524-aea7e9ec70e4",
+          "_createdAt": 1730352442411,
+          "_updatedAt": 1731836528133
+        },
+        {
+          "_configName": "node-1",
+          "repo": "zcr07/node-1",
+          "branch": "main",
+          "token": "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",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "_id": "dc6c8cac-b260-49d1-b260-8832960dd53d",
+          "_createdAt": 1732321803260,
+          "_updatedAt": 1732321803260
+        },
+        {
+          "_configName": "node-2",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "token": "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",
+          "branch": "main",
+          "repo": "zcr07/node-2",
+          "_id": "f2e24856-c89e-4f09-9ef8-670e975cbb5d",
+          "_createdAt": 1732321905575,
+          "_updatedAt": 1732321905575
+        },
+        {
+          "_configName": "node-3",
+          "repo": "zcr07/node-3",
+          "branch": "main",
+          "token": "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",
+          "path": "imgss/",
+          "customUrl": "https://node.r08.us.kg",
+          "_id": "00642892-c82e-4b88-b522-37bb09467a17",
+          "_createdAt": 1732321935850,
+          "_updatedAt": 1732321935850
+        }
+      ],
+      "defaultId": "00642892-c82e-4b88-b522-37bb09467a17"
+    }
+  },
+  "picgo-plugin-autocopy": {
+    "template": "Custom",
+    "customLink": "<p align='center'><img src=\"$url\" style='width:400px;'><br><br>"
+  }
+}
+```
