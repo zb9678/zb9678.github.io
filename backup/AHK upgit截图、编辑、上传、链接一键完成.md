@@ -26,8 +26,7 @@ F1 & s::
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.22:16:33:13.png" style="width:400px;"></p>
 
-## 配置文件 config.json
-- 位于 C:\Users\z\.picgo\config.json
+## 
 
 ```
 rename = "up1/{month}.{day}:{hour}:{minute}:{second}{ext}"
@@ -46,6 +45,51 @@ default_uploader = "github"
 # 保存文件的分支，例如 master 或 main
 branch = "main"
 pat = "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"
+repo = "img"
+username = "zb9678"
+
+```
+
+## zcr07   config.toml
+
+```
+rename = "im/Ugit{month}.{day}:{hour}:{minute}:{second}{ext}"
+default_uploader = "github"
+
+[output_formats]
+"bbcode" = "[img]{url}[/img]"
+"html" = '<img src="{url}" />'
+"markdown" = "![]({url})"
+"ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
+
+
+[uploaders.github]
+# 保存文件的分支，例如 master 或 main
+branch = "main"
+pat = "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"
+repo = "img"
+username = "zcr07"
+
+```
+
+## zb9     config.toml
+
+```
+rename = "im2/L{month}.{day}:{hour}:{minute}:{second}{ext}"
+default_uploader = "github"
+[replacements]
+"raw.githubusercontent.com" = "im.zb9.us.kg"
+
+[output_formats]
+"bbcode" = "[img]{url}[/img]"
+"html" = '<img src="{url}" />'
+"markdown" = "![]({url})"
+"ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
+
+[uploaders.github]
+# 保存文件的分支，例如 master 或 main
+branch = "main"
+pat = "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"
 repo = "img"
 username = "zb9678"
 
