@@ -39,6 +39,8 @@ btt(Text,600,0,,"Style4")
 <p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241122171454.png" style='width:400px;'><br><br>
 
 ## config node-1.json
+配置文件 config.json
+- 位于 C:\Users\z\.picgo\config.json
 
 ```
 {
