@@ -1,29 +1,6 @@
-## 解码(2种方法)
+## 解码
 
 ```
-+#d::
-send, ^c
-Run, wscript.exe "D:\ahk1.0\fg.vbs" 
-sleep, 2000
-
-b64Decode(string)
-{
-    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x1, "ptr", 0, "uint*", size, "ptr", 0, "ptr", 0))
-        throw Exception("CryptStringToBinary failed", -1)
-    VarSetCapacity(buf, size, 0)
-    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x1, "ptr", &buf, "uint*", size, "ptr", 0, "ptr", 0))
-        throw Exception("CryptStringToBinary failed", -1)
-
-    return StrGet(&buf, size, "UTF-8") ; 确保返回 UTF-8 编码的字符串
-} 
-
-decoded := b64decode(clipboard)
-FileAppend, % decoded , d:\5.txt ; 写入文件
-sleep, 1000
-Run, nircmd.exe clipboard readfile "d:\5.txt"
-return
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   base64解码到剪贴板 +#d   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 8-182
-
 +#d::
     Clipboard := "" ; 清空剪贴板
     send, ^c ; 复制剪贴板内容
