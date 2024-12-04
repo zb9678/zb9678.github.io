@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 04 Dec 2024 09:57:47 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>一键开启Ahk脚本或关闭</title><link>https://zb9678.github.io/post/yi-jian-kai-qi-Ahk-jiao-ben-huo-guan-bi.html</link><description>## 一键开启Ahk脚本或关闭&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 04 Dec 2024 10:12:36 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>一键开启Ahk脚本或关闭</title><link>https://zb9678.github.io/post/yi-jian-kai-qi-Ahk-jiao-ben-huo-guan-bi.html</link><description>## 一键开启Ahk脚本或关闭&#13;
 &#13;
 ```&#13;
 #SingleInstance force ;----------- 强制加载新的脚本&#13;
@@ -2182,27 +2182,7 @@ command := SoundVolumeViewPath . ' /SetDefault ''' . devices[currentIndex] . '''
 # sound_volume_view　下载地址&#13;
 https://www.nirsoft.net/utils/sound_volume_view.html&#13;
 # realtek 下载地址&#13;
-https://www.realtek.com/Download/Overview?menu_id=355。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20--er-ji--%2C%20--yang-sheng-qi--%2C%20--shou-ji--.html</guid><pubDate>Sun, 03 Nov 2024 04:00:40 +0000</pubDate></item><item><title>AHK 单键启动关闭 ahk</title><link>https://zb9678.github.io/post/AHK%20-dan-jian-qi-dong-guan-bi-%20ahk.html</link><description>`#SingleInstance force                                          ;----------- 强制加载新的脚本&#13;
-isRunning := false                  ; 状态变量: isRunning 用于跟踪脚本是否正在运行&#13;
-&#13;
-$^esc::                  ; $+esc::&#13;
-    	if (isRunning) &#13;
-	{&#13;
-      					 ; 1.如果脚本已经在运行，则关闭它&#13;
-        	Name := 'SnoMouse.ahk'                     ;------ 指定要退出的脚本名称&#13;
-        	DetectHiddenWindows, On                   ;------ 启用对隐藏窗口的检测&#13;
-       	SetTitleMatchMode, 2 ; 设置标题匹配模式&#13;
-&#13;
-       	WinClose, %Name% ahk_class AutoHotkey&#13;
-        isRunning := false 			                        ;-----------更新状态为未运行&#13;
-    	} &#13;
-&#13;
-      else {&#13;
-       					 ; 2.如果脚本没有在运行，则启动它&#13;
-        	Run D:\ahk1.0\Lib\SnoMouse.ahk&#13;
-        isRunning := true                                         ;---------更新状态为正在运行&#13;
-   	 }&#13;
-return`。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20-dan-jian-qi-dong-guan-bi-%20ahk.html</guid><pubDate>Sun, 03 Nov 2024 03:55:43 +0000</pubDate></item><item><title>AHK 确认对话框</title><link>https://zb9678.github.io/post/AHK%20-que-ren-dui-hua-kuang.html</link><description>`DetectHiddenWindows, On                                 ;------ 启用对隐藏窗口的检测&#13;
+https://www.realtek.com/Download/Overview?menu_id=355。</description><guid isPermaLink="true">https://zb9678.github.io/post/AHK%20--er-ji--%2C%20--yang-sheng-qi--%2C%20--shou-ji--.html</guid><pubDate>Sun, 03 Nov 2024 04:00:40 +0000</pubDate></item><item><title>AHK 确认对话框</title><link>https://zb9678.github.io/post/AHK%20-que-ren-dui-hua-kuang.html</link><description>`DetectHiddenWindows, On                                 ;------ 启用对隐藏窗口的检测&#13;
 SetTitleMatchMode, 2                                           ;----------- 设置标题匹配模式&#13;
 &#13;
 F9 &amp; [::&#13;
