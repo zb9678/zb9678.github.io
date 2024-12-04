@@ -1,4 +1,4 @@
-## 解码
+## 解码(2种方法)
 
 ```
 +#d::
@@ -22,6 +22,35 @@ FileAppend, % decoded , d:\5.txt ; 写入文件
 sleep, 1000
 Run, nircmd.exe clipboard readfile "d:\5.txt"
 return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   base64解码到剪贴板 +#d   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 8-182
+
++#d::
+    Clipboard := "" ; 清空剪贴板
+    send, ^c ; 复制剪贴板内容
+    ClipWait, 1 ; 等待剪贴板内容更新，超时为1秒
+    if (ErrorLevel) {
+        MsgBox, 剪贴板未能成功更新！
+        return
+    }
+    decoded := b64Decode(clipboard) ; 解码剪贴板内容
+
+    file := FileOpen("D:\5.txt", "w", "UTF-8") ; 打开文件并指定为 UTF-8 编码
+    file.Write(decoded) ; 写入解码后的内容
+    file.Close() ; 关闭文件
+sleep, 1000
+Run, nircmd.exe clipboard readfile "d:\5.txt"
+return 
+
+b64Decode(string)
+{
+    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x1, "ptr", 0, "uint*", size, "ptr", 0, "ptr", 0))
+        throw Exception("CryptStringToBinary failed", -1)
+    VarSetCapacity(buf, size, 0)
+    if !(DllCall("crypt32\CryptStringToBinary", "ptr", &string, "uint", 0, "uint", 0x1, "ptr", &buf, "uint*", size, "ptr", 0, "ptr", 0))
+        throw Exception("CryptStringToBinary failed", -1)
+
+    return StrGet(&buf, size, "UTF-8") ; 确保返回 UTF-8 编码的字符串
+}
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   base64解码到剪贴板 +#d   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 8-182
 
 ```
@@ -54,6 +83,22 @@ return
 ```
 
 ## 详解
+
+```
++#d::
+    Clipboard := "" ; 清空剪贴板
+    send, ^c ; 复制剪贴板内容
+    ClipWait, 1 
+    if (ErrorLevel) {
+        MsgBox, 剪贴板未能成功更新！
+        return
+    }    ;等待剪贴板更新：ClipWait, 1 等待剪贴板在最多 1 秒内更新。如果未能更新，则显示消息框并退出。
+```
+
+ 'decoded := b64Decode(clipboard) ; 解码剪贴板内容'
+
+- 解码操作：调用 b64Decode 函数，将剪贴板中的 Base64 编码字符串解码为原始字符串，并将结果存储在 decoded 变量中。
+
 
 ```
 
