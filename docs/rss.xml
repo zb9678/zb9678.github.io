@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Wed, 04 Dec 2024 14:47:19 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>运行 *.vbs</title><link>https://zb9678.github.io/post/yun-xing-%20-.vbs.html</link><description>`Run, wscript.exe 'D:\ahk1.0\Lib\choice1.vbs'`。</description><guid isPermaLink="true">https://zb9678.github.io/post/yun-xing-%20-.vbs.html</guid><pubDate>Wed, 04 Dec 2024 14:46:50 +0000</pubDate></item><item><title>base64  编、解码到剪贴板</title><link>https://zb9678.github.io/post/base64%20%20-bian-%E3%80%81-jie-ma-dao-jian-tie-ban.html</link><description>## 解码&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Thu, 05 Dec 2024 07:47:06 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>剪贴板通知及查找历史</title><link>https://zb9678.github.io/post/jian-tie-ban-tong-zhi-ji-cha-zhao-li-shi.html</link><description>## 复制后通知&#13;
+&#13;
+```&#13;
+OnClipboardChange:               ;注册一个每当剪贴板内容发生改变时都会自动调用的函数.&#13;
+{&#13;
+	SoundBeep, 10000, 1	&#13;
+	btt(Clipboard,,,,'Style8')&#13;
+	sleep, 700&#13;
+	btt()​&#13;
+FileAppend, %clipboard% `n, d:\6           ;------------   剪贴板历史记录保存&#13;
+return&#13;
+}&#13;
+;----------------------------------------------------------------------------------&#13;
+```&#13;
+&#13;
+## 查找剪贴板历史&#13;
+&#13;
+```&#13;
+ &gt;!1::&#13;
+RunWait, 'D:\ahk1.0\Lib\0 tool\EmEditor\EmEditor.exe' 'd:\6'&#13;
+ return&#13;
+```。</description><guid isPermaLink="true">https://zb9678.github.io/post/jian-tie-ban-tong-zhi-ji-cha-zhao-li-shi.html</guid><pubDate>Thu, 05 Dec 2024 07:46:40 +0000</pubDate></item><item><title>运行 *.vbs</title><link>https://zb9678.github.io/post/yun-xing-%20-.vbs.html</link><description>`Run, wscript.exe 'D:\ahk1.0\Lib\choice1.vbs'`。</description><guid isPermaLink="true">https://zb9678.github.io/post/yun-xing-%20-.vbs.html</guid><pubDate>Wed, 04 Dec 2024 14:46:50 +0000</pubDate></item><item><title>base64  编、解码到剪贴板</title><link>https://zb9678.github.io/post/base64%20%20-bian-%E3%80%81-jie-ma-dao-jian-tie-ban.html</link><description>## 解码&#13;
 &#13;
 ```&#13;
 +#d::&#13;
