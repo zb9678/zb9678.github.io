@@ -40,8 +40,8 @@ return
 
 ##  安装xiaoxiao
 
-<p align="center"><img src="https://jsd.cdn.zzko.cn/gh/zb9678/img@main/up1/12.06:08:27:16.png" style="width:400px;"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.06:08:30:10.png" style="width:400px;"></p>
 
 ## 选择使用xiaoxiao
 
-<p align="center"><img src="https://jsd.cdn.zzko.cn/gh/zb9678/img@main/up1/12.06:08:27:58.png" style="width:400px;"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.06:08:30:52.png" style="width:400px;"></p>
