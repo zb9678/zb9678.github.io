@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 06 Dec 2024 16:51:17 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>选定文字 以管理员运行</title><link>https://zb9678.github.io/post/xuan-ding-wen-zi-%20-yi-guan-li-yuan-yun-xing.html</link><description>## 选定文字 以管理员运行&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 06 Dec 2024 16:53:16 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>ping选定多个网址</title><link>https://zb9678.github.io/post/ping-xuan-ding-duo-ge-wang-zhi.html</link><description>## ping选定多个网址&#13;
+&#13;
+```&#13;
+^F9::&#13;
+    clipboard := ''  ; 清空剪贴板&#13;
+    Send, ^c  ; 复制选中的文本到剪贴板&#13;
+    ClipWait  ; 等待剪贴板中有数据&#13;
+    urls := clipboard  ; 将剪贴板内容存储到变量中&#13;
+&#13;
+    ; 创建一个临时批处理文件&#13;
+    FileDelete, ping_commands.bat  ; 删除旧的文件（如果存在）&#13;
+    FileAppend, @echo off`n, ping_commands.bat  ; 创建新的批处理文件并添加开头&#13;
+&#13;
+    Loop, parse, urls, `n  ; 遍历每一行（网址）&#13;
+    {&#13;
+        FileAppend, ping %A_LoopField%`n, ping_commands.bat  ; 将每个 ping 命令写入批处理文件&#13;
+    }&#13;
+&#13;
+    Run, cmd.exe /k ping_commands.bat  ; 在一个窗口中运行批处理文件&#13;
+return&#13;
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  ^F9  ping选定多个网址  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012-516&#13;
+```。</description><guid isPermaLink="true">https://zb9678.github.io/post/ping-xuan-ding-duo-ge-wang-zhi.html</guid><pubDate>Fri, 06 Dec 2024 16:52:55 +0000</pubDate></item><item><title>选定文字 以管理员运行</title><link>https://zb9678.github.io/post/xuan-ding-wen-zi-%20-yi-guan-li-yuan-yun-xing.html</link><description>## 选定文字 以管理员运行&#13;
 &#13;
 ```&#13;
 ^F11::&#13;
