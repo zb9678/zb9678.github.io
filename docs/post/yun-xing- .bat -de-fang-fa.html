@@ -10,7 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="##
+<meta name="description" content="## 运行 .bat 的方法
 
 ```
 Appskey & Esc::
@@ -21,10 +21,11 @@ return
 ```
 
 ## 代码解析：
-`
+
+```
 %ComSpec% 是一个系统变量，指向 CMD 的可执行文件路径。">
 <meta property="og:title" content="运行 .bat 的方法">
-<meta property="og:description" content="##
+<meta property="og:description" content="## 运行 .bat 的方法
 
 ```
 Appskey & Esc::
@@ -35,7 +36,8 @@ return
 ```
 
 ## 代码解析：
-`
+
+```
 %ComSpec% 是一个系统变量，指向 CMD 的可执行文件路径。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/yun-xing-%20.bat%20-de-fang-fa.html">
@@ -107,7 +109,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2></h2>
+<div class="markdown-body" id="postBody"><h2>运行 .bat 的方法</h2>
 <pre class="notranslate"><code class="notranslate">Appskey &amp; Esc::
 SetWorkingDir, D:\ahk1.0\Lib\
 Run, %ComSpec% /c choice1.bat,, Hide  ; 使用 ComSpec 运行并隐藏窗口
@@ -115,7 +117,10 @@ return
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; Esc  小菜单   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012-517
 </code></pre>
 <h2>代码解析：</h2>
-<p><code class="notranslate">%ComSpec% 是一个系统变量，指向 CMD 的可执行文件路径。 /c 参数表示执行命令后关闭窗口。 ,, Hide 表示隐藏窗口。</code></p></div>
+<pre class="notranslate"><code class="notranslate">%ComSpec% 是一个系统变量，指向 CMD 的可执行文件路径。
+/c 参数表示执行命令后关闭窗口。
+,, Hide 表示隐藏窗口。
+</code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
