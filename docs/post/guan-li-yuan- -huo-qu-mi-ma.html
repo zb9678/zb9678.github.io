@@ -10,7 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## 
+<meta name="description" content="## 管理员
 
 ```
 if !A_IsAdmin
@@ -38,10 +38,16 @@ F1 & F7::
 return
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 & F7 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014
 ```
+## 管理员
 
+```
+RunAs, Administrator, MyPassword
+Run, RegEdit.exe
+RunAs  ; 恢复为普通行为.
+```
 。">
 <meta property="og:title" content="管理员 获取密码">
-<meta property="og:description" content="## 
+<meta property="og:description" content="## 管理员
 
 ```
 if !A_IsAdmin
@@ -69,7 +75,13 @@ F1 & F7::
 return
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 & F7 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014
 ```
+## 管理员
 
+```
+RunAs, Administrator, MyPassword
+Run, RegEdit.exe
+RunAs  ; 恢复为普通行为.
+```
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zb9678.github.io/post/guan-li-yuan-%20-huo-qu-mi-ma.html">
@@ -141,7 +153,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2></h2>
+<div class="markdown-body" id="postBody"><h2>管理员</h2>
 <pre class="notranslate"><code class="notranslate">if !A_IsAdmin
 {
     Run *RunAs "%A_ScriptFullPath%"
@@ -163,6 +175,11 @@ F1 &amp; F7::
     	SendInput, %password%{Enter}
 return
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; F7 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014
+</code></pre>
+<h2>管理员</h2>
+<pre class="notranslate"><code class="notranslate">RunAs, Administrator, MyPassword
+Run, RegEdit.exe
+RunAs  ; 恢复为普通行为.
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
