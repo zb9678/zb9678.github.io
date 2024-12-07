@@ -1,4 +1,4 @@
-## CoordMode, Mouse, Client 
+## 启动时删除chrome历史
 
 ```
  CoordMode, Mouse, Client  ; 设置坐标模式为客户端
