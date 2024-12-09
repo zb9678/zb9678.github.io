@@ -1,6 +1,8 @@
 ## Github同步到GitLab
 
-- Sync to GitLab
+### sync-to-gitlab.yml
+
+- zb9678.github.io/.github/workflows/sync-to-gitlab.yml
 
 ```
 name: Sync to GitLab
