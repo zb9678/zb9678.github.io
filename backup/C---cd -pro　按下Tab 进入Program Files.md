@@ -34,6 +34,10 @@ C:\Program Files (x86)>
 
 ## 转入其他目录　cd /d d:\3
 
+注意：如果不加参数/d，是无法转入其他目录的。如
+- d:\3>cd c:\
+- d:\3>
+
 ```
 C:\Program Files (x86)>cd /d d:\3
 
