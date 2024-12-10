@@ -44,3 +44,16 @@ C:\Program Files (x86)>cd /d d:\3
 d:\3>
 
 ```
+
+## 打开当前目录　start .
+
+```
+d:\3>
+
+d:\3>start .
+
+d:\3>
+
+```
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.10:15:41:15.png" style="width:400px;"></p>
