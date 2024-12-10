@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Mon, 09 Dec 2024 09:37:35 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>Github同步到GitLab</title><link>https://zb9678.github.io/post/Github-tong-bu-dao-GitLab.html</link><description>## Github同步到GitLab&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 10 Dec 2024 07:17:36 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>cd..\..\..</title><link>https://zb9678.github.io/post/cd..-..-...html</link><description>## 回到上２级目录&#13;
+&#13;
+&#13;
+```&#13;
+D:\ahk1.0\1&gt;cd 2&#13;
+&#13;
+D:\ahk1.0\1\2&gt;cd..\..&#13;
+&#13;
+D:\ahk1.0&gt;cd 1\2&#13;
+&#13;
+D:\ahk1.0\1\2&gt;cd..\..\..&#13;
+&#13;
+D:\&gt;&#13;
+```。</description><guid isPermaLink="true">https://zb9678.github.io/post/cd..-..-...html</guid><pubDate>Tue, 10 Dec 2024 07:17:12 +0000</pubDate></item><item><title>Github同步到GitLab</title><link>https://zb9678.github.io/post/Github-tong-bu-dao-GitLab.html</link><description>## Github同步到GitLab&#13;
 &#13;
 ### sync-to-gitlab.yml&#13;
 &#13;
