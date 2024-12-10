@@ -31,3 +31,12 @@ C:\>cd "\Program Files (x86)"
 C:\Program Files (x86)>
 
 ```
+
+## 转入其他目录　cd /d d:\3
+
+```
+C:\Program Files (x86)>cd /d d:\3
+
+d:\3>
+
+```
