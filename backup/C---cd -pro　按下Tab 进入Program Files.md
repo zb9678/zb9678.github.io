@@ -68,3 +68,12 @@ d:\3>
 
 <p align='center'><img src="https://cdn.jsdelivr.net/gh/zcr07/img@main/images/20241210155534.png" style='width:400px;'><br><br>
 
+## 打开启动目录 start shell:startup
+
+```
+d:\3>start shell:startup
+
+d:\3>     
+```
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.10:15:59:34.png" style="width:400px;"></p>
