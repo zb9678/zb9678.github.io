@@ -96,8 +96,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     Send, {Shift} ; 根据你的设置可能需要调整
 
     ; 使用 SendInput 发送密码
-    SendInput, %password%{Enter}
-Send, {Shift}
+    ;SendInput, %password%{Enter}
+    ;Send, {Shift}
+    SendInput, %password%{Enter}{Shift}
 return
 
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; F7 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00014
