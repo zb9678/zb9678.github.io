@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 13 Dec 2024 15:11:05 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>*Rctrl::return禁止单独按下 RCtrl 时触发</title><link>https://zb9678.github.io/post/-Rctrl--return-jin-zhi-dan-du-an-xia-%20RCtrl%20-shi-chu-fa.html</link><description>## 如何使 Rctrl &amp; a 快捷键组合按下时，不会激活 Send, #{Space}&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 13 Dec 2024 15:20:04 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>*Rctrl::return禁止单独按下 RCtrl 时触发</title><link>https://zb9678.github.io/post/-Rctrl--return-jin-zhi-dan-du-an-xia-%20RCtrl%20-shi-chu-fa.html</link><description>## 如何使 Rctrl &amp; a 快捷键组合按下时，不会激活 Send, #{Space}&#13;
 &#13;
 - 给脚本添加   &#13;
 &#13;
+`#HotkeyModifierTimeout 0`&#13;
+&#13;
 ` *Rctrl::return  ; 禁止单独按下 RCtrl 时触发`&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.13:23:19:25.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
+&#13;
 &#13;
 ```&#13;
 Rctrl::  &#13;
@@ -16,7 +21,8 @@ return&#13;
 以下为SnoMouse.ahk脚本中的一部分&#13;
 &#13;
 ```&#13;
-*Rctrl::return  ; 禁止单独按下 RCtrl 时触发&#13;
+#HotkeyModifierTimeout 0&#13;
+;*Rctrl::return  ; 禁止单独按下 RCtrl 时触发&#13;
 ; 鼠标运动处理&#13;
 *&gt;^a:: 鼠标模拟.左按('a')&#13;
 *&gt;^d:: 鼠标模拟.右按('d')&#13;

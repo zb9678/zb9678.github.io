@@ -2,7 +2,12 @@
 
 - 给脚本添加   
 
+`#HotkeyModifierTimeout 0`
+
 ` *Rctrl::return  ; 禁止单独按下 RCtrl 时触发`
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.13:23:19:25.png" style="width:400px;"></p>
+
 
 ```
 Rctrl::  
@@ -15,7 +20,8 @@ return
 以下为SnoMouse.ahk脚本中的一部分
 
 ```
-*Rctrl::return  ; 禁止单独按下 RCtrl 时触发
+#HotkeyModifierTimeout 0
+;*Rctrl::return  ; 禁止单独按下 RCtrl 时触发
 ; 鼠标运动处理
 *>^a:: 鼠标模拟.左按("a")
 *>^d:: 鼠标模拟.右按("d")
