@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Fri, 13 Dec 2024 15:20:04 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>*Rctrl::return禁止单独按下 RCtrl 时触发</title><link>https://zb9678.github.io/post/-Rctrl--return-jin-zhi-dan-du-an-xia-%20RCtrl%20-shi-chu-fa.html</link><description>## 如何使 Rctrl &amp; a 快捷键组合按下时，不会激活 Send, #{Space}&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 14 Dec 2024 05:55:35 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>Telegram变中文</title><link>https://zb9678.github.io/post/Telegram-bian-zhong-wen.html</link><description>##&#13;
+&#13;
+```&#13;
+切换为中文简体&#13;
+https://t.me/setlanguage/classic-zh&#13;
+繁体 &#13;
+https://t.me/setlanguage/taiwan&#13;
+英文&#13;
+https://t.me/setlanguage/en&#13;
+```&#13;
+&#13;
+## 图床设置&#13;
+&#13;
+&#13;
+```&#13;
+t.me/zcrzbbbot&#13;
+7753625462:AAH1l55SDt6DKGi3z4CsbxSDSGJljI3QlSo&#13;
+发送者 ID: 5065849893&#13;
+发送者名称: bb&#13;
+发送者用户名: @kev_zh&#13;
+&#13;
+```。</description><guid isPermaLink="true">https://zb9678.github.io/post/Telegram-bian-zhong-wen.html</guid><pubDate>Sat, 14 Dec 2024 05:47:53 +0000</pubDate></item><item><title>*Rctrl::return禁止单独按下 RCtrl 时触发</title><link>https://zb9678.github.io/post/-Rctrl--return-jin-zhi-dan-du-an-xia-%20RCtrl%20-shi-chu-fa.html</link><description>## 如何使 Rctrl &amp; a 快捷键组合按下时，不会激活 Send, #{Space}&#13;
 &#13;
 - 给脚本添加   &#13;
 &#13;
