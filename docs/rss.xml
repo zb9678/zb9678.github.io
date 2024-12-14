@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 14 Dec 2024 16:26:37 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>上传截图设置</title><link>https://zb9678.github.io/post/shang-chuan-jie-tu-she-zhi.html</link><description>## 三种可替换&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sat, 14 Dec 2024 16:33:09 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>上传截图设置</title><link>https://zb9678.github.io/post/shang-chuan-jie-tu-she-zhi.html</link><description>## 三种可替换&#13;
 &#13;
 https://jsd.cdn.zzko.cn/gh/zcr07/img@main/images/    20241212110126.png&#13;
 &#13;
 https://ing.w07.us.kg/images/                                         20241212110126.png   &#13;
+&#13;
+https://cdn.jsdelivr.net/gh/zcr07/img@main/images/     20241215001329.png&#13;
 &#13;
 - 注意：第二种要稍等个1分多钟才会出图，因为Github需要更新数据。</description><guid isPermaLink="true">https://zb9678.github.io/post/shang-chuan-jie-tu-she-zhi.html</guid><pubDate>Sat, 14 Dec 2024 16:16:48 +0000</pubDate></item><item><title>文字转语音</title><link>https://zb9678.github.io/post/wen-zi-zhuan-yu-yin.html</link><description>## 文字转语音&#13;
 &#13;
