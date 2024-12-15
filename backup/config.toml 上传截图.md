@@ -23,6 +23,32 @@ branch = "main"
 pat = "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"
 repo = "img"
 username = "zcr07"
+```
 
+## F1 & a  上传截图到github/img
 
 ```
+F1 & a::
+    ; 启动截图程序
+    Run, "D:\ahk1.0\Lib\0 tool\9金山截图王\kscrcap.exe"
+    
+    ; 延迟 2 秒后弹出确认对话框
+    Sleep, 2000
+    MsgBox, 4,, 请在完成截图和编辑后点击“是”确认上传图片。
+    IfMsgBox, No
+        return ; 如果选择“否”，则直接退出脚本
+    
+    ; 上传图片
+    Run, D:\ahk1.0\Lib\0 tool\picgo-croe\upgit.exe :clipboard -o clipboard -f ccc, , hide
+    return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 & a  上传截图到github/img   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  000001-1984
+```
+
+### 使用说明
+
+https://github.com/pluveto/upgit/blob/main/docs/README.zh-CN.md
+
+--output-type           如 --output-type clipboard
+-o output-type         如 -o clipboard
+upgit :clipboard -o clipboard -f ccc    "ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
+                         
