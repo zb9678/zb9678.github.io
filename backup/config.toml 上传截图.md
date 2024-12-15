@@ -50,7 +50,8 @@ https://github.com/pluveto/upgit/blob/main/docs/README.zh-CN.md
 
 ```
 --output-type           如 --output-type clipboard
--o output-type         如 -o clipboard
+-o                              如 -o clipboard
+
 upgit :clipboard -o clipboard -f ccc    
 "ccc" = '<p align="center"><img src="{url}" style="width:400px;"></p>'
 ```
