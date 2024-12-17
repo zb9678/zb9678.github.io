@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 17 Dec 2024 06:48:37 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>{Raw}</title><link>https://zb9678.github.io/post/%7BRaw%7D.html</link><description>## {Raw}&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Tue, 17 Dec 2024 07:46:35 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>{Raw}</title><link>https://zb9678.github.io/post/%7BRaw%7D.html</link><description>## {Raw}&#13;
 &#13;
 ```&#13;
 SendInput {Raw}{Tab}&#13;
 ```&#13;
 &#13;
-&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.17:14:46:50.png' style='width:400px;'&gt;&lt;/p&gt;。</description><guid isPermaLink="true">https://zb9678.github.io/post/%7BRaw%7D.html</guid><pubDate>Tue, 17 Dec 2024 06:48:10 +0000</pubDate></item><item><title>config.toml 上传截图</title><link>https://zb9678.github.io/post/config.toml%20-shang-chuan-jie-tu.html</link><description>## config.toml 上传截图&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.17:14:46:50.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
+&#13;
+## SendRaw, {Tab}&#13;
+&#13;
+```&#13;
+SendRaw&#13;
+功能： 逐字发送输入，不解析特殊字符（如 {}）。</description><guid isPermaLink="true">https://zb9678.github.io/post/%7BRaw%7D.html</guid><pubDate>Tue, 17 Dec 2024 06:48:10 +0000</pubDate></item><item><title>config.toml 上传截图</title><link>https://zb9678.github.io/post/config.toml%20-shang-chuan-jie-tu.html</link><description>## config.toml 上传截图&#13;
 &#13;
 'raw.githubusercontent.com/zcr07/img/main' = 'ing.w07.us.kg'  &#13;
 困扰很久的问题解决了。</description><guid isPermaLink="true">https://zb9678.github.io/post/config.toml%20-shang-chuan-jie-tu.html</guid><pubDate>Sat, 14 Dec 2024 17:01:49 +0000</pubDate></item><item><title>上传截图设置</title><link>https://zb9678.github.io/post/shang-chuan-jie-tu-she-zhi.html</link><description>## 三种可替换&#13;
