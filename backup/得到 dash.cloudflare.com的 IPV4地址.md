@@ -21,9 +21,11 @@
 
 ## ping出的104.17.110.184不能直接用
 - 尾数4要修改为12356789中的任何数，但不能为4
+- 第二位的8也能改，比如改为9
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:12:43:54.png" style="width:400px;"></p>
 
-## 2606:4700::6811:6eb8 要改为 2606:4700::6811:6eb 12345679
+## 2606:4700::6811:6eb8 要改为 2606:4700::6811:6eb12345679abcdef   
+第二位的b也可以改 1234567890acdef
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:13:10:48.png" style="width:400px;"></p>
