@@ -24,6 +24,6 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:12:43:54.png" style="width:400px;"></p>
 
-## 2606:4700::6811:6eb8 要改为 2606:4700::6811:6eb7
+## 2606:4700::6811:6eb8 要改为 2606:4700::6811:6eb 12345679
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:13:10:48.png" style="width:400px;"></p>
