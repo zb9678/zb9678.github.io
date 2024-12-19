@@ -18,3 +18,8 @@
 
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:12:34:03.png" style="width:400px;"></p>
+
+## ping出的104.17.110.184不能直接用
+- 尾数4要修改为12356789中的任何数，但不能为4
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.19:12:43:54.png" style="width:400px;"></p>
