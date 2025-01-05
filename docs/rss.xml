@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sun, 05 Jan 2025 14:26:58 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>(?=4) </title><link>https://zb9678.github.io/post/%28-%3D4%29%20.html</link><description>## \d+(?=4)&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://zb9678.github.io</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://zb9678.github.io</link></image><lastBuildDate>Sun, 05 Jan 2025 15:08:37 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>(?=4) </title><link>https://zb9678.github.io/post/%28-%3D4%29%20.html</link><description>## \d+(?=4)&#13;
 &#13;
 - (?=4)  表示满足在数字4的前面&#13;
 &#13;
@@ -1458,7 +1458,17 @@ Return&#13;
 ## 每行首均添加相同内容....&#13;
 `^(.)     |    ....\0`&#13;
 &#13;
-&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.04:08:48:09.png' style='width:400px;'&gt;&lt;/p&gt;。</description><guid isPermaLink="true">https://zb9678.github.io/post/mei-xing-mo-jun-tian-jia-xiang-tong-nei-rong-.....html</guid><pubDate>Wed, 04 Dec 2024 00:42:15 +0000</pubDate></item><item><title>筛选Html</title><link>https://zb9678.github.io/post/shai-xuan-Html.html</link><description>## 筛选Html&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/12.04:08:48:09.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
+&#13;
+## \A\d{2}&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:22:56:08.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
+&#13;
+## (.)\z&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:22:59:41.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
+&#13;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:00:36.png' style='width:400px;'&gt;&lt;/p&gt;。</description><guid isPermaLink="true">https://zb9678.github.io/post/mei-xing-mo-jun-tian-jia-xiang-tong-nei-rong-.....html</guid><pubDate>Wed, 04 Dec 2024 00:42:15 +0000</pubDate></item><item><title>筛选Html</title><link>https://zb9678.github.io/post/shai-xuan-Html.html</link><description>## 筛选Html&#13;
 `&lt;\w+)*.*&gt;.*?&lt;٨1&gt;`&#13;
 &#13;
 ![17](https://github.com/user-attachments/assets/4875920a-4cd8-4e8a-a992-6cdef28e3f54)&#13;
