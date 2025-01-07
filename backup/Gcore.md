@@ -1,3 +1,7 @@
+## 视频教程
+
+https://www.youtube.com/watch?v=puME1NGA-Ic
+
 ## Cf  新建Workers
 
 - https://dash.cloudflare.com/
@@ -11,6 +15,7 @@
 
 - https://console-intl.huaweicloud.com/
 
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.07:19:49:11.png" style="width:400px;"></p>
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.07:19:16:05.png" style="width:400px;"></p>
 
@@ -28,6 +33,7 @@
 
 - https://portal.gcore.com/
 
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.07:19:51:26.png" style="width:400px;"></p>
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.07:19:31:07.png" style="width:400px;"></p>
 
