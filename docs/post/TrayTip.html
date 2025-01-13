@@ -10,13 +10,12 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## TrayTip
-
-0=没有图标（默认）
-1=消息
-2=警告
-3=错误
-20=AHK
+<meta name="description" content="> [!TIP]
+>0=没有图标（默认）
+>1=消息
+>2=警告
+>3=错误
+>20=AHK
 
 ```
 v::
@@ -30,7 +29,22 @@ TrayTip, 第4个气球提示, 确定, , 0
 ```
 <p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.13:19:18:25.png' style='width:400px;'></p>
 
-## traytip一直不断地出现
+> [!TIP]
+>SetTimer
+
+```
+c::                                                                          ; 要更精确的控制显示的时间 SetTimer, 而不使用 Sleep 的方法 (它停止了当前线程)
+TrayTip, NO.2标题, 第1内容,  , 18
+SetTimer, HideTrayTip, 2000                                ; 等待 2 (只用为1-6) 秒关闭通知
+HideTrayTip()
+{
+    TrayTip   
+}
+return
+```
+
+> [!TIP]
+> traytip一直不断地出现
 
 ``
 ;使用计时器进行周期性的刷新，使traytip一直不断地出现
@@ -43,13 +57,12 @@ RefreshTrayTip7:
 
 TrayTip, 有标题 , 显示内容不超过68个字符 , ,3               ; 有标题的内容文字不超过68个。">
 <meta property="og:title" content="TrayTip">
-<meta property="og:description" content="## TrayTip
-
-0=没有图标（默认）
-1=消息
-2=警告
-3=错误
-20=AHK
+<meta property="og:description" content="> [!TIP]
+>0=没有图标（默认）
+>1=消息
+>2=警告
+>3=错误
+>20=AHK
 
 ```
 v::
@@ -63,7 +76,22 @@ TrayTip, 第4个气球提示, 确定, , 0
 ```
 <p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.13:19:18:25.png' style='width:400px;'></p>
 
-## traytip一直不断地出现
+> [!TIP]
+>SetTimer
+
+```
+c::                                                                          ; 要更精确的控制显示的时间 SetTimer, 而不使用 Sleep 的方法 (它停止了当前线程)
+TrayTip, NO.2标题, 第1内容,  , 18
+SetTimer, HideTrayTip, 2000                                ; 等待 2 (只用为1-6) 秒关闭通知
+HideTrayTip()
+{
+    TrayTip   
+}
+return
+```
+
+> [!TIP]
+> traytip一直不断地出现
 
 ``
 ;使用计时器进行周期性的刷新，使traytip一直不断地出现
@@ -115,7 +143,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     font-size: 12px;
 }
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
 
 
 
@@ -145,12 +173,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>TrayTip</h2>
-<p>0=没有图标（默认）<br>
+<div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>0=没有图标（默认）<br>
 1=消息<br>
 2=警告<br>
 3=错误<br>
 20=AHK</p>
+</div>
 <pre class="notranslate"><code class="notranslate">v::
 TrayTip, 第1个气球提示, 我是消息, , 3
 sleep, 1000
@@ -161,7 +189,19 @@ sleep, 1000
 TrayTip, 第4个气球提示, 确定, , 0
 </code></pre>
 <p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/dc781ce0d7a918303c577f7327c5073980902cbe77e5a26d3e292b61a126b636/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30312e31333a31393a31383a32352e706e67"><img src="https://camo.githubusercontent.com/dc781ce0d7a918303c577f7327c5073980902cbe77e5a26d3e292b61a126b636/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30312e31333a31393a31383a32352e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.13:19:18:25.png" style="max-width: 100%;"></a></p>
-<h2>traytip一直不断地出现</h2>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>SetTimer</p>
+</div>
+<pre class="notranslate"><code class="notranslate">c::                                                                          ; 要更精确的控制显示的时间 SetTimer, 而不使用 Sleep 的方法 (它停止了当前线程)
+TrayTip, NO.2标题, 第1内容,  , 18
+SetTimer, HideTrayTip, 2000                                ; 等待 2 (只用为1-6) 秒关闭通知
+HideTrayTip()
+{
+    TrayTip   
+}
+return
+</code></pre>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>traytip一直不断地出现</p>
+</div>
 <p>``<br>
 ;使用计时器进行周期性的刷新，使traytip一直不断地出现<br>
 x::<br>
@@ -174,16 +214,15 @@ sleep, 6000<br>
 TrayTip,  , 无标题，则内容显示不超过102个字符 , ,3        ;无标题  内容不超过102个字符。<br>
 return</p>
 <pre class="notranslate"><code class="notranslate">
+&gt; [!NOTE]
+&gt;  仅在notepad中交换a、b键
 
-##  仅在notepad中交换a、b键
-
-#IfWinActive ahk_class Notepad
-
-a::b 
-b::a
-
-#IfWinActive ;
-</code></pre></div>
+</code></pre>
+<p>#IfWinActive ahk_class Notepad</p>
+<p>a::b<br>
+b::a</p>
+<p>#IfWinActive ;</p>
+<pre class="notranslate"><code class="notranslate"></code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 
 </div>

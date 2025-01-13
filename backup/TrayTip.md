@@ -1,10 +1,9 @@
-## TrayTip
-
-0=没有图标（默认）
-1=消息
-2=警告
-3=错误
-20=AHK
+> [!TIP]
+>0=没有图标（默认）
+>1=消息
+>2=警告
+>3=错误
+>20=AHK
 
 ```
 v::
@@ -18,7 +17,22 @@ TrayTip, 第4个气球提示, 确定, , 0
 ```
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.13:19:18:25.png" style="width:400px;"></p>
 
-## traytip一直不断地出现
+> [!TIP]
+>SetTimer
+
+```
+c::                                                                          ; 要更精确的控制显示的时间 SetTimer, 而不使用 Sleep 的方法 (它停止了当前线程)
+TrayTip, NO.2标题, 第1内容,  , 18
+SetTimer, HideTrayTip, 2000                                ; 等待 2 (只用为1-6) 秒关闭通知
+HideTrayTip()
+{
+    TrayTip   
+}
+return
+```
+
+> [!TIP]
+> traytip一直不断地出现
 
 ``
 ;使用计时器进行周期性的刷新，使traytip一直不断地出现
@@ -35,12 +49,14 @@ TrayTip,  , 无标题，则内容显示不超过102个字符 , ,3        ;无标
 return
 ```
 
+> [!NOTE]
+>  仅在notepad中交换a、b键
 
-##  仅在notepad中交换a、b键
-
+```
 #IfWinActive ahk_class Notepad
 
 a::b 
 b::a
 
 #IfWinActive ;
+```
