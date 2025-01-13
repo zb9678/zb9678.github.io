@@ -4,6 +4,7 @@
 1=消息
 2=警告
 3=错误
+20=AHK
 
 ```
 v::
@@ -16,6 +17,23 @@ sleep, 1000
 TrayTip, 第4个气球提示, 确定, , 0
 ```
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.13:19:18:25.png" style="width:400px;"></p>
+
+## traytip一直不断地出现
+
+``
+;使用计时器进行周期性的刷新，使traytip一直不断地出现
+x::
+SetTimer, RefreshTrayTip7, 13000                       ; 6秒后消失(固定值)，等7秒再次出现(可调)，一直持续   RefreshTrayTip7 如有多个脚本这段文字要用不同的
+Gosub, RefreshTrayTip7                                       ; 调用一次来让它立即开始.
+return
+
+RefreshTrayTip7:    
+
+TrayTip, 有标题 , 显示内容不超过68个字符 , ,3               ; 有标题的内容文字不超过68个。 
+sleep, 6000
+TrayTip,  , 无标题，则内容显示不超过102个字符 , ,3        ;无标题  内容不超过102个字符。
+return
+```
 
 
 ##  仅在notepad中交换a、b键
