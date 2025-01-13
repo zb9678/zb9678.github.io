@@ -44,6 +44,22 @@ return
 ```
 
 > [!TIP]
+> SetTimer, HideTrayTip6, Off
+
+```
+n::
+ 	TrayTip, 标题, 内容 , , 2
+    	SetTimer, HideTrayTip6, 3000                ; HideTrayTip6 要用不同的
+ return
+
+HideTrayTip6:
+SetTimer, HideTrayTip6, Off
+TrayTip
+return
+```
+
+
+> [!TIP]
 > zz := logo
 
 ```
