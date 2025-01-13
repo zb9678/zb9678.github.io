@@ -44,6 +44,23 @@ return
 ```
 
 > [!TIP]
+> zz := logo
+
+```
+b::
+logo := 0x3                                                           ; 十六进制值 信息图标 0x1 警告图标 0x2 错误图标 0x3 
+zz := logo
+ 	TrayTip, 标题, 内容 , , %zz%                       ; %zz%  表达式代表图标选择
+
+SetTimer, HideTrayTip8, 2000                              ; HideTrayTip8  这个名称要用不同的，否则多个会出错
+	HideTrayTip8() 
+{
+    	TrayTip 
+}
+ return
+```
+
+> [!TIP]
 > traytip一直不断地出现
 
 ``
@@ -61,14 +78,3 @@ TrayTip,  , 无标题，则内容显示不超过102个字符 , ,3        ;无标
 return
 ```
 
-
-> [!NOTE]
->  仅在notepad中交换a、b键
-
-
-```
-#IfWinActive ahk_class Notepad
-a::b 
-b::a
-#IfWinActive ;
-```
