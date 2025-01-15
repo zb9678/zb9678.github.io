@@ -11,90 +11,30 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="> [!TIP]
-> 空格TAB等转换为换行  1
+> :basecamp:    获取选中文件的路径     :basecampy:
 
 ```
-F6 & 4::
-	clipboard =
-	send, ^c
-	sleep, 100
-	a = %clipboard%
-	stringreplace, out, a, ` , `n, All
-	send, %out%
-return                                                                   ;-------回车变换行即增加一行．和上面的区别：空格处也变换行　
-```
-
-> [!TIP]
-> 空格TAB等转换为换行 2
-
-```
-F6 & 4::
-    	Clipboard := ''
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, '\s', '`r`n')
-    	Send, ^v
-return  
-```
-
-> [!Note]
-> 选中 添加空行
-
-```
-F6 & 3::
-    	Clipboard := ''
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, '\R', '`r`n`r`n')
-    	Send, ^v
+ >^x::   
+send ^c
+sleep,200
+clipboard=%clipboard%
 return
-```
-。">
-<meta property="og:title" content="空格TAB等转换为换行">
+```。">
+<meta property="og:title" content="获取选中文件的路径">
 <meta property="og:description" content="> [!TIP]
-> 空格TAB等转换为换行  1
+> :basecamp:    获取选中文件的路径     :basecampy:
 
 ```
-F6 & 4::
-	clipboard =
-	send, ^c
-	sleep, 100
-	a = %clipboard%
-	stringreplace, out, a, ` , `n, All
-	send, %out%
-return                                                                   ;-------回车变换行即增加一行．和上面的区别：空格处也变换行　
-```
-
-> [!TIP]
-> 空格TAB等转换为换行 2
-
-```
-F6 & 4::
-    	Clipboard := ''
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, '\s', '`r`n')
-    	Send, ^v
-return  
-```
-
-> [!Note]
-> 选中 添加空行
-
-```
-F6 & 3::
-    	Clipboard := ''
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, '\R', '`r`n`r`n')
-    	Send, ^v
+ >^x::   
+send ^c
+sleep,200
+clipboard=%clipboard%
 return
-```
-。">
+```。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://bo.zb9.us.kg/post/kong-ge-TAB-deng-zhuan-huan-wei-huan-xing.html">
+<meta property="og:url" content="https://bo.zb9.us.kg/post/huo-qu-xuan-zhong-wen-jian-de-lu-jing.html">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
-<title>空格TAB等转换为换行</title>
+<title>获取选中文件的路径</title>
 
 
 
@@ -131,13 +71,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     font-size: 12px;
 }
 </style>
-<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
 
 
 
 <body>
     <div id="header">
-<h1 class="postTitle">空格TAB等转换为换行</h1>
+<h1 class="postTitle">获取选中文件的路径</h1>
 <div class="title-right">
     <a href="https://bo.zb9.us.kg" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -145,7 +85,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/zb9678/zb9678.github.io/issues/146" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/147" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -161,35 +101,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>空格TAB等转换为换行  1</p>
+<div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><img class="emoji" title=":basecamp:" alt=":basecamp:" src="https://github.githubassets.com/images/icons/emoji/basecamp.png" height="20" width="20" align="absmiddle">    获取选中文件的路径     <img class="emoji" title=":basecampy:" alt=":basecampy:" src="https://github.githubassets.com/images/icons/emoji/basecampy.png" height="20" width="20" align="absmiddle"></p>
 </div>
-<pre class="notranslate"><code class="notranslate">F6 &amp; 4::
-	clipboard =
-	send, ^c
-	sleep, 100
-	a = %clipboard%
-	stringreplace, out, a, ` , `n, All
-	send, %out%
-return                                                                   ;-------回车变换行即增加一行．和上面的区别：空格处也变换行　
-</code></pre>
-<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>空格TAB等转换为换行 2</p>
-</div>
-<pre class="notranslate"><code class="notranslate">F6 &amp; 4::
-    	Clipboard := ""
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, "\s", "`r`n")
-    	Send, ^v
-return  
-</code></pre>
-<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>选中 添加空行</p>
-</div>
-<pre class="notranslate"><code class="notranslate">F6 &amp; 3::
-    	Clipboard := ""
-    	Send, ^c
-    	ClipWait
-    	Clipboard := RegExReplace(Clipboard, "\R", "`r`n`r`n")
-    	Send, ^v
+<pre class="notranslate"><code class="notranslate"> &gt;^x::   
+send ^c
+sleep,200
+clipboard=%clipboard%
 return
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
