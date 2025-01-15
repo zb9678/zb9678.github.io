@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 15 Jan 2025 07:24:48 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>右键属性</title><link>https://bo.zb9.us.kg/post/you-jian-shu-xing.html</link><description>&gt; [!TIP]&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 15 Jan 2025 07:32:14 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>右键属性 显示扩展名 显隐文件</title><link>https://bo.zb9.us.kg/post/you-jian-shu-xing-%20-xian-shi-kuo-zhan-ming-%20-xian-yin-wen-jian.html</link><description>&gt; [!TIP]&#13;
 &gt; 右键属性&#13;
 &#13;
 F1 &amp; y::&#13;
@@ -46,7 +46,7 @@ RegWrite, REG_DWORD, HKEY_CURRENT_USER,Software\Microsoft\Windows\CurrentVersion
 &#13;
 &#13;
 &#13;
-。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/you-jian-shu-xing.html</guid><pubDate>Wed, 15 Jan 2025 07:22:50 +0000</pubDate></item><item><title>LTrim</title><link>https://bo.zb9.us.kg/post/LTrim.html</link><description>&gt; [!TIP]&#13;
+。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/you-jian-shu-xing-%20-xian-shi-kuo-zhan-ming-%20-xian-yin-wen-jian.html</guid><pubDate>Wed, 15 Jan 2025 07:22:50 +0000</pubDate></item><item><title>LTrim</title><link>https://bo.zb9.us.kg/post/LTrim.html</link><description>&gt; [!TIP]&#13;
 &gt; LTrim&#13;
 &#13;
 ​```&#13;
