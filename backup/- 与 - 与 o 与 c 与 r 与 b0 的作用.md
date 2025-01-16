@@ -46,6 +46,28 @@
 :c:Gu::xxx   只有输入的是是Gu才能输出xxx　　gu　GU　gU　　都无法输出xxx
 ```
 
+### 例如
+
+```
+:C:BTW::  ; 输入所有大写字母.
+:C:Btw::  ; 只有第一个字母输入大写字母.
+: :btw::  ; 输入任何其他组合.
+    case_conform_btw() {
+        hs := A_ThisHotkey  ; 为了方便, 以防被打断.
+        if (hs == ":C:BTW")
+            Send BY THE WAY
+        else if (hs == ":C:Btw")
+            Send By the way
+        else
+            Send by the way
+    }
+
+3种输出结果
+btw               by the way
+BTW             BY THE WAY
+Btw               By the way
+```
+
 > [!TIP]
 >    r 的作用
 
