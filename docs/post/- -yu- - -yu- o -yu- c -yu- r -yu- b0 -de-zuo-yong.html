@@ -125,7 +125,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 <ul>
 <li>自动输出   （区别于 o）<br>
-- - 去除 ā 后的空格</li>
+- - 去除 ā 后的空格<br>
+- 除非使用了 * 否则您必须在热字串的缩写后输入 终止符 才能触发它. 终止符最开始由以下内容组成:   -  (  )  [  ]  {  }   '  :  ;  "  /  \  ,  .  ?  !   <code class="notranslate">n   </code>t</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">:*:a9::ā    无需空格 ā          ya9      只能单独使用，前面有y就不能变为 ā
 :*?:a7::ā   无需空格 ā          yā       前面有y没关系。
