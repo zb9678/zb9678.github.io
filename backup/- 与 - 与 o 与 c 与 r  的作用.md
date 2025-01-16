@@ -36,3 +36,12 @@
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.16:14:43:21.png" style="width:400px;"></p>
 
 <p align='center'><img src="https://ing.w07.us.kg/images/20250116142301.png" style='width:400px;'><br><br>
+
+> [!TIP]
+>    c 的作用
+
+- 输入时需要区分大小写
+
+```
+:c:Gu::xxx   只有输入的是是Gu才能输出xxx　　gu　GU　gU　　都无法输出xxx
+```
