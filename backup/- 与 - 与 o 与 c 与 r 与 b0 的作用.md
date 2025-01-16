@@ -45,3 +45,29 @@
 ```
 :c:Gu::xxx   只有输入的是是Gu才能输出xxx　　gu　GU　gU　　都无法输出xxx
 ```
+
+> [!TIP]
+>    r 的作用
+
+-  原样输出，禁止转义
+
+```
+　:r:dc::{enter}　输入dc 原样输出 {enter} 　而不会转义成 回车
+```
+
+> [!TIP]
+>    b0 的作用
+
+- 在输入内容 <ll> 后添加 :: 后的内容 </ll>
+  - - 注意，不是b，是 b0
+
+```
+:b0:<ll>::</ll>{left 5}           <ll>  </ll>
+ :b:<li>::</li>{left 5}
+ </li>
+:ob0:<ll>::</ll>{left 5}           <ll></ll>
+ :ob:<li>::</li>{left 5}             
+</li>
+```
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.16:15:02:16.png" style="width:400px;"></p>
