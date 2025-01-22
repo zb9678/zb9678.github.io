@@ -10,321 +10,77 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## 批量复制粘贴工具
-
-<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.22:19:08:13.png' style='width:400px;'></p>
+<meta name="description" content="## 限制单进程运行
 
 ```
-global MyClipData
-global page
-*>!q:: 批量复制粘贴工具()
-	#IfWinExist, 批量复制粘贴工具 ahk_class AutoHotkeyGUI
-$^c::
-	Clipboard:=''
-	Send ^c{Ctrl Up}
-	ClipWait, 3
-	s:=Clipboard
-	if (s='')
-	ToolTip,
-else
-	批量复制粘贴工具(s)
-	return
-1::
-	nume:=1
-	Gosub copytt(nume)
-	return
-2::
-	nume:=2
-	Gosub copytt(nume)
-	return
-3::
-	nume:=3
-	Gosub copytt(nume)
-	return
-4::
-	nume:=4
-	Gosub copytt(nume)
-	return
-5::
-	nume:=5
-	Gosub copytt(nume)
-	return
-6::
-	nume:=6
-	Gosub copytt(nume)
-	return
-7::
-	nume:=7
-	Gosub copytt(nume)
-	return
-8::
-	nume:=8
-	Gosub copytt(nume)
-	return
-9::
-	nume:=9
-	Gosub copytt(nume)
-	return
-copytt(nume):
-{
-	i:=nume
-	Clipboard:=MyClipData[i:=(page-1)*10+i]
-	Send ^v
-	return
-}
-0::
-	nume1:=0
-	Gosub copytt(nume1)
-	return
-copytt(nume1):
-{
-	i:=nume1
-	Clipboard:=MyClipData[i:=(page-1)*10+10+i]
-	Send ^v
-	return
-}
-#IfWinExist
-;-------- 下面是函数 --------
-批量复制粘贴工具(s:='', Cmd:='')
-{
-static
-  	if (Cmd='Move')
-{
-	if (A_GuiControl='')
-	SendMessage, 0xA1, 2
-	return
-}
-else if (Cmd='Click')
-{
-    	i:=SubStr(A_GuiControl, 3)
-    	if (i>=1 and i<=10)
-{
-      	s:=MyClipData[i:=(page-1)*10+i]
-      	if (s='')
-        	return
-      	if (!clear)
-{
-       	; Gui, MyClip: Hide
-        	; Gui, MyClip: Show, NA
-        	Clipboard:=s
-        	Send ^v
-        	Sleep, 200
-        	return
-}
-      	MyClipData.RemoveAt(i)
-      	if (MyClipData.length()<(page-1)*10+1)
-        	page--
-}
-else if (i=11 and page>1)
-	page--
-else if (i=13 and MyClipData.length()>page*10)
-	page++
-else if (i=12)
-      	clear:=!clear
-}
-else if (Cmd='' and s!='')
-{
-    	MyClipData.InsertAt(1,s), page:=1, clear:=0
-}
- 	 if !IsObject(MyClipData)
-{
-    MyClipData:=[], page:=1, clear:=0
-    Run:=Func(A_ThisFunc).Bind('','Click')
-    Gui, MyClip: Destroy
-    Gui, MyClip: +AlwaysOnTop +ToolWindow +E0x08000000
-    Gui, MyClip: Margin, 10, 10
-    Gui, MyClip: Color, f39bdc8
-    Gui, MyClip: Font, s11,c364f6b
-    Loop, 13
-    {
-      i:=A_Index, v:=(i=11 ? '<<' : i=13 ? '>>' : '')
-      j:=(i=1 ? 'w250 Left' : i=11 ? 'xm w75'
-        : i=12 ? 'x+0 w100' : i=13 ? 'x+0 w75' : 'y+0 wp Left')
-      Gui, MyClip: Add, Button, %j% vbt%i% Hwndid -Wrap, %v%
-      GuiControl, MyClip: +g, %id%, % Run
-    }
-    Gui, MyClip: Show, NA, %A_ThisFunc%
-    OnMessage(0x201, Func(A_ThisFunc).Bind('','Move'))
-    v:=Func(A_ThisFunc).Bind('','')
-    Menu, Tray, Add
-    Menu, Tray, Add, %A_ThisFunc%, %v%
-    Menu, Tray, Default, %A_ThisFunc%
-    Menu, Tray, Click, 1
-  }
-  Loop, 10
-  {    Menu, Tray, Click, 1
-
-    i:=A_Index, v:=MyClipData[(page-1)*10+i]
-    v:=(v='' ? v : '[' StrLen(v) '] ' SubStr(v,1,50))
-    v:=RegExReplace(v, 's+', ' ')
-    GuiControl, MyClip: , bt%i%, %v%
-  }
-  GuiControl, MyClip: , bt12, % clear ? '点选条目':'+删除条目+'
-  Gui, MyClip: Show, NA
-}
+#SingleInstance Off
+;MsgBox, 4096,, % A_Now
 return
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ art+q 批量复制粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 4-212
-```。">
-<meta property="og:title" content="批量复制粘贴工具">
-<meta property="og:description" content="## 批量复制粘贴工具
 
-<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.22:19:08:13.png' style='width:400px;'></p>
+	OnlyOne(flag='') 
+  {
+  	static init:=OnlyOne('001')
+  	DetectHiddenWindows, % (bak:=A_DetectHiddenWindows) ? 'On':'On'
+  	mypid:=DllCall('GetCurrentProcessId')
+  	flag:='Ahk_OnlyOne_Ahk<<' . flag . '>>'
+  	Gui, Ahk_OnlyOne_Ahk: Show, Hide, %flag%
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	Loop, % list
+  	IfWinExist, % 'ahk_id ' . list%A_Index%
+  {
+    	WinGet, pid, PID
+    	IfEqual, pid, %mypid%, Continue
+   	 WinClose, ahk_pid %pid% ahk_class AutoHotkey,, 3
+    	IfWinNotExist,,, Continue
+    	Process, Close, %pid%
+    	WinWaitClose
+  }
+
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	IfNotEqual, list, 1, ExitApp
+  	DetectHiddenWindows, %bak%
+  }
+
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   限制单进程运行    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 3-64
+``。">
+<meta property="og:title" content="限制单进程运行">
+<meta property="og:description" content="## 限制单进程运行
 
 ```
-global MyClipData
-global page
-*>!q:: 批量复制粘贴工具()
-	#IfWinExist, 批量复制粘贴工具 ahk_class AutoHotkeyGUI
-$^c::
-	Clipboard:=''
-	Send ^c{Ctrl Up}
-	ClipWait, 3
-	s:=Clipboard
-	if (s='')
-	ToolTip,
-else
-	批量复制粘贴工具(s)
-	return
-1::
-	nume:=1
-	Gosub copytt(nume)
-	return
-2::
-	nume:=2
-	Gosub copytt(nume)
-	return
-3::
-	nume:=3
-	Gosub copytt(nume)
-	return
-4::
-	nume:=4
-	Gosub copytt(nume)
-	return
-5::
-	nume:=5
-	Gosub copytt(nume)
-	return
-6::
-	nume:=6
-	Gosub copytt(nume)
-	return
-7::
-	nume:=7
-	Gosub copytt(nume)
-	return
-8::
-	nume:=8
-	Gosub copytt(nume)
-	return
-9::
-	nume:=9
-	Gosub copytt(nume)
-	return
-copytt(nume):
-{
-	i:=nume
-	Clipboard:=MyClipData[i:=(page-1)*10+i]
-	Send ^v
-	return
-}
-0::
-	nume1:=0
-	Gosub copytt(nume1)
-	return
-copytt(nume1):
-{
-	i:=nume1
-	Clipboard:=MyClipData[i:=(page-1)*10+10+i]
-	Send ^v
-	return
-}
-#IfWinExist
-;-------- 下面是函数 --------
-批量复制粘贴工具(s:='', Cmd:='')
-{
-static
-  	if (Cmd='Move')
-{
-	if (A_GuiControl='')
-	SendMessage, 0xA1, 2
-	return
-}
-else if (Cmd='Click')
-{
-    	i:=SubStr(A_GuiControl, 3)
-    	if (i>=1 and i<=10)
-{
-      	s:=MyClipData[i:=(page-1)*10+i]
-      	if (s='')
-        	return
-      	if (!clear)
-{
-       	; Gui, MyClip: Hide
-        	; Gui, MyClip: Show, NA
-        	Clipboard:=s
-        	Send ^v
-        	Sleep, 200
-        	return
-}
-      	MyClipData.RemoveAt(i)
-      	if (MyClipData.length()<(page-1)*10+1)
-        	page--
-}
-else if (i=11 and page>1)
-	page--
-else if (i=13 and MyClipData.length()>page*10)
-	page++
-else if (i=12)
-      	clear:=!clear
-}
-else if (Cmd='' and s!='')
-{
-    	MyClipData.InsertAt(1,s), page:=1, clear:=0
-}
- 	 if !IsObject(MyClipData)
-{
-    MyClipData:=[], page:=1, clear:=0
-    Run:=Func(A_ThisFunc).Bind('','Click')
-    Gui, MyClip: Destroy
-    Gui, MyClip: +AlwaysOnTop +ToolWindow +E0x08000000
-    Gui, MyClip: Margin, 10, 10
-    Gui, MyClip: Color, f39bdc8
-    Gui, MyClip: Font, s11,c364f6b
-    Loop, 13
-    {
-      i:=A_Index, v:=(i=11 ? '<<' : i=13 ? '>>' : '')
-      j:=(i=1 ? 'w250 Left' : i=11 ? 'xm w75'
-        : i=12 ? 'x+0 w100' : i=13 ? 'x+0 w75' : 'y+0 wp Left')
-      Gui, MyClip: Add, Button, %j% vbt%i% Hwndid -Wrap, %v%
-      GuiControl, MyClip: +g, %id%, % Run
-    }
-    Gui, MyClip: Show, NA, %A_ThisFunc%
-    OnMessage(0x201, Func(A_ThisFunc).Bind('','Move'))
-    v:=Func(A_ThisFunc).Bind('','')
-    Menu, Tray, Add
-    Menu, Tray, Add, %A_ThisFunc%, %v%
-    Menu, Tray, Default, %A_ThisFunc%
-    Menu, Tray, Click, 1
-  }
-  Loop, 10
-  {    Menu, Tray, Click, 1
-
-    i:=A_Index, v:=MyClipData[(page-1)*10+i]
-    v:=(v='' ? v : '[' StrLen(v) '] ' SubStr(v,1,50))
-    v:=RegExReplace(v, 's+', ' ')
-    GuiControl, MyClip: , bt%i%, %v%
-  }
-  GuiControl, MyClip: , bt12, % clear ? '点选条目':'+删除条目+'
-  Gui, MyClip: Show, NA
-}
+#SingleInstance Off
+;MsgBox, 4096,, % A_Now
 return
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ art+q 批量复制粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 4-212
-```。">
+
+	OnlyOne(flag='') 
+  {
+  	static init:=OnlyOne('001')
+  	DetectHiddenWindows, % (bak:=A_DetectHiddenWindows) ? 'On':'On'
+  	mypid:=DllCall('GetCurrentProcessId')
+  	flag:='Ahk_OnlyOne_Ahk<<' . flag . '>>'
+  	Gui, Ahk_OnlyOne_Ahk: Show, Hide, %flag%
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	Loop, % list
+  	IfWinExist, % 'ahk_id ' . list%A_Index%
+  {
+    	WinGet, pid, PID
+    	IfEqual, pid, %mypid%, Continue
+   	 WinClose, ahk_pid %pid% ahk_class AutoHotkey,, 3
+    	IfWinNotExist,,, Continue
+    	Process, Close, %pid%
+    	WinWaitClose
+  }
+
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	IfNotEqual, list, 1, ExitApp
+  	DetectHiddenWindows, %bak%
+  }
+
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   限制单进程运行    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 3-64
+``。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://bo.zb9.us.kg/post/pi-liang-fu-zhi-zhan-tie-gong-ju.html">
+<meta property="og:url" content="https://bo.zb9.us.kg/post/xian-zhi-dan-jin-cheng-yun-xing.html">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
-<title>批量复制粘贴工具</title>
+<title>限制单进程运行</title>
 
 
 
@@ -367,7 +123,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">批量复制粘贴工具</h1>
+<h1 class="postTitle">限制单进程运行</h1>
 <div class="title-right">
     <a href="https://bo.zb9.us.kg" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -375,7 +131,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/zb9678/zb9678.github.io/issues/155" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/156" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -391,157 +147,37 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>批量复制粘贴工具</h2>
-<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/29b4ba8bbf913c305073bb0e4b9af83a8b0c8813aa80ce90b44ae28a5347b576/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30312e32323a31393a30383a31332e706e67"><img src="https://camo.githubusercontent.com/29b4ba8bbf913c305073bb0e4b9af83a8b0c8813aa80ce90b44ae28a5347b576/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30312e32323a31393a30383a31332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.22:19:08:13.png" style="max-width: 100%;"></a></p>
-<pre class="notranslate"><code class="notranslate">global MyClipData
-global page
-*&gt;!q:: 批量复制粘贴工具()
-	#IfWinExist, 批量复制粘贴工具 ahk_class AutoHotkeyGUI
-$^c::
-	Clipboard:=""
-	Send ^c{Ctrl Up}
-	ClipWait, 3
-	s:=Clipboard
-	if (s="")
-	ToolTip,
-else
-	批量复制粘贴工具(s)
-	return
-1::
-	nume:=1
-	Gosub copytt(nume)
-	return
-2::
-	nume:=2
-	Gosub copytt(nume)
-	return
-3::
-	nume:=3
-	Gosub copytt(nume)
-	return
-4::
-	nume:=4
-	Gosub copytt(nume)
-	return
-5::
-	nume:=5
-	Gosub copytt(nume)
-	return
-6::
-	nume:=6
-	Gosub copytt(nume)
-	return
-7::
-	nume:=7
-	Gosub copytt(nume)
-	return
-8::
-	nume:=8
-	Gosub copytt(nume)
-	return
-9::
-	nume:=9
-	Gosub copytt(nume)
-	return
-copytt(nume):
-{
-	i:=nume
-	Clipboard:=MyClipData[i:=(page-1)*10+i]
-	Send ^v
-	return
-}
-0::
-	nume1:=0
-	Gosub copytt(nume1)
-	return
-copytt(nume1):
-{
-	i:=nume1
-	Clipboard:=MyClipData[i:=(page-1)*10+10+i]
-	Send ^v
-	return
-}
-#IfWinExist
-;-------- 下面是函数 --------
-批量复制粘贴工具(s:="", Cmd:="")
-{
-static
-  	if (Cmd="Move")
-{
-	if (A_GuiControl="")
-	SendMessage, 0xA1, 2
-	return
-}
-else if (Cmd="Click")
-{
-    	i:=SubStr(A_GuiControl, 3)
-    	if (i&gt;=1 and i&lt;=10)
-{
-      	s:=MyClipData[i:=(page-1)*10+i]
-      	if (s="")
-        	return
-      	if (!clear)
-{
-       	; Gui, MyClip: Hide
-        	; Gui, MyClip: Show, NA
-        	Clipboard:=s
-        	Send ^v
-        	Sleep, 200
-        	return
-}
-      	MyClipData.RemoveAt(i)
-      	if (MyClipData.length()&lt;(page-1)*10+1)
-        	page--
-}
-else if (i=11 and page&gt;1)
-	page--
-else if (i=13 and MyClipData.length()&gt;page*10)
-	page++
-else if (i=12)
-      	clear:=!clear
-}
-else if (Cmd="" and s!="")
-{
-    	MyClipData.InsertAt(1,s), page:=1, clear:=0
-}
- 	 if !IsObject(MyClipData)
-{
-    MyClipData:=[], page:=1, clear:=0
-    Run:=Func(A_ThisFunc).Bind("","Click")
-    Gui, MyClip: Destroy
-    Gui, MyClip: +AlwaysOnTop +ToolWindow +E0x08000000
-    Gui, MyClip: Margin, 10, 10
-    Gui, MyClip: Color, f39bdc8
-    Gui, MyClip: Font, s11,c364f6b
-    Loop, 13
-    {
-      i:=A_Index, v:=(i=11 ? "&lt;&lt;" : i=13 ? "&gt;&gt;" : "")
-      j:=(i=1 ? "w250 Left" : i=11 ? "xm w75"
-        : i=12 ? "x+0 w100" : i=13 ? "x+0 w75" : "y+0 wp Left")
-      Gui, MyClip: Add, Button, %j% vbt%i% Hwndid -Wrap, %v%
-      GuiControl, MyClip: +g, %id%, % Run
-    }
-    Gui, MyClip: Show, NA, %A_ThisFunc%
-    OnMessage(0x201, Func(A_ThisFunc).Bind("","Move"))
-    v:=Func(A_ThisFunc).Bind("","")
-    Menu, Tray, Add
-    Menu, Tray, Add, %A_ThisFunc%, %v%
-    Menu, Tray, Default, %A_ThisFunc%
-    Menu, Tray, Click, 1
-  }
-  Loop, 10
-  {    Menu, Tray, Click, 1
-
-    i:=A_Index, v:=MyClipData[(page-1)*10+i]
-    v:=(v="" ? v : "[" StrLen(v) "] " SubStr(v,1,50))
-    v:=RegExReplace(v, "s+", " ")
-    GuiControl, MyClip: , bt%i%, %v%
-  }
-  GuiControl, MyClip: , bt12, % clear ? "点选条目":"+删除条目+"
-  Gui, MyClip: Show, NA
-}
+<div class="markdown-body" id="postBody"><h2>限制单进程运行</h2>
+<pre class="notranslate"><code class="notranslate">#SingleInstance Off
+;MsgBox, 4096,, % A_Now
 return
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ art+q 批量复制粘贴   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 4-212
+
+	OnlyOne(flag="") 
+  {
+  	static init:=OnlyOne("001")
+  	DetectHiddenWindows, % (bak:=A_DetectHiddenWindows) ? "On":"On"
+  	mypid:=DllCall("GetCurrentProcessId")
+  	flag:="Ahk_OnlyOne_Ahk&lt;&lt;" . flag . "&gt;&gt;"
+  	Gui, Ahk_OnlyOne_Ahk: Show, Hide, %flag%
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	Loop, % list
+  	IfWinExist, % "ahk_id " . list%A_Index%
+  {
+    	WinGet, pid, PID
+    	IfEqual, pid, %mypid%, Continue
+   	 WinClose, ahk_pid %pid% ahk_class AutoHotkey,, 3
+    	IfWinNotExist,,, Continue
+    	Process, Close, %pid%
+    	WinWaitClose
+  }
+
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	IfNotEqual, list, 1, ExitApp
+  	DetectHiddenWindows, %bak%
+  }
+
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   限制单进程运行    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 3-64
+``
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 

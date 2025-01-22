@@ -1,5 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 22 Jan 2025 11:10:13 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>批量复制粘贴工具</title><link>https://bo.zb9.us.kg/post/pi-liang-fu-zhi-zhan-tie-gong-ju.html</link><description>## 批量复制粘贴工具
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 22 Jan 2025 11:22:40 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>限制单进程运行</title><link>https://bo.zb9.us.kg/post/xian-zhi-dan-jin-cheng-yun-xing.html</link><description>## 限制单进程运行
+
+```
+#SingleInstance Off
+;MsgBox, 4096,, % A_Now
+return
+
+	OnlyOne(flag='') 
+  {
+  	static init:=OnlyOne('001')
+  	DetectHiddenWindows, % (bak:=A_DetectHiddenWindows) ? 'On':'On'
+  	mypid:=DllCall('GetCurrentProcessId')
+  	flag:='Ahk_OnlyOne_Ahk&lt;&lt;' . flag . '&gt;&gt;'
+  	Gui, Ahk_OnlyOne_Ahk: Show, Hide, %flag%
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	Loop, % list
+  	IfWinExist, % 'ahk_id ' . list%A_Index%
+  {
+    	WinGet, pid, PID
+    	IfEqual, pid, %mypid%, Continue
+   	 WinClose, ahk_pid %pid% ahk_class AutoHotkey,, 3
+    	IfWinNotExist,,, Continue
+    	Process, Close, %pid%
+    	WinWaitClose
+  }
+
+  	WinGet, list, List, %flag% ahk_class AutoHotkeyGUI
+  	IfNotEqual, list, 1, ExitApp
+  	DetectHiddenWindows, %bak%
+  }
+
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   限制单进程运行    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 3-64
+``。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/xian-zhi-dan-jin-cheng-yun-xing.html</guid><pubDate>Wed, 22 Jan 2025 11:09:44 +0000</pubDate></item><item><title>批量复制粘贴工具</title><link>https://bo.zb9.us.kg/post/pi-liang-fu-zhi-zhan-tie-gong-ju.html</link><description>## 批量复制粘贴工具
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.22:19:08:13.png' style='width:400px;'&gt;&lt;/p&gt;
 
 ```
 global MyClipData
