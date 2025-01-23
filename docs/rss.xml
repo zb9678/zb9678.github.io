@@ -1,5 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Thu, 23 Jan 2025 07:55:53 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>你可能没有适当的权限访问该项目</title><link>https://bo.zb9.us.kg/post/ni-ke-neng-mei-you-shi-dang-de-quan-xian-fang-wen-gai-xiang-mu.html</link><description>##  运行时显示
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Thu, 23 Jan 2025 08:12:58 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>洋葱</title><link>https://bo.zb9.us.kg/post/yang-cong.html</link><description>##  洋葱
+
+- 下载(下载 Tor 浏览器)  
+- 网桥（获取网桥）
+-  https://bridges.torproject.org/
+- 
+obfs4 91.134.80.41:59987 ACBB6AD034A3C0712265F1BFEC9F27D33B7EFC20 cert=GjxluYzjUz3H1aPRnwncHk46UYhFXvWjn4SA1wwFTfIAFVuBsfsvuZA5KlUi4obxcSaeIQ iat-mode=0
+obfs4 57.128.68.206:12069 3D31D10FFF77231A352CA982BD373ED9235FD769 cert=xPPp3sNp0xVeoxF+SL7ixf7cefyotL7eBCgPctKyqosvDZMKD2TvvEccUcR5IFkJyM4qFQ iat-mode=0
+=========================================================
+obfs4 37.59.26.110:19706 A633763DAE52CB625D5D2C61C719449C2AB510F2 cert=LvggKZHapvNlZPI7GN19q8OWBMuYtxkRnpvwjEfGI2rh14Vp4UsZnnzJa1dftIRgct4tNA iat-mode=0
+obfs4 15.235.48.110:6241 16AE419DBE20765A30E27008E1359DBDBAD260E1 cert=gRpsUldyaLSeBI51nMWcu55dwdD8YJ0N6DQJZxugFS995I+c24PtAaJVy1sfc+fnTvZcGQ iat-mode=0
+=========================================================
+obfs4 15.235.48.110:6241 16AE419DBE20765A30E27008E1359DBDBAD260E1 cert=gRpsUldyaLSeBI51nMWcu55dwdD8YJ0N6DQJZxugFS995I+c24PtAaJVy1sfc+fnTvZcGQ iat-mode=0
+obfs4 37.59.26.110:19706 A633763DAE52CB625D5D2C61C719449C2AB510F2 cert=LvggKZHapvNlZPI7GN19q8OWBMuYtxkRnpvwjEfGI2rh14Vp4UsZnnzJa1dftIRgct4tNA iat-mode=0
+=========================================================
+obfs4 90.50.90.165:9003 1A399F6F1E18A134D33788FA2D2600425858570D cert=rIvJbVTm3dvy+I5Iy0EJGcFiTc5l8PX1GnUx1ntuxzXkG41DQupda++kDyisSx9xvur2TA iat-mode=0
+obfs4 87.197.128.98:9292 AE6BA15179AEEF64A0F543BEB7FA1BE2E91A93CF cert=t36bkZYMFJyJzTN1HYyh5LzAK/R81GAAH2Q7N3P9qLt5Jd0g7qDvWPIKTurxO2t7XzxSQA iat-mode=0
+=========================================================
+obfs4 15.235.48.110:6241 16AE419DBE20765A30E27008E1359DBDBAD260E1 cert=gRpsUldyaLSeBI51nMWcu55dwdD8YJ0N6DQJZxugFS995I+c24PtAaJVy1sfc+fnTvZcGQ iat-mode=0
+obfs4 37.59.26.110:19706 A633763DAE52CB625D5D2C61C719449C2AB510F2 cert=LvggKZHapvNlZPI7GN19q8OWBMuYtxkRnpvwjEfGI2rh14Vp4UsZnnzJa1dftIRgct4tNA iat-mode=0
+=========================================================。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/yang-cong.html</guid><pubDate>Thu, 23 Jan 2025 08:07:12 +0000</pubDate></item><item><title>你可能没有适当的权限访问该项目</title><link>https://bo.zb9.us.kg/post/ni-ke-neng-mei-you-shi-dang-de-quan-xian-fang-wen-gai-xiang-mu.html</link><description>##  运行时显示
 - Windows 无法访问指定设备、路径或文件。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/ni-ke-neng-mei-you-shi-dang-de-quan-xian-fang-wen-gai-xiang-mu.html</guid><pubDate>Thu, 23 Jan 2025 07:48:13 +0000</pubDate></item><item><title>打开 EmEditor</title><link>https://bo.zb9.us.kg/post/da-kai-%20EmEditor.html</link><description>## 打开 EmEditor
 
 ```
