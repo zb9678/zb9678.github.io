@@ -25,4 +25,52 @@ iDhO9tkWnKyAg7AqRxHviCUZ7L3VeK8filQ7Kut2w
 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8
 ```
 
+## 第三方
+
+DockerHub
+代理 api 接口：hub-dk.fjy.zone 
+
+docker pull hub-dk.fjy.zone/library/nginx
+为防止滥用，如需密码请添加主页群组
+
+Gemini
+官方 api 接口：https://generativelanguage.googleapis.com
+
+代理 api 接口：https://api-gm.fjy.zone 点击复制
+
+ChatGPT
+官方 api 接口：https://api.openai.com
+
+代理 api 接口：https://api-gpt.fjy.zone 点击复制
+
+Telegram
+官方 api 接口：https://api.telegram.org
+
+代理 api 接口：https://api-tg.fjy.zone 点击复制
+
+Github Proxy
+api 接口地址：https://api-ghp.fjy.zone 点击复制
+
+Gravatar
+官方 api 接口：https://www.gravatar.com
+
+代理 api 接口：https://api-gravatar.fjy.zone 
+-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
+
+## 申请API KEY  Gemini
+https://aistudio.google.com/
+
+AIzaSyClaOulZvUcsimDRH5_2VVa03Q49F9Vxbsh
+AIzaSyD9iwJJcXEDQ7OPcnGHnWw4tYyQyquwf-gk
+AIzaSyDKqmnzO4JVymehv62X_6OdrReIBjP2zDwf
+AIzaSyC7qNz7yd4g-He60QwPbtC_6UQJEWRRcjAh
+AIzaSyDV_L6qR9tbu0ocqy8MdNM3xh16BXWlS-Uy
+AIzaSyA6BrVw_hgyZw2aGiNkVBP7hPi-fLl2u0Ek
+AIzaSyCaqku0koSSuWkFAIyw0vtVgEKI2sQ-wQws
+AIzaSyDR9SCl5dB8_8gpSGGhaWw8dCiw6tqof8gu
+
+-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
+
+## 
+
 
