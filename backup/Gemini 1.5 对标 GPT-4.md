@@ -19,6 +19,9 @@ CF中设置  CNAME  cname-china.vercel-dns.com
 
 CF中设置  SSL  自定义SSL  完全
 
+cname.vercel-dns.com 是 Vercel 全球 CDN 的通用域名。
+cname-china.vercel-dns.com 是 Vercel 为中国大陆用户提供的 CDN 加速专用域名。
+
 
 ## Lobechat 设置
 
