@@ -1,5 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sat, 25 Jan 2025 07:59:10 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>Gemini 1.5 对标 GPT-4</title><link>https://bo.zb9.us.kg/post/Gemini%201.5%20-dui-biao-%20GPT-4.html</link><description>## Gemini对标GPT
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sat, 25 Jan 2025 15:29:47 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>无需右键，直接对文件名进行复制粘贴</title><link>https://bo.zb9.us.kg/post/wu-xu-you-jian-%EF%BC%8C-zhi-jie-dui-wen-jian-ming-jin-xing-fu-zhi-zhan-tie.html</link><description>## 对点选文件文件夹直接复制文件名  `abc.后缀`   及  `abc `(无后缀)到剪贴板中
+
+```
+&gt;^c::                                              
+	send, {f2}^a                                            ; ------复制文件名（包含后缀）
+sleep, 10
+	send, ^c{esc} 
+sleep, 10
+	Send, {F2}                                                ; -------------触发重命名操作
+sleep, 10
+	Send, ^c{esc}                                          ;-----再一次获取无后缀文件名
+ClipWait, 1                                                           ; -------等待剪贴板内容准备好
+	return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^c 复制文件名 有后缀和无后缀  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 06-369
+```
+
+## 对选中文件直接粘贴剪贴板中内容
+
+```
+ &gt;^v::
+	send, {F2}
+	sleep, 20
+	send, {ctrl down}v{ctrl up}{enter}
+	return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  &gt;^v 对文件夹文件粘贴文件名  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 07-306
+```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/wu-xu-you-jian-%EF%BC%8C-zhi-jie-dui-wen-jian-ming-jin-xing-fu-zhi-zhan-tie.html</guid><pubDate>Sat, 25 Jan 2025 15:22:40 +0000</pubDate></item><item><title>Gemini 1.5 对标 GPT-4</title><link>https://bo.zb9.us.kg/post/Gemini%201.5%20-dui-biao-%20GPT-4.html</link><description>## Gemini对标GPT
 
 ```
 Gemini 1.5 对标 GPT-4
