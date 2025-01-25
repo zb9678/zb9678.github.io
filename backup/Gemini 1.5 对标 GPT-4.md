@@ -1,3 +1,14 @@
+## Gemini对标GPT
+
+```
+Gemini 1.5 对标 GPT-4
+Gemini 1.5 pro 对标 GPT-4o                       2次/分钟 50次/每天
+Gemini 1.5 Flash 对标 GPT-4o-mini            15次/分钟 1500次/每天
+gemini-2.0-flash-exp 对标 GPT-o1-mini     10次/分钟 1500次/每天 
+Gemini Experimental 1206 对标 GPT o1
+```
+===================================
+
 ## vercel  绑定自定义域  Lobechat
 
 - https://vercel.com/zcr07s-projects/lobchat/settings/domains
@@ -10,7 +21,6 @@ CF中设置  SSL  自定义SSL  完全
 
 
 ## Lobechat 设置
-
 
 ```
 sk-yNdE8YSAKoGiEd6KB36e2c85709443448bB61f12Da62B5D06
@@ -71,6 +81,58 @@ AIzaSyDR9SCl5dB8_8gpSGGhaWw8dCiw6tqof8gu
 
 -=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
 
-## 
+## 申请API KEY   GPT
+https://github.com/popjane/free_chatgpt_api
+
+授权成功！
+API URL
+https://free.v36.cm
+API KEY
+sk-yNdE8YSAKoGiEd6KB36e2c85709443448bB61f12Da62B5D06
 
 
+## 申请API KEY  Gemini 
+
+- https://aistudio.google.com/apikey
+
+Gemini    chatbox配置
+
+https://aistudio.google.com/
+
+AIzaSyClaOulZvUcsimDRH5_2VVa03Q49F9Vxbsh
+
+==================
+
+## 欧路词典
+
+AIzaSyAgWZQprDU8S_RPDroJaGwVE6Qez70pVzEr   自定义API key
+
+https://gem.n06.us.kg/v1/chat/completions  自定义 uRL
+
+gemini-2.0-flash-exp                       模型设置
+
+确认 关闭其他引擎
+==================
+
+## 沉浸式翻译 配置
+
+chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/options.html#general
+
+/自定义 API Key/sk-yNdE8YSAKoGiEd6KB36e2c85709443448bB61f12Da62B5D06
+
+/gpt-4o-mini
+
+/展开更多自定义选项(折叠状态要打开)
+
+/自定义 API 接口地址：/https://free.v36.cm
+-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
+
+## cursor 配置
+
+AIzaSyAgWZQprDU8S_RPDroJaGwVE6Qez70pVzEr
+
+https://gem.n06.us.kg/v1  
+
+Gemini-Exp-1206
+
+==================
