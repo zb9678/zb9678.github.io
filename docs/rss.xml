@@ -1,5 +1,72 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 26 Jan 2025 08:18:32 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>Lobechat</title><link>https://bo.zb9.us.kg/post/Lobechat.html</link><description>##  Lobechat 启动脚本
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 26 Jan 2025 08:31:44 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>调节鼠标滚动行数</title><link>https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</link><description>## 每次按下对应的快捷键，即增加滚动行数2-18行
+
+```
+
+F5 &amp; esc::                                                             ; 1-5行 设置快捷键来增加或减少滚动行数
+	scrollLines++ ; 增加行数
+	scrollLines := scrollLines + 2 
+    	UpdateToolTip() ; 更新提示
+Return
+
+F5 &amp; F1::                                                              ;  1-7行
+	scrollLines++ ; 增加行数
+	scrollLines := scrollLines + 4 
+    	UpdateToolTip() ; 更新提示
+Return
+F5 &amp; F2::                                                             ; 1-9行 设置快捷键来增加或减少滚动行数
+	scrollLines++ ; 增加行数
+	scrollLines := scrollLines + 9
+    	UpdateToolTip() ; 更新提示
+Return
+F5 &amp; F3::                                                              ; 1-19行
+	scrollLines++ ; 增加行数
+	scrollLines := scrollLines + 15 
+    	UpdateToolTip() ; 更新提示
+Return
+; 鼠标滚轮向下滚动
+~WheelDown::
+    MouseGetPos, xpos, ypos
+    if (xpos &gt;= 0 &amp;&amp; xpos &lt;= 15) ; 仅屏幕左侧调整音量
+    {
+        SendInput {Volume_Down}
+    }
+    else if (scrollLines &gt; 0) ; 只有滚动行数大于 0 时才执行滚动
+    {
+        Loop, %scrollLines% ; 根据设置的行数进行循环
+        {
+            MouseClick, WheelDown ; 向下滚动
+        }
+    }
+Return
+
+~WheelUp::
+    MouseGetPos, xpos, ypos
+    if (xpos &gt;= 0 &amp;&amp; xpos &lt;= 15) ; 仅屏幕左侧调整音量
+    {
+        SendInput {Volume_Up}
+    }
+    else if (scrollLines &gt; 0) ; 只有滚动行数大于 0 时才执行滚动
+    {
+        Loop, %scrollLines% ; 根据设置的行数进行循环
+        {
+            MouseClick, WheelUp ; 向上滚动
+        }
+    }
+Return
+
+; 更新 ToolTip 显示函数
+UpdateToolTip() {
+    global scrollLines ; 使用全局变量
+    ToolTip, 当前滚动行数: %scrollLines% ; 显示当前行数
+    Sleep, 1000 ; 显示 1 秒
+    ToolTip ; 关闭提示
+}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F5 &amp;Esc增加滚动行数 F5 &amp; F1 减少 ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-3057
+```
+
+。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</guid><pubDate>Sun, 26 Jan 2025 08:20:58 +0000</pubDate></item><item><title>Lobechat</title><link>https://bo.zb9.us.kg/post/Lobechat.html</link><description>##  Lobechat 启动脚本
 
 ```
 F5 &amp; L::                                                       
