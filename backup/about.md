@@ -14,6 +14,14 @@ https://your.ls/shbhw
 
 https://paste.to/?81f876fdb2656bfc#A4iwyQ9YjTB9nG2hZdqsAVJKLDiD3x4qiL7QH1uL7Tf1
 
+### config.toml
+
+https://paste.to/?19c90ec499773b1b#FhgzeEWx8SJVRWYVtqqYMCWqirs6dEBhHd7vgXzM3zq4
+
+### config.json
+
+https://paste.to/?e663b2b79b58234f#9H1GKLtLNy9xqFH8iDJM8aoFQ7iZWAJhMwnGx55qoe7N
+
 ### 订阅
 
 https://your.ls/suu86  
