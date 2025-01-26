@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 26 Jan 2025 08:31:44 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>调节鼠标滚动行数</title><link>https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</link><description>## 每次按下对应的快捷键，即增加滚动行数2-18行
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 26 Jan 2025 15:40:48 +0000</lastBuildDate><managingEditor>琶琶啙</managingEditor><ttl>60</ttl><webMaster>琶琶啙</webMaster><item><title>调节鼠标滚动行数</title><link>https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</link><description>## 每次按下对应的快捷键，即增加滚动行数2-18行
 
 ```
 
@@ -4536,4 +4536,4 @@ cron = *  *  *  *  *  *&#13;
 安装【创建仓库】点击[通过模板创建仓库](https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai)&#13;
 &#13;
 写文章&#13;
-issues　　　右侧 `Labels` 选 `documentation`   (这个很重要)。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/gou-jian-de-guo-cheng.html</guid><pubDate>Fri, 25 Oct 2024 10:39:46 +0000</pubDate></item></channel></rss>
+issues　　　右侧 `Labels` 选 `documentation`   (这个很重要)。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/gou-jian-de-guo-cheng.html</guid><pubDate>Fri, 25 Oct 2024 10:39:46 +0000</pubDate></item><item><title>about</title><link>https://bo.zb9.us.kg/about.html</link><description>zvvvv。</description><guid isPermaLink="true">https://bo.zb9.us.kg/about.html</guid><pubDate>Sun, 26 Jan 2025 15:40:26 +0000</pubDate></item></channel></rss>
