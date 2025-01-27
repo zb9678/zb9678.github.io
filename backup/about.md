@@ -24,6 +24,12 @@ https://paste.to/
 
 -  https://github.com/zyy200712/zyy200712.github.io
 
+## Blogger
+
+-  https://www.blogger.com/blog/posts/6092320546852585844
+
+-  https://www.j07.us.kg/2024/10/10.html
+
 ## panel4
 
 -  https://panel4.serv00.com/file_manager/
@@ -38,11 +44,11 @@ https://paste.to/
 
 - https://dash.cloudflare.com/74514754bf9382d6eb62a00b54e28032/pages/view/zbb7001-github-io/domains
 
-## Blogger
+## serv00博客  帕帕斯🔭
 
--  https://www.blogger.com/blog/posts/6092320546852585844
+https://kevzcr.serv00.net/
 
--  https://www.j07.us.kg/2024/10/10.html
+https://kevzcr.serv00.net/admin   pan Zb8zcr071225@gmail.com
 
 ## workspace.google
 
