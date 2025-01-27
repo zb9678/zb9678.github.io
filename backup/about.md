@@ -36,7 +36,7 @@ https://paste.to/
 
 -  https://z07.rr.nu/0.html
 
-## 袙袙斯
+## 袙袙斯 hexo博客
 
 -  https://bo.zbb07.us.kg/
 
@@ -49,6 +49,24 @@ https://paste.to/
 https://kevzcr.serv00.net/
 
 https://kevzcr.serv00.net/admin   pan Zb8zcr071225@gmail.com
+
+## github博客   掱掱斯
+
+https://www.zbb07.us.kg/
+
+https://github.com/zbb7001/k.github.io
+
+## 叭叭粢
+
+https://0.r08.us.kg/
+
+https://github.com/zcr07/zcr07.github.io/tree/master/_posts
+
+## 耙耙氏
+
+https://u07.us.kg/?i=1
+
+https://u07.us.kg/wp-login.php?redirect_to=https%3A%2F%2Fu07.us.kg%2Fwp-admin%2Fpost-new.php%3Fi%3D1&reauth=1
 
 ## workspace.google
 
