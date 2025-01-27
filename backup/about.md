@@ -6,6 +6,16 @@ https://da.r08.us.kg/
 
 https://paste.to/
 
+## Blogger
+
+-  https://www.blogger.com/blog/posts/6092320546852585844
+
+-  https://www.j07.us.kg/2024/10/10.html
+
+## panel4
+
+https://panel4.serv00.com/file_manager/
+
 ### Ahk1.0  25.1.27
 
 https://your.ls/shbhw
@@ -57,6 +67,10 @@ https://your.ls/9b7j4
 ### serv00
 
 https://paste.to/?dc34a839ec970147#9GK8hw1a3zE4hbvHJgzjMEB3waJeMBWaFZhp8BKn92CK
+
+## workspace.google
+
+https://bk.j07.us.kg/
 
 
 
