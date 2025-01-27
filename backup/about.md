@@ -14,7 +14,9 @@ https://paste.to/
 
 ## panel4
 
-https://panel4.serv00.com/file_manager/
+-  https://panel4.serv00.com/file_manager/
+
+-  https://z07.rr.nu/0.html
 
 ### Ahk1.0  25.1.27
 
