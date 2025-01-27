@@ -25,7 +25,6 @@
         "随记":"/tag.html",
         "导航": "/",
         "chat": "/chat?session=inbox&topic=bo3YERGi",
-        "Tools": "/Tools.html"
     },
     "commentLabelColor": "#006b75",
     "yearColorList": ["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
