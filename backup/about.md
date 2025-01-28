@@ -68,7 +68,15 @@ https://u07.us.kg/?i=1
 
 https://u07.us.kg/wp-login.php?redirect_to=https%3A%2F%2Fu07.us.kg%2Fwp-admin%2Fpost-new.php%3Fi%3D1&reauth=1 
 
+## 派派兕
+
+https://z07.great-site.net/?i=1
+
 https://dash.infinityfree.com/accounts        (zcr071225Zb InfinityFree )  
+
+https://www.youtube.com/watch?v=SpCgmN8UFSA
+
+https://www.youtube.com/watch?v=ITamb5sPpmE
 
 ## workspace.google
 
