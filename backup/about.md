@@ -66,7 +66,9 @@ https://github.com/zcr07/zcr07.github.io/tree/master/_posts
 
 https://u07.us.kg/?i=1
 
-https://u07.us.kg/wp-login.php?redirect_to=https%3A%2F%2Fu07.us.kg%2Fwp-admin%2Fpost-new.php%3Fi%3D1&reauth=1            
+https://u07.us.kg/wp-login.php?redirect_to=https%3A%2F%2Fu07.us.kg%2Fwp-admin%2Fpost-new.php%3Fi%3D1&reauth=1 
+
+https://dash.infinityfree.com/accounts        (zcr071225Zb InfinityFree )  
 
 ## workspace.google
 
