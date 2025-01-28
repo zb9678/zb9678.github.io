@@ -68,7 +68,11 @@ https://u07.us.kg/?i=1
 
 https://u07.us.kg/wp-login.php?redirect_to=https%3A%2F%2Fu07.us.kg%2Fwp-admin%2Fpost-new.php%3Fi%3D1&reauth=1 
 
-## 派派兕
+#### u07.us.kg  SSL续期 4.28前 地址如下
+
+https://dash.infinityfree.com/sslCertificates/5050817
+
+## 派派兕  (未绑定自定义域)
 
 https://z07.great-site.net/?i=1
 
