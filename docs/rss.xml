@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 02 Feb 2025 07:40:02 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>生成二维码</title><link>https://bo.zb9.us.kg/post/sheng-cheng-er-wei-ma.html</link><description>## D:\ahk1.0\Ahk1.1.ahk
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 02 Feb 2025 08:17:16 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>生成二维码</title><link>https://bo.zb9.us.kg/post/sheng-cheng-er-wei-ma.html</link><description>## D:\ahk1.0\Ahk1.1.ahk
 
 ```
 /*
@@ -1609,7 +1609,7 @@ SendRaw&#13;
 功能： 逐字发送输入，不解析特殊字符（如 {}）。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/%7BRaw%7D.html</guid><pubDate>Tue, 17 Dec 2024 06:48:10 +0000</pubDate></item><item><title>config.toml 上传截图</title><link>https://bo.zb9.us.kg/post/config.toml%20-shang-chuan-jie-tu.html</link><description>## config.toml 上传截图&#13;
 &#13;
 'raw.githubusercontent.com/zcr07/img/main' = 'ing.w07.us.kg'  &#13;
-困扰很久的问题解决了。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/config.toml%20-shang-chuan-jie-tu.html</guid><pubDate>Sat, 14 Dec 2024 17:01:49 +0000</pubDate></item><item><title>上传截图设置</title><link>https://bo.zb9.us.kg/post/shang-chuan-jie-tu-she-zhi.html</link><description>## 三种可替换
+困扰很久的问题解决了。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/config.toml%20-shang-chuan-jie-tu.html</guid><pubDate>Sat, 14 Dec 2024 17:01:49 +0000</pubDate></item><item><title>上传截图 config.json</title><link>https://bo.zb9.us.kg/post/shang-chuan-jie-tu-%20config.json.html</link><description>## 三种可替换
 
 https://cdn.statically.io/gh/zcr07/img@main/images/    20241212110126.png
 
@@ -1618,7 +1618,7 @@ https://ing.w07.us.kg/images/                                         2024121211
 https://cdn.jsdelivr.net/gh/zcr07/img@main/images/     20241215001329.png
 
 
-- 注意：第二种要稍等个2分多钟才会出图，因为Github需要更新数据。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/shang-chuan-jie-tu-she-zhi.html</guid><pubDate>Sat, 14 Dec 2024 16:16:48 +0000</pubDate></item><item><title>文字转语音</title><link>https://bo.zb9.us.kg/post/wen-zi-zhuan-yu-yin.html</link><description>## 文字转语音&#13;
+- 注意：第二种要稍等个2分多钟才会出图，因为Github需要更新数据。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/shang-chuan-jie-tu-%20config.json.html</guid><pubDate>Sat, 14 Dec 2024 16:16:48 +0000</pubDate></item><item><title>文字转语音</title><link>https://bo.zb9.us.kg/post/wen-zi-zhuan-yu-yin.html</link><description>## 文字转语音&#13;
 &#13;
 &#13;
 ```&#13;
