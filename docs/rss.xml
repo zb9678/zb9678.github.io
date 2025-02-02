@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Tue, 28 Jan 2025 08:43:33 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>调节鼠标滚动行数</title><link>https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</link><description>## 每次按下对应的快捷键，即增加滚动行数2-18行
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 02 Feb 2025 07:40:02 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>生成二维码</title><link>https://bo.zb9.us.kg/post/sheng-cheng-er-wei-ma.html</link><description>## D:\ahk1.0\Ahk1.1.ahk
+
+```
+/*
+; 如果当前脚本没有以管理员权限运行，并且命令行参数中没有 /restart 选项，
+; 则以管理员权限重新启动脚本，并添加 /restart 选项。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/sheng-cheng-er-wei-ma.html</guid><pubDate>Sun, 02 Feb 2025 07:39:36 +0000</pubDate></item><item><title>调节鼠标滚动行数</title><link>https://bo.zb9.us.kg/post/diao-jie-shu-biao-gun-dong-xing-shu.html</link><description>## 每次按下对应的快捷键，即增加滚动行数2-18行
 
 ```
 
