@@ -12,6 +12,8 @@ https://paste.to/
 
 - https://ser07.rr.nu/1.html
 
+- http://ser.r08.us.kg/1.html
+
 ## 琶琶🔭啙 笔记  zb9
 
 -  https://bo.zb9.us.kg/about.html
