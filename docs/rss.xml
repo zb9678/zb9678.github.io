@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Mon, 03 Feb 2025 15:59:33 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Thu, 06 Feb 2025 03:36:29 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
 
 - 在cloudflare中新建Workers 并修改worker.js代码如下
 
@@ -3720,20 +3720,34 @@ jobs:&#13;
 &#13;
 &#13;
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zcr07/img@main/images/20241117110524.png' style='width:400px;'&gt;&lt;br&gt;&lt;br&gt;&#13;
-。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/zheng-ze-%20-pi-pei-19%2020%2010-bing-qie-hou-mian-dai-%EF%BC%92-wei-shu-zi.html</guid><pubDate>Sun, 17 Nov 2024 03:05:30 +0000</pubDate></item><item><title>正则 筛选IPv6的最佳方法</title><link>https://bo.zb9.us.kg/post/zheng-ze-%20-shai-xuan-IPv6-de-zui-jia-fang-fa.html</link><description>## 这种方法比较完美&#13;
-&#13;
-  `(\w+:)+(:+)\w+:\w+`&#13;
-&#13;
-&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.29:21:40:32.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
-&#13;
-=================================================&#13;
-&#13;
-## 而这种方法有缺陷&#13;
-&#13;
-  `(\w+:+)+(\w+)+`&#13;
-&#13;
-&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.29:21:41:44.png' style='width:400px;'&gt;&lt;/p&gt;&#13;
-&#13;
+。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/zheng-ze-%20-pi-pei-19%2020%2010-bing-qie-hou-mian-dai-%EF%BC%92-wei-shu-zi.html</guid><pubDate>Sun, 17 Nov 2024 03:05:30 +0000</pubDate></item><item><title>正则 筛选IPv6的最佳方法</title><link>https://bo.zb9.us.kg/post/zheng-ze-%20-shai-xuan-IPv6-de-zui-jia-fang-fa.html</link><description>## 这种方法比较完美
+
+`(\w+:)+(\w+)::(\w+:)+(\w+)`
+
+```
+2606:4700:3018::2054:1c9a     分为3部分
+
+2606:4700:3018     ::      2054:1c9a
+
+2606:4700:3018   ----(\w+:)+(\w+)
+
+::
+
+2054:1c9a   ----(\w+:)+(\w+)
+```
+
+  `(\w+:)+(:+)\w+:\w+`
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.29:21:40:32.png' style='width:400px;'&gt;&lt;/p&gt;
+
+=================================================
+
+## 而这种方法有缺陷
+
+  `(\w+:+)+(\w+)+`
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/11.29:21:41:44.png' style='width:400px;'&gt;&lt;/p&gt;
+
 。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/zheng-ze-%20-shai-xuan-IPv6-de-zui-jia-fang-fa.html</guid><pubDate>Sun, 17 Nov 2024 03:01:20 +0000</pubDate></item><item><title>正则式</title><link>https://bo.zb9.us.kg/post/zheng-ze-shi.html</link><description>`&lt;!DOCTYPE html&gt;&#13;
     &lt;html lang='zh-CN'&gt;&#13;
 &lt;head&gt;&#13;
