@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Thu, 06 Feb 2025 03:42:41 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 09 Feb 2025 10:26:51 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
 
 - 在cloudflare中新建Workers 并修改worker.js代码如下
 
@@ -2304,19 +2304,19 @@ send, ^w&#13;
 return&#13;
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; C  打开 chrome     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00011-969&#13;
 ```&#13;
-。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/CoordMode%2C%20Mouse%2C%20Client%20.html</guid><pubDate>Sat, 07 Dec 2024 05:38:44 +0000</pubDate></item><item><title>运行 .bat 的方法</title><link>https://bo.zb9.us.kg/post/yun-xing-%20.bat%20-de-fang-fa.html</link><description>## 运行 .bat 的方法&#13;
-&#13;
-```&#13;
-Appskey &amp; Esc::&#13;
-SetWorkingDir, D:\ahk1.0\Lib\&#13;
-Run, %ComSpec% /c choice1.bat,, Hide  ; 使用 ComSpec 运行并隐藏窗口&#13;
-return&#13;
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; Esc  小菜单   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012-517&#13;
-```&#13;
-&#13;
-## 代码解析：&#13;
-&#13;
-```&#13;
+。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/CoordMode%2C%20Mouse%2C%20Client%20.html</guid><pubDate>Sat, 07 Dec 2024 05:38:44 +0000</pubDate></item><item><title>运行 .bat 的方法</title><link>https://bo.zb9.us.kg/post/yun-xing-%20.bat%20-de-fang-fa.html</link><description>## 运行 .bat 的方法
+
+```
+Appskey &amp; Esc::
+SetWorkingDir, D:\ahk1.0\Lib\
+Run, %ComSpec% /c choice1.bat,, Hide  ; 使用 ComSpec 运行并隐藏窗口
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ Appskey &amp; Esc  小菜单   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 012-517
+```
+
+## 代码解析：
+
+```
 %ComSpec% 是一个系统变量，指向 CMD 的可执行文件路径。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/yun-xing-%20.bat%20-de-fang-fa.html</guid><pubDate>Fri, 06 Dec 2024 17:19:37 +0000</pubDate></item><item><title>选定文件 管理员运行</title><link>https://bo.zb9.us.kg/post/xuan-ding-wen-jian-%20-guan-li-yuan-yun-xing.html</link><description>## 选定文件 管理员运行&#13;
 &#13;
 ```&#13;
