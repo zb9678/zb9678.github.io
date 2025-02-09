@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 09 Feb 2025 14:47:18 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域**</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu---.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Sun, 09 Feb 2025 16:14:50 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>给任意网址在CF上添加自定义域**</title><link>https://bo.zb9.us.kg/post/gei-ren-yi-wang-zhi-zai-CF-shang-tian-jia-zi-ding-yi-yu---.html</link><description>## 给任意网址如 ser07.rr.nu  在CF上添加自定义域
 
 - 在cloudflare中新建Workers 并修改worker.js代码如下
 
@@ -3452,19 +3452,19 @@ btt(Text,600,0,,'Style4') &#13;
     &#13;
     ; 延迟 2 秒后弹出确认对话框&#13;
     Sleep, 2000&#13;
-    MsgBox, 4,, 请在完成截图和编辑后点击“是”确认上传图片。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/AHK%20picgo-jie-tu-%E3%80%81-bian-ji-%E3%80%81-shang-chuan-%E3%80%81-lian-jie-yi-jian-wan-cheng.html</guid><pubDate>Fri, 22 Nov 2024 08:44:52 +0000</pubDate></item><item><title>AHK upgit截图、编辑、上传、链接一键完成</title><link>https://bo.zb9.us.kg/post/AHK%20upgit-jie-tu-%E3%80%81-bian-ji-%E3%80%81-shang-chuan-%E3%80%81-lian-jie-yi-jian-wan-cheng.html</link><description>## 脚本部分&#13;
-&#13;
-```&#13;
-F1 &amp; s::&#13;
-    ; 显示上传中提示&#13;
-    Text := '⭕ 上传图片中 ⭕'&#13;
-    btt(Text, 600, 0, , 'Style4')&#13;
-&#13;
-    ; 启动截图程序&#13;
-    Run, 'D:\ahk1.0\Lib\0 tool\9金山截图王\kscrcap.exe'&#13;
-    &#13;
-    ; 延迟 2 秒后弹出确认对话框&#13;
-    Sleep, 2000&#13;
+    MsgBox, 4,, 请在完成截图和编辑后点击“是”确认上传图片。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/AHK%20picgo-jie-tu-%E3%80%81-bian-ji-%E3%80%81-shang-chuan-%E3%80%81-lian-jie-yi-jian-wan-cheng.html</guid><pubDate>Fri, 22 Nov 2024 08:44:52 +0000</pubDate></item><item><title>AHK upgit截图、编辑、上传、链接一键完成</title><link>https://bo.zb9.us.kg/post/AHK%20upgit-jie-tu-%E3%80%81-bian-ji-%E3%80%81-shang-chuan-%E3%80%81-lian-jie-yi-jian-wan-cheng.html</link><description>## 脚本部分
+
+```
+F1 &amp; s::
+    ; 显示上传中提示
+    Text := '⭕ 上传图片中 ⭕'
+    btt(Text, 600, 0, , 'Style4')
+
+    ; 启动截图程序
+    Run, 'D:\ahk1.0\Lib\0 tool\9金山截图王\kscrcap.exe'
+    
+    ; 延迟 2 秒后弹出确认对话框
+    Sleep, 2000
     MsgBox, 4,, 请在完成截图和编辑后点击“是”确认上传图片。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/AHK%20upgit-jie-tu-%E3%80%81-bian-ji-%E3%80%81-shang-chuan-%E3%80%81-lian-jie-yi-jian-wan-cheng.html</guid><pubDate>Fri, 22 Nov 2024 08:37:44 +0000</pubDate></item><item><title>AHK 限制单进程运行</title><link>https://bo.zb9.us.kg/post/AHK%20-xian-zhi-dan-jin-cheng-yun-xing.html</link><guid isPermaLink="true">https://bo.zb9.us.kg/post/AHK%20-xian-zhi-dan-jin-cheng-yun-xing.html</guid><pubDate>Fri, 22 Nov 2024 08:34:17 +0000</pubDate></item><item><title>AHK ahk1.1修改后重载 定时重载2个脚本</title><link>https://bo.zb9.us.kg/post/AHK%20ahk1.1-xiu-gai-hou-zhong-zai-%20-ding-shi-zhong-zai-2-ge-jiao-ben.html</link><description>```&#13;
 #Persistent&#13;
 #SingleInstance ignore&#13;

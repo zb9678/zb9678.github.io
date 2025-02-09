@@ -26,6 +26,10 @@ F1 & s::
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.22:16:33:13.png" style="width:400px;"></p>
 
+## Github帐号zb96   重新申请Token
+
+- https://github.com/settings/tokens
+
 ## 
 
 ```
