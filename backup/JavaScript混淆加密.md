@@ -1,0 +1,17 @@
+## JavaScript混淆加密
+
+- https://toolonline.net/js-obfuscator
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.10:19:17:21.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.10:19:18:43.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.10:19:19:56.png" style="width:400px;"></p>
+
+## 复制代码粘贴到混淆里
+
+- https://github.com/6Kmfi6HP/EDtunnel/blob/main/index.js
+
+## 说明
+
+- https://kjgx668.blogspot.com/2025/02/2025cloudflare1101-cloudflare520-VPN-YouTube4K.html
