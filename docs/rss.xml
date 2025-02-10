@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Mon, 10 Feb 2025 11:23:13 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>JavaScript混淆加密</title><link>https://bo.zb9.us.kg/post/JavaScript-hun-yao-jia-mi.html</link><description>## JavaScript混淆加密
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Mon, 10 Feb 2025 11:24:12 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>JavaScript混淆加密</title><link>https://bo.zb9.us.kg/post/JavaScript-hun-yao-jia-mi.html</link><description>## JavaScript混淆加密
 
 - https://toolonline.net/js-obfuscator
 
@@ -9,7 +9,7 @@
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.10:19:19:56.png' style='width:400px;'&gt;&lt;/p&gt;
 
-## 复制代码粘贴到混淆里
+## 复制明文代码粘贴到混淆里
 
 - https://github.com/6Kmfi6HP/EDtunnel/blob/main/index.js
 
