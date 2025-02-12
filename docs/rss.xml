@@ -1,5 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:11:12 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>快速回到行首 行尾</title><link>https://bo.zb9.us.kg/post/kuai-su-hui-dao-xing-shou-%20-xing-wei.html</link><description>##  快速回到行首 行尾
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:15:44 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>有关重启，关机等</title><link>https://bo.zb9.us.kg/post/you-guan-zhong-qi-%EF%BC%8C-guan-ji-deng.html</link><description>##  重启，关机等
+
+```
+F4 &amp; z::
+Run, nircmd speak text '确定注销，请点是' 0 90
+Run, nircmd.exe cmdwait 100 qboxcom '.............注  销.............' '  注意：保存文件' exitwin logoff
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; z 注销     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000001-2280
+F4 &amp; c::
+;Run, nircmd speak text '确定重启 请点是' 0 90
+Run, nircmd.exe  cmdwait 100 qboxcom '.............重  启.............' '  注意：保存文件' exitwin reboot
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; c 重启     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000002-2285
+
+F4 &amp; g::
+;Run, nircmd speak text '确定关机 请点是' 0 90
+Run, nircmd.exe cmdwait 100 qboxcom '.............关  机.............' '  注意：保存文件' exitwin poweroffr
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; g 关机    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000003-2291
+
+F4 &amp; S::
+;Run, nircmd speak text '进入待机 请点是' 0 90
+Run, nircmd.exe cmdwait 100 qboxcom '.............睡　眠............' '  睡眠：注意保存文件' standby
+sleep, 500
+send, y
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; S 睡眠    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000004-2299
+
+F4 &amp; x::
+;Run, nircmd speak text '确定休眠 请点是' 0 90
+Run, nircmd.exe cmdwait 100 qboxcom '.............休　眠.............' '  注意：保存文件' hibernate
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; X 休眠    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000005-2305
+
+F4 &amp; E::
+Run, nircmd speak text '重启资源管理器' 0 90
+sleep, 2000
+process,close,explorer.exe
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; E 重启资源管理器    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000006-2312
+
+F4 &amp; p::
+Run, nircmd speak text '关屏' 0 90
+Run, nircmd.exe cmdwait 2000 monitor off
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ    F4 &amp; p 关屏    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 000000007-2318
+```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/you-guan-zhong-qi-%EF%BC%8C-guan-ji-deng.html</guid><pubDate>Wed, 12 Feb 2025 03:15:21 +0000</pubDate></item><item><title>快速回到行首 行尾</title><link>https://bo.zb9.us.kg/post/kuai-su-hui-dao-xing-shou-%20-xing-wei.html</link><description>##  快速回到行首 行尾
 
 ```
 #F2::
