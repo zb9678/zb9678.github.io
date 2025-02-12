@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:08:01 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>仅针对Joplin及Typora的操作</title><link>https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</link><description>## 仅针对Joplin及Typora的操作
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:10:07 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>仅针对Joplin及Typora的操作</title><link>https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</link><description>## 仅针对Joplin及Typora的操作
 
 ```
 #If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))                  ;---仅Typora  Joplin 
@@ -96,6 +96,236 @@ return
 return
 #If
 ;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F9 下标    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```
+
+##
+
+```
+{
+    ; F6 &amp; R 红色        ;ROYGQBP WETUI
+    F6 &amp; r::b205('#f20c00')
+
+    ; F6 &amp; O 橙色                       
+    F6 &amp; o::b205('#ec6800')
+
+; F6 &amp; y 暗红色
+    F6 &amp; y::b205('#fff143')
+
+; F6 &amp; g 亮绿色
+    F6 &amp; g::b205('#00e500')
+
+; F6 &amp; q 兰绿色
+    F6 &amp; q::b205('#177cb0')
+
+    ; F6 &amp; B 浅蓝色
+    F6 &amp; b::b205('#44cef6')
+
+; F6 &amp; p 暗紫色
+    F6 &amp; p::b205('#b61aae')
+
+; F6 &amp; w 绿色
+    F6 &amp; w::b205('#bce672')
+
+; F6 &amp; e 绿色
+    F6 &amp; e::b205('#955539')
+
+; F6 &amp; t 兰绿色
+
+    F6 &amp; t::b205('#d7003a')
+
+; F6 &amp; u 深紫色
+    F6 &amp; u::b205('#ff0097')
+
+; F6 &amp; i 紫色
+    F6 &amp; i::b205('#ff461f')
+}
+
+; 快捷增加字体颜色
+b205(s){
+      clipboard := ''
+    SendInput,^x
+sleep,100
+	clipboard = &lt;span style='color: %s%; font-size:18px'&gt;%clipboard%&lt;/span&gt;
+ 	SendInput {ctrl down}v{ctrl up}
+	;Send {Left 7} ; 光标跟随到文本
+}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; O 橙色   joplin字体颜色  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 04 -2434
+
+{
+; F7 &amp; q 兰绿色
+    F7 &amp; q::b204('#177cb0')
+
+; F7 &amp; w 绿色
+    F7 &amp; w::b204('#bce672')
+
+; F7 &amp; e 绿色
+    F7 &amp; e::b204('#955539')
+
+; F7 &amp; R 红色
+    F7 &amp; r::b204('#f20c00')
+
+; F7 &amp; t 兰绿色
+    F7 &amp; t::b204('#d7003a')
+
+; F7 &amp; y 暗红色
+    F7 &amp; y::b204('#fff143')
+
+; F7 &amp; u 深紫色
+    F7 &amp; u::b204('#ff0097')
+
+; F7 &amp; i 紫色
+    F7 &amp; i::b204('#ff461f')
+
+; F7 &amp; O 橙色      ; ORBPYGMST
+    F7 &amp; o::b204('#ec6800')
+
+; F7 &amp; p 暗紫色
+    F7 &amp; p::b204('#b61aae')
+
+; F7 &amp; B 浅蓝色
+    F7 &amp; b::b204('#44cef6')
+
+; F7 &amp; G 亮绿色
+    F7 &amp; g::b204('#00e500')
+}
+
+; 快捷增加字体颜色
+b204(s){
+      clipboard := ''
+    SendInput,^x
+sleep,100
+	clipboard = &lt;span style='font-family:KaiTi; font-size:30px; color: %s%'&gt;%clipboard%&lt;/span&gt;
+	SendInput {ctrl down}v{ctrl up}
+	;Send {Left 7} ; 光标跟随到文本
+}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F7 &amp; O 橙色   joplin字体颜色  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 05-2484
+
+    ; F8 &amp; q 兰绿色       ;   QWERTYUIOP  BG
+    F8 &amp; q::b203('#177cb0')
+
+; F8 &amp; w 绿色
+    F8 &amp; w::b203('#426666')
+
+; F8 &amp; e 绿色
+    F8 &amp; e::b203('#955539')
+
+    ; F8 &amp; R 红色
+    F8 &amp; r::b203('#f20c00')
+
+; F8 &amp; t 兰绿色
+    F8 &amp; t::b203('#d7003a')
+
+; F8 &amp; y 暗红色
+    F8 &amp; y::b203('#fff143')
+
+; F8 &amp; u 兰绿色
+    F8 &amp; u::b203('#ff0097')
+
+; F8 &amp; i 紫色
+    F8 &amp; i::b203('#ff461f')
+
+    ; F8 &amp; O 橙色
+    F8 &amp; o::b203('#ec6800')
+
+; F8 &amp; p 暗紫色
+    F8 &amp; p::b203('#b61aae')
+
+    ; F8 &amp; B 浅蓝色
+    F8 &amp; b::b203('#44cef6')
+
+; F8 &amp; g 暗绿色
+    F8 &amp; g::b203('#00e500')
+
+; 快捷增加字体颜色
+b203(s)
+{
+    clipboard := ''
+    SendInput,^x
+sleep,100
+    SendInput, {TEXT}&lt;span style='font-family:LiSu; font-size:24px; color: #2E3138; background: %s%'&gt;%clipboard%&lt;/span&gt;
+    Send {Left 25}{home}
+}                                             ;  ------------------------------------- r t y o p     g b     m s
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F8 &amp; O 橙色 Tyora 背景色    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 06 -2532
+
+; F9 &amp; q 兰绿色       ;   QWERTYUIOP  BG
+    F9 &amp; q::b202('#177cb0')
+
+; F9 &amp; w 绿色
+    F9 &amp; w::b202('#426666')
+
+; F9 &amp; e 绿色
+    F9 &amp; e::b202('#955539')
+
+    ; F9 &amp; R 红色
+    F9 &amp; r::b202('#f20c00')
+
+; F9 &amp; t 兰绿色
+    F9 &amp; t::b202('#d7003a')
+
+; F9 &amp; y 暗红色
+    F9 &amp; y::b202('#000000')
+
+; F9 &amp; u 兰绿色
+    F9 &amp; u::b202('#ff0097')
+
+; F9 &amp; i 紫色
+    F9 &amp; i::b202('#ff461f')
+
+    ; F9 &amp; O 橙色
+    F9 &amp; o::b202('#ec6800')
+
+; F9 &amp; p 暗紫色
+    F9 &amp; p::b202('#b61aae')
+
+    ; F9 &amp; B 浅蓝色
+    F9 &amp; b::b202('#44cef6')
+
+; F9 &amp; g 暗绿色
+    F9 &amp; g::b202('#00e500')
+
+; 快捷增加字体颜色
+b202(s)
+{
+   clipboard := ''
+    SendInput ^x
+sleep,100
+          SendInput, {TEXT}&lt;table&gt;&lt;td bgcolor=%s%&gt;&lt;font size = '4'&gt;&lt;/font&gt;%clipboard%&lt;td bgcolor=#2E3138&gt;&lt;/table&gt;
+a := '1'
+;Send {Left 8}%a%{Left 20}{home}-{Space}
+Send {Left 8}%a%{home}{up}-{Space}
+}                                             ;  ------------------------------------- r t y o p     g b     m s
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F9 &amp; O 橙色 Tyora 背景色    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 07-2582
+
+F7 &amp; 1::b201(12)
+F7 &amp; 2::b201(14)
+F7 &amp; 3::b201(16)
+F7 &amp; 4::b201(18)
+F7 &amp; 5::b201(20)
+F7 &amp; 6::b201(22)
+F7 &amp; 7::b201(24)
+
+b201(size)
+{
+    clipboard := ''          ; 清空剪贴板
+    SendInput ^x             ; 剪切选中的文本
+    Sleep, 100               ; 等待剪贴板有内容
+    ClipWait                 ; 等待剪贴板内容更新
+    ; 设置新的剪贴板内容
+    clipboard := '&lt;span style='font-family: KaiTi; font-size: ' size 'pt;'&gt;' clipboard '&lt;/span&gt;'
+    ; 等待剪贴板内容更新    color: #d7003a;
+    ClipWait
+    ; 粘贴新的内容
+    SendInput ^v
+    ; 光标左移 7 次
+    Send {Left 7}
+}
+return
+#IfWinActive
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F7 &amp; 1-7  Tyora 字号    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 08-2609
 ```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</guid><pubDate>Wed, 12 Feb 2025 03:07:36 +0000</pubDate></item><item><title>空行，空格，Tab等操作</title><link>https://bo.zb9.us.kg/post/kong-xing-%EF%BC%8C-kong-ge-%EF%BC%8CTab-deng-cao-zuo.html</link><description>## 合并多行空行为１行
 
 ```
