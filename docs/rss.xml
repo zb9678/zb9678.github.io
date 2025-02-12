@@ -1,5 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Tue, 11 Feb 2025 11:26:34 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>解决CloudFlare打开缓慢</title><link>https://bo.zb9.us.kg/post/jie-jue-CloudFlare-da-kai-huan-man.html</link><description>## 解决CloudFlare打开缓慢
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 02:50:04 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>自动添加序号 1.2.3.........</title><link>https://bo.zb9.us.kg/post/zi-dong-tian-jia-xu-hao-%201.2.3..........html</link><description>## 自动添加序号 1.2.3.........
+
+```
+appskey &amp; v::
+    	if (!bzz)
+        	bzz := '1'                           ; 如果变量 bzz 尚未初始化，则初始化为 '1'
+    	SendInput, %bzz%.{space}
+    	bzz++
+     Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   appskey &amp; b  1.2.3.到无穷   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```
+
+## 自动添加序号 a.b.c......
+```
+appskey &amp; b::
+    if (!bz)
+        bz := 'a'                                    ; 如果变量 bz 尚未初始化，则初始化为 'a'
+    SendInput, %bz%.{space}
+
+    ; 字母递增逻辑                                 判断是否在 'a-z' 范围 ASCII码a-z 97-122
+    if (StrLen(bz) == 1 &amp;&amp; Asc(bz) &gt;= 97 &amp;&amp; Asc(bz) &lt; 122) 
+        bz := Chr(Asc(bz) + 1)  ; 递增到下一个字母
+    else if (bz == 'z')
+        bz := 'a'  ; 如果当前是 'z'，循环回到 'a'
+Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   appskey &amp; b   a-z 循环   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```
+
+## 自动添加序号 A.B.C.......
+
+```
+appskey &amp; n::
+    if (!uz)
+        uz := 'A'                                    ; 如果变量 uz 尚未初始化，则初始化为 'A'
+    SendInput, %uz%.{space}
+
+    ; 字母递增逻辑                                 判断是否在 'a-z' 范围 ASCII码a-z 97-122
+    if (StrLen(uz) == 1 &amp;&amp; Asc(uz) &gt;= 65 &amp;&amp; Asc(uz) &lt; 90) 
+        uz := Chr(Asc(uz) + 1)  ; 递增到下一个字母
+    else if (uz == 'Z')
+        uz := 'A'  ; 如果当前是 'z'，循环回到 'a'
+Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   appskey &amp; n  A-Z 循环   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```
+
+## 自动添加序号 1.2.3.........9.1.2.3......9.1.
+
+```
+
+appskey &amp; m::
+    	if (!azz)
+        	azz := '1'                           ; 如果变量 azz 尚未初始化，则初始化为 '1'
+    	SendInput, %azz%.{space}
+; 更新数字，如果超过9则重置为1
+azz := (azz &lt; 9) ? azz + 1 : 1
+Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   appskey &amp; m 如果超过9则重置为1  ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/zi-dong-tian-jia-xu-hao-%201.2.3..........html</guid><pubDate>Wed, 12 Feb 2025 02:49:35 +0000</pubDate></item><item><title>解决CloudFlare打开缓慢</title><link>https://bo.zb9.us.kg/post/jie-jue-CloudFlare-da-kai-huan-man.html</link><description>## 解决CloudFlare打开缓慢
 
 首先关闭所有chorme的插件。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/jie-jue-CloudFlare-da-kai-huan-man.html</guid><pubDate>Tue, 11 Feb 2025 11:26:13 +0000</pubDate></item><item><title>JavaScript混淆加密</title><link>https://bo.zb9.us.kg/post/JavaScript-hun-yao-jia-mi.html</link><description>## JavaScript混淆加密
 
