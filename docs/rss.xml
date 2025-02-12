@@ -1,5 +1,46 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:10:07 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>仅针对Joplin及Typora的操作</title><link>https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</link><description>## 仅针对Joplin及Typora的操作
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:11:12 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>快速回到行首 行尾</title><link>https://bo.zb9.us.kg/post/kuai-su-hui-dao-xing-shou-%20-xing-wei.html</link><description>##  快速回到行首 行尾
+
+```
+#F2::
+if (onoff := !onoff)
+	{
+	Send {home}
+	}
+else
+	{
+    	Send {end}
+keywait, F2
+}
+ Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   #F2 行首 行尾    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 09-2625
+
+#F3::
+if (onoff := !onoff)
+	{
+	Send #!{home}
+	}
+else
+	{
+    	Send #!{end}
+keywait, F3
+}
+ Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  #F3 段首 段尾     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 10 -2638
+
+#F4::
+if (onoff := !onoff)
+	{
+send, ^a{left}
+	}
+else
+	{
+send, ^a{right}
+	keywait, F4
+	}
+ Return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   #F4 页首 页尾    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 11-2651
+```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/kuai-su-hui-dao-xing-shou-%20-xing-wei.html</guid><pubDate>Wed, 12 Feb 2025 03:10:53 +0000</pubDate></item><item><title>仅针对Joplin及Typora的操作</title><link>https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</link><description>## 仅针对Joplin及Typora的操作
 
 ```
 #If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))                  ;---仅Typora  Joplin 
