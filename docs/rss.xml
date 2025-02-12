@@ -1,5 +1,102 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:05:31 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>空行，空格，Tab等操作</title><link>https://bo.zb9.us.kg/post/kong-xing-%EF%BC%8C-kong-ge-%EF%BC%8CTab-deng-cao-zuo.html</link><description>## 合并多行空行为１行
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 12 Feb 2025 03:08:01 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>仅针对Joplin及Typora的操作</title><link>https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</link><description>## 仅针对Joplin及Typora的操作
+
+```
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))                  ;---仅Typora  Joplin 
+
+F6 &amp; F1::
+	clipboard := ''
+    	SendInput,^x
+	sleep,100
+	clipboard = #  &lt;span style='font-family:KaiTi; font-size:30px; color: #d7003a'&gt;%clipboard%&lt;/span&gt;  [^0]   ; ------------- 12 握了请握  [^012] {left}
+	SendInput {ctrl down}v{ctrl up}{home}{up}{right 2}
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F1 标题添加序号等    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 001-2803 
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+F6 &amp; F2::
+	send {space 2}
+	clipboard = - [ ] &lt;span style='color: #4c221b'&gt;确定已经掌握了请打上对勾！&lt;/span&gt;
+	SendInput {ctrl down}v{ctrl up}                      ; ------------- 确定已经掌握了请打上对勾！
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F2 确定已经掌握了请打上对勾    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 002-2812 
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+
+ F6 &amp; F4::zaa()
+	zaa()
+{
+	clipboard := ''
+	Send ^x
+	Sleep 500
+	clipboard = &lt;center&gt;%clipboard%&lt;/center&gt;
+	Sleep 50
+	Send ^v
+}
+return
+#IfWinActive
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F4 Tyora 居中   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 003-2828
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+
+F6 &amp; F5::
+	send &gt;✌️ 
+	sleep, 100
+	send {enter}{bs}{enter}{left 2}
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F5  &gt; :v:    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 004-2838 
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+
+F6 &amp; F7::zc()
+	zc()
+{
+	clipboard := ''
+	Send ^x
+	Sleep 500
+	clipboard = ``%clipboard%``
+	Sleep 50
+	Send ^v
+}
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F7 Tyora 代码块   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 005-2854
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+
+ F6 &amp; F8::zb()
+	 zb()
+{
+	clipboard := ''
+	Send ^x
+	Sleep 500
+	clipboard = ^%clipboard%^
+	Sleep 50
+	Send ^v
+}
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F8 上标    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 006-2870
+
+#If (WinActive('ahk_exe Typora.exe') or WinActive('ahk_exe Joplin.exe'))
+
+ F6 &amp; F9::zd()
+	zd()
+{
+	clipboard := ''
+	Send ^x
+	Sleep 500
+	clipboard = ~%clipboard%~
+	Sleep 50
+	Send ^v
+}
+return
+#If
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F6 &amp; F9 下标    ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 007-2886
+```。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/jin-zhen-dui-Joplin-ji-Typora-de-cao-zuo.html</guid><pubDate>Wed, 12 Feb 2025 03:07:36 +0000</pubDate></item><item><title>空行，空格，Tab等操作</title><link>https://bo.zb9.us.kg/post/kong-xing-%EF%BC%8C-kong-ge-%EF%BC%8CTab-deng-cao-zuo.html</link><description>## 合并多行空行为１行
 
 ```
 F6 &amp; 1::
