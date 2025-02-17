@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Mon, 17 Feb 2025 05:52:56 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>本地文件夹设置为局域网共享</title><link>https://bo.zb9.us.kg/post/ben-di-wen-jian-jia-she-zhi-wei-ju-yu-wang-gong-xiang.html</link><description>## 本地文件夹设置为局域网共享
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Mon, 17 Feb 2025 05:53:30 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>本地文件夹设置为局域网共享</title><link>https://bo.zb9.us.kg/post/ben-di-wen-jian-jia-she-zhi-wei-ju-yu-wang-gong-xiang.html</link><description>## 本地文件夹设置为局域网共享
 
 - 	Run shrpubw
 - 	Run fsmgmt.msc 
 
-![Image](https://github.com/user-attachments/assets/afcfa87e-83ae-4759-8000-6b6ae841a94f)
+
 ![Image](https://github.com/user-attachments/assets/d4c612dd-d31b-4d35-b703-c6f4ea419768)
 ![Image](https://github.com/user-attachments/assets/89067e2e-470f-4df1-852e-0e6284d6e582)
 ![Image](https://github.com/user-attachments/assets/1f15eb7e-6078-4274-b90a-6ab955a02c62)
@@ -18,7 +18,8 @@
 ![Image](https://github.com/user-attachments/assets/5277dc2d-bcf1-4777-a917-aa3c7c8db7eb)
 
 ![Image](https://github.com/user-attachments/assets/1b53bcb0-04e2-4eb2-8a80-2bb980161bd2)
-![Image](https://github.com/user-attachments/assets/01e802af-99ee-44a4-9651-af0571323de6)。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/ben-di-wen-jian-jia-she-zhi-wei-ju-yu-wang-gong-xiang.html</guid><pubDate>Mon, 17 Feb 2025 05:52:31 +0000</pubDate></item><item><title>win7</title><link>https://bo.zb9.us.kg/post/win7.html</link><description>##  手机分享到win7
+![Image](https://github.com/user-attachments/assets/01e802af-99ee-44a4-9651-af0571323de6)
+![Image](https://github.com/user-attachments/assets/afcfa87e-83ae-4759-8000-6b6ae841a94f)。</description><guid isPermaLink="true">https://bo.zb9.us.kg/post/ben-di-wen-jian-jia-she-zhi-wei-ju-yu-wang-gong-xiang.html</guid><pubDate>Mon, 17 Feb 2025 05:52:31 +0000</pubDate></item><item><title>win7</title><link>https://bo.zb9.us.kg/post/win7.html</link><description>##  手机分享到win7
 
 - 手机安装 Every Proxy，打开 Https
 
