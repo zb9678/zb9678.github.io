@@ -25,3 +25,22 @@ AutoProxy
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:41:38.png" style="width:400px;"></p>
 
 强调：记着点击 左侧 应用选项 后才会起效 。
+
+
+## Karing设置
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:49:19.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:59:20.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:47:49.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:57:41.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:58:30.png" style="width:400px;"></p>
+
+### 备份与同步 Webdav设置
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:20:00:14.png" style="width:400px;"></p>
+
+
