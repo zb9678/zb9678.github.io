@@ -23,3 +23,5 @@ AutoProxy
 - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:41:38.png" style="width:400px;"></p>
+
+强调：记着点击 左侧 应用选项 后才会起效 。
