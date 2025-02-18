@@ -1,10 +1,10 @@
-## 用原先的10808端口
+## 电脑上用原先的10808端口 即修改Karing默认端口设置
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.18:12:58:11.png" style="width:400px;"></p>
 
+==================================================
 
-
-## 新建代理服务器 3066
+## 采用Karing默认端口 新建代理服务器 3066
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:31:59.png" style="width:400px;"></p>
 
