@@ -1,8 +1,14 @@
+## 用原先的10808端口
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.18:12:58:11.png" style="width:400px;"></p>
+
+
+
 ## 新建代理服务器 3066
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:31:59.png" style="width:400px;"></p>
 
-## 设置成  Socks5  Karing全代理端口3066  (设置/端口/全代理)
+## 设置成  Socks5  Karing全代理端口 3067 或3066  (设置/端口/全代理)
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.17:19:30:43.png" style="width:400px;"></p>
 
