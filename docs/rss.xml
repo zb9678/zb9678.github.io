@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 19 Feb 2025 03:42:29 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>IP文本转换为节点</title><link>https://bo.zb9.us.kg/post/IP-wen-ben-zhuan-huan-wei-jie-dian.html</link><description>## 获取IP
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://bo.zb9.us.kg</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://bo.zb9.us.kg</link></image><lastBuildDate>Wed, 19 Feb 2025 03:46:36 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>IP文本转换为节点</title><link>https://bo.zb9.us.kg/post/IP-wen-ben-zhuan-huan-wei-jie-dian.html</link><description>## 获取IP
 
 - https://www.lddgo.net/network/randomip
 
@@ -7,9 +7,12 @@
 
 - 2803:f800:51::/48
 
-## IPv4
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.19:11:45:14.png' style='width:400px;'&gt;&lt;/p&gt;
+
+## 获取 IPv4 节点 （数量根据4.txt中的IP数量决定）
 
 - ahk脚本目录下建立IP库文本文件 4.txt 内容如下
+
 104.17.253.154
 104.17.253.229
 104.17.253.127...........
@@ -49,6 +52,7 @@ return
 ## IPv6
 
 - ahk脚本目录下建立IP库文本文件 6.txt 内容如下
+
 [2803:F800:0051:0000:0000:0000:508C:CB2E]
 [2803:F800:0051:0000:0000:0000:7559:838C]
 [2803:F800:0051:0000:0000:0000:CE83:4BD6]......
