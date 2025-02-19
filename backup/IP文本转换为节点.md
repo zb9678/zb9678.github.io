@@ -1,3 +1,11 @@
+## 获取IP
+
+- https://www.lddgo.net/network/randomip
+
+- 162.159.0.0    162.159.0.255
+
+- 2803:f800:51::/48
+
 ## IPv4
 
 - ahk脚本目录下建立IP库文本文件 4.txt 内容如下
