@@ -14,3 +14,11 @@
 ## 软件下载
 
 [pinginfoview.zip](https://github.com/user-attachments/files/18935683/pinginfoview.zip)
+
+## 科学设置
+
+![Image](https://github.com/user-attachments/assets/f15433ba-883c-40d4-ba73-c1a528b4842b)
+
+![Image](https://github.com/user-attachments/assets/a4e766e6-71bf-4cf3-b69a-0314196a0a76)
+
+![Image](https://github.com/user-attachments/assets/4e9c9aba-baf9-4697-8ce8-2398fcfcd223)
