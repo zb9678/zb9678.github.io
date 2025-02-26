@@ -1,10 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Wed, 26 Feb 2025 11:19:44 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>选中下面的网址</title><link>https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</link><description>## 选中下面的网址
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Wed, 26 Feb 2025 11:34:09 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>选中下面的网址</title><link>https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</link><description>## 选中下面的网址
 
 ```
-(?&lt;=：)[^：\s]+
+(?&lt;=：)[a-zA-Z0-9.-]+
 ```
-- 匹配内容：匹配冒号后面   除冒号和空白字符以外的任何字符，直到遇到下一个冒号或空白字符。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</guid><pubDate>Wed, 26 Feb 2025 11:19:16 +0000</pubDate></item><item><title>优选IP</title><link>https://12.zcr25.ggff.net/post/you-xuan-IP.html</link><description>## pinginfoview 优选IP
+199.93 ms：www.d-555.com
+323.16 ms：www.gov.se
+327.84 ms：www.visa.com.sg
+330.75 ms：time.is
+331.26 ms：www.visa.co.jp
+331.30 ms：iplocation.io
+332.06 ms：www.whoer.net
+332.49 ms：www.hugedomains.com
+333.32 ms：ip.sb
+335.68 ms：japan.com
+338.77 ms：shopify.com
+347.01 ms：download.yunzhongzhuan.com
+347.10 ms：www.digitalocean.com
+357.57 ms：russia.com
+447.24 ms：fbi.gov
+1051.13 ms：edtunnel-dgp.pages.dev  
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.26:19:33:21.png' style='width:400px;'&gt;&lt;/p&gt;。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</guid><pubDate>Wed, 26 Feb 2025 11:19:16 +0000</pubDate></item><item><title>优选IP</title><link>https://12.zcr25.ggff.net/post/you-xuan-IP.html</link><description>## pinginfoview 优选IP
 
 ![Image](https://github.com/user-attachments/assets/c6e3ab7e-2bed-42c5-b06d-67110671d54e)
 
