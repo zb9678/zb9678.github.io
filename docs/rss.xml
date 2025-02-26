@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Wed, 26 Feb 2025 11:17:39 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>优选IP</title><link>https://12.zcr25.ggff.net/post/you-xuan-IP.html</link><description>## pinginfoview 优选IP
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Wed, 26 Feb 2025 11:19:44 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>选中下面的网址</title><link>https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</link><description>## 选中下面的网址
+
+```
+(?&lt;=：)[^：\s]+
+```
+- 匹配内容：匹配冒号后面   除冒号和空白字符以外的任何字符，直到遇到下一个冒号或空白字符。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</guid><pubDate>Wed, 26 Feb 2025 11:19:16 +0000</pubDate></item><item><title>优选IP</title><link>https://12.zcr25.ggff.net/post/you-xuan-IP.html</link><description>## pinginfoview 优选IP
 
 ![Image](https://github.com/user-attachments/assets/c6e3ab7e-2bed-42c5-b06d-67110671d54e)
 
