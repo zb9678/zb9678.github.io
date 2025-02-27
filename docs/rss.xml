@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Thu, 27 Feb 2025 09:14:13 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Thu, 27 Feb 2025 09:31:39 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
 
 ```
 F1 &amp; w::
@@ -656,7 +656,8 @@ rules:
 
 
 ```
-。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</guid><pubDate>Thu, 27 Feb 2025 09:13:50 +0000</pubDate></item><item><title>选中下面的网址</title><link>https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</link><description>## 选中下面的网址
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.27:17:30:40.png' style='width:400px;'&gt;&lt;/p&gt;。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</guid><pubDate>Thu, 27 Feb 2025 09:13:50 +0000</pubDate></item><item><title>选中下面的网址</title><link>https://12.zcr25.ggff.net/post/xuan-zhong-xia-mian-de-wang-zhi.html</link><description>## 选中下面的网址
 
 ```
 (?&lt;=：)[a-zA-Z0-9.-]+
