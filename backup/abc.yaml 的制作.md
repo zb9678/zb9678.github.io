@@ -118,7 +118,7 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-    - {name: 01, server: 104.21.236.177, port: 443, type: vless, uuid: 1ae2d51f-1cfe-4453-b7f5-e2bf8263a9d1, tls: true, tfo: false, skip-cert-verify: true, servername: ff.v07.us.kg, client-fingerprint: random, network: ws, ws-opts: {path: ""/?ed=2560"", headers: {Host: ff.v07.us.kg}}}
+  - {name: 01, server: 2A06:98C1:3122::CACE, port: 443, type: vless, uuid: 1ae2d51f-1cfe-4453-b7f5-e2bf8263a9d1, tls: true, tfo: false, skip-cert-verify: true, servername: ff.v07.us.kg, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ff.v07.us.kg}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -133,121 +133,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - name: 📲 电报信息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
       - ♻️ 自动选择
       - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 rules:
-  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
-  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
-  - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-  - DOMAIN-SUFFIX,local,🎯 全球直连
-  - DOMAIN-SUFFIX,localhost,🎯 全球直连
-  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
-  - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
-  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
-  - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
-  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
-  - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
-  - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
-  - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-  - DOMAIN,router.asus.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
-  - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,my.router,🎯 全球直连
-  - DOMAIN-SUFFIX,p.to,🎯 全球直连
-  - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
-  - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-  - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
-
-  - DOMAIN-SUFFIX,265.com,🎯 全球直连
-  - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
-  - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt2-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt3-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt4-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt5-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt6-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
-  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
-  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
-  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
-  - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
-  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
-
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
   - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
@@ -647,13 +539,14 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-
-
-  - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
+
 
 
 
 ```
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.27:17:30:40.png" style="width:400px;"></p>
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/02.27:17:32:58.png" style="width:400px;"></p>
