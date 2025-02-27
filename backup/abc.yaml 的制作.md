@@ -84,13 +84,7 @@ return
   - {"type":"vmess","name":"233boy-grpc-t03-cf.phpman.top","grpc-opts":{"grpc-service-name":"537d21ad-49af-41ad-8089-db557b63a40e"},"server":"t03-cf.phpman.top","port":"443","uuid":"537d21ad-49af-41ad-8089-db557b63a40e","alterId":"0","cipher":"auto","network":"grpc","tls":true}
 ```
 
-##  查找abc.yaml中的      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-
-```
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-```
-
-替换为如下
+##  根据上面的条数，增删下面节点名 默认为200条节点
 
 ```
       - 01
@@ -105,6 +99,7 @@ return
       - 10
       - 11
       - 12
+      - ................
 ```
 
 ## 模板   abc.yaml

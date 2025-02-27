@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Thu, 27 Feb 2025 10:26:15 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Thu, 27 Feb 2025 10:43:52 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
 
 ```
 F1 &amp; w::
@@ -85,13 +85,7 @@ return
   - {'type':'vmess','name':'233boy-grpc-t03-cf.phpman.top','grpc-opts':{'grpc-service-name':'537d21ad-49af-41ad-8089-db557b63a40e'},'server':'t03-cf.phpman.top','port':'443','uuid':'537d21ad-49af-41ad-8089-db557b63a40e','alterId':'0','cipher':'auto','network':'grpc','tls':true}
 ```
 
-##  查找abc.yaml中的      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-
-```
-      - zzzaaaaaaaaaaazzzzzzzzzzaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-```
-
-替换为如下
+##  根据上面的条数，增删下面节点名 默认为200条节点
 
 ```
       - 01
@@ -106,6 +100,7 @@ return
       - 10
       - 11
       - 12
+      - ................
 ```
 
 ## 模板   abc.yaml
