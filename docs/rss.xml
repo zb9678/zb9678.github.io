@@ -1,5 +1,107 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Thu, 27 Feb 2025 10:43:52 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sat, 01 Mar 2025 00:11:01 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>批量制作节点</title><link>https://12.zcr25.ggff.net/post/pi-liang-zhi-zuo-jie-dian.html</link><description>## vless节点 IPV4
+
+- 需读取同目录下的IP文本  4.txt
+
+```
+F1 &amp; j::  
+    ; 读取剪贴板内容
+    ;originalText := Clipboard
+      originalText := 'vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.21.236.177:2083?encryption=none&amp;security=tls&amp;sni=yyyty.zbb25.filegear-sg.me&amp;fp=random&amp;type=ws&amp;host=yyyty.zbb25.filegear-sg.me&amp;path=%2F%3Fed%3D2560#p'
+           ;originalText := 'vless://6784c6ee-cc88-419b-8fee-ca090dbaa428@104.21.236.177:2096?encryption=none&amp;security=tls&amp;sni=edk.v07.us.kg&amp;type=ws&amp;host=edk.v07.us.kg&amp;path=%3Fed%3D2560#aa'
+                                            ; 可修改  6784c6ee-cc88-419b-8fee-ca090dbaa428和edk.v07.us.kg     以及最后的#C  
+    ; 读取 IP 列表文件
+    ipList := []
+    Loop, Read, 4.txt
+    {
+        ipList.Push(A_LoopReadLine)  ; 逐行读取并存入数组
+    }
+
+    newText := ''  ; 存储最终文本
+
+    ; 依次替换 IP
+    for index, ip in ipList
+    {
+        newText .= StrReplace(originalText, '104.21.236.177', ip) . '`n'
+    }
+
+    ; 写入剪贴板
+    Clipboard := RTrim(newText, '`n')
+    ;MsgBox, 生成完成，已复制到剪贴板！
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; j 将4.txt中的IP替换为节点   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000004-3062 
+```
+
+## trojan节点 
+
+- 需读取同目录下的IP文本  5.txt
+
+```
+F1 &amp; i::  
+    ; 读取剪贴板内容
+    ;originalText := Clipboard
+      originalText := 'trojan://47%5ER%7DB%5B%3BU%2B%25B%29i%2Bk@206.238.236.31:2087?security=tls&amp;sni=309pB.ZbB.dnS-DYnAMic.nET&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=309pb.zbb.dns-dynamic.net&amp;path=%2FtrzK9DMAj2zBKkHhtR%3Fed%3D2560#bn'
+         ;originalText := 'trojan://Aimer@206.238.236.31:8443?security=tls&amp;sni=agept.ambercc.filegear-sg.me&amp;type=ws&amp;host=agept.ambercc.filegear-sg.me&amp;path=%2F#qq'
+    ; 读取 IP 列表文件
+    ipList := []
+    Loop, Read, 5.txt
+    {
+        ipList.Push(A_LoopReadLine)  ; 逐行读取并存入数组
+    }
+
+    newText := ''  ; 存储最终文本
+
+    ; 依次替换 IP
+    for index, ip in ipList
+    {
+        newText .= StrReplace(originalText, '206.238.236.31', ip) . '`n'
+    }
+
+    ; 写入剪贴板
+    Clipboard := RTrim(newText, '`n')
+    ;MsgBox, 生成完成，已复制到剪贴板！
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; i 将5.txt中的IP替换为节点   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000004-3062  vless
+```
+
+## vless节点   IPV6
+
+- 需读取同目录下的IP文本  6.txt
+
+```
+
+F1 &amp; u::  
+    ; 读取剪贴板内容
+    ;originalText := Clipboard
+      originalText := 'vless://a2a6f6ae-7f5b-42ed-9842-e346e56bc22b@[2606:4700::31ed:42ab]:2087?encryption=none&amp;security=tls&amp;sni=zyd.zcr25.ggff.net&amp;fp=randomized&amp;type=ws&amp;host=zyd.zcr25.ggff.net&amp;path=%2F%3Fed%3D2560#zy'
+     ;originalText := 'vless://1ae2d51f-1cfe-4453-b7f5-e2bf8263a9d1@[2606:4700::31ed:42ab]:2053?encryption=none&amp;security=tls&amp;sni=ff.v07.us.kg&amp;fp=random&amp;type=ws&amp;host=ff.v07.us.kg&amp;path=%2F%3Fed%3D2560#ii'
+                                            ; 可修改  6784c6ee-cc88-419b-8fee-ca090dbaa428和edk.v07.us.kg     以及最后的#C  
+    ; 读取 IP 列表文件
+    ipList := []
+    Loop, Read, 6.txt
+    {
+        ipList.Push(A_LoopReadLine)  ; 逐行读取并存入数组
+    }
+
+    newText := ''  ; 存储最终文本
+
+    ; 依次替换 IP
+    for index, ip in ipList
+    {
+        newText .= StrReplace(originalText, '[2606:4700::31ed:42ab]', ip) . '`n'
+    }
+
+    ; 写入剪贴板
+    Clipboard := RTrim(newText, '`n')
+    ;MsgBox, 生成完成，已复制到剪贴板！
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; u 将6.txt中的IP替换为节点   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 00000004-3062
+
+```
+
+
+
+。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/pi-liang-zhi-zuo-jie-dian.html</guid><pubDate>Sat, 01 Mar 2025 00:10:25 +0000</pubDate></item><item><title>abc.yaml 的制作</title><link>https://12.zcr25.ggff.net/post/abc.yaml%20-de-zhi-zuo.html</link><description>##  高级替换脚本
 
 ```
 F1 &amp; w::
