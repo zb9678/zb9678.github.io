@@ -1,3 +1,11 @@
+## `\p{han}`　匹配汉字
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png" style="width:400px;"></p>
+
+## `\P{han}`　非汉字
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png" style="width:400px;"></p>
+
 ## \p{Ps}
 
 ![截图20241224175524](https://github.com/user-attachments/assets/ba2717cb-2816-40b6-8c68-ed810162c0a8)
@@ -21,16 +29,5 @@
 
 ##
 
-```
-<br><center><span style="color: #fff97b; font-size: 30px;">🎗  &nbsp; 正则表达式 &nbsp;  🎗</span></center></br>
 
 
-## `\p{han}`　匹配汉字
-
-
-## `\P{han}`　非汉字
-
-
-<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png" style="width:400px;"></p>
-
-<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png" style="width:400px;"></p>
