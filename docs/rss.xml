@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 13:23:55 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>文字横排改为竖排</title><link>https://12.zcr25.ggff.net/post/wen-zi-heng-pai-gai-wei-shu-pai.html</link><description>## 文字横排改为竖排
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 16:59:09 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>上传剪贴板中的文件  上传截图</title><link>https://12.zcr25.ggff.net/post/shang-chuan-jian-tie-ban-zhong-de-wen-jian-%20%20-shang-chuan-jie-tu.html</link><description>## 上传截图 upgit.exe
+
+```
+F1 &amp; a::
+    	Run, 'D:\ahk1.0\Lib\0 tool\kscrcap\kscrcap.exe', , , pid
+    	Process, WaitClose, %pid%, 20              ; --等待进程关闭，最长 20 秒
+
+; 确认是否上传
+    	MsgBox, 4,, 请在完成截图和编辑后点击“是”确认上传图片。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/shang-chuan-jian-tie-ban-zhong-de-wen-jian-%20%20-shang-chuan-jie-tu.html</guid><pubDate>Sun, 02 Mar 2025 16:58:48 +0000</pubDate></item><item><title>文字横排改为竖排</title><link>https://12.zcr25.ggff.net/post/wen-zi-heng-pai-gai-wei-shu-pai.html</link><description>## 文字横排改为竖排
 
 -  ` (\r\n)*`  替换为  `\r\n`
 
