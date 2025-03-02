@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/180062094?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="## `\p{han}`　匹配汉字 1
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png' style='width:400px;'></p>
+
+## `\p{Lo}`　匹配汉字 2
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:02:51.png' style='width:400px;'></p>
+
+
+### `\P{han}`　非汉字  此处为大写的 P 表示反选
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png' style='width:400px;'></p>
+
+##  `\p{L}`  字母与汉字
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:13:03.png' style='width:400px;'></p>
+
+## `\p{Ll}`  大写 L 小写 l   匹配 大小写字母
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:57:15.png' style='width:400px;'></p>
+
+## `\p{N}`  匹配 数字
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:17:09.png' style='width:400px;'></p>
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:34:08.png' style='width:400px;'></p>
+
+## `\p{P}`  匹配 中英文标点
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:23:28.png' style='width:400px;'></p>
+
+### `\p{P}|[<>~+×÷=＝$￥|｜``]``  补充符号
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:41:09.png' style='width:400px;'></p>1
+
+=================================================================
+
+## `[[:punct:]｜＝￥]` 匹配 所有标点
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:18:21.png' style='width:400px;'></p>
+
+### 注意区别
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:22:40.png' style='width:400px;'></p>
+
+==================================================================
+
+## `\p{Pc}`  匹配 下划线
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:27:29.png' style='width:400px;'></p>
+
+## `\p{Ps}` 匹配 中英文各类左括号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:37:43.png' style='width:400px;'></p>
+
+## `\p{Pe}` 匹配 中英文各类右括号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:43:36.png' style='width:400px;'></p>
+
+
+## `\p{Pi}` 匹配 中文左引号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:00:10.png' style='width:400px;'></p>
+
+## `\p{Pf}`  匹配 中文右引号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:56:20.png' style='width:400px;'></p>
+
+## `\p{sm}`  匹配  大多符号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:07:10.png' style='width:400px;'></p>
+
+## `\p{so}`  匹配 大多符号未选中的其他符号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:09:56.png' style='width:400px;'></p>
+
+## `\p{z}`  匹配 空格 不含Tab
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:13:33.png' style='width:400px;'></p>
+
+## `\p{c}`  匹配 Tab
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:17:05.png' style='width:400px;'></p>
+
+## `\p{s}`  匹配 表情符号及数字符号
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:31:35.png' style='width:400px;'></p>
+
+## `^[\s\t]*\n`  匹配 空行
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:45:41.png' style='width:400px;'></p>
+
+## `[ā-ǜà-ü]`   匹配韵母
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:50:01.png' style='width:400px;'></p>
+
+## `[a-ǜà-ü]`   匹配韵母和字母   注意是 a   不是 ā
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:00:06.png' style='width:400px;'></p>
+
+
+## `[^\p{L}\p{N}]`  反向匹配
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:34:17.png' style='width:400px;'></p>
+
+
+
+
+
+。">
+<meta property="og:title" content="正则匹配 汉字及字母，数字，符号等">
+<meta property="og:description" content="## `\p{han}`　匹配汉字 1
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png' style='width:400px;'></p>
+
+## `\p{Lo}`　匹配汉字 2
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:02:51.png' style='width:400px;'></p>
+
+
+### `\P{han}`　非汉字  此处为大写的 P 表示反选
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png' style='width:400px;'></p>
+
+##  `\p{L}`  字母与汉字
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:13:03.png' style='width:400px;'></p>
+
+## `\p{Ll}`  大写 L 小写 l   匹配 大小写字母
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:57:15.png' style='width:400px;'></p>
+
+## `\p{N}`  匹配 数字
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:17:09.png' style='width:400px;'></p>
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:34:08.png' style='width:400px;'></p>
+
+## `\p{P}`  匹配 中英文标点
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:23:28.png' style='width:400px;'></p>
+
+### `\p{P}|[<>~+×÷=＝$￥|｜``]``  补充符号
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:41:09.png' style='width:400px;'></p>1
+
+=================================================================
+
+## `[[:punct:]｜＝￥]` 匹配 所有标点
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:18:21.png' style='width:400px;'></p>
+
+### 注意区别
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:22:40.png' style='width:400px;'></p>
+
+==================================================================
+
+## `\p{Pc}`  匹配 下划线
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:27:29.png' style='width:400px;'></p>
+
+## `\p{Ps}` 匹配 中英文各类左括号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:37:43.png' style='width:400px;'></p>
+
+## `\p{Pe}` 匹配 中英文各类右括号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:43:36.png' style='width:400px;'></p>
+
+
+## `\p{Pi}` 匹配 中文左引号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:00:10.png' style='width:400px;'></p>
+
+## `\p{Pf}`  匹配 中文右引号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:56:20.png' style='width:400px;'></p>
+
+## `\p{sm}`  匹配  大多符号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:07:10.png' style='width:400px;'></p>
+
+## `\p{so}`  匹配 大多符号未选中的其他符号 
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:09:56.png' style='width:400px;'></p>
+
+## `\p{z}`  匹配 空格 不含Tab
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:13:33.png' style='width:400px;'></p>
+
+## `\p{c}`  匹配 Tab
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:17:05.png' style='width:400px;'></p>
+
+## `\p{s}`  匹配 表情符号及数字符号
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:31:35.png' style='width:400px;'></p>
+
+## `^[\s\t]*\n`  匹配 空行
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:45:41.png' style='width:400px;'></p>
+
+## `[ā-ǜà-ü]`   匹配韵母
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:50:01.png' style='width:400px;'></p>
+
+## `[a-ǜà-ü]`   匹配韵母和字母   注意是 a   不是 ā
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:00:06.png' style='width:400px;'></p>
+
+
+## `[^\p{L}\p{N}]`  反向匹配
+
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:34:17.png' style='width:400px;'></p>
+
+
+
+
+
+。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://12.zcr25.ggff.net/post/zheng-ze-pi-pei-%20-han-zi-ji-zi-mu-%EF%BC%8C-shu-zi-%EF%BC%8C-fu-hao-deng.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
+<title>正则匹配 汉字及字母，数字，符号等</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">正则匹配 汉字及字母，数字，符号等</h1>
+<div class="title-right">
+    <a href="https://12.zcr25.ggff.net" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/131" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2><code class="notranslate">\p{han}</code>　匹配汉字 1</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/87a417f4255354b84139fb078442fc5dd8c72448d8ad9e9868b38a3d8fdb25e3/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a33363a35362e706e67"><img src="https://camo.githubusercontent.com/87a417f4255354b84139fb078442fc5dd8c72448d8ad9e9868b38a3d8fdb25e3/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a33363a35362e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Lo}</code>　匹配汉字 2</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/83c85d141a9e86b4c71ae2f09b5ff40bcfbd6aca1963733b64a02cdb9673284b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a30323a35312e706e67"><img src="https://camo.githubusercontent.com/83c85d141a9e86b4c71ae2f09b5ff40bcfbd6aca1963733b64a02cdb9673284b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a30323a35312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:02:51.png" style="max-width: 100%;"></a></p>
+<h3><code class="notranslate">\P{han}</code>　非汉字  此处为大写的 P 表示反选</h3>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/483ca664201c5c56795def476bf545bed676b7559c6f91e59d58018e579f9681/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a33393a30302e706e67"><img src="https://camo.githubusercontent.com/483ca664201c5c56795def476bf545bed676b7559c6f91e59d58018e579f9681/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a33393a30302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{L}</code>  字母与汉字</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a5c93ca05e430b64bb40a0f35aec1b42d7aa10d309099d527365d09f97a9366d/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a31333a30332e706e67"><img src="https://camo.githubusercontent.com/a5c93ca05e430b64bb40a0f35aec1b42d7aa10d309099d527365d09f97a9366d/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a31333a30332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:13:03.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Ll}</code>  大写 L 小写 l   匹配 大小写字母</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f76966bb2f40961ec5bb741e60a486ef03a966f3f9a5ec3a4c58ebb8f687bcaf/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a35373a31352e706e67"><img src="https://camo.githubusercontent.com/f76966bb2f40961ec5bb741e60a486ef03a966f3f9a5ec3a4c58ebb8f687bcaf/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31313a35373a31352e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:57:15.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{N}</code>  匹配 数字</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/df575393ef393328cd23b558dc5bba5982f6491bc1f96f917d8582590fa8c656/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a31373a30392e706e67"><img src="https://camo.githubusercontent.com/df575393ef393328cd23b558dc5bba5982f6491bc1f96f917d8582590fa8c656/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a31373a30392e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:17:09.png" style="max-width: 100%;"></a></p>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ede390b59dc30e9bfaed0f2d8dd1e5ee32680b142f4c1c6a772a64240d851683/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a33343a30382e706e67"><img src="https://camo.githubusercontent.com/ede390b59dc30e9bfaed0f2d8dd1e5ee32680b142f4c1c6a772a64240d851683/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a33343a30382e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:34:08.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{P}</code>  匹配 中英文标点</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a5d25be7cdca1722540f34d36a1ed07e2f88cfeffe4855a48340e497412c3259/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a32333a32382e706e67"><img src="https://camo.githubusercontent.com/a5d25be7cdca1722540f34d36a1ed07e2f88cfeffe4855a48340e497412c3259/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a32333a32382e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:23:28.png" style="max-width: 100%;"></a></p>
+<h3>`\p{P}|[&lt;&gt;~+×÷=＝$￥|｜<code class="notranslate">]</code>  补充符号</h3>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a32a89446a8523b81f9a8930b48b66a0c484b295104cc8dc0c9954cfff0fb419/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a34313a30392e706e67"><img src="https://camo.githubusercontent.com/a32a89446a8523b81f9a8930b48b66a0c484b295104cc8dc0c9954cfff0fb419/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a34313a30392e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:41:09.png" style="max-width: 100%;"></a></p>1
+<p>=================================================================</p>
+<h2><code class="notranslate">[[:punct:]｜＝￥]</code> 匹配 所有标点</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/836a016fe92d2a127e311590585fbb1b81323b406345e83fb5d247554fe678bf/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a31383a32312e706e67"><img src="https://camo.githubusercontent.com/836a016fe92d2a127e311590585fbb1b81323b406345e83fb5d247554fe678bf/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a31383a32312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:18:21.png" style="max-width: 100%;"></a></p>
+<h3>注意区别</h3>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/50fa116f4b7b93540ed2f219f89efa0936a489f415e11bb90f77274d7018a496/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a32323a34302e706e67"><img src="https://camo.githubusercontent.com/50fa116f4b7b93540ed2f219f89efa0936a489f415e11bb90f77274d7018a496/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a32323a34302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:22:40.png" style="max-width: 100%;"></a></p>
+<p>==================================================================</p>
+<h2><code class="notranslate">\p{Pc}</code>  匹配 下划线</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a969ee0baa675fda383a08327f48f8cc7f9c5de13f32de58ab94d2abce0005a0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a32373a32392e706e67"><img src="https://camo.githubusercontent.com/a969ee0baa675fda383a08327f48f8cc7f9c5de13f32de58ab94d2abce0005a0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31323a32373a32392e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:12:27:29.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Ps}</code> 匹配 中英文各类左括号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/070136937f24daf61a85146bc6495acdd04a3a6726317d9a21e64c204c576b4c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a33373a34332e706e67"><img src="https://camo.githubusercontent.com/070136937f24daf61a85146bc6495acdd04a3a6726317d9a21e64c204c576b4c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a33373a34332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:37:43.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Pe}</code> 匹配 中英文各类右括号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/54ae2fcfcb3eb0998dcf724a4a3b7584a08bc716d4a6b3a1bc431463851ac339/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a34333a33362e706e67"><img src="https://camo.githubusercontent.com/54ae2fcfcb3eb0998dcf724a4a3b7584a08bc716d4a6b3a1bc431463851ac339/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a34333a33362e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:43:36.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Pi}</code> 匹配 中文左引号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/97e1472eb7e69b4ee00a9cf154507c4087db6a38c4498eac5cb5562d896c4979/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30303a31302e706e67"><img src="https://camo.githubusercontent.com/97e1472eb7e69b4ee00a9cf154507c4087db6a38c4498eac5cb5562d896c4979/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30303a31302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:00:10.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{Pf}</code>  匹配 中文右引号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9e64c93ffad6fc871f0ac05b8e9ae5ef9c8f35007a7be8a8d04baef05ddc2579/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a35363a32302e706e67"><img src="https://camo.githubusercontent.com/9e64c93ffad6fc871f0ac05b8e9ae5ef9c8f35007a7be8a8d04baef05ddc2579/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31333a35363a32302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:56:20.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{sm}</code>  匹配  大多符号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/86e2769074f8aca4624186a3194f3737febb90614c9f74843dd6da2ea4fc4c37/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30373a31302e706e67"><img src="https://camo.githubusercontent.com/86e2769074f8aca4624186a3194f3737febb90614c9f74843dd6da2ea4fc4c37/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30373a31302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:07:10.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{so}</code>  匹配 大多符号未选中的其他符号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/deb24afc2f83933716dce8b056d659ed7361089d00fb5e77f85cb76c0d15c4ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30393a35362e706e67"><img src="https://camo.githubusercontent.com/deb24afc2f83933716dce8b056d659ed7361089d00fb5e77f85cb76c0d15c4ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a30393a35362e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:09:56.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{z}</code>  匹配 空格 不含Tab</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/13ebe1c91822e14fcb252c778ca8531cad631e94cfe2e007e02ab6fd38a70483/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a31333a33332e706e67"><img src="https://camo.githubusercontent.com/13ebe1c91822e14fcb252c778ca8531cad631e94cfe2e007e02ab6fd38a70483/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a31333a33332e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:13:33.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{c}</code>  匹配 Tab</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/259723c790b196eb112aed8dc0b3cfe315730c383a8b3ff876d82d303fc90a73/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a31373a30352e706e67"><img src="https://camo.githubusercontent.com/259723c790b196eb112aed8dc0b3cfe315730c383a8b3ff876d82d303fc90a73/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a31373a30352e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:17:05.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">\p{s}</code>  匹配 表情符号及数字符号</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cbae4efa279eadce100d562f144818e1139bdb2c2bb0ec06563a85207e0558fa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a33313a33352e706e67"><img src="https://camo.githubusercontent.com/cbae4efa279eadce100d562f144818e1139bdb2c2bb0ec06563a85207e0558fa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a33313a33352e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:31:35.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">^[\s\t]*\n</code>  匹配 空行</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7dc35953d93bdaacc124cb2311e003444399c850710861eb25815307d7b5d805/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a34353a34312e706e67"><img src="https://camo.githubusercontent.com/7dc35953d93bdaacc124cb2311e003444399c850710861eb25815307d7b5d805/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a34353a34312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:45:41.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">[ā-ǜà-ü]</code>   匹配韵母</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f7cc2a505b259f0b9e17f5c4966df138179b307f24a24fc41609d3d210d05da7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a35303a30312e706e67"><img src="https://camo.githubusercontent.com/f7cc2a505b259f0b9e17f5c4966df138179b307f24a24fc41609d3d210d05da7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31343a35303a30312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:50:01.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">[a-ǜà-ü]</code>   匹配韵母和字母   注意是 a   不是 ā</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e6cedae7e67ec029c0b64f4e9f93f28e4d4d2da85141294718460fe6beebdaf7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a30303a30362e706e67"><img src="https://camo.githubusercontent.com/e6cedae7e67ec029c0b64f4e9f93f28e4d4d2da85141294718460fe6beebdaf7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a30303a30362e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:00:06.png" style="max-width: 100%;"></a></p>
+<h2><code class="notranslate">[^\p{L}\p{N}]</code>  反向匹配</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/40bbb9a3f1b6aea700ce0accec2456dc8c966ee9298af1fd12c77207bdc75875/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a33343a31372e706e67"><img src="https://camo.githubusercontent.com/40bbb9a3f1b6aea700ce0accec2456dc8c966ee9298af1fd12c77207bdc75875/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f7570312f30332e30323a31353a33343a31372e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:15:34:17.png" style="max-width: 100%;"></a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://12.zcr25.ggff.net">琶琶🔭啙</a></div>
+<div id="footer2"><span id="filingNum"><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备20250105号</a> • </span>
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2015"!=""){
+    var startSite=new Date("02/16/2015");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
+
+</html>
