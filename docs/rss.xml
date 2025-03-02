@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 05:56:58 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>chrome界面上无法滚轮调节音量</title><link>https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</link><description>## chrome界面上无法滚轮调节音量
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 06:18:33 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>chrome界面上无法滚轮调节音量</title><link>https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</link><description>## chrome界面上无法滚轮调节音量
 
 问题：在chrome界面上，ahk脚本的滚动调节音量等失效。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</guid><pubDate>Sun, 02 Mar 2025 03:30:17 +0000</pubDate></item><item><title>隐藏的文件夹</title><link>https://12.zcr25.ggff.net/post/yin-cang-de-wen-jian-jia.html</link><description>## 新建一个无名，隐藏的文件夹
 
@@ -3613,19 +3613,27 @@ https://www.youtube.com/watch?v=puME1NGA-Ic&#13;
 
 ## `\p{Pi}` 匹配 中文左引号 
 
-&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:52:49.png' style='width:400px;'&gt;&lt;/p&gt;
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:00:10.png' style='width:400px;'&gt;&lt;/p&gt;
 
 ## `\p{Pf}`  匹配 中文右引号 
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:13:56:20.png' style='width:400px;'&gt;&lt;/p&gt;
 
-## `\p{Pc}`  匹配 
+## `\p{sm}`  匹配  大多符号 
 
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:07:10.png' style='width:400px;'&gt;&lt;/p&gt;
 
+## `\p{so}`  匹配 大多符号未选中的其他符号 
 
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:09:56.png' style='width:400px;'&gt;&lt;/p&gt;
 
-## `\p{Pc}`  匹配 
+## `\p{z}`  匹配 空格 不含Tab
 
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:13:33.png' style='width:400px;'&gt;&lt;/p&gt;
+
+## `\p{c}`  匹配 Tab
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:14:17:05.png' style='width:400px;'&gt;&lt;/p&gt;
 
 
 
