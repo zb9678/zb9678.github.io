@@ -6,7 +6,7 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:39:00.png" style="width:400px;"></p>
 
-## \p{Ps}
+##  `\p{Ps}`  字母与汉字
 
 ![截图20241224175524](https://github.com/user-attachments/assets/ba2717cb-2816-40b6-8c68-ed810162c0a8)
 ![截图20241224175705](https://github.com/user-attachments/assets/9c2090aa-56cf-40be-93b9-389d14446ead)
