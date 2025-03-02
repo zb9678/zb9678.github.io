@@ -18,3 +18,33 @@
 ![截图20241224184811](https://github.com/user-attachments/assets/0a99ba96-08e0-4d0a-9921-fd853c2a182a)
 ![截图20241224185418](https://github.com/user-attachments/assets/2ec058be-43f8-4f04-bfb3-7b73721f0678)
 ![截图20241224185459](https://github.com/user-attachments/assets/a4c5252d-96de-4be5-8831-a9fcd9ce895d)
+
+##
+
+```
+<br><center><span style="color: #fff97b; font-size: 30px;">🎗  &nbsp; 正则表达式 &nbsp;  🎗</span></center></br>
+
+---
+<span style="color: #fff97b; font-size: 20px;">
+
+[toc] 
+</span>
+<br>
+<br>
+
+<span style="color: #ff997b">
+<span style="font-size: 18px">
+
+==========================
+# `\p{han}`　匹配汉字
+
+ `[\u4E00-\u9FFF㐀-\u4DBF豈-\uFAFF]`
+
+<img src="https://zbing-my.sharepoint.com/:i:/g/personal/k55_zbing_onmicrosoft_com/ESbdRYlgjbNHvckuhihy_zkBm-jmlAlWyGqGS-3eVL1u8w?download=1" style="zoom:50%;" />
+
+# `\P{han}`　非汉字
+
+<img src="https://zbing-my.sharepoint.com/:i:/g/personal/k55_zbing_onmicrosoft_com/ETzGqpacAUxNhOvu0ddwqCEBI14WZnVrHfx4BgFWS-WFEg?download=1" style="zoom:50%;" />
+```
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png" style="width:400px;"></p>

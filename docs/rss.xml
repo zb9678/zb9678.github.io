@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 03:30:41 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>chrome界面上无法滚轮调节音量</title><link>https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</link><description>## chrome界面上无法滚轮调节音量
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Sun, 02 Mar 2025 03:37:44 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>chrome界面上无法滚轮调节音量</title><link>https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</link><description>## chrome界面上无法滚轮调节音量
 
 问题：在chrome界面上，ahk脚本的滚动调节音量等失效。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/chrome-jie-mian-shang-wu-fa-gun-lun-diao-jie-yin-liang.html</guid><pubDate>Sun, 02 Mar 2025 03:30:17 +0000</pubDate></item><item><title>隐藏的文件夹</title><link>https://12.zcr25.ggff.net/post/yin-cang-de-wen-jian-jia.html</link><description>## 新建一个无名，隐藏的文件夹
 
@@ -3569,26 +3569,56 @@ https://www.youtube.com/watch?v=puME1NGA-Ic&#13;
 &#13;
 ## 注意节点数量不要超过115个&#13;
 &#13;
-- 否则无法生成短链接。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/jie-dian-zhuan-huan-shuo-ming-%20115.html</guid><pubDate>Wed, 25 Dec 2024 01:57:58 +0000</pubDate></item><item><title>\p{Ps}</title><link>https://12.zcr25.ggff.net/post/-p%7BPs%7D.html</link><description>## \p{Ps}&#13;
-&#13;
-![截图20241224175524](https://github.com/user-attachments/assets/ba2717cb-2816-40b6-8c68-ed810162c0a8)&#13;
-![截图20241224175705](https://github.com/user-attachments/assets/9c2090aa-56cf-40be-93b9-389d14446ead)&#13;
-![截图20241224180422](https://github.com/user-attachments/assets/9bf22533-90d8-4bb3-ae4f-b28d8191a350)&#13;
-![截图20241224181403](https://github.com/user-attachments/assets/347c46cc-03bd-4f62-afce-de50022f0e85)&#13;
-![截图20241224182115](https://github.com/user-attachments/assets/566430b3-9785-4aee-ac23-8efb9879ee7d)&#13;
-![截图20241224182212](https://github.com/user-attachments/assets/b1d99168-e0de-4641-b1d5-668dce0beacc)&#13;
-![截图20241224182354](https://github.com/user-attachments/assets/b1eced7a-530c-450a-a993-57a4de714036)&#13;
-![截图20241224183045](https://github.com/user-attachments/assets/8f17d272-391c-42f9-99f7-cb096e2b4664)&#13;
-![截图20241224183238](https://github.com/user-attachments/assets/2cd95010-251b-4cb3-8cf9-61aa3205550b)&#13;
-![截图20241224183359](https://github.com/user-attachments/assets/4bf0940e-07bb-4a73-83f4-b25d9189cb68)&#13;
-![截图20241224183552](https://github.com/user-attachments/assets/14f4c6ef-a895-4d35-bc33-5ef443a0993e)&#13;
-![截图20241224184146](https://github.com/user-attachments/assets/bb87ec8b-0877-4070-b2e9-1c0f5a0540e2)&#13;
-![截图20241224184304](https://github.com/user-attachments/assets/f57eef6f-4d1b-4f5e-9c80-f7e646d597d5)&#13;
-![截图20241224184447](https://github.com/user-attachments/assets/b88ed845-1d82-4880-a3ef-ca1bb55389d3)&#13;
-![截图20241224184608](https://github.com/user-attachments/assets/170d2812-4280-47d0-b4d7-83ecda8d2b28)&#13;
-![截图20241224184811](https://github.com/user-attachments/assets/0a99ba96-08e0-4d0a-9921-fd853c2a182a)&#13;
-![截图20241224185418](https://github.com/user-attachments/assets/2ec058be-43f8-4f04-bfb3-7b73721f0678)&#13;
-![截图20241224185459](https://github.com/user-attachments/assets/a4c5252d-96de-4be5-8831-a9fcd9ce895d)&#13;
+- 否则无法生成短链接。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/jie-dian-zhuan-huan-shuo-ming-%20115.html</guid><pubDate>Wed, 25 Dec 2024 01:57:58 +0000</pubDate></item><item><title>\p{Ps}</title><link>https://12.zcr25.ggff.net/post/-p%7BPs%7D.html</link><description>## \p{Ps}
+
+![截图20241224175524](https://github.com/user-attachments/assets/ba2717cb-2816-40b6-8c68-ed810162c0a8)
+![截图20241224175705](https://github.com/user-attachments/assets/9c2090aa-56cf-40be-93b9-389d14446ead)
+![截图20241224180422](https://github.com/user-attachments/assets/9bf22533-90d8-4bb3-ae4f-b28d8191a350)
+![截图20241224181403](https://github.com/user-attachments/assets/347c46cc-03bd-4f62-afce-de50022f0e85)
+![截图20241224182115](https://github.com/user-attachments/assets/566430b3-9785-4aee-ac23-8efb9879ee7d)
+![截图20241224182212](https://github.com/user-attachments/assets/b1d99168-e0de-4641-b1d5-668dce0beacc)
+![截图20241224182354](https://github.com/user-attachments/assets/b1eced7a-530c-450a-a993-57a4de714036)
+![截图20241224183045](https://github.com/user-attachments/assets/8f17d272-391c-42f9-99f7-cb096e2b4664)
+![截图20241224183238](https://github.com/user-attachments/assets/2cd95010-251b-4cb3-8cf9-61aa3205550b)
+![截图20241224183359](https://github.com/user-attachments/assets/4bf0940e-07bb-4a73-83f4-b25d9189cb68)
+![截图20241224183552](https://github.com/user-attachments/assets/14f4c6ef-a895-4d35-bc33-5ef443a0993e)
+![截图20241224184146](https://github.com/user-attachments/assets/bb87ec8b-0877-4070-b2e9-1c0f5a0540e2)
+![截图20241224184304](https://github.com/user-attachments/assets/f57eef6f-4d1b-4f5e-9c80-f7e646d597d5)
+![截图20241224184447](https://github.com/user-attachments/assets/b88ed845-1d82-4880-a3ef-ca1bb55389d3)
+![截图20241224184608](https://github.com/user-attachments/assets/170d2812-4280-47d0-b4d7-83ecda8d2b28)
+![截图20241224184811](https://github.com/user-attachments/assets/0a99ba96-08e0-4d0a-9921-fd853c2a182a)
+![截图20241224185418](https://github.com/user-attachments/assets/2ec058be-43f8-4f04-bfb3-7b73721f0678)
+![截图20241224185459](https://github.com/user-attachments/assets/a4c5252d-96de-4be5-8831-a9fcd9ce895d)
+
+##
+
+```
+&lt;br&gt;&lt;center&gt;&lt;span style='color: #fff97b; font-size: 30px;'&gt;🎗  &amp;nbsp; 正则表达式 &amp;nbsp;  🎗&lt;/span&gt;&lt;/center&gt;&lt;/br&gt;
+
+---
+&lt;span style='color: #fff97b; font-size: 20px;'&gt;
+
+[toc] 
+&lt;/span&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;span style='color: #ff997b'&gt;
+&lt;span style='font-size: 18px'&gt;
+
+==========================
+# `\p{han}`　匹配汉字
+
+ `[\u4E00-\u9FFF㐀-\u4DBF豈-\uFAFF]`
+
+&lt;img src='https://zbing-my.sharepoint.com/:i:/g/personal/k55_zbing_onmicrosoft_com/ESbdRYlgjbNHvckuhihy_zkBm-jmlAlWyGqGS-3eVL1u8w?download=1' style='zoom:50%;' /&gt;
+
+# `\P{han}`　非汉字
+
+&lt;img src='https://zbing-my.sharepoint.com/:i:/g/personal/k55_zbing_onmicrosoft_com/ETzGqpacAUxNhOvu0ddwqCEBI14WZnVrHfx4BgFWS-WFEg?download=1' style='zoom:50%;' /&gt;
+```
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/03.02:11:36:56.png' style='width:400px;'&gt;&lt;/p&gt;
 。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/-p%7BPs%7D.html</guid><pubDate>Tue, 24 Dec 2024 11:05:00 +0000</pubDate></item><item><title>我的电脑共享盘</title><link>https://12.zcr25.ggff.net/post/wo-de-dian-nao-gong-xiang-pan.html</link><description>## 共享盘kz85&#13;
 &#13;
 &#13;
