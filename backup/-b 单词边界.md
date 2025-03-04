@@ -10,6 +10,14 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.04:16:56:25.png" style="width:400px;"></p><br><br>
 
+## \b\w{2}\b
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.04:17:06:52.png" style="width:400px;"></p><br><br>
+
+## \b\w{2}\b \b\w{2}\b
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.04:17:10:05.png" style="width:400px;"></p><br><br>
+
 ##
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.04:16:29:13.png" style="width:400px;"></p><br><br>
