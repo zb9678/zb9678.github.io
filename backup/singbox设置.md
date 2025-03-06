@@ -97,7 +97,9 @@ vless://1ae2d51f-1cfe-4453-b7f5-e2bf8263a9d1@[2606:4700::5e12:b05b]:443?encrypti
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.06:11:55:14.png" style="width:400px;"></p><br>
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.06:11:51:18.png" style="width:400px;"></p><br>
 
-##  singbox配置文件的用法
+##  singbox配置文件的用法 
+
+- z55.json 和 ID_m6od7e1c.json 是一个文件
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.06:13:30:30.png" style="width:400px;"></p><br>
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.06:13:27:06.png" style="width:400px;"></p><br>
