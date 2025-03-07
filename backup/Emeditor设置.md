@@ -30,7 +30,7 @@ C:\0　　tool\BaiduNetdiskWorkspace\EmEditor设置
 
 - D:\ahk1.0\Lib\0 tool\EmEditor-24.5.3-x64
 
-
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.07:16:59:53.png" style="width:400px;"></p><br>
 
 
 
