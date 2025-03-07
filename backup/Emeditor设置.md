@@ -1,3 +1,7 @@
+## 芊芊精典 下载地址
+
+- https://myqqjd.lanzout.com/b06lv9fdg
+
 ## Emeditor设置
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.07:16:44:31.png" style="width:400px;"></p><br>
