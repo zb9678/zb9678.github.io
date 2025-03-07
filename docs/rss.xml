@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Fri, 07 Mar 2025 08:57:28 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>Emeditor设置</title><link>https://12.zcr25.ggff.net/post/Emeditor-she-zhi.html</link><description>## Emeditor设置
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Fri, 07 Mar 2025 08:58:34 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>Emeditor设置</title><link>https://12.zcr25.ggff.net/post/Emeditor-she-zhi.html</link><description>## Emeditor设置
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.07:16:44:31.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
@@ -25,7 +25,18 @@ C:\0　　tool\BaiduNetdiskWorkspace\EmEditor设置
 
 设置保存
        eeConfig.ini
-```。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/Emeditor-she-zhi.html</guid><pubDate>Fri, 07 Mar 2025 08:50:38 +0000</pubDate></item><item><title>Github tokens</title><link>https://12.zcr25.ggff.net/post/Github%20tokens.html</link><description>## Github tokens (classic)
+```
+
+- 复制后粘贴至
+
+- D:\ahk1.0\Lib\0 tool\EmEditor-24.5.3-x64
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://12.zcr25.ggff.net/post/Emeditor-she-zhi.html</guid><pubDate>Fri, 07 Mar 2025 08:50:38 +0000</pubDate></item><item><title>Github tokens</title><link>https://12.zcr25.ggff.net/post/Github%20tokens.html</link><description>## Github tokens (classic)
 
 -  https://github.com/settings/tokens
 

@@ -25,3 +25,13 @@ C:\0　　tool\BaiduNetdiskWorkspace\EmEditor设置
 设置保存
        eeConfig.ini
 ```
+
+- 复制后粘贴至
+
+- D:\ahk1.0\Lib\0 tool\EmEditor-24.5.3-x64
+
+
+
+
+
+
