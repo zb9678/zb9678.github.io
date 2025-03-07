@@ -13,3 +13,15 @@
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.07:16:50:29.png" style="width:400px;"></p><br>
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.07:16:51:07.png" style="width:400px;"></p><br>
+
+## 关于更新版本后，注册与恢复设置
+
+```
+替换以下2个文件
+C:\0　　tool\BaiduNetdiskWorkspace\EmEditor设置
+注册信息
+           eeLM.ini
+
+设置保存
+       eeConfig.ini
+```
