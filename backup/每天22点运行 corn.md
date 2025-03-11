@@ -1,3 +1,8 @@
+## ` * * * * *  `
+
+？分  ？时   ？号  ？月   周？
+
+
 ## 每分钟运行一次
 
 
@@ -45,10 +50,10 @@
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.11:23:40:18.png" style="width:400px;"></p><br>
 
 
-##
+##  12号运行  间隔3个月
 
 
-
+` 0 0 12 */3 * `
 
 
 
