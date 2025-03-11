@@ -1,30 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Tue, 11 Mar 2025 15:22:19 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>每天22点运行 corn</title><link>https://12.zcr25.ggff.net/post/mei-tian-22-dian-yun-xing-%20corn.html</link><description>## 每分钟运行一次
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>https://12.zcr25.ggff.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>https://12.zcr25.ggff.net</link></image><lastBuildDate>Tue, 11 Mar 2025 15:41:14 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>每天22点运行 corn</title><link>https://12.zcr25.ggff.net/post/mei-tian-22-dian-yun-xing-%20corn.html</link><description>## 每分钟运行一次
+
 
 `* * * * *  `
 
+
 ## 间隔2分钟运行一次
+
 
 `*/2 * * * *` 
 
-## 每天22点运行
 
-`* 22 * * * `
+## 每天22点运行  
 
-## 每隔1小时中的第23分钟运行
+
+` * 22 * * *  `
+
+- 
+-  每天 22:46:00 运行  
+
+
+` 46 22 * * * `
+
+
+## 23分运行 间隔为1小时
 
 23 * * * *  
 
 
 
 
+## 每年的7月 13日  11点  25分运行
+
+
+` 25 11 13 7 * `
 
 
 
+##  每个星期日
 
+0 0 * * SUN
 
-
-
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.11:23:40:18.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
 
 
