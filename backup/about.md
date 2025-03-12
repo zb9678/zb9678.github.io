@@ -1,12 +1,16 @@
 ## 导航
 
-https://da.r08.us.kg/
+https://da.zcr4.ip-ddns.com/
 
 ## 网络笔记
 
-https://rj.r08.us.kg/zbb
+https://rj.zcr4.ip-ddns.com/zbb
 
 https://paste.to/
+
+成语
+
+https://rj.zcr4.ip-ddns.com/4a8mNs
 
 ## 图床
 
