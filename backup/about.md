@@ -2,6 +2,12 @@
 
 https://da.zcr4.ip-ddns.com/
 
+## 免翻
+
+https://zh.zcr4.ip-ddns.com/          https://ser00.rr.nu/1.html
+
+- https://zh.zcr4.ip-ddns.com/https://ser00.rr.nu/1.html
+
 ## 网络笔记
 
 https://rj.zcr4.ip-ddns.com/zbb
