@@ -4,9 +4,11 @@ https://da.zcr4.ip-ddns.com/
 
 ## 免翻
 
-https://zh.zcr4.ip-ddns.com/          https://ser00.rr.nu/1.html
+https://zh.zcr4.ip-ddns.com/          
 
-- https://zh.zcr4.ip-ddns.com/https://ser00.rr.nu/1.html
+- https://ser00.rr.nu/1.html   需要翻
+
+- https://zh.zcr4.ip-ddns.com/https://ser00.rr.nu/1.html   加前缀后免翻
 
 ## 网络笔记
 
