@@ -30,6 +30,8 @@
 
 - 公式    =TEXT(A1,"00")&B1
 
+`TEXT(A1,"00")会将数字转换为文本，并且保持两位数的格式，如果数字小于10，则在前面添加一个零。`
+
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.13:11:42:12.png" style="width:400px;"></p><br>
 
 - 公式    =CONCATENATE(TEXT(A1,"00"),B1)
