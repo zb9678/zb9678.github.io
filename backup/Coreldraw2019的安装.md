@@ -27,7 +27,7 @@
 9. HiBitUninstaller-Portable.exe 关闭前，必须运行过至少一次coreldraw.  （后期如果卸载，必须重启一下电脑，将残留文件删除干净）。
 ```
 
-## 具体图标
+## 步骤截图
 
 ![Image](https://github.com/user-attachments/assets/6e48d7d6-0a3b-4d0d-9954-82b84fd21021)
 ![Image](https://github.com/user-attachments/assets/6e1d40ee-225f-447d-947d-5c0654293988)
