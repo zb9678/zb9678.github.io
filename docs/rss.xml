@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sun, 16 Mar 2025 07:06:57 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>Hosts</title><link>http://9.zcr3.ddns-ip.net/post/Hosts.html</link><description>##  Hosts
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sun, 16 Mar 2025 07:07:24 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>Hosts</title><link>http://9.zcr3.ddns-ip.net/post/Hosts.html</link><description>##  Hosts
 
 ```
 # Copyright (c) 1993-2009 Microsoft Corp.
@@ -100,7 +100,6 @@
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
-
 
 ```。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/Hosts.html</guid><pubDate>Sun, 16 Mar 2025 07:06:31 +0000</pubDate></item><item><title>SumIF 对满足条件的数据求和</title><link>http://9.zcr3.ddns-ip.net/post/SumIF%20-dui-man-zu-tiao-jian-de-shu-ju-qiu-he.html</link><description>## SumIF 对满足条件的数据求和
 
