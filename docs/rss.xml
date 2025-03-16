@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sun, 16 Mar 2025 11:21:25 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>filter 函數</title><link>http://9.zcr3.ddns-ip.net/post/filter%20-han-shu.html</link><description>## Filter 函數
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sun, 16 Mar 2025 11:31:51 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>filter 对数据进行筛选</title><link>http://9.zcr3.ddns-ip.net/post/filter%20-dui-shu-ju-jin-xing-shai-xuan.html</link><description>## Filter 对数据进行筛选
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.16:19:01:16.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
@@ -20,7 +20,7 @@
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.16:19:20:54.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
 
-。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/filter%20-han-shu.html</guid><pubDate>Sun, 16 Mar 2025 11:21:01 +0000</pubDate></item><item><title>Hosts</title><link>http://9.zcr3.ddns-ip.net/post/Hosts.html</link><description>##  Hosts
+。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/filter%20-dui-shu-ju-jin-xing-shai-xuan.html</guid><pubDate>Sun, 16 Mar 2025 11:21:01 +0000</pubDate></item><item><title>Hosts</title><link>http://9.zcr3.ddns-ip.net/post/Hosts.html</link><description>##  Hosts
 
 ```
 # Copyright (c) 1993-2009 Microsoft Corp.
