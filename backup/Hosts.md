@@ -38,6 +38,7 @@
 #127.0.0.1 http://mirror3.internetdownloadmanager.com
 #  IDM
 
+#防 CorelDRAW 注册登陆
 0.0.0.0 apps.corel.com
 0.0.0.0 mc.corel.com
 0.0.0.0 origin-mc.corel.com
@@ -52,7 +53,20 @@
 127.0.0.1 65.200.22.154
 127.0.0.1 65.200.22.99
 127.0.0.1 hub5btmain.sandai.net
-# Coreldraw
+127.0.0.1 mc.corel.com
+127.0.0.1 ipm.corel.com
+127.0.0.1 sws.corel.com
+127.0.0.1 dam.corel.com
+127.0.0.1 compute-1.amazonaws.com
+127.0.0.1 www.corel.com
+127.0.0.1 lm.licenses.adobe.com
+127.0.0.1 na2m-pr.licenses.adobe.com
+127.0.0.1 practivate.adobe.com
+127.0.0.1 activate.adobe.com
+127.0.0.1 ereg.adobe.com
+127.0.0.1 wip.adobe.com
+127.0.0.1 lmlicenses.wip4.adobe.com
+127.0.0.1 cloud.coreldraw.app
 
 # GitHub520 Host Start
 140.82.114.25                 alive.github.com
