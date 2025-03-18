@@ -93,10 +93,10 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.18:19:55:06.png" style="width:400px;"></p><br>
 
-## bitlocker  解密  不能断电，时间有可能几天 
+## bitlocker  解密  不能断电 最终用时1.5小时
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.18:19:56:28.png" style="width:400px;"></p><br>
 
 
-
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.18:21:43:38.png" style="width:400px;"></p><br>
 
