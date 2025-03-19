@@ -1,5 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Tue, 18 Mar 2025 13:52:09 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>进入win11的安全模式</title><link>http://9.zcr3.ddns-ip.net/post/jin-ru-win11-de-an-quan-mo-shi.html</link><description>## 进入win11的安全模式
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Wed, 19 Mar 2025 02:07:00 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>节点制作</title><link>http://9.zcr3.ddns-ip.net/post/jie-dian-zhi-zuo.html</link><description>## 节点制作
+
+- 教程
+
+-  https://www.youtube.com/watch?v=NbruiJShUCE&amp;t=200s
+
+- 获取IP
+
+- https://fofa.info/
+
+` server=='cloudflare' &amp;&amp; port=='80' &amp;&amp; header='Forbidden' &amp;&amp; country=='CN' `
+
+## 工具
+
+- https://bulianglin.com/archives/cdn.html
+
+填写内容如下
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.19:10:04:49.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+```
+1. vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInMxMC12bWVzcy13cy10bHMtYXJnbyIsDQogICJhZGQiOiAiZG5zY2hlY2tlci5vcmciLA0KICAicG9ydCI6ICI4NDQzIiwNCiAgImlkIjogImVkODI0NDY0LTk0NjEtNGUzNS05MjM5LTc4NGRlNDEwYjljMiIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczEwLnpjcjQuaXAtZGRucy5jb20iLA0KICAicGF0aCI6ICIvZWQ4MjQ0NjQtOTQ2MS00ZTM1LTkyMzktNzg0ZGU0MTBiOWMyLXZtP2VkPTIwNDgiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiczEwLnpjcjQuaXAtZGRucy5jb20iLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==
+```
+
+2. CDN提供商： 选 自定义
+
+3. 点击提取节点
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/jie-dian-zhi-zuo.html</guid><pubDate>Wed, 19 Mar 2025 02:06:31 +0000</pubDate></item><item><title>进入win11的安全模式</title><link>http://9.zcr3.ddns-ip.net/post/jin-ru-win11-de-an-quan-mo-shi.html</link><description>## 进入win11的安全模式
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.18:18:18:32.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
