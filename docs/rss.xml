@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Tue, 25 Mar 2025 02:00:38 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>BPB面板</title><link>http://9.zcr3.ddns-ip.net/post/BPB-mian-ban.html</link><description>## BPB面板
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Tue, 25 Mar 2025 03:26:59 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>BPB面板</title><link>http://9.zcr3.ddns-ip.net/post/BPB-mian-ban.html</link><description>## BPB面板
 
 - 教程
 
 - https://www.youtube.com/watch?v=cPI5cJo8R1A
 
-## 新建github仓库
+## 利用github自动更新bpb面板
+
+新建github仓库
 
 - https://github.com/new
 
@@ -20,6 +22,55 @@
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:09:57:30.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
 
 &lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:09:59:53.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:31:57.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:35:04.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:36:16.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+##  Actions后，自动拉取了_workers.js
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:33:14.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+## CF设置
+
+新建pages 连接到github
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:39:48.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:45:16.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:50:26.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:52:14.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+重新部署项目
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:53:27.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+- https://pp.zv6.rr.nu/panel
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:56:23.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:57:06.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:10:57:37.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+## 设置bpb面板
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:11:03:09.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:11:04:52.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.25:11:07:04.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+
+
+
+
+
+=============================================================================
 
 - https://dash.cloudflare.com/74514754bf9382d6eb62a00b54e28032/workers/services/view/lingering-thunder-82bpb/production/settings
 
