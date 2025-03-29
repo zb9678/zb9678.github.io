@@ -1,5 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Tue, 25 Mar 2025 03:27:26 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>BPB面板</title><link>http://9.zcr3.ddns-ip.net/post/BPB-mian-ban.html</link><description>## BPB面板
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sat, 29 Mar 2025 06:44:06 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>手机共享科学设置</title><link>http://9.zcr3.ddns-ip.net/post/shou-ji-gong-xiang-ke-xue-she-zhi.html</link><description># 手机共享科学设置
+
+## 电脑上设置v2ray
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.29:14:33:21.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+## 查看CMCC-L4NG_5G  IPv4 地址
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.29:14:35:12.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.29:14:36:23.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+## 打开 自动检测设备  （这个是关健）
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/03.29:14:39:22.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+
+## 荣10手机上进行设置
+
+1.设置
+2.WLAN
+选择   CMCC-L4NG_5G
+长按 修改网络
+显示高级选项
+a. 手动
+b. 服务器主机名   192.168.1.6     注意此处会变，应先在电脑上查看具体内容
+c. 服务器端口       10808
+d. IP   DHCP
+
+OK！
+
+
+
+
+
+
+
+
+
+
+。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/shou-ji-gong-xiang-ke-xue-she-zhi.html</guid><pubDate>Sat, 29 Mar 2025 06:43:43 +0000</pubDate></item><item><title>BPB面板</title><link>http://9.zcr3.ddns-ip.net/post/BPB-mian-ban.html</link><description>## BPB面板
 
 - 教程
 
