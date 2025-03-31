@@ -1,5 +1,110 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Sat, 29 Mar 2025 06:44:06 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>手机共享科学设置</title><link>http://9.zcr3.ddns-ip.net/post/shou-ji-gong-xiang-ke-xue-she-zhi.html</link><description># 手机共享科学设置
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Mon, 31 Mar 2025 09:31:00 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>节点搭建</title><link>http://9.zcr3.ddns-ip.net/post/jie-dian-da-jian.html</link><description>## 节点搭建
+
+==============================  7001 
+1._worker.js  复制
+https://github.com/amclubs/am-cf-tunnel/blob/main/_worker.js
+2. 7001  新建workers
+https://dash.cloudflare.com/74514754bf9382d6eb62a00b54e28032/workers/services/edit/wild-snowflake-f2vlc/production
+3.绑定域名
+vlc.zcr5.ddns-ip.net
+4.创建KV空间
+vlc
+5. 绑定KV空间
+amclubs    vlc
+6.修改原始UUID d0298536-d670-4045-bbb1-ddd5ea68683e
+https://vlc.zcr5.ddns-ip.net/d0298536-d670-4045-bbb1-ddd5ea68683e/ui
+修改后的UUID c683a04f-d1fb-43f7-8e41-9b443c2db18e
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e/ui
+7.以下即新的订阅内容
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e此处没有ui
+
+通用订阅地址:  点击复制订阅地址 
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub
+
+Base64订阅地址:  点击复制订阅地址 
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?base64
+
+clash订阅地址:  点击复制订阅地址 
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?clash
+
+singbox订阅地址:  点击复制订阅地址 
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?singbox
+
+通用订阅地址:  点击复制订阅地址 
+https://vlc.zcr6.ggff.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub
+
+Base64订阅地址:  点击复制订阅地址 
+https://vlc.zcr6.ggff.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?base64
+
+clash订阅地址:  点击复制订阅地址 
+https://vlc.zcr6.ggff.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?clash
+
+singbox订阅地址:  点击复制订阅地址 
+https://vlc.zcr6.ggff.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?singbox
+
+8.
+&amp;IP_URL=https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipUrl.txt
+此文本内容如下：
+https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipJP.txt@141.147.163.68
+https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipHK.txt@proxyip.amclubs.kozow.com
+https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.csv
+https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipUS.txt@proxyip.amclubs.camdvr.org
+说明：@141.147.163.68 为反代IP  @proxyip.amclubs.kozow.com  @proxyip.amclubs.camdvr.org
+9.给通用订阅地址添加参数
+通用订阅地址:  
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub
+
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+
+https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?sub&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+另：文本中都不加反代IP，可在集合文本参数后再加一个反代IP的参数 &amp;PRXYIP==ts.hpc.tw
+&amp;IP_URL=https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipUrl.txt
+此文本内容如下：
+https://github.com/zcr07/am-cf-tunnel/blob/main/ipUrl.txt
+点Raw得到如下
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/refs/heads/main/ipUrl.txt
+删除此部分内容 refs/heads/  得到如下
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipJP.txt@141.147.163.68
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipHK.txt@proxyip.amclubs.kozow.com
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipv4.csv
+https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUS.txt@ts.hpc.tw
+
+
+
+
+
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub&amp;IP_URL=https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipUrl.txt&amp;PRXYIP==ts.hpc.tw
+
+==============================  7001
+1.Trojan节点        wild-snowflake-f2trj
+https://github.com/amclubs/am-cf-trojan/blob/main/_worker.js
+https://dash.cloudflare.com/74514754bf9382d6eb62a00b54e28032/workers/services/view/wild-snowflake-f2trj/production/settings
+2.创建KV空间
+vlc
+3. 绑定KV空间
+amclubs   trj
+4. 修改密码 原密码为auto
+http://trj.zcr5.ddns-ip.net/auto/ui
+5.修改完即订阅地址为
+http://trj.zcr5.ddns-ip.net/zbb
+
+通用订阅地址:  点击复制订阅地址 
+https://trj.zcr5.ddns-ip.net/zbb?sub
+
+Base64订阅地址:  点击复制订阅地址 
+https://trj.zcr5.ddns-ip.net/zbb?base64
+
+clash订阅地址:  点击复制订阅地址 
+https://trj.zcr5.ddns-ip.net/zbb?clash
+
+singbox订阅地址:  点击复制订阅地址 
+https://trj.zcr5.ddns-ip.net/zbb?singbox
+-------------------------------------------
+
+https://trj.zcr5.ddns-ip.net/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/jie-dian-da-jian.html</guid><pubDate>Mon, 31 Mar 2025 09:30:33 +0000</pubDate></item><item><title>手机共享科学设置</title><link>http://9.zcr3.ddns-ip.net/post/shou-ji-gong-xiang-ke-xue-she-zhi.html</link><description># 手机共享科学设置
 
 ## 电脑上设置v2ray
 
