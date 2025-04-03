@@ -1,5 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Mon, 31 Mar 2025 09:31:00 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>节点搭建</title><link>http://9.zcr3.ddns-ip.net/post/jie-dian-da-jian.html</link><description>## 节点搭建
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>琶琶🔭啙</title><link>http://9.zcr3.ddns-ip.net</link><description>一些随手的笔记</description><copyright>琶琶🔭啙</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/180062094?v=4</url><title>avatar</title><link>http://9.zcr3.ddns-ip.net</link></image><lastBuildDate>Thu, 03 Apr 2025 00:30:24 +0000</lastBuildDate><managingEditor>琶琶🔭啙</managingEditor><ttl>60</ttl><webMaster>琶琶🔭啙</webMaster><item><title>win11 0x80190001错误</title><link>http://9.zcr3.ddns-ip.net/post/win11%200x80190001-cuo-wu.html</link><description>## win11 0x80190001错误
+
+&lt;p align='center'&gt;&lt;img src='https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/04.03:08:21:29.png' style='width:400px;'&gt;&lt;/p&gt;&lt;br&gt;
+
+## 修复0x80190001错误
+
+1. 首先关闭科学上网
+
+2. 打开   Windows Powershell（管理员）
+
+3. 在弹出的命令框内输入：netsh winsock reset
+
+4. 在命令框内继续输入：netsh int ip reset
+
+5. 在命令框内继续输入：ipconfig /release
+
+6. 在命令框内继续输入：ipconfig /renew
+
+7. 在命令框内继续输入：ipconfig /flushdns
+
+8. 在命令框内继续输入：ipconfig /registerdns
+
+9. 在命令框内继续输入：inetcpl.cpl
+
+10.在Internet `属性` 界面，首先选择菜单到  `高级`，点击“高级”菜单界面下的 `还原高级设置`
+
+11.接着在“高级”菜单下的“设置”中，依次勾选以下选项使用TLS 1.0&gt;使用TLS 1.1&gt;使用TLS 1.2&gt;使用TLS 1.3，勾选完该4个选项后点击下方确定，再点击右下角应用
+
+12. 在命令框内继续输入：ncpa.cpl
+
+13. 正在使用的网络适配器，选择 `属性` ，在“属性”窗口里双击  `Internet 协议版本 4（TCP/IPv4）`，勾选 `自动获得 IP 地址`，`自动获得 DNS 服务器地址`，勾选完后点击确定。</description><guid isPermaLink="true">http://9.zcr3.ddns-ip.net/post/win11%200x80190001-cuo-wu.html</guid><pubDate>Thu, 03 Apr 2025 00:29:56 +0000</pubDate></item><item><title>节点搭建</title><link>http://9.zcr3.ddns-ip.net/post/jie-dian-da-jian.html</link><description>## 节点搭建
 
 ==============================  7001 
 1._worker.js  复制
