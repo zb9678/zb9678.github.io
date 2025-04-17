@@ -42,7 +42,7 @@ https://tj.r08.us.kg/zbb
 
 ## 葩葩🔭思  成语  7001
 
--  https://bk.z07.us.kg/
+-  https://7.zcr5.ddns-ip.net/
 
 -  https://github.com/zbb7001/z.github.io/issues
 
