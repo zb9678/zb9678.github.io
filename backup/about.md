@@ -36,7 +36,7 @@ https://tj.r08.us.kg/zbb
 
 ## 琶琶🔭啙 笔记  zb9
 
--  https://bo.zb9.us.kg/about.html
+-  https://9.zcr3.ddns-ip.net/
 
 -  https://github.com/zb9678/zb9678.github.io/issues/166
 
