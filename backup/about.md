@@ -36,21 +36,21 @@ https://tj.r08.us.kg/zbb
 
 ## 琶琶🔭啙 笔记  zb9
 
--  https://9.zcr3.ddns-ip.net/
-
--  https://github.com/zb9678/zb9678.github.io/issues/166
+https://github.com/zb9678/zb9678.github.io
+   
+https://9.zcr3.ddns-ip.net/tag.html
 
 ## 葩葩🔭思  成语  7001
 
--  https://7.zcr5.ddns-ip.net/
-
--  https://github.com/zbb7001/z.github.io/issues
+https://github.com/zbb7001/zbb7001.github.io
+    
+https://7.zcr5.ddns-ip.net/tag.html
 
 ## 爬爬茨  随记  zyy
 
--  https://b.zbb96.dynv6.net/
+https://github.com/zyy200712/zyy200712.github.io
 
--  https://github.com/zyy200712/zyy200712.github.io
+https://y.zcr8.ddns-ip.net/tag.html
 
 ## Blogger
 
