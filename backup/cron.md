@@ -1,122 +1,96 @@
-## cron
+＃　六段式
 
-- https://crontab.guru/examples.html
+cron = *  *  *  *  *  *
+         {秒} {分} {时} {日期} {月} {星期} 
+           0      0    12       ?     *    WED         在每星期三下午12:00:00 执行
+注意：
+如果我们指定每月2号执行操作，那么每月2号是星期几是不确定的，因此星期字段不能为 * ，* 表示所有的值，所以要用 ？  
+问号的形式可不适用于五段式。
 
+6段式例子
+  （1）0/2 * * * * ?   表示每2秒 执行任务
 
-```
+  （1）0 0/2 * * * ?    表示每2分钟 执行任务
 
+  （1）0 0 2 1 * ?   表示在每月的1日的凌晨2点调整任务
 
+  （2）0 15 10 ? * MON-FRI   表示周一到周五每天上午10:15执行作业
 
-每一分钟
-* * * * *
-then at 2025-05-04 11:05:00
-then at 2025-05-04 11:06:00
-then at 2025-05-04 11:07:00
-then at 2025-05-04 11:08:00
-then at 2025-05-04 11:09:00
+  （3）0 15 10 ? 6L 2002-2006   表示2002-2006年的每个月的最后一个星期五上午10:15执行作
 
-每3分钟
-*/3 * * * *
-then at 2025-05-04 11:06:00
-then at 2025-05-04 11:09:00
-then at 2025-05-04 11:12:00
-then at 2025-05-04 11:15:00
-then at 2025-05-04 11:18:00
+  （4）0 0 10,14,16 * * ?   每天上午10点，下午2点，4点 
 
-从1分到59分，每2分钟
-1-59/2 * * * *
-then at 2025-05-04 11:09:00
-then at 2025-05-04 11:11:00
-then at 2025-05-04 11:13:00
-then at 2025-05-04 11:15:00
-then at 2025-05-04 11:17:00
+  （5）0 0/30 9-17 * * ?   朝九晚五工作时间内每半小时 
 
+  （6）0 0 12 ? * WED    表示每个星期三中午12点 
 
-从周一到周五的每一天的22:00 ​​​ 
-0 22 * * 1-5
-then at 2025-05-05 22:00:00
-then at 2025-05-06 22:00:00
-then at 2025-05-07 22:00:00
-then at 2025-05-08 22:00:00
-then at 2025-05-09 22:00:00
-vhen at 2025-05-12 22:00:00
+  （7）0 0 12 * * ?   每天中午12点触发 
 
-从第0分钟起，每1小时
-0 * * * *
-     at 2025-05-04 12:00:00
-then at 2025-05-04 13:00:00
-then at 2025-05-04 14:00:00
-then at 2025-05-04 15:00:00
-then at 2025-05-04 16:00:00
+  （8）0 15 10 ? * *    每天上午10:15触发 
 
-从第0分钟起，每2小时
-0 */2 * * *
-     at 2025-05-04 12:00:00
-then at 2025-05-04 14:00:00
-then at 2025-05-04 16:00:00
-then at 2025-05-04 18:00:00
-then at 2025-05-04 20:00:00
+  （9）0 15 10 * * ?     每天上午10:15触发 
 
-从9点到17点，每小时0分钟
-0 9-17 * * *
+  （10）0 15 10 * * ?    每天上午10:15触发 
 
-在每个星期天的04:05 ​​​ 
-5 4 * * sun
-then at 2025-05-11 04:05:00
-then at 2025-05-18 04:05:00
-then at 2025-05-25 04:05:00
-then at 2025-06-01 04:05:00
-then at 2025-06-08 04:05:00
+  （11）0 15 10 * * ? 2005    2005年的每天上午10:15触发 
 
-每个月的8号到14号，每天04:00
-0 4 8-14 * *
-then at 2025-05-08 04:00:00
-then at 2025-05-09 04:00:00
-then at 2025-05-10 04:00:00
-then at 2025-05-11 04:00:00
-then at 2025-05-12 04:00:00
-then at 2025-05-13 04:00:00
-then at 2025-05-14 04:00:00
+  （12）0 * 14 * * ?     在每天下午2点到下午2:59期间的每1分钟触发 
 
-每个月的1日,14:15
-15 14 1 * *
- at 2025-06-01 14:15:00
-then at 2025-07-01 14:15:00
-then at 2025-08-01 14:15:00
-then at 2025-09-01 14:15:00
-then at 2025-10-01 14:15:00
+  （13）0 0/5 14 * * ?    在每天下午2点到下午2:55期间的每5分钟触发 
 
+  （14）0 0/5 14,18 * * ?     在每天下午2点到2:55期间和下午6点到6:55期间的每5分钟触发 
 
-每年的 1月1日00:00
-0 0 1 1 *
+  （15）0 0-5 14 * * ?    在每天下午2点到下午2:05期间的每1分钟触发 
 
-每6个月的 1日00:00
-0 0 1 */6 *
+  （16）0 10,44 14 ? 3 WED    每年三月的星期三的下午2:10和2:44触发 
 
-每3个月的 1日00:00
-0 0 1 */3 *
+  （17）0 15 10 ? * MON-FRI    周一至周五的上午10:15触发 
 
-每个月的 1日00:00
-0 0 1 * * 
+  （18）0 15 10 15 * ?    每月15日上午10:15触发 
 
-每个周日00:00
-0 0 * * 0
+  （19）0 15 10 L * ?    每月最后一日的上午10:15触发 
 
-仅周末 即周六周天 00:00
-0 0 * * 6,0
+  （20）0 15 10 ? * 6L    每月的最后一个星期五上午10:15触发 
 
-仅工作日 即周一到周五 00:00
-0 0 * * 1-5
+  （21）0 15 10 ? * 6L 2002-2005   2002年至2005年的每月的最后一个星期五上午10:15触发 
 
-每天 00:00
-0 0 * * *
-     *at 2025-05-05 00:00:00
-then at 2025-05-06 00:00:00
-then at 2025-05-07 00:00:00
-then at 2025-05-08 00:00:00
-then at 2025-05-09 00:00:00
- 
+  （22）0 15 10 ? * 6#3   每月的第三个星期五上午10:15触发
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+＃　五段式
 
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.2veqv9qnu8.jpg" style="width:600px;"><br><br><br>
 
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.syy77xsvl.png" style="width:600px;"><br><br><br>
 
-```
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.51e5h15rwe.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.3rb8aqd00d.jpg" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.ic4e33gup.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.7i0dvzp1ac.jpg" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.99tcqx1iqw.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.4xujje1re3.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.2h8b4hadil.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.m2rdx1p9.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.9kg6lxd3lm.jpg" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.wik6wk4ix.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.4xujlcnoi4.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.10264opree.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.9dcyqmnlg5.jpg" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.45ho3nwlfm.png" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.8vmx23073j.jpg" style="width:600px;"><br><br><br>
+
+<p align = "center"><img src="https://github.com/zcr07/picx-images-hosting/raw/master/1/image.10264qinr4.png" style="width:600px;"><br><br><br>
