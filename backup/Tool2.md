@@ -1,5 +1,25 @@
 
+https://idx.google.com/z517-99013236
 
+https://www.terabox.com/main?category=all
+
+https://da.zcr4.ip-ddns.com/
+
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓    节点
+
+===== https://client.webhostmost.com/clientarea.php ===zb9678@outlook.com==F7
+
+==pub===  https://pub.u07.dpdns.org/e78f1f95-d0bc-4875-8979-76c26cb9212e
+
+==zds===  https://zds.u07.dpdns.org/bfa7f851-240b-4b7a-a6fe-fce52925ec70
+
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓    节点
+
+===== https://client.webhostmost.com/clientarea.php ===ngro1031@gmail.com==F7
+
+==yhg===  https://yhg.u07.dpdns.org/66344ea1-c7c5-4fe7-b16f-090c50da19e0
+
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓    节点    
 
 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛git_cf 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
 
@@ -93,6 +113,26 @@
 
 ===========================F7=======zcr071225@gmail.com
 
+============= zcr7.xx.kg =========================zyy
+
+============= zcr5.xx.kg =========================zyy
+
+============= zcr25.xx.kg ========================700
+
+============= zcr07.xx.kg ========================zcr
+
+
+============= zbb25.hidns.co ========================
+
+============= zcr25.hidns.co  ========================
+
+
+===========================F7=======zbb7001@gmail.com
+
+============= zcr5.qzz.io ===========================
+
+============= z75.myfw.us ==========================
+
 
 ## desec.io 
 
@@ -142,68 +182,66 @@
 
 ============================= https://outlook.live.com/mail/0
 
-1=====zyy======zb9678@outlook.com============= Zb 99999
+1=====zb9======zb9678@outlook.com============= F7z
 
-2=============zcr60@outlook.com============== Zb 99999
+2=============zcr60@outlook.com===============zcr5.ddns-ip.net
 
-===============zcr5.ddns-ip.net
+3=============zcr61@outlook.com==============
 
-3=============zcr61@outlook.com============== Zb 99999
+4=============zcr00@outlook.com==============
 
-4=============zcr00@outlook.com============== Zb 99999
-
-5=============zcr97@outlook.com============== Zb 99999
+5=============zcr97@outlook.com============== 
 
 
 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 09
 
 ============================= https://outlook.live.com/mail/0
 
-01=====Zb6666=====zb9678@gmail.com
+01=====zyy=====zb9678@gmail.com========= F7y
 
-02=====Zb8=====zcr74@outlook.com========= zcr8.ddns-ip.net
+02============zcr74@outlook.com========= zcr8.ddns-ip.net
 
-03=====Zb6666=====zcr76@outlook.com====== zcr7.ggff.net==26.4.1
+03============zcr76@outlook.com========= zcr7.ggff.net
 
-04=====Zb6666=====zcr55@outlook.com
+04============zcr55@outlook.com
 
-05=====Zb6666=====zcr57@outlook.com========= zc25.ip-ddns.com
+05============zcr57@outlook.com========= zc25.ip-ddns.com
 
-06=====Zb6666=====zbb102@outlook.com
+06============zbb102@outlook.com
 
-07=====Zb6666=====zcr102@outlook.com
+07============zcr102@outlook.com
 
 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ip-ddns🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 10
 
 ============================= https://outlook.live.com/mail/0
 
-01====F6=======zb9678@hotmail.com
+01====zcr=======zb9678@hotmail.com===========  F7c
 
-02====F7=======zcr01@outlook.com===========zcr7.ip-ddns.com
+02============zcr01@outlook.com===========zcr7.ip-ddns.com
 
-03====F6=======zcr02@outlook.com============zcr3.ddns-ip.net
+03============zcr02@outlook.com============zcr3.ddns-ip.net
 
-04====F6=======zcr48@outlook.com
+04============zcr48@outlook.com
 
-05====F6=======zcr54@outlook.com
+05============zcr54@outlook.com
 
 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 11
 
 ============================= https://outlook.live.com/mail/0
 
-01====F7=======zcr071225@gmail.com
+01====700=======zcr071225@gmail.com===========F7
 
-02====F7=======zcr0711@outlook.com
+02=============zcr0711@outlook.com
 
-03====F7=======zcr0712@outlook.com===========zcr6.ddns-ip.net
+03=============zcr0712@outlook.com===========zcr6.ddns-ip.net
 
-04====F7=======zcr0713@outlook.com
+04=============zcr0713@outlook.com
 
-05====F7=======zcr07145@outlook.com
+05=============zcr07145@outlook.com
 
-06====F7=======zcr0715@outlook.com
+06=============zcr0715@outlook.com
 
-07====F7=======zcr1225@outlook.com========== zcr4.ip-ddns.com
+07=============zcr1225@outlook.com========== zcr4.ip-ddns.com
 
 
 ## cloudns.be
@@ -250,17 +288,6 @@
 ============= zb25.x10.mx =================  zb9
 
 
-## 申请
-
-
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛域名 申请🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 申请
-
-===========https://sitelutions.com/login
-
-==================zbb7001@gmail.com============  z8
-
-
-
 ##  dynv6
 
 
@@ -274,7 +301,9 @@
 
 -----------------------zc7.myfw.us--------------------------
 
------------------------r9678.rr.nu------------------------
+-----------------------zyy55.v6.army------------------------
+
+-----------------------zyy55.dns.army------------------------
 	
 
 ===========================F7========ngro1031@gmail.com
@@ -283,8 +312,9 @@
 
 -----------------------zng.myfw.us--------------------------
 
------------------------n9678.rr.nu------------------------
+-----------------------n9678.dns.army------------------------
 
+-----------------------n9678.v6.army------------------------
 
 ===========================F7========zcr071225@gmail.com
 
@@ -292,17 +322,19 @@
 
 -----------------------z85.myfw.us--------------------------
 
------------------------zcr05.rr.nu------------------------
+-----------------------zcr05.dynv6.net------------------------
 
+-----------------------zcr05.dns.army------------------------
 
-
-===========================F7========zcr55@outlook.com
+===========================kev========zcr55@outlook.com
 
 -----------------------kevv6.v6.army--------------------------
 
 -----------------------z70.myfw.us--------------------------
 
------------------------ .rr.nu------------------------
+-----------------------ng555.dns.army------------------------
+
+-----------------------ng555.dynv6.net------------------------
 
 
 ## hidns.co
@@ -317,6 +349,8 @@
 ==================zbb25.hidns.co    26.3.17==============  zcr
 
 ==================zcr25.hidns.co    26.3.17=============== zcr
+
+==================zc77.hidns.co    26.5.17=============== kev
 
 
 
@@ -333,23 +367,69 @@
 
 
 
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 📢📢
 
-## zone.id
+## x10
 
 
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 zone.id 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 05
+=============================== 双向解析 zcr  2025-03-30
+https://x10hosting.com/panel/services/152028
+zcr071225@gmail.comF7
 
-===========https://my.zone.id/subdomains/q0iq1q1iq/dns_record
+zb25.elementfx.com        kev
 
-=========F7========zcr5.zone.id    26.4.11== zcr071225@gmail.com
+zb25.x10.bz              zyy
 
-===========https://my.zone.id/subdomains/a1ipceiq/dns_record
+zb25.x10.mx              zb9
+=============================== 双向解析 7001  2025-03-23
+https://x10hosting.com/panel/services/152028
+zbb7001@gmail.comF7
 
-=========F7========zb70.zone.id    26.4.13== zbb7001@gmail.com
+zcr25.x10.bz             7001
 
+zcr25.elementfx.com      ng
+	
+zcr25.x10.mx             zcr
 
 
 📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 📢📢
+
+
+## xx.kg
+
+==============https://dash.domain.digitalplat.org/auth/login
+
+======================zcr======================20260506
+zcr07.dpdns.org
+zbb07.dpdns.org
+zb9.dpdns.org
+zcr07.xx.kg
+
+======================zb9======================20260506
+z07.dpdns.org
+r08.dpdns.org
+k07.dpdns.org
+zcr5.qzz.io
+
+======================kev======================20260506
+v07.dpdns.org
+n06.dpdns.org
+xn--whqv54a8q5b.dpdns.org
+
+======================ng======================20260506
+j07.dpdns.org
+u07.dpdns.org
+
+======================zyy======================20260506
+zc08.dpdns.org
+zcr5.xx.kg
+zcr7.xx.kg
+
+======================7001======================20260506
+w07.dpdns.org
+y07.dpdns.org
+h07.dpdns.org
+zcr25.xx.kg
 
 📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 
 
@@ -534,8 +614,8 @@ zcr25.x10.mx             zcr
 
 ## 订阅
 
-
 ================================= 速度快
+
 https://65.r07.cloudns.be/150a
 
 https://65.r07.cloudns.be/150b
@@ -549,7 +629,9 @@ https://65.r07.cloudns.be/150e
 https://65.r07.cloudns.be/150f
 
 https://65.r07.cloudns.be/150g
+
 ================================= 节转订 慢
+
 https://65.r07.cloudns.be/v01
 
 https://65.r07.cloudns.be/v02
@@ -557,20 +639,27 @@ https://65.r07.cloudns.be/v02
 https://65.r07.cloudns.be/t01
 
 https://65.r07.cloudns.be/t02
+
+
 =================================
 
 https://gob64.topmarco.tech
+
 ================================= 参数
+
 https://github.com/zcr07/am-cf-tunnel/blob/main/ipUrl.txt
 https://raw.githubusercontent.com/zcr07/am-cf-tunnel/refs/heads/main/ipUS.txt 删除红色
 https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+
 &IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
 &IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
 &IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
 &IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
 &IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
 &IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
+
 =================================01 zcr  Torjan
+
 ant.zbb07.dpdns.org
 ant.zcr07.dpdns.org
 ant.zb9.dpdns.org
@@ -595,6 +684,7 @@ singbox订阅地址:  点击复制订阅地址
 https://ant.zbb25.filegear-sg.me/zbb?singbox
 
 =================================02 zcr  vless
+
 am.zb9.dpdns.org
 am.zc23.cc.ua
 am.r07.cloudns.be
@@ -622,6 +712,7 @@ singbox订阅地址:  点击复制订阅地址
 https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?singbox
 
 =================================03 zb9  Torjan
+
 tr.z9678.dynv6.net
 tr.z9678.rr.nu
 tr.z9678.v6.army
@@ -650,7 +741,9 @@ https://tr.z9678.dynv6.net/zbb?singbox
 https://tr.z9678.rr.nu/zbb?sub
 https://tr.z9678.v6.army/zbb?sub
 
+
 =================================04 zb9   vless
+
 v.zcr07.dynv6.net
 v.zcr07.rr.nu
 v.zcr07.v6.army
@@ -671,7 +764,9 @@ https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?clash
 singbox订阅地址:  点击复制订阅地址 
 https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?singbox
 
-=================================05 kev   Torjan https://dash.cloudflare.com/9e27b7387c208a2ad54e44ada4e24423/pages/view/idele-siekls-kevamtr/domains 
+=================================05 kev   Torjan 
+
+https://dash.cloudflare.com/9e27b7387c208a2ad54e44ada4e24423/pages/view/idele-siekls-kevamtr/domains 
 idele-siekls-kevamtr
 tk.zcr9.dedyn.io
 tk.zcr25.dedyn.io
@@ -701,6 +796,7 @@ singbox订阅地址:  点击复制订阅地址
 https://tk.z07.isgre.at/zbb?singbox
 
 =================================06 kev   vless
+
 vk.zcr9.dedyn.io
 vk.c08.rr.nu
 vk.r9678.rr.nu
@@ -726,6 +822,7 @@ singbox订阅地址:  点击复制订阅地址
 https://vk.c08.rr.nu/85cd6780-0b78-4deb-b11c-c07a10eb04fd?singbox
 
 =================================07 ng   Torjan  
+
 tn.zcr25.dedyn.io
 tn.zcr25.netlib.re
 tn.zcr25.rr.nu
@@ -746,7 +843,9 @@ https://tn.zcr25.rr.nu/zbb?clash
 
 singbox订阅地址:  点击复制订阅地址 
 https://tn.zcr25.rr.nu/zbb?singbox
+
 =================================08 ng   vless
+
 vn.zcr9.dedyn.io
 vn.zcr25.dedyn.io
 vn.c08.rr.nu
@@ -772,6 +871,7 @@ singbox订阅地址:  点击复制订阅地址
 https://vn.zcr25.netlib.re/dcabc1ad-9713-4c32-9559-597308a8f635?singbox
 
 =================================09 zyy   Torjan 
+
 t.c08.rr.nu
 t.zc5.rr.nu
 t.zcr25.dedyn.io
@@ -797,6 +897,7 @@ singbox订阅地址:  点击复制订阅地址
 https://t.zc5.rr.nu/zbb?singbox
 
 =================================10 zyy   vless
+
 vy.c08.rr.nu
 vy.zcr25.dedyn.io
 vy.zcr25.hidns.co
@@ -821,6 +922,7 @@ singbox订阅地址:  点击复制订阅地址
 https://vy.zcr25.dedyn.io/6392b959-8e97-4f33-9ff6-665bfafdc1f0?singbox
 
 =================================11 7001   Torjan
+
 trj.zcr5.ddns-ip.net
 trj.zzzzz.dns-dynamic.net
 trj.zcr25.x10.bz
@@ -848,6 +950,7 @@ singbox订阅地址:  点击复制订阅地址
 https://trj.zcr5.ddns-ip.net/zbb?singbox
 
 =================================12 7001   vless
+
 v7.c08.rr.nu
 v7.zcr25.dedyn.io
 v7.zcr25.hidns.co
@@ -1362,524 +1465,26 @@ https://bpbzb9.zbb06.filegear-sg.me/panel
 
 ================================= 10 BPB kev
 https://bpbkev.zbb22.ggff.net/panel
-。">
-<meta property="og:title" content="Tools">
-<meta property="og:description" content="## git_cf
 
+https://wbb.zc08.dpdns.org/login
+https://wbp.zcr05.v6.army/panel
+https://wpp.zbb25.hidns.co/login
 
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛git_cf 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+https://pb.zcr9.dedyn.io/panel
+https://pp.zcr25.dedyn.io/panel
+https://309pb.zbb.dns-dynamic.net/login
 
-01==========cf============zcr071225@gmail.com =======  F8
+https://ddd.zcr06.filegear-sg.me/login
+https://bpbzb9.zbb06.filegear-sg.me/panel
+https://ttt.zbb25.filegear-sg.me/panel
 
-01===Gi============zb9678@hotmail.com ======== F7
+https://g5h.zcr25.ggff.net/panel
+https://fa.zcr25.ggff.net/panel
+https://bpbng.zcr06.filegear-sg.me/panel
+https://bpbkev.zbb22.ggff.net/panel
 
 
-➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
 
-02==========cf============zb9678@gmail.com ========= F8
-
-02===Gi============zb9678@outlook.com ======== F7
-
-
-➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
-
-03==========cf============kev071225@gmail.com ======= F8
-
-03===Gi============zb9678@gmail.com ========= F7
-
-
-➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
-
-04==========cf============ngro1031@gmail.com ======= F8
-
-04===Gi============kev071225@gmail.com ======== F7
-
-➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
-
-05==========cf============zyy7031@gmail.com ======== F8
-
-05===Gi============zyy7031@gmail.com  ========= F7
-
-
-➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
-
-06==========cf============zbb7001@gmail.com======== F8
-
-06===Gi============zbb7001@gmail.com========= zb
-
-
-## gmail
-
-
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛gmail邮箱 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
-
-=========https://github.com =========https://dash.cloudflare.com
-
-01======================= F7 ======= zcr071225@gmail.com
-
-02======================= Zcr8 =======  zb9678@gmail.com
-
-03====================== F7 =======  kev071225@gmail.com
-
-04====================== F7 ========  ngro1031@gmail.com
-
-05======================== F8 =======  zyy7031@gmail.com
-
-06========================  F8 ======= zbb7001@gmail.com
-
-
-## serv00
-
-
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛serv00 邮箱🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
-
-===================https://panel4.serv00.com
-
-== https://mail.serv00.com/?_task=mail&_mbox=INBOX
-
-1======4====F7===1@kevzcr.serv00.net
-
-2======9=========2@zb7.serv00.net
-
-3======8=========3@z07.serv00.net
-
-4======8=========4@z88.serv00.net
-
-5======0=========6@z11.serv00.net
-
-6======0=========9@z99.serv00.net
-
-
-## rr.nu 
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 rr.nu 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 01
-
-===========https://hostry.com/orders
-
-===========================F7=======zcr071225@gmail.com
-
-
-## desec.io 
-
-
-🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 desec.io 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 02
-
-==============https://desec.io/login
-
-====zcr25.dedyn.io====F7==================zcr76@outlook.com
-
-====zcr9.dedyn.io=====F7==================zcr02@outlook.com 
-
-
-## he 
-
-
-🟪🟪🟪🟪🟪🟪🟪🟪🟪 he 不能开科学 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 04
-
-==========https://dns.he.net
-
-=======z8======zcr25.rr.nu========================zcr07
-
-
-## L53
-
-
-🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮  L53  🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮 07
-
-=====https://customer.l53.net/
-
-=============zbb25.filegear-sg.me============== 26.2.22
-
-==============ngro1031@gmail.com ================  F7
-
-
-=====https://customer.l53.net/
-
-=============zcr06.filegear-sg.me================   26.2.22
-
-============zb9678@outlook.com================  F7
-
-
-## ddns-ip
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 08
-
-============================= https://outlook.live.com/mail/0
-
-1=====zyy======zb9678@outlook.com============= Zb 99999
-
-2=============zcr60@outlook.com============== Zb 99999
-
-===============zcr5.ddns-ip.net
-
-3=============zcr61@outlook.com============== Zb 99999
-
-4=============zcr00@outlook.com============== Zb 99999
-
-5=============zcr97@outlook.com============== Zb 99999
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 09
-
-============================= https://outlook.live.com/mail/0
-
-01=====Zb6666=====zb9678@gmail.com
-
-02=====Zb8=====zcr74@outlook.com========= zcr8.ddns-ip.net
-
-03=====Zb6666=====zcr76@outlook.com====== zcr7.ggff.net==26.4.1
-
-04=====Zb6666=====zcr55@outlook.com
-
-05=====Zb6666=====zcr57@outlook.com========= zc25.ip-ddns.com
-
-06=====Zb6666=====zbb102@outlook.com
-
-07=====Zb6666=====zcr102@outlook.com
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ip-ddns🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 10
-
-============================= https://outlook.live.com/mail/0
-
-01====F6=======zb9678@hotmail.com
-
-02====F7=======zcr01@outlook.com===========zcr7.ip-ddns.com
-
-03====F6=======zcr02@outlook.com============zcr3.ddns-ip.net
-
-04====F6=======zcr48@outlook.com
-
-05====F6=======zcr54@outlook.com
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 11
-
-============================= https://outlook.live.com/mail/0
-
-01====F7=======zcr071225@gmail.com
-
-02====F7=======zcr0711@outlook.com
-
-03====F7=======zcr0712@outlook.com===========zcr6.ddns-ip.net
-
-04====F7=======zcr0713@outlook.com
-
-05====F7=======zcr07145@outlook.com
-
-06====F7=======zcr0715@outlook.com
-
-07====F7=======zcr1225@outlook.com========== zcr4.ip-ddns.com
-
-
-## cloudns.be
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱cloudns.be🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 12
-
-============= https://www.cloudns.net/records/domain/7778373/
-
-01====F7=======r@zbb07.filegear-sg.me ===========  r07.cloudns.be
-
-02====F7=======z@zbb07.filegear-sg.me =========== z07.cloudns.be
-
-03====F7=======1@zbb07.filegear-sg.me =========== k07.cloudns.be
-
-
-## X10
-
-
-🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 13
-
-=============https://x10hosting.com
-
-======F7=======zbb7001@gmail.com
-
-============= zcr25.x10.bz ================== 7001
-
-============= zcr25.elementfx.com ============= ng
-
-	
-============= zcr25.x10.mx ================== zcr
-
-
-🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 14
-
-=============https://x10hosting.com
-
-======F7===== zcr071225@gmail.com
-
-============= zb25.elementfx.com ============  kev
-
-============= zb25.x10.bz =================   zyy
-
-============= zb25.x10.mx =================  zb9
-
-
-## 申请
-
-
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛域名 申请🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 申请
-
-===========https://sitelutions.com/login
-
-==================zbb7001@gmail.com============  z8
-
-
-
-##  dynv6
-
-
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 dynv6🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 15
-
-============== https://dynv6.com/zones
-
-===========================F7========zyy7031@gmail.com
-
------------------------y9678.dynv6.net--------------------------
-
------------------------r9678.rr.nu------------------------
-
-===========================F7========ngro1031@gmail.com
-
------------------------n9678.dynv6.net--------------------------
-
------------------------n9678.rr.nu------------------------
-
-
-===========================F7========zcr071225@gmail.com
-
------------------------zcr05.v6.army--------------------------
-
------------------------zcr05.rr.nu------------------------
-
-
-
-===========================F7========zcr55@outlook.com
-
------------------------kevv6.v6.army--------------------------
-
------------------------ .rr.nu------------------------
-
-
-## hidns.co
-
-
-🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪  hidns.co 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 06
-
-=====托管至== https://hostry.com/orders/
-
-=========== https://www.hidoha.net/order/service/manage/
-
-==================zbb25.hidns.co    26.3.17==============  zcr
-
-==================zcr25.hidns.co    26.3.17=============== zcr
-
-
-
-## netlib.re
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 netlib.re 🧱🧱🧱🧱🧱26.2.22🧱🧱🧱🧱🧱 03
-
-==============https://www.netlib.re
-
-=========zcr25.netlib.re====zcr===============zcr071225@gmail
-
-=========zcr07.netlib.re====zcr===============zcr071225@gmail
-
-
-
-
-## zone.id
-
-
-🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 zone.id 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 05
-
-===========https://my.zone.id/subdomains/q0iq1q1iq/dns_record
-
-=========F7========zcr5.zone.id    26.4.11== zcr071225@gmail.com
-
-===========https://my.zone.id/subdomains/a1ipceiq/dns_record
-
-=========F7========zb70.zone.id    26.4.13== zbb7001@gmail.com
-
-
-
-📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 📢📢
-
-📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 
-
-
-## 其它
-
-
-===============================zcr
-
-https://dash.cloudflare.com/addfe9fc56c06acb158fd7b4883b478f/pages/view/x10/settings/production
-
-bdcd8f4b-7d60-4f18-8082-3c94a77cd1a5
-
-TR_PASS
-
-PROXYIP
-
-.github/workflows/Obfuscate.yml
-
-TR_PASS
-
-jx(oeD3]_eKad7@y
-
-SUB_PATH
-
-R,0*k*NTHfYT7uhZ
-
-https://ddd.n06.us.kg/panel
-
-=============================== 双向解析 zcr  x10hosting
-
-https://x10hosting.com/panel/services/152028
-
-zcr071225@gmail.com
-
-F7
-
-zb25.elementfx.com        kev
-
-zb25.x10.bz              zyy
-
-zb25.x10.mx              zb9
-
-=============================== 双向解析 7001
-
-https://x10hosting.com/panel/services/152028
-
-zbb7001@gmail.com
-
-Zb8
-
-zcr25.x10.bz             7001
-
-zcr25.elementfx.com      ng
-	
-zcr25.x10.mx             zcr
-
-📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢
-
-======================zcr======================
-
------------------------------zb9.dpdns.org
-
------------------------------zcr07.dpdns.org
-
------------------------------zbb07.dpdns.org
-
------------------------------zcr4.ip-ddns.com
-
------------------------------zbb25.filegear-sg.me
-
------------------------------r07.cloudns.be
-
------------------------------zcr25.x10.mx
-
------------------------------zc23.cc.ua
-
-======================zb9======================
-
------------------------------r08.dpdns.org
-
------------------------------k07.dpdns.org
-
------------------------------z07.dpdns.org
-
------------------------------zcr3.ddns-ip.net
-
------------------------------zbb06.filegear-sg.me
-
------------------------------z07.cloudns.be
-
------------------------------zb25.x10.mx
-
------------------------------kev25.cc.ua
-
-======================kev======================
-
------------------------------n06.dpdns.org
-
------------------------------v07.dpdns.org
-
------------------------------zcr6.ddns-ip.net
-
------------------------------zcr07.ddns-ip.net
-
------------------------------b01.dns-dynamic.net
-
------------------------------zcr07.filegear-sg.me
-
------------------------------zbb22.ggff.net
-
------------------------------zb25.elementfx.com
-
------------------------------zb9.cc.ua
-
-======================ng======================
-
------------------------------j07.dpdns.org
-
------------------------------u07.dpdns.org
-
------------------------------zcr7.ip-ddns.com
-
------------------------------zc25.ip-ddns.com
-
------------------------------zcr07.dns-dynamic.net
-
------------------------------zcr06.filegear-sg.me
-
------------------------------k07.cloudns.be
-
------------------------------zcr25.elementfx.com
-
------------------------------ng25.cc.ua
-
------------------------------zc24.cc.ua
-
-======================zyy======================
-
------------------------------zc08.dpdns.org
-
------------------------------zcr8.ddns-ip.net
-
------------------------------zc25.ddns-ip.net
-
------------------------------zbb.dns-dynamic.net
-
------------------------------zcr25.ggff.net
-
------------------------------zcr7.ggff.net
-
------------------------------zb25.x10.bz
-
-
-======================7001======================
-
------------------------------h07.dpdns.org
-
------------------------------w07.dpdns.org
-
------------------------------y07.dpdns.org
-
------------------------------zcr5.ddns-ip.net
-
------------------------------zc07.ip-ddns.com
-
------------------------------zzzzz.dns-dynamic.net
-
------------------------------zbb07.filegear-sg.me
-
------------------------------zcr6.ggff.net
-
------------------------------zcr25.x10.bz
 
 
 
