@@ -1,9 +1,56 @@
+## 导航
+
+[杷杷瓷伎](https://da.zcr25.x10.mx/) 
+
+## 图床
+
+`zcrzbb`   https://tu7.zcr25.dedyn.io/
+
+`zcrzbb`   https://tch.zcr5.xx.kg/
+
+https://tc.r07.cloudns.be/zbb
+
+`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`      https://picx.xpoet.cn/#/          
+
+## 博客
+
+[妑🔭差](https://z.zcr4.ip-ddns.com/  )
+
+https://github.com/zcr07/zcr7.github.io/issues/new
+
+ [舥舥🔭兹](https://bg.zcr4.ip-ddns.com/)
+
+https://github.com/zcr07/git-blog-share/tree/main/posts
+
+[帊帊🔭瓷](https://as.zcr25.dedyn.io/)          
+
+ https://as.zcr25.dedyn.io/admin
+
+[🌚筢筢🔭嬨](https://hx.zcr25.dedyn.io/)
+
+https://github.com/zcr07/hexo/tree/main/source/_posts
+
+[叭叭粢 🔭](https://z.zcr25.x10.mx/)
+
+https://github.com/zcr07/zcr07.github.io/tree/master/_posts
+
+[袙袙斯](https://bo.h07.dpdns.org/)
+
+7001      https://github.com/zbb7001/zb.github.io/tree/master/z            
+
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓 常用
 
 https://idx.google.com/z517-99013236
+
+https://colab.research.google.com/drive/1uQONtCVACeAWip1dzQolGJsAptjEf8Pn#scrollTo=egU0obRUq7mZ
+
+https://www.doubao.com/chat/drive/7214596584651266?tab=myUpload
 
 https://www.terabox.com/main?category=all
 
 https://da.zcr4.ip-ddns.com/
+
+https://zh.zcr4.ip-ddns.com/https://z.zcr4.ip-ddns.com/Tool2.html#desec.io
 
 🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓    节点
 
@@ -244,8 +291,19 @@ https://da.zcr4.ip-ddns.com/
 07=============zcr1225@outlook.com========== zcr4.ip-ddns.com
 
 
-## cloudns.be
+## so.kg 
 
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓 so.kg 🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓
+
+============= https://sokg.net/domains
+
+01====F6=======zcr07.so.kg ===========  zcr
+
+02====F6=======zbb70.so.kg ===========  700
+
+03====F6=======kev07.so.kg ===========  kev
+
+## cloudns.be
 
 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱cloudns.be🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 12
 
@@ -261,11 +319,11 @@ https://da.zcr4.ip-ddns.com/
 ## X10
 
 
-🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 13
+🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮6.8🧮🧮🧮🧮🧮 13
 
 =============https://x10hosting.com
 
-======F7=======zbb7001@gmail.com
+============================F7=======zbb7001@gmail.com
 
 ============= zcr25.x10.bz ================== 7001
 
@@ -275,11 +333,11 @@ https://da.zcr4.ip-ddns.com/
 ============= zcr25.x10.mx ================== zcr
 
 
-🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 14
+🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮6.8🧮🧮🧮🧮🧮 14
 
 =============https://x10hosting.com
 
-======F7===== zcr071225@gmail.com
+============================F7===== zcr071225@gmail.com
 
 ============= zb25.elementfx.com ============  kev
 
@@ -350,8 +408,18 @@ https://da.zcr4.ip-ddns.com/
 
 ==================zcr25.hidns.co    26.3.17=============== zcr
 
+
 ==================zc77.hidns.co    26.5.17=============== kev
 
+
+🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 zcr5.qzz.io  🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 07
+
+=====托管至== https://hostry.com/orders/============== 7001==F7
+
+
+==================    zcr5.qzz.io   26.5.28=============== 7001
+
+==================   z75.myfw.us   =================== 7001
 
 
 ## netlib.re
@@ -433,6 +501,17 @@ zcr25.xx.kg
 
 📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 
 
+## duia.eu
+
+======================https://www.duiadns.net/account/change-a.html==F6+666
+
+
+====================== zcr7.duia.eu  ======================cf6bMZYiWVQuJe
+
+====================== zcr7.duia.ro  ======================cf6bMZYiWVQuJe
+
+
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 
 
 ## 其它
 
@@ -486,6 +565,20 @@ zcr25.x10.bz             7001
 zcr25.elementfx.com      ng
 	
 zcr25.x10.mx             zcr
+
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢
+
+## zabc
+
+-------------------------- https://zoneabc.net/dashboard/domains
+
+--------------------------- https://hostry.com/orders/
+
+===== F6========= zcr5.zabc.net ================== zcr 
+
+===== F6========= zbb7001.zabc.net =============== 700
+
+===== F6========= kev9678.zabc.net =============== kev
 
 📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢
 
