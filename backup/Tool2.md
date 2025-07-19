@@ -30,13 +30,23 @@ https://github.com/zcr07/git-blog-share/tree/main/posts
 
 https://github.com/zcr07/hexo/tree/main/source/_posts
 
-[叭叭粢 🔭](https://z.zcr25.x10.mx/)
+[叭叭粢 🔭](https://pap.zb9.dpdns.org/)
 
 https://github.com/zcr07/zcr07.github.io/tree/master/_posts
 
 [袙袙斯](https://bo.h07.dpdns.org/)
 
 7001      https://github.com/zbb7001/zb.github.io/tree/master/z            
+
+🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓 gitlab 🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓
+
+--------------------------------https://gitlab.com/users/sign_in/
+
+01=====zcr=====F7=====https://gitlab.com/zcr071225=================zcr
+
+02=====zb9=====F7=====https://gitlab.com/zb9678==================zb9
+
+03=====7001=====F7=====https://gitlab.com/zbb2===================7001
 
 🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓🐓 常用
 
@@ -129,26 +139,65 @@ https://zh.zcr4.ip-ddns.com/https://z.zcr4.ip-ddns.com/Tool2.html#desec.io
 06========================  F8 ======= zbb7001@gmail.com
 
 
-## serv00
+## outlook
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛outlook邮箱 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+
+------------- https://outlook.live.com/mail/0/
+
+1 ---zyy-------------- zb9678@outlook.com --------------------- F7o
+
+2=============zcr60@outlook.com==============
+
+3=============zcr61@outlook.com==============
+
+4=============zcr00@outlook.com==============
+
+5=============zcr97@outlook.com============== 
 
 
-🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛serv00 邮箱🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+01-----700----------- zb9678@hotmail.com --------------------- F7h
 
-===================https://panel4.serv00.com
+02============zcr01@outlook.com============== 
 
-== https://mail.serv00.com/?_task=mail&_mbox=INBOX
+03============zcr02@outlook.com============== 
 
-1======4====F7===1@kevzcr.serv00.net
+04============zcr48@outlook.com============== 
 
-2======9=========2@zb7.serv00.net
+05============zcr54@outlook.com============== 
 
-3======8=========3@z07.serv00.net
 
-4======8=========4@z88.serv00.net
+01 ----zcr------------ zb9678@gmail.com ----------------------- F7g
 
-5======0=========6@z11.serv00.net
+02============zcr74@outlook.com============== 
 
-6======0=========9@z99.serv00.net
+03============zcr76@outlook.com============== 
+
+04============zcr55@outlook.com============== 
+
+05============zcr57@outlook.com============== 
+
+06============zbb102@outlook.com=============
+
+07============zcr102@outlook.com=============
+
+## zb9 图床
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛zb9 图床🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛github-gitlab备份
+
+
+----------   https://gitlab.com/zb9678/node-1/-/tree/main/images?ref_type=heads
+
+====================   https://github.com/zb9678/node-1/tree/main/images
+
+----------   https://gitlab.com/zb9678/node-2/-/tree/main/images?ref_type=heads
+
+=====================  https://github.com/zb9678/node-2/tree/main/images
+
+----------   https://gitlab.com/zb9678/node-3/-/tree/main/images?ref_type=heads
+
+=====================   https://github.com/zb9678/node-3/tree/main/images
 
 
 ## rr.nu 
