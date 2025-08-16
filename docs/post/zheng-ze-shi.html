@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/180062094?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="`<!DOCTYPE html>
+    <html lang='zh-CN'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  
+    <title>🚨正则式</title>
+  
+    <style>
+      
+          * {
+            margin: 0;
+            padding: 0;        
+            }
+                        
+        .b  {
+            white-space: nowrap; /* 防止换行 */
+            overflow: hidden;    /* 隐藏溢出内容 */
+            text-overflow: ellipsis; /* 添加省略号表示溢出 */
+            display: inline-block; /* 使其适应内容宽度 */
+            font-family: KaiTi;
+            font-size: 24px;
+            color: #00e500;
+            }
+
+    .highlight {
+            color: red;
+            font-weight: bold;
+            }
+
+ .video-container{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+            }
+      
+        body {
+            background-color: #282A36;
+            padding-top: 60px; /* 根据工具栏的高度调整 */
+            color: #f5f5f5;
+            line-height: 1.6;
+            margin-left: 350px;
+            margin-right: 200px; /* 根据目录宽度调整 */
+            font-family: Arial, sans-serif;
+            counter-reset: section;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 所有内容左对齐 */
+            }
+      
+    h1, h2, h3 {
+            color: #4592af;
+            margin-left: 2px;
+            white-space: nowrap;     /* 防止换行 */
+            overflow: hidden;        /* 隐藏溢出内容 */
+            text-overflow: ellipsis; /* 添加省略号表示溢出 */
+            margin-top: 2px;
+            margin-bottom: -1px;
+            display: block;          /* 确保是块级元素 */
+            font-size: 24px; /* 根据需要调整 */
+            }
+
+        #toc {
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            max-height: 90vh; /* 设置最大高度为视口高度的80% */
+            max-width: 45vh;
+            overflow-y: auto; /* 添加垂直滚动条 */
+            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+                    font-size: 14px; /* 根据需要调整 */
+            }
+
+       #toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: section; /* 重置计数器 */
+            }
+
+      #toc li {
+            counter-increment: section;
+            }
+
+ #toc li::before {
+            content: counter(section) '. ';
+            color: #FF0000;
+            }
+
+       #toc a {
+            color: #4592af;
+            text-decoration: none;
+            }
+
+   #toc a:hover {
+            text-decoration: underline;
+            }
+
+     body > h2 {
+            counter-increment: section;
+            }
+
+body > h2::before{
+            content: counter(section) '. ';
+            color: #ff461f;
+            }
+          .code {
+        font-family: monospace;
+        background-color: #f4f4f4;
+        padding: 5px;
+        border: 1px solid #ccc;
+        white-space: pre-wrap; /* 保持格式 */
+    }
+         </style>
+  
+  
+    </head>
+<body>
+          <marquee loop='99999' style='width: 100px;color:#d908a1;' >
+        正则表达式  
+            <input type='text' value='初级概念性知识' style='width: 100px; color:#0033fa;'>
+            <input type='text' value='高级语法及应用' style='width: 100px; color:#08d971;'>            
+        </marquee>
+  
+  
+    <div id='toc'>
+        <!--<h2>目录</h2>-->
+        <ul id='toc-list'>
+            <!-- 目录项将由JavaScript生成 -->
+        </ul>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  <h2 id='section1'>【回车】和【换行】</h2>
+    <p>
+        在机械英文打字机上，有一个部件叫'字车'（carriage），每打一个单词，'字车'就前进一格。">
+<meta property="og:title" content="正则式">
+<meta property="og:description" content="`<!DOCTYPE html>
+    <html lang='zh-CN'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  
+    <title>🚨正则式</title>
+  
+    <style>
+      
+          * {
+            margin: 0;
+            padding: 0;        
+            }
+                        
+        .b  {
+            white-space: nowrap; /* 防止换行 */
+            overflow: hidden;    /* 隐藏溢出内容 */
+            text-overflow: ellipsis; /* 添加省略号表示溢出 */
+            display: inline-block; /* 使其适应内容宽度 */
+            font-family: KaiTi;
+            font-size: 24px;
+            color: #00e500;
+            }
+
+    .highlight {
+            color: red;
+            font-weight: bold;
+            }
+
+ .video-container{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+            }
+      
+        body {
+            background-color: #282A36;
+            padding-top: 60px; /* 根据工具栏的高度调整 */
+            color: #f5f5f5;
+            line-height: 1.6;
+            margin-left: 350px;
+            margin-right: 200px; /* 根据目录宽度调整 */
+            font-family: Arial, sans-serif;
+            counter-reset: section;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 所有内容左对齐 */
+            }
+      
+    h1, h2, h3 {
+            color: #4592af;
+            margin-left: 2px;
+            white-space: nowrap;     /* 防止换行 */
+            overflow: hidden;        /* 隐藏溢出内容 */
+            text-overflow: ellipsis; /* 添加省略号表示溢出 */
+            margin-top: 2px;
+            margin-bottom: -1px;
+            display: block;          /* 确保是块级元素 */
+            font-size: 24px; /* 根据需要调整 */
+            }
+
+        #toc {
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            max-height: 90vh; /* 设置最大高度为视口高度的80% */
+            max-width: 45vh;
+            overflow-y: auto; /* 添加垂直滚动条 */
+            background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+                    font-size: 14px; /* 根据需要调整 */
+            }
+
+       #toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: section; /* 重置计数器 */
+            }
+
+      #toc li {
+            counter-increment: section;
+            }
+
+ #toc li::before {
+            content: counter(section) '. ';
+            color: #FF0000;
+            }
+
+       #toc a {
+            color: #4592af;
+            text-decoration: none;
+            }
+
+   #toc a:hover {
+            text-decoration: underline;
+            }
+
+     body > h2 {
+            counter-increment: section;
+            }
+
+body > h2::before{
+            content: counter(section) '. ';
+            color: #ff461f;
+            }
+          .code {
+        font-family: monospace;
+        background-color: #f4f4f4;
+        padding: 5px;
+        border: 1px solid #ccc;
+        white-space: pre-wrap; /* 保持格式 */
+    }
+         </style>
+  
+  
+    </head>
+<body>
+          <marquee loop='99999' style='width: 100px;color:#d908a1;' >
+        正则表达式  
+            <input type='text' value='初级概念性知识' style='width: 100px; color:#0033fa;'>
+            <input type='text' value='高级语法及应用' style='width: 100px; color:#08d971;'>            
+        </marquee>
+  
+  
+    <div id='toc'>
+        <!--<h2>目录</h2>-->
+        <ul id='toc-list'>
+            <!-- 目录项将由JavaScript生成 -->
+        </ul>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  <h2 id='section1'>【回车】和【换行】</h2>
+    <p>
+        在机械英文打字机上，有一个部件叫'字车'（carriage），每打一个单词，'字车'就前进一格。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://9.zcr3.ddns-ip.net/post/zheng-ze-shi.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
+<title>正则式</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">正则式</h1>
+<div class="title-right">
+    <a href="http://9.zcr3.ddns-ip.net" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/43" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>`<br>
+</p>
+
+    
+    
+<pre class="notranslate"><code class="notranslate">&lt;title&gt;🚨正则式&lt;/title&gt;
+
+&lt;style&gt;
+  
+      * {
+        margin: 0;
+        padding: 0;        
+        }
+                    
+    .b  {
+        white-space: nowrap; /* 防止换行 */
+        overflow: hidden;    /* 隐藏溢出内容 */
+        text-overflow: ellipsis; /* 添加省略号表示溢出 */
+        display: inline-block; /* 使其适应内容宽度 */
+        font-family: KaiTi;
+        font-size: 24px;
+        color: #00e500;
+        }
+
+.highlight {
+        color: red;
+        font-weight: bold;
+        }
+</code></pre>
+<p>.video-container{<br>
+display: flex;<br>
+justify-content: right;<br>
+align-items: center;<br>
+height: 100vh;<br>
+}</p>
+<pre class="notranslate"><code class="notranslate">    body {
+        background-color: #282A36;
+        padding-top: 60px; /* 根据工具栏的高度调整 */
+        color: #f5f5f5;
+        line-height: 1.6;
+        margin-left: 350px;
+        margin-right: 200px; /* 根据目录宽度调整 */
+        font-family: Arial, sans-serif;
+        counter-reset: section;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* 所有内容左对齐 */
+        }
+  
+h1, h2, h3 {
+        color: #4592af;
+        margin-left: 2px;
+        white-space: nowrap;     /* 防止换行 */
+        overflow: hidden;        /* 隐藏溢出内容 */
+        text-overflow: ellipsis; /* 添加省略号表示溢出 */
+        margin-top: 2px;
+        margin-bottom: -1px;
+        display: block;          /* 确保是块级元素 */
+        font-size: 24px; /* 根据需要调整 */
+        }
+
+    #toc {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        max-height: 90vh; /* 设置最大高度为视口高度的80% */
+        max-width: 45vh;
+        overflow-y: auto; /* 添加垂直滚动条 */
+        background-color: rgba(40, 42, 54, 0.9); /* 半透明背景 */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+                font-size: 14px; /* 根据需要调整 */
+        }
+
+   #toc ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        counter-reset: section; /* 重置计数器 */
+        }
+
+  #toc li {
+        counter-increment: section;
+        }
+</code></pre>
+<p>#toc li::before {<br>
+content: counter(section) ". ";<br>
+color: #FF0000;<br>
+}</p>
+<pre class="notranslate"><code class="notranslate">   #toc a {
+        color: #4592af;
+        text-decoration: none;
+        }
+</code></pre>
+<p>#toc a:hover {<br>
+text-decoration: underline;<br>
+}</p>
+<pre class="notranslate"><code class="notranslate"> body &gt; h2 {
+        counter-increment: section;
+        }
+</code></pre>
+<p>body &gt; h2::before{<br>
+content: counter(section) ". ";<br>
+color: #ff461f;<br>
+}<br>
+.code {<br>
+font-family: monospace;<br>
+background-color: #f4f4f4;<br>
+padding: 5px;<br>
+border: 1px solid #ccc;<br>
+white-space: pre-wrap; /* 保持格式 */<br>
+}<br>
+&lt;/style&gt;</p>
+<pre class="notranslate"><code class="notranslate">&lt;/head&gt;
+</code></pre>
+
+          
+        正则表达式  
+            
+                        
+        
+<pre class="notranslate"><code class="notranslate">&lt;div id="toc"&gt;
+    &lt;!--&lt;h2&gt;目录&lt;/h2&gt;--&gt;
+    &lt;ul id="toc-list"&gt;
+        &lt;!-- 目录项将由JavaScript生成 --&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+  <h2 id="user-content-section1">【回车】和【换行】</h2>
+    <p>
+        在机械英文打字机上，有一个部件叫"字车"（carriage），每打一个单词，"字车"就前进一格。<br>
+        当打满一行字符后，打字者就得推动"字车"到起始位置，这时打字机会有两个动作响应：<br>
+        一是："字车"被归位（carriage return，回到最左端），这个推动"字车"的动作叫"回车"（carriage return）。<br>
+        二是：滚筒上卷一行（line feed），以便开始输入下一行。<br>
+        所以合并起来就是CRLF = Carriage Return &amp; Line Feed。<br>        
+    </p>
+  <h2 id="user-content-section2">EmEditor</h2>
+    <p>
+        通常，<br>
+        CR+LF (\r\n) 被用在 Windows 操作系统中，<br>
+        CR (\r) 被用在 Macintosh 上，<br>
+        LF (\n) 被用于 Unix。<br>
+        \r    回车符  <br>
+        \n   换行符  <br>
+        <span>\r\n\r\n</span>可以匹配Windows下的空白行，因为它将匹配两个连续的行尾标签，而这正是两条记录之间的空白行；<br>
+    </p>
+<pre class="notranslate"><code class="notranslate">&lt;!-- 添加更多章节 --&gt;  
+</code></pre>
+  <h2 id="user-content-section3">匹配以abc为开头,并且最后一个字母不为数字的字符串:</h2>
+    <p>
+        <span>abc[^0-9]</span><br>
+        匹配结果<br>
+        abcd<br>
+        \d  数字字符，等价于[0-9] <br>
+        \D  非数字字符，等价于[^0-9] <br>
+        <span>abc(\D)*</span> <br>
+        <span>abcf</span>11we <br>
+        <span>abcerewsdfsggddd</span>2xss <br>
+        匹配到数字11和2时，匹配终止 <br>        
+    </p>
+<pre class="notranslate"><code class="notranslate">&lt;!-- 继续添加其他章节 --&gt;
+</code></pre>
+  <h2 id="user-content-section4">匹配一组字符</h2>
+    <p>
+        [ ] 定义一个字符集合<br>
+        0-9、a-z 定义了一个字符区间，区间使用 ASCI 码来确定，字符区间在 [ ] 中使用。<br>
+        -只有在[]之间才是元字符，在[]之外就是一个普通字符；<br>
+        ^ 在 [ ] 中是取非操作。<br>        
+    </p>
+  <h2 id="user-content-section5">各种语言注释的方法</h2>
+    <p>
+        CSS注释：     /* 这是一个CSS注释 */       <br>
+        JavaScript注释：         <br>
+        // 这是一个单行注释       <br>
+        /* 这是一个多行注释 */  <br>
+        AHK注释： <br>   
+        ;  这是一个单行注释       <br>
+        /* 这是一个多行注释 */  <br>
+        Bat注释： <br>
+        rem 这是一条注释      <br>
+        ::  这也是一条注释         <br>
+        HTML注释：  <br>        
+    </p>
+  <h2 id="user-content-section6">匹配邮箱</h2>
+    <p>
+        <span>\w+@(\w+\.)+\w+</span>　 <br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3e08d1a1163b8b03cee856b4e52c1e9b2ef629411460cf7da1814af06b737df1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32313a30383a32303a34352e706e67"><img src="https://camo.githubusercontent.com/3e08d1a1163b8b03cee856b4e52c1e9b2ef629411460cf7da1814af06b737df1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32313a30383a32303a34352e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.21:08:20:45.png" style="max-width: 100%;"></a></p>
+        <span>[\w.]+@(\w+\.)+\w+</span>　 <br>     
+<p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/33db6913ee918f2a502325de02c280a55e7b63f454c9803bbb7bf725829ef8ab/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f696d67406d61696e2f696d322f32303234313132313038313233312e706e67"><img src="https://camo.githubusercontent.com/33db6913ee918f2a502325de02c280a55e7b63f454c9803bbb7bf725829ef8ab/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f696d67406d61696e2f696d322f32303234313132313038313233312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241121081231.png" style="max-width: 100%;"></a><br><br>
+        [\w.] 匹配的是字母数字或者 '.' ,在其后面加上 + ,表示匹配多次。在字符集合 [ ] 里, '.' 不是元字符; <br>        
+    </p>
+  <h2 id="user-content-section7">* 和 + 都是贪婪型元字符</h2>
+    <p>
+        <span>a.+c</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f9fc1403b70e895dbce326ecca8f310a60d2f52418312b41311a91b81b9c3738/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6335666639386532343535343636356436663434372e706e67"><img src="https://camo.githubusercontent.com/f9fc1403b70e895dbce326ecca8f310a60d2f52418312b41311a91b81b9c3738/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6335666639386532343535343636356436663434372e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/c5ff98e24554665d6f447.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section8">*?、+? 和 {m, n}?懒惰型元字符</h2>
+    <p>
+        <span>a.+?c</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/811dd47bf1cefdbf025aad4df41fcb88d51391afb987e721bf140f1e48aecce5/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3836666137656162396238613665656531653261612e706e67"><img src="https://camo.githubusercontent.com/811dd47bf1cefdbf025aad4df41fcb88d51391afb987e721bf140f1e48aecce5/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3836666137656162396238613665656531653261612e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/86fa7eab9b8a6eee1e2aa.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section9">匹配//开头的行　注意：可能有空格</h2>
+    <p>
+        <span>^\s*\/\/.*$</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4cc33e105d76648e008eab8208804040a0f52d25dc52f2bd2d41b1b9f1853faa/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3139656165343466633931393364326339303264302e706e67"><img src="https://camo.githubusercontent.com/4cc33e105d76648e008eab8208804040a0f52d25dc52f2bd2d41b1b9f1853faa/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3139656165343466633931393364326339303264302e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/19eae44fc9193d2c902d0.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section10">匹配19　20</h2>
+    <p>
+        <span>19|^20|^10</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d6a5827f86d6ff351ded134bb5c71bd170090453e73d7dc113ffcca50657f26d/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3463636234623139323231333036643335386666612e706e67"><img src="https://camo.githubusercontent.com/d6a5827f86d6ff351ded134bb5c71bd170090453e73d7dc113ffcca50657f26d/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3463636234623139323231333036643335386666612e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/4ccb4b19221306d358ffa.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section11">匹配19 20并且后面带２位数字</h2>
+    <p>
+        <span>(19|20|10)\d{2}</span>　 <br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3c546bb15c59415fce0cf6f258149015d22f90deaa490fe1cd8c58b95e710afa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f696d67406d61696e2f696d322f32303234313132313038323630322e706e67"><img src="https://camo.githubusercontent.com/3c546bb15c59415fce0cf6f258149015d22f90deaa490fe1cd8c58b95e710afa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f696d67406d61696e2f696d322f32303234313132313038323630322e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/img@main/im2/20241121082602.png" style="max-width: 100%;"></a><br><br>
+</p><pre class="notranslate"><code class="notranslate">&lt;/p&gt;
+</code></pre>
+  <h2 id="user-content-section12">匹配IP地址　错误的方法</h2>
+    <p>
+        <span>(\d+\.)+\d+</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/46035b8cb13c12c4332da6ef0ecbb6177806a8a81770d36af46ab61dafb50e87/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3430623336386134336661373538633530303966622e706e67"><img src="https://camo.githubusercontent.com/46035b8cb13c12c4332da6ef0ecbb6177806a8a81770d36af46ab61dafb50e87/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3430623336386134336661373538633530303966622e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/40b368a43fa758c5009fb.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section13">匹配IP地址　正确的方法</h2>
+    <p>
+        <span>((25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c80cd5dd1e941b476ab144bc768c49199f9394814c745bb35e166b060e3ed349/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3563363162333363343037653262383935633331382e706e67"><img src="https://camo.githubusercontent.com/c80cd5dd1e941b476ab144bc768c49199f9394814c745bb35e166b060e3ed349/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3563363162333363343037653262383935633331382e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/5c61b33c407e2b895c318.png" style="max-width: 100%;"></a></p>        
+      <p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f0f97f4e836733d66877a384cc2d3a075b047f36a08d3a24e5776e7f5b417fc9/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6263306330643136303063383233303261333736322e706e67"><img src="https://camo.githubusercontent.com/f0f97f4e836733d66877a384cc2d3a075b047f36a08d3a24e5776e7f5b417fc9/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6263306330643136303063383233303261333736322e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/bc0c0d1600c82302a3762.png" style="max-width: 100%;"></a>
+    </p>
+  <h2 id="user-content-section14">匹配方法</h2>
+    <p>
+        <span>((25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c80cd5dd1e941b476ab144bc768c49199f9394814c745bb35e166b060e3ed349/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3563363162333363343037653262383935633331382e706e67"><img src="https://camo.githubusercontent.com/c80cd5dd1e941b476ab144bc768c49199f9394814c745bb35e166b060e3ed349/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3563363162333363343037653262383935633331382e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/5c61b33c407e2b895c318.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section15">查找出 @ 字符后</h2>
+    <p>
+        <span>(?&lt;=@).+ </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2da96ab2c5b8a71e9dab5de20bed575fddafe631b905c0dc910a69adea6b1178/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3139303135356266323134386532356535303234622e706e67"><img src="https://camo.githubusercontent.com/2da96ab2c5b8a71e9dab5de20bed575fddafe631b905c0dc910a69adea6b1178/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3139303135356266323134386532356535303234622e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/190155bf2148e25e5024b.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section16">查找出 @ 字符后含-号</h2>
+    <p>
+        <span>(?&lt;=@)\w+-*(\.*\w+)* </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8391918c0c475015bf61432891e72f607409443808ce9f97e19fbda9768caa07/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6330663137303332333538666537323539636165372e706e67"><img src="https://camo.githubusercontent.com/8391918c0c475015bf61432891e72f607409443808ce9f97e19fbda9768caa07/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6330663137303332333538666537323539636165372e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/c0f17032358fe7259cae7.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section17">查找出 @ 字符后</h2>
+    <p>
+        <span>(?&lt;=@)\w+(\.\w+)* </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b5aee231f60cc5db8de7d4799d09e503e3bb6395ba9aae1a1b60afd489343383/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3635613930333766666535303662356566633363352e706e67"><img src="https://camo.githubusercontent.com/b5aee231f60cc5db8de7d4799d09e503e3bb6395ba9aae1a1b60afd489343383/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3635613930333766666535303662356566633363352e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/65a9037ffe506b5efc3c5.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section18">查找出 @ 字符前含-号</h2>
+    <p>
+        <span>\w+[-\w]*(?=@)   .....    \w+-*\w+(?=@)</span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/82267e3cc78de446842002affe9bdf396edbbebaed4159f54070d6b4451693cd/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3062306135373637376439326363303435386537662e706e67"><img src="https://camo.githubusercontent.com/82267e3cc78de446842002affe9bdf396edbbebaed4159f54070d6b4451693cd/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3062306135373637376439326363303435386537662e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/0b0a57677d92cc0458e7f.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section19">查找出 @ 字符前</h2>
+    <p>
+        <span>\w+(?=@)</span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ad8e112fb6e6b7a07caff6c910090be2466372794cfc282542ceef34e050a204/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6262623062303364356165383037396336363866382e706e67"><img src="https://camo.githubusercontent.com/ad8e112fb6e6b7a07caff6c910090be2466372794cfc282542ceef34e050a204/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6262623062303364356165383037396336363866382e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/bbb0b03d5ae8079c668f8.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section20">筛选IPv6</h2>
+    <p>
+        <span>(\w+:)+(:+)\w+:\w+</span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0a137187c2e567b969ad523e7bf9c05064c53cbbd2534637bdaaaab3608da03f/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6131313435653564313034376630356533363230362e706e67"><img src="https://camo.githubusercontent.com/0a137187c2e567b969ad523e7bf9c05064c53cbbd2534637bdaaaab3608da03f/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6131313435653564313034376630356533363230362e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/a1145e5d1047f05e36206.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section21">指代法5</h2>
+    <p>
+        <span>查找(tom|jerry)替换为\u$1 </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/91c9c3a4f4af65936dd42ab08631591b0843557f825cbd321d748b5a19945eab/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6463646437616331393831616332613530363862612e706e67"><img src="https://camo.githubusercontent.com/91c9c3a4f4af65936dd42ab08631591b0843557f825cbd321d748b5a19945eab/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6463646437616331393831616332613530363862612e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/dcdd7ac1981ac2a5068ba.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section22">指代法4</h2>
+    <p>
+        <span>查找(\w)(\w{2})(\w)替换为$1\U$2\E$3 </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/acc1761f77b2e7939c49d547c706d43b1cc70308e266790b6187e2b419149096/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3839323439663131303562383264653962333466642e706e67"><img src="https://camo.githubusercontent.com/acc1761f77b2e7939c49d547c706d43b1cc70308e266790b6187e2b419149096/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3839323439663131303562383264653962333466642e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/89249f1105b82de9b34fd.png" style="max-width: 100%;"></a></p>
+        <p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c5f822300b8a5de6776738e99bcd34b02bd9f18de5d8b261e212b6923bd1f545/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6337626166356264333530336133323937373730362e706e67"><img src="https://camo.githubusercontent.com/c5f822300b8a5de6776738e99bcd34b02bd9f18de5d8b261e212b6923bd1f545/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6337626166356264333530336133323937373730362e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/c7baf5bd3503a32977706.png" style="max-width: 100%;"></a>
+    </p>
+   <h2 id="user-content-section23">筛选Html</h2>
+    <p>
+        <span>&lt;(\w+)*.*&gt;.*?&lt;无/\1&gt;</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e491913891a403e5f1c74f6d33fcad6c87371dfe2d025657201740f7ef2c2d64/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3461323830356433386137303239316538343035622e706e67"><img src="https://camo.githubusercontent.com/e491913891a403e5f1c74f6d33fcad6c87371dfe2d025657201740f7ef2c2d64/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3461323830356433386137303239316538343035622e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/4a2805d38a70291e8405b.png" style="max-width: 100%;"></a>       
+    </p>
+  <h2 id="user-content-section24">指代法2</h2>
+    <p>
+        <span>&lt;(\w+)*&gt;.*?&lt;无/\1&gt;</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1ee37c04f9e60e3dd7cafc1ddfa28bfef9c302b281dbfd0f4d1d5d49e4b29418/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3733636166396663366232303766356165633531632e706e67"><img src="https://camo.githubusercontent.com/1ee37c04f9e60e3dd7cafc1ddfa28bfef9c302b281dbfd0f4d1d5d49e4b29418/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f3733636166396663366232303766356165633531632e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/73caf9fc6b207f5aec51c.png" style="max-width: 100%;"></a></p>
+        
+    <p></p>
+  <h2 id="user-content-section25">指代法1</h2>
+    <p>
+        <span>(\d{3})(-)(\d{3})(-)(\d{4}) 替换为 $5+$1</span>　 <br>
+        </p><p align="left"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9f84649d143cddbe88dc52dd602951fd7f84d7acfa3b3958c19c8e563eb1e99e/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6566313735336432616464653432633031383239642e706e67"><img src="https://camo.githubusercontent.com/9f84649d143cddbe88dc52dd602951fd7f84d7acfa3b3958c19c8e563eb1e99e/68747470733a2f2f74746b2e7a626230372e75732e6b672f66696c652f6566313735336432616464653432633031383239642e706e67" data-canonical-src="https://ttk.zbb07.us.kg/file/ef1753d2adde42c01829d.png" style="max-width: 100%;"></a></p>
+        
+    <p></p>
+  <h2 id="user-content-section26">本后２个以上字符</h2>
+    <p>
+        <span>(?&lt;=本).{2,} </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c38d9c42dbb699de01e89b9946869f5a7a6227cd6752c3ecf9a1376fd888948d/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6135323263623531626638336438613061653437342e706e67"><img src="https://camo.githubusercontent.com/c38d9c42dbb699de01e89b9946869f5a7a6227cd6752c3ecf9a1376fd888948d/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6135323263623531626638336438613061653437342e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/a522cb51bf83d8a0ae474.png" style="max-width: 100%;"></a></p>
+    <p></p>
+  <h2 id="user-content-section27">查找出 @ 字符后</h2>
+    <p>
+        <span>(?&lt;=@).+ </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2da96ab2c5b8a71e9dab5de20bed575fddafe631b905c0dc910a69adea6b1178/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3139303135356266323134386532356535303234622e706e67"><img src="https://camo.githubusercontent.com/2da96ab2c5b8a71e9dab5de20bed575fddafe631b905c0dc910a69adea6b1178/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3139303135356266323134386532356535303234622e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/190155bf2148e25e5024b.png" style="max-width: 100%;"></a></p>        
+    <p></p>
+  <h2 id="user-content-section28">标点后换行</h2>
+    <p>
+        <span>([[:punct:]])或 ([[:punct:]｜＝￥]) | \1\n </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/782d1468bfa3a41205fb905cbe2d2a11e94c6a592b46d47938b5c6cd7c957ad6/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3134333435363461656236363265613733356233332e706e67"><img src="https://camo.githubusercontent.com/782d1468bfa3a41205fb905cbe2d2a11e94c6a592b46d47938b5c6cd7c957ad6/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3134333435363461656236363265613733356233332e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/1434564aeb662ea735b33.png" style="max-width: 100%;"></a></p>
+    <p></p>
+   <h2 id="user-content-section29">多空格变单空格</h2>
+    <p>
+        <span>([[:space:]])+ || 单空格 \s+ </span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/96fe36ba9f3eee5917da8481223b4bc2771248d1a9577c99b34fa8b02216ccd8/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6337643336623039623765386263303138363466322e706e67"><img src="https://camo.githubusercontent.com/96fe36ba9f3eee5917da8481223b4bc2771248d1a9577c99b34fa8b02216ccd8/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6337643336623039623765386263303138363466322e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/c7d36b09b7e8bc01864f2.png" style="max-width: 100%;"></a>
+    </p>
+  <h2 id="user-content-section30">所有或指定单词大小写 首大写</h2>
+    <p>
+        <span>(THE | fox) || \U$1</span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b64f9290db10028143ce6765743f86ff52de49e64db9c404a6a8875296921d6b/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3665643235346263373062386233333136616635362e706e67"><img src="https://camo.githubusercontent.com/b64f9290db10028143ce6765743f86ff52de49e64db9c404a6a8875296921d6b/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3665643235346263373062386233333136616635362e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/6ed254bc70b8b3316af56.png" style="max-width: 100%;"></a>
+         </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/66b448ac354ac5778beb1fefe20dbb8e940c7395484da457fb3c4d19eb69c253/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3732366266623231363237663564656131613261352e706e67"><img src="https://camo.githubusercontent.com/66b448ac354ac5778beb1fefe20dbb8e940c7395484da457fb3c4d19eb69c253/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3732366266623231363237663564656131613261352e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/726bfb21627f5dea1a2a5.png" style="max-width: 100%;"></a>
+           </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/04d641c7618a6f2f2f478b46f42f8455fb51510fc586218d56e03ea6faf18c38/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3166623962616231313537393163366535383735392e706e67"><img src="https://camo.githubusercontent.com/04d641c7618a6f2f2f478b46f42f8455fb51510fc586218d56e03ea6faf18c38/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3166623962616231313537393163366535383735392e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/1fb9bab115791c6e58759.png" style="max-width: 100%;"></a>
+    </p>  
+  <h2 id="user-content-section31">改变位置</h2>
+    <p>
+        <span>\b(\w+)\s(\w+)\s(\w+)\s(\w+)\b || $2 $1 $4 $3</span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6c9bd61a818e32860207b5b95850bb72172f09ce85c76341ffa93e212b341604/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3333353033316666313338633536333763313766632e706e67"><img src="https://camo.githubusercontent.com/6c9bd61a818e32860207b5b95850bb72172f09ce85c76341ffa93e212b341604/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3333353033316666313338633536333763313766632e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/335031ff138c5637c17fc.png" style="max-width: 100%;"></a>
+    </p>
+  <h2 id="user-content-section32">多行合并</h2>
+    <p>
+        <span>(?&lt;=[^[:punct:]])\n|^\s+ </span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/26e44b498af7274d202c4f1842eccb17ccc9872edfb132d3a04aa88e6940af16/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3763373537663433383638616138363737373263362e706e67"><img src="https://camo.githubusercontent.com/26e44b498af7274d202c4f1842eccb17ccc9872edfb132d3a04aa88e6940af16/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3763373537663433383638616138363737373263362e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/7c757f43868aa867772c6.png" style="max-width: 100%;"></a>
+    </p>
+  <h2 id="user-content-section33">匹配手机号</h2>
+    <p>
+        <span>1[3-8]\d{9}</span>　 <br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a895b6e3e8db9fbae76c1747f45f3220fe5dccc0f3102ddc2ae5c9ff582c0706/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6661383562663163326535343739666134623063302e706e67"><img src="https://camo.githubusercontent.com/a895b6e3e8db9fbae76c1747f45f3220fe5dccc0f3102ddc2ae5c9ff582c0706/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6661383562663163326535343739666134623063302e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/fa85bf1c2e5479fa4b0c0.png" style="max-width: 100%;"></a>
+    </p>
+  <h2 id="user-content-section34">行后加空行 删除空行(用筛选)</h2>
+    <p>
+        <span>(.+)  ||  \1\n</span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b990a2f371bd50164b7558112ef8ebfc3b56577832d8868e70506f4d975727a5/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6139363833643531343861343662623031393262322e706e67"><img src="https://camo.githubusercontent.com/b990a2f371bd50164b7558112ef8ebfc3b56577832d8868e70506f4d975727a5/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6139363833643531343861343662623031393262322e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/a9683d5148a46bb0192b2.png" style="max-width: 100%;"></a>
+         </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3e106496fd6acfbb29300343dcc164ef967bcf7106cee82a68e1275a7e9d6af8/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6562376335303934623734386539646239373436382e706e67"><img src="https://camo.githubusercontent.com/3e106496fd6acfbb29300343dcc164ef967bcf7106cee82a68e1275a7e9d6af8/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6562376335303934623734386539646239373436382e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/eb7c5094b748e9db97468.png" style="max-width: 100%;"></a>
+    </p>
+
+  <h2 id="user-content-section35">每行前后添加内容</h2>
+    <p>
+        <span> .+ | \[\0]#dd </span><br>
+     <br> <br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c9481b07223c27ad13ef5a9e6f153d36a8180d3bcad37e5084b30302a9fec8c7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e336e726b74693667756d2e706e67"><img src="https://camo.githubusercontent.com/c9481b07223c27ad13ef5a9e6f153d36a8180d3bcad37e5084b30302a9fec8c7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e336e726b74693667756d2e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.3nrkti6gum.png" style="max-width: 100%;"></a>
+    <br><br>    </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/595cdc5a555ae85242b53e49dec694ec599de8c7be50e8ad8080426389d2f2b6/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6664363663613437386332393964363638336230322e706e67"><img src="https://camo.githubusercontent.com/595cdc5a555ae85242b53e49dec694ec599de8c7be50e8ad8080426389d2f2b6/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6664363663613437386332393964363638336230322e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/fd66ca478c299d6683b02.png" style="max-width: 100%;"></a></p>  
+      <br><br>  <p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0de4adfd07a6edb6309213c8e67b5204c239b4bcef2b0e977002bbd42c0a89e1/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6238323263623530323466363431306632323239332e706e67"><img src="https://camo.githubusercontent.com/0de4adfd07a6edb6309213c8e67b5204c239b4bcef2b0e977002bbd42c0a89e1/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6238323263623530323466363431306632323239332e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/b822cb5024f6410f22293.png" style="max-width: 100%;"></a></p>
+
+  <h2 id="user-content-section36">每行行首添加打开的文件名</h2>
+    <p>
+        <span>.+ | $(FilenameEx)\0\n 注：F和E必须大写</span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/24725bda47eb1374e4e2ef1895682a712b4394d2bcb957d96a8e2e402d8e3015/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3235363137356435653661383735643832356161372e706e67"><img src="https://camo.githubusercontent.com/24725bda47eb1374e4e2ef1895682a712b4394d2bcb957d96a8e2e402d8e3015/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3235363137356435653661383735643832356161372e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/256175d5e6a875d825aa7.png" style="max-width: 100%;"></a>
+    </p>
+
+  <h2 id="user-content-section37">文件夹内的所有TXT文件都加上前后缀</h2>
+    <p>
+        <span>.+ | $(FilenameEx)\0\n"这是A" </span><br>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c3d4c7c4d9c79d4ae60094c9b14ba1e9b87f2e4d6b3c09391f7f44f6a6dba333/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3332656438663533393233356532383635316231662e706e67"><img src="https://camo.githubusercontent.com/c3d4c7c4d9c79d4ae60094c9b14ba1e9b87f2e4d6b3c09391f7f44f6a6dba333/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3332656438663533393233356532383635316231662e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/32ed8f539235e28651b1f.png" style="max-width: 100%;"></a>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/47146c3f922269dd01d41bc96c2b63a126c2c2aa7eadd3c8b84ab6de58decf56/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3363636263633030386232386233323435373637332e706e67"><img src="https://camo.githubusercontent.com/47146c3f922269dd01d41bc96c2b63a126c2c2aa7eadd3c8b84ab6de58decf56/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3363636263633030386232386233323435373637332e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/3ccbcc008b28b32457673.png" style="max-width: 100%;"></a>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3513f7df1f3d1b56b9986a389b94c03695371943551d41b639d0cb0af27c05ae/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3061396165653364313264623362376263363436322e706e67"><img src="https://camo.githubusercontent.com/3513f7df1f3d1b56b9986a389b94c03695371943551d41b639d0cb0af27c05ae/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3061396165653364313264623362376263363436322e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/0a9aee3d12db3b7bc6462.png" style="max-width: 100%;"></a>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/113289ba5f8de0e56c39b001d7c97eae01728aed18adea77e08f63ba156fa347/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3931643764326561353266353531653065643466622e706e67"><img src="https://camo.githubusercontent.com/113289ba5f8de0e56c39b001d7c97eae01728aed18adea77e08f63ba156fa347/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3931643764326561353266353531653065643466622e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/91d7d2ea52f551e0ed4fb.png" style="max-width: 100%;"></a>
+        </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8f67ecd853dee4ab913ab979baaf7cfa42a3eab2ab0c19c7bf1fe19ebabc1862/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3433323836616535666465366337306232633433372e706e67"><img src="https://camo.githubusercontent.com/8f67ecd853dee4ab913ab979baaf7cfa42a3eab2ab0c19c7bf1fe19ebabc1862/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3433323836616535666465366337306232633433372e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/43286ae5fde6c70b2c437.png" style="max-width: 100%;"></a>
+    </p>
+
+  <h2 id="user-content-section39">匹配第1个数字</h2>
+    <p>
+      <span>\G\d+</span><br>
+      </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f67b472963580668356e5c49c284beac104855d42cf51c2c7d0c9cfb37322771/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3031326538643537633264333035646561663335642e706e67"><img src="https://camo.githubusercontent.com/f67b472963580668356e5c49c284beac104855d42cf51c2c7d0c9cfb37322771/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3031326538643537633264333035646561663335642e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/012e8d57c2d305deaf35d.png" style="max-width: 100%;"></a>
+    </p>         
+   
+  <h2 id="user-content-section39">匹配特定字符如@后的内容</h2>
+    <p>
+      <span>.+?@\K.+ \K:重置匹配的起始位置</span><br>
+      </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1e50127cc3cf73a22cedbf94ffb0c6b2799b765fbab58f540cd796bd580d6102/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6266643061346362346331623739636565353562392e706e67"><img src="https://camo.githubusercontent.com/1e50127cc3cf73a22cedbf94ffb0c6b2799b765fbab58f540cd796bd580d6102/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6266643061346362346331623739636565353562392e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/bfd0a4cb4c1b79cee55b9.png" style="max-width: 100%;"></a>
+    </p>         
+        
+  <h2 id="user-content-section39">非捕获组</h2>
+    <p>
+      <span>非捕获组(?:^.*?@+)与捕获组(^.*?@+)两者的区别</span><br>
+      </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/79e89e1164879c244f5ccaa39053f9ac71789eda0132421b8d92fcc0c16a2b89/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3864613164303638393832346264333338623032612e706e67"><img src="https://camo.githubusercontent.com/79e89e1164879c244f5ccaa39053f9ac71789eda0132421b8d92fcc0c16a2b89/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3864613164303638393832346264333338623032612e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/8da1d0689824bd338b02a.png" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">匹配IPV6节点 全匹配</h2>
+    <p>
+      <span>(\w+:+)+(\w+)+</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/67c144a6b02a4f340898129c54b95542a846ccec6fc936339b3a9f8b7c6296cc/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6665666663633163343562303761666566323462662e706e67"><img src="https://camo.githubusercontent.com/67c144a6b02a4f340898129c54b95542a846ccec6fc936339b3a9f8b7c6296cc/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f6665666663633163343562303761666566323462662e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/feffcc1c45b07afef24bf.png" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">匹配IPV6节点 不全</h2>
+    <p>
+      <span>(\w+:)+(:\w+)+</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/98a33abb070a1808ef243a45a7ee121870047435558722efea659492a113c637/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3338343630646530633965393562316533643363342e706e67"><img src="https://camo.githubusercontent.com/98a33abb070a1808ef243a45a7ee121870047435558722efea659492a113c637/68747470733a2f2f74756b752e7a626230372e75732e6b672f66696c652f3338343630646530633965393562316533643363342e706e67" data-canonical-src="https://tuku.zbb07.us.kg/file/38460de0c9e95b1e3d3c4.png" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">匹配[  ]内的字符</h2>
+    <p>
+      <span>\[\K.+(?=\])</span><br>
+  <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0b0cf2dc0e429461870ff82e96804d0f191f51a90fbda4a33b9b02199ac9f51b/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f626435363231306236666538363730303866343564363833353238396136353064646237383932302e6a7067"><img src="https://camo.githubusercontent.com/0b0cf2dc0e429461870ff82e96804d0f191f51a90fbda4a33b9b02199ac9f51b/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f626435363231306236666538363730303866343564363833353238396136353064646237383932302e6a7067" data-canonical-src="https://assets.vviptuangou.com/bd56210b6fe867008f45d6835289a650ddb78920.jpg" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">匹配最后一对括号内的内容</h2>
+    <p>
+      <span>.*(?&lt;=\()\K.+(?=\))</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6fc9fad9464a777bbcc053e2d005f65a06b21b945f88e92750fbd448364829a6/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f316336653837313933303037363832333937303764316536653232633334346539306365383634632e6a7067"><img src="https://camo.githubusercontent.com/6fc9fad9464a777bbcc053e2d005f65a06b21b945f88e92750fbd448364829a6/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f316336653837313933303037363832333937303764316536653232633334346539306365383634632e6a7067" data-canonical-src="https://assets.vviptuangou.com/1c6e8719300768239707d1e6e22c344e90ce864c.jpg" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">匹配所有括号内的字符</h2>
+    <p>
+      <span>\(\K.+?(?=\))</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/dd66099924de0d2e35cc704f1c0e2576ae1d86f13a9ae6e2db65b71d7659da13/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f376537656538363064393163326638376664663337626230656434303764336638333733363234322e6a7067"><img src="https://camo.githubusercontent.com/dd66099924de0d2e35cc704f1c0e2576ae1d86f13a9ae6e2db65b71d7659da13/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f376537656538363064393163326638376664663337626230656434303764336638333733363234322e6a7067" data-canonical-src="https://assets.vviptuangou.com/7e7ee860d91c2f87fdf37bb0ed407d3f83736242.jpg" style="max-width: 100%;"></a>
+  <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d4bbcd9f48f7317493d0b6513bc00e8d7bee2add8a0d214b3def88d363ef599e/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f363963386462393933346533626636383733383765613132346633663563383862636536393365352e6a7067"><img src="https://camo.githubusercontent.com/d4bbcd9f48f7317493d0b6513bc00e8d7bee2add8a0d214b3def88d363ef599e/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f363963386462393933346533626636383733383765613132346633663563383862636536393365352e6a7067" data-canonical-src="https://assets.vviptuangou.com/69c8db9934e3bf687387ea124f3f5c88bce693e5.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer" href=""><img align="center" style="max-width: 100%;"></a><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/22d509b67361e595d36834d520ff33a61fcfebe604fc96cda81714170ac71b61/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32313a30383a33303a32322e706e67"><img src="https://camo.githubusercontent.com/22d509b67361e595d36834d520ff33a61fcfebe604fc96cda81714170ac71b61/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d67406d61696e2f63646e2f4231312e32313a30383a33303a32322e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img@main/cdn/B11.21:08:30:22.png" style="max-width: 100%;"></a></p>
+    <p></p>         
+              
+  <h2 id="user-content-section39">匹配正确的字符，同时如果<span>括号成对</span>也匹配</h2>
+    <p>
+      <span>(\()?abc(?(1)\))</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/aa24fd3c592edbb0570a486febac1b1c16a0c008422951de985a1b7bb8e21643/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f626366323934663338326337353562383663336361373465363138393730613965306238663637332e6a7067"><img src="https://camo.githubusercontent.com/aa24fd3c592edbb0570a486febac1b1c16a0c008422951de985a1b7bb8e21643/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f626366323934663338326337353562383663336361373465363138393730613965306238663637332e6a7067" data-canonical-src="https://assets.vviptuangou.com/bcf294f382c755b86c3ca74e618970a9e0b8f673.jpg" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section39">\b\b单词边界</h2>
+    <p>
+      <span>(\()?\bab\b(?(1)\))</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/80e58216f1a94d2b2274eda337492e43e224eb5100d64e7feb344ec8e38d161b/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f386334303934623032396335346231303866376561343438613339336464646631663236663230622e6a7067"><img src="https://camo.githubusercontent.com/80e58216f1a94d2b2274eda337492e43e224eb5100d64e7feb344ec8e38d161b/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f386334303934623032396335346231303866376561343438613339336464646631663236663230622e6a7067" data-canonical-src="https://assets.vviptuangou.com/8c4094b029c54b108f7ea448a393dddf1f26f20b.jpg" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section48">跳过规定字符匹配其它</h2>
+    <p>
+      <span>(\d+)(?=-)|(?&lt;=-)(\d+)</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c4c53b4182cb4e7b3f46094e6a4695dfa97fe0e505c6f34c2666dfefe8daf28a/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f633564613031353161333035336136643434323165356365656433613233626339666236336336362e6a7067"><img src="https://camo.githubusercontent.com/c4c53b4182cb4e7b3f46094e6a4695dfa97fe0e505c6f34c2666dfefe8daf28a/68747470733a2f2f6173736574732e767669707475616e676f752e636f6d2f633564613031353161333035336136643434323165356365656433613233626339666236336336362e6a7067" data-canonical-src="https://assets.vviptuangou.com/c5da0151a3053a6d4421e5ceed3a23bc9fb63c66.jpg" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section49">匹配末尾</h2>
+    <p>
+      <span>b\z</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0ef059bcf0747104e275c427914cff806d96f7ec1c0b5003a0604e521522bb9b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e39677769767672626e342e706e67"><img src="https://camo.githubusercontent.com/0ef059bcf0747104e275c427914cff806d96f7ec1c0b5003a0604e521522bb9b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e39677769767672626e342e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.9gwivvrbn4.png" style="max-width: 100%;"></a>
+    </p>         
+              
+  <h2 id="user-content-section50">匹配开始</h2>
+    <p>
+      <span>\Aa</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c6a4d10528193c5b8d4649e4a3436d75ddedd26126e5d7bac388da56d5485cf8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e3677716f6a38783378372e706e67"><img src="https://camo.githubusercontent.com/c6a4d10528193c5b8d4649e4a3436d75ddedd26126e5d7bac388da56d5485cf8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e3677716f6a38783378372e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.6wqoj8x3x7.png" style="max-width: 100%;"></a>
+    </p>         
+    
+  <h2 id="user-content-section51">单词边界</h2>
+    <p>
+      <span>st\B</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a1d9954f2b5ad24a03165f99e6aad16e181b9aaae9f56f28be7de0ab52b69259/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e3173657a7530613467742e706e67"><img src="https://camo.githubusercontent.com/a1d9954f2b5ad24a03165f99e6aad16e181b9aaae9f56f28be7de0ab52b69259/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e3173657a7530613467742e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.1sezu0a4gt.png" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/71dec3fa782e153d819153059ba6edd2f7ba8fbf0ab350ae8ed197d5905729aa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e337965656672723161792e706e67"><img src="https://camo.githubusercontent.com/71dec3fa782e153d819153059ba6edd2f7ba8fbf0ab350ae8ed197d5905729aa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e337965656672723161792e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.3yeefrr1ay.png" style="max-width: 100%;"></a>
+    </p>         
+   
+  <h2 id="user-content-section52">匹配t的左边不是s,是s</h2>
+    <p>
+<span><code class="notranslate"></code></span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/886ced6e52f670cbc7b1da3baa33d5f006acac9a19628fd7f2540f18f948c9ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e6d307a34366b37362e706e67"><img src="https://camo.githubusercontent.com/886ced6e52f670cbc7b1da3baa33d5f006acac9a19628fd7f2540f18f948c9ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e6d307a34366b37362e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.m0z46k76.png" style="max-width: 100%;"></a>
+  <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d8a6b70d4e46cfeafb45512e0f4b76662af5f6d90d04123d77780ae176c33296/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3967776a3363736764732e6a7067"><img src="https://camo.githubusercontent.com/d8a6b70d4e46cfeafb45512e0f4b76662af5f6d90d04123d77780ae176c33296/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3967776a3363736764732e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.9gwj3csgds.jpg" style="max-width: 100%;"></a>
+    </p>         
+            
+  <h2 id="user-content-section53">匹配s的右边不是t,是t</h2>
+    <p>
+      <span></span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9502d64d702c52b13be4f071bccd068dabea2f6551117df6ab95bc68720e7f0f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e38733339627a346f36782e706e67"><img src="https://camo.githubusercontent.com/9502d64d702c52b13be4f071bccd068dabea2f6551117df6ab95bc68720e7f0f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e38733339627a346f36782e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.8s39bz4o6x.png" style="max-width: 100%;"></a>
+    </p>         
+            
+  <h2 id="user-content-section54">将以空格分隔的前后调换</h2>
+    <p>
+      <span>(.+)\s+(.+)</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8236018c53a7f194a4f11582ed7cfc2028449a88566cdb06c9190033d992f62f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e316c6272797037676c342e706e67"><img src="https://camo.githubusercontent.com/8236018c53a7f194a4f11582ed7cfc2028449a88566cdb06c9190033d992f62f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f692f696d6167652e316c6272797037676c342e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/i/image.1lbryp7gl4.png" style="max-width: 100%;"></a>
+    </p>          
+            
+  <h2 id="user-content-section55">数字的左右边界</h2>
+    <p>
+      <span></span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3e962e437ec951025025311312f5e014d5a00252276ea2304a0d52a8513c289c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333831362e3137356364326a366b792e6a7067"><img src="https://camo.githubusercontent.com/3e962e437ec951025025311312f5e014d5a00252276ea2304a0d52a8513c289c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333831362e3137356364326a366b792e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103816.175cd2j6ky.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7903bcd71c342bf166984b5663a2e1b7012170e2f74ec91d528c68c93aa2390a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333733372e356a34356b6d326933352e6a7067"><img src="https://camo.githubusercontent.com/7903bcd71c342bf166984b5663a2e1b7012170e2f74ec91d528c68c93aa2390a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333733372e356a34356b6d326933352e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103737.5j45km2i35.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/65a73dcb62c0236d47838401e97a28f50e367b1ff52dfa5b009b4d08678e710e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333731302e337965656c3535616d6f2e6a7067"><img src="https://camo.githubusercontent.com/65a73dcb62c0236d47838401e97a28f50e367b1ff52dfa5b009b4d08678e710e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333731302e337965656c3535616d6f2e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103710.3yeel55amo.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f0f2000404a9f887107700b47961c38499d75dfbae1daf02ea1646913d3c72b4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333535392e387a36686370633535612e6a7067"><img src="https://camo.githubusercontent.com/f0f2000404a9f887107700b47961c38499d75dfbae1daf02ea1646913d3c72b4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333535392e387a36686370633535612e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103559.8z6hcpc55a.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b5be356e185351a722dc2a253216c5ddfa2fd1d2c428c0b693afb7f93dd4c4bb/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333531352e3674373271786b6865352e6a7067"><img src="https://camo.githubusercontent.com/b5be356e185351a722dc2a253216c5ddfa2fd1d2c428c0b693afb7f93dd4c4bb/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333531352e3674373271786b6865352e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103515.6t72qxkhe5.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3f7de4d405a579beeedfdaaee2057fc54bd902c15704dc8d213d743b35da34d9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333234382e396b67347a30366c66762e6a7067"><img src="https://camo.githubusercontent.com/3f7de4d405a579beeedfdaaee2057fc54bd902c15704dc8d213d743b35da34d9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312fe688aae59bbe32303234303931363130333234382e396b67347a30366c66762e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/截图20240916103248.9kg4z06lfv.jpg" style="max-width: 100%;"></a>
+ <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c53c6784e7fd6b9c51c1e3553ae981b94879c9f24813b5e66c9bed2c21d33f76/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f323032342d30392d31362d3130ea9e893137ea9e8935352e3674373271786b6865322e6a7067"><img src="https://camo.githubusercontent.com/c53c6784e7fd6b9c51c1e3553ae981b94879c9f24813b5e66c9bed2c21d33f76/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f323032342d30392d31362d3130ea9e893137ea9e8935352e3674373271786b6865322e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/2024-09-16-10꞉17꞉55.6t72qxkhe2.jpg" style="max-width: 100%;"></a>
+   <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cb6816a782e05011b3b7a1b633733de8064641aa7297cc854c2c77ca5fbc4c16/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3435686d676c787a316f2e706e67"><img src="https://camo.githubusercontent.com/cb6816a782e05011b3b7a1b633733de8064641aa7297cc854c2c77ca5fbc4c16/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3435686d676c787a316f2e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.45hmglxz1o.png" style="max-width: 100%;"></a>
+     <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/80b3dfddbc47db36c295918bc986d16777adb1889febd55a2791945bce482875/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e367437327430366833752e706e67"><img src="https://camo.githubusercontent.com/80b3dfddbc47db36c295918bc986d16777adb1889febd55a2791945bce482875/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e367437327430366833752e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.6t72t06h3u.png" style="max-width: 100%;"></a>
+    </p>         
+            
+  <h2 id="user-content-section56">从右向左每3位加一个逗号</h2>
+    <p>
+      <span>(?&lt;=\d)(?=(\d\d\d)+$)</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/74171d14293b4c44890df6489ee83fd4b893011efa67b211284fad2f3dd19bf9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393271336167327873722e706e67"><img src="https://camo.githubusercontent.com/74171d14293b4c44890df6489ee83fd4b893011efa67b211284fad2f3dd19bf9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393271336167327873722e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.92q3ag2xsr.png" style="max-width: 100%;"></a>
+  <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b2884710d4de99b8e7788deaf15ac0807303773da28429f78ebfb931706257fe/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6d31366a333969342e706e67"><img src="https://camo.githubusercontent.com/b2884710d4de99b8e7788deaf15ac0807303773da28429f78ebfb931706257fe/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6d31366a333969342e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.m16j39i4.png" style="max-width: 100%;"></a>
+    </p>         
+            
+  <h2 id="user-content-section57">匹配时间</h2>
+    <p>
+      <span></span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d52cb4ec3c794acbae73777bef330c8645cefaaa515f2a9bfc6fe1dd95c32efe/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e39646378336e343038612e706e67"><img src="https://camo.githubusercontent.com/d52cb4ec3c794acbae73777bef330c8645cefaaa515f2a9bfc6fe1dd95c32efe/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e39646378336e343038612e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.9dcx3n408a.png" style="max-width: 100%;"></a>
+   <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3f4e0ef688f1066e61d929879fbd40b203b2e26125264e014d8496d623b5355d/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3431793069786e357a342e6a7067"><img src="https://camo.githubusercontent.com/3f4e0ef688f1066e61d929879fbd40b203b2e26125264e014d8496d623b5355d/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3431793069786e357a342e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.41y0ixn5z4.jpg" style="max-width: 100%;"></a>
+     <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/73ef93ca649ab4f990e175b425030e163b186c345d2f3eed789a4759d615cfb5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3634647437303365766a2e706e67"><img src="https://camo.githubusercontent.com/73ef93ca649ab4f990e175b425030e163b186c345d2f3eed789a4759d615cfb5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3634647437303365766a2e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.64dt703evj.png" style="max-width: 100%;"></a>
+       <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8f7fc3894571a4634e55a6bb644710c515f32655c94648391ef07eb342363353/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e36696b387877336963742e706e67"><img src="https://camo.githubusercontent.com/8f7fc3894571a4634e55a6bb644710c515f32655c94648391ef07eb342363353/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e36696b387877336963742e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.6ik8xw3ict.png" style="max-width: 100%;"></a>
+        <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2203b662134db80f8033ae10242176fcef54fdaa870e657c42251ed1bda20282/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3336316a3369723078612e706e67"><img src="https://camo.githubusercontent.com/2203b662134db80f8033ae10242176fcef54fdaa870e657c42251ed1bda20282/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3336316a3369723078612e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.361j3ir0xa.png" style="max-width: 100%;"></a>
+</p><pre class="notranslate"><code class="notranslate">&lt;/p&gt;       
+</code></pre>
+            
+  <h2 id="user-content-section58">多空格替换为单空格或无</h2>
+    <p>
+      <span>[\s\r\n]+</span><br>
+  </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d7fa95a92a6135984c25eb75a99d47877c5afd7a2aaea30ac9d042939b885832/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e356330787172356f62652e706e67"><img src="https://camo.githubusercontent.com/d7fa95a92a6135984c25eb75a99d47877c5afd7a2aaea30ac9d042939b885832/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e356330787172356f62652e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.5c0xqr5obe.png" style="max-width: 100%;"></a>
+    </p>         
+            
+  <h2 id="user-content-section59">删除空行 1</h2>
+    <p>
+      <span>^[\s\t]*\n</span><br>
+      </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/36a7b83f4cf7c917e8155af18fd963757aaf3e5179fad126a511965d25a7ce25/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e706661713130316f6f2e706e67"><img src="https://camo.githubusercontent.com/36a7b83f4cf7c917e8155af18fd963757aaf3e5179fad126a511965d25a7ce25/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e706661713130316f6f2e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.pfaq101oo.png" style="max-width: 100%;"></a>
+<br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1ae5a5d829bddebae90844bcc0125d473449bdafbbb408dc62611d684c79670a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e37736e36356d7a7776762e706e67"><img src="https://camo.githubusercontent.com/1ae5a5d829bddebae90844bcc0125d473449bdafbbb408dc62611d684c79670a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e37736e36356d7a7776762e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.7sn65mzwvv.png" style="max-width: 100%;"></a>
+    </p>   
+            
+  <h2 id="user-content-section60">删除空行 2</h2>
+    <p>
+      <span>^(\s*)$\n</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/dc19e74d1e4dfeb89c2b7936b8c1e91e4a11e46a55f2200766643a78fed4602b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393974623767317676742e706e67"><img src="https://camo.githubusercontent.com/dc19e74d1e4dfeb89c2b7936b8c1e91e4a11e46a55f2200766643a78fed4602b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393974623767317676742e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.99tb7g1vvt.png" style="max-width: 100%;"></a>
+    </p>         
+           
+  <h2 id="user-content-section60">多行合并为１行</h2>
+    <p>
+      <span>[\s\t]*\n</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c1bc75368c41ef9ee45d22dfd5a519d3747a7901ce96baa8e6d77cdfd70058f4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6d3136306b3473372e706e67"><img src="https://camo.githubusercontent.com/c1bc75368c41ef9ee45d22dfd5a519d3747a7901ce96baa8e6d77cdfd70058f4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6d3136306b3473372e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.m160k4s7.png" style="max-width: 100%;"></a>
+    </p>       
+  
+  <h2 id="user-content-section61">首尾空白字符</h2>
+    <p>
+  <br><br>    <span>^\s+|\s+$</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f611c3280e49749bf2de273a4698d3a4a9345d05f26d298cbe8e826a1f2a75a1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e373764696a756e3372672e706e67"><img src="https://camo.githubusercontent.com/f611c3280e49749bf2de273a4698d3a4a9345d05f26d298cbe8e826a1f2a75a1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e373764696a756e3372672e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.77dijun3rg.png" style="max-width: 100%;"></a>
+  </p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3ae5ca826b0f4a24ff5255ccd96fd26586b4a2bf1af9c5b3a7a63abfa27846a8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e7379776f617435387a2e6a7067"><img src="https://camo.githubusercontent.com/3ae5ca826b0f4a24ff5255ccd96fd26586b4a2bf1af9c5b3a7a63abfa27846a8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e7379776f617435387a2e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.sywoat58z.jpg" style="max-width: 100%;"></a>
+    </p>         
+  
+  <h2 id="user-content-section62">匹配a到z，排除b,c</h2>
+    <p>
+      <span>[a-z&amp;&amp;[^bc]]</span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/11a976d4ffebbb0b0e10137d73519982b238727f79f77aac93ec5147bd51c8b0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e313735636635726f6a722e706e67"><img src="https://camo.githubusercontent.com/11a976d4ffebbb0b0e10137d73519982b238727f79f77aac93ec5147bd51c8b0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e313735636635726f6a722e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.175cf5rojr.png" style="max-width: 100%;"></a>
+  <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ce0af2c5486aab2ab741e14de8fc0117d0b54e900d0e3b20a2316cd9ad02d231/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393639706138627430642e706e67"><img src="https://camo.githubusercontent.com/ce0af2c5486aab2ab741e14de8fc0117d0b54e900d0e3b20a2316cd9ad02d231/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e393639706138627430642e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.969pa8bt0d.png" style="max-width: 100%;"></a>
+   <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/883a9d84485470019ba306f5e34151048acacc789b3eddce58bc72b0dd612a27/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3936397061386d3869312e706e67"><img src="https://camo.githubusercontent.com/883a9d84485470019ba306f5e34151048acacc789b3eddce58bc72b0dd612a27/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e3936397061386d3869312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.969pa8m8i1.png" style="max-width: 100%;"></a>
+     <br><br></p><p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7f2f10ac12002ab41777645a90e7491f85994883b6811b332f2f5c9ac5dc8ae1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6c766f7376676369302e6a7067"><img src="https://camo.githubusercontent.com/7f2f10ac12002ab41777645a90e7491f85994883b6811b332f2f5c9ac5dc8ae1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a637230372f706963782d696d616765732d686f7374696e67406d61737465722f312f696d6167652e6c766f7376676369302e6a7067" data-canonical-src="https://cdn.jsdelivr.net/gh/zcr07/picx-images-hosting@master/1/image.lvosvgci0.jpg" style="max-width: 100%;"></a>
+    </p>         
+        
+  <h2 id="user-content-section39">Mouselnc　框选ORC</h2>
+    <p>
+      <span></span><br>
+</p><p align="center"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kevzcr/picx-images-hosting/raw/master/4/image.86tlzdf7ii.jpg"><img src="https://github.com/kevzcr/picx-images-hosting/raw/master/4/image.86tlzdf7ii.jpg" style="max-width: 100%;"></a>
+    </p>         
+  
+  &lt;script&gt;
+        document.addEventListener("DOMContentLoaded", function() {
+            const tocList = document.getElementById("toc-list");
+            const headers = document.querySelectorAll("body &gt; h2");
+
+            headers.forEach((header, index) =&gt; {
+                const id = "section" + (index + 1);
+                header.setAttribute("id", id);
+
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.setAttribute("href", "#" + id);
+                a.textContent = header.textContent;
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        });
+    &lt;/script&gt;
+
+
+<p>`</p></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="http://9.zcr3.ddns-ip.net">琶琶🔭啙</a></div>
+<div id="footer2"><span id="filingNum"><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备20250105号</a> • </span>
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2015"!=""){
+    var startSite=new Date("02/16/2015");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
+
+</html>

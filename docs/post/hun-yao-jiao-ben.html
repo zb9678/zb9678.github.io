@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/180062094?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="## A.js 未混淆脚本
+
+
+```
+
+// 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
+
+let mytoken = 'zbb'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
+let ChatID =''; //可以为空，或者@userinfobot中获取，/start
+let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
+let FileName = 'CF-Workers-SUB';
+let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
+let total = 99;//TB
+let timestamp = 4102329600000;//2099-12-31
+
+let cacheTTL = 24 ;//小时，缓存时长
+
+//节点链接 + 订阅链接
+let MainData = `
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:90d7::3243:fde]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#ggg01
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:9a62::1952:6bc2]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg02
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:99e8::4f8d:2f35]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg03
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:f4::3f7b:2155]:443?encryption=none&security=tls&sni=Xb.zCr07.Rr.NU&fp=random&type=ws&host=Xb.Zcr07.rr.nu&path=%2FproxyIP%3D146.70.175.174#ggg04
+trojan://zbb@[2a06:98c1:3120::1747:2177]:443?security=tls&type=ws&host=afei.zb9.us.kg&path=%2F%3Fed%3D2560#ggg05
+trojan://trojan@[2606:4700:9aeb::2993:8fe]:2087?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#ggg06
+trojan://zbb@[2606:4700:8399::200b:cee]:443?security=tls&type=ws&host=afei.zb9.us.kg&path=%2F%3Fed%3D2560#ggg07
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:90c7::5db9:316a]:2053?encryption=none&security=tls&sni=xb.zcr07.isgre.at&fp=random&type=ws&host=xb.zcr07.isgre.at&path=%2FproxyIP%3Dproxyip.multacom.fxxk.dedyn.io#ggg08
+trojan://trojan@[2606:4700:99e5::6e41:33c0]:2087?security=tls&sni=ygtrj.zcr07.us.kg&fp=randomized&type=ws&host=ygtrj.zcr07.us.kg&path=%2F%3Fed%3D2560#ggg09
+trojan://trojan@172.67.144.252:2096?security=tls&sni=ygtrj.zcr07.us.kg&fp=randomized&type=ws&host=ygtrj.zcr07.us.kg&path=%2F%3Fed%3D2560#gggg01
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@172.67.74.24:443?encryption=none&security=tls&sni=ddd.zcr07.us.KG&alpn=h2&fp=randomized&type=ws&host=ddd.zcr07.us.KG&path=vless-ws%2F%3Fed%3D2048#gggg02
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@104.19.32.166:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg03
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@213.232.115.234:444?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#gggg04
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@69.84.182.31:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg05
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.114:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg06
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@104.21.26.89:443?encryption=none&security=tls&sni=ddd.zcr07.uS.KG&alpn=h2&fp=safari&type=ws&host=ddd.zcr07.uS.KG&path=vless-ws%2F%3Fed%3D2048#gggg07
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.152:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg08
+trojan://trojan@104.17.225.135:2053?security=tls&sni=ygt.z07.rr.nu&fp=randomized&type=ws&host=ygt.z07.rr.nu&path=%2F%3Fed%3D2560#gggg09
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@md631.xyz:8443?encryption=none&security=tls&sni=zbpB.R07.cLouDNS.BE&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zBPb.R07.cloUdNs.Be&path=%2FV4hx2LWdjbfCJLLI%2FdHMuaHBjLnR3%3Fed%3D2560#u01
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@solairaheaters.com:2087?encryption=none&security=tls&sni=BPB.ZcR07.Us.kG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=Bpb.zCR07.US.kg&path=%2F7u07kA0qyMqxpN17%2FdHMuaHBjLnR3%3Fed%3D2560#u02
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.sjtoyota.com:2083?encryption=none&security=tls&sni=ZBPb.R07.ClOUDnS.be&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ZBpB.r07.cLoUdnS.BE&path=%2FgTk4KMYgJfYDm72J%2FdHMuaHBjLnR3%3Fed%3D2560#u03
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@wikiwiki.t7t7i7.com:443?encryption=none&security=tls&sni=bp.zcr07.findhERE.oRg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bP.Zcr07.fINDhEre.org&path=%2FLZzA2TPulz9om2vO%2FdHMuaHBjLnR3%3Fed%3D2560#u04
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@42zzz.com:2083?encryption=none&security=tls&sni=bp.ZcR07.FINdHEre.OrG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bp.ZCr07.findHerE.oRg&path=%2F346aDJvgAYLhcrX7%2FdHMuaHBjLnR3%3Fed%3D2560#u05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@h4p9z1.t7t7i7.com:2053?encryption=none&security=tls&sni=bPb.zcr07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bpB.ZcR07.uS.Kg&path=%2FjKcPyo636Nbs0Tdb%2FdHMuaHBjLnR3%3Fed%3D2560#u06
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.18fu.com:2096?encryption=none&security=tls&sni=zBpB.R07.clOudns.bE&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ZbPb.R07.CloUdNS.bE&path=%2FRNsJpvGkhFeSBXL2%2FdHMuaHBjLnR3%3Fed%3D2560#u07
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@www.heibi100.com:443?encryption=none&security=tls&sni=bPB.Zcr07.cOM.Mp&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bpB.ZCR07.COM.mP&path=%2F08CEIjl9rygvryCo%2FdHMuaHBjLnR3%3Fed%3D2560#u08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@18fu.com:443?encryption=none&security=tls&sni=zyH.Z07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zYh.z07.uS.Kg&path=%2F0ln3z8nMGP6CGZFN%2FdHMuaHBjLnR3%3Fed%3D2560#u09
+vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@www.zcr07.us.kg:2053?encryption=none&security=tls&sni=ygc.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ygc.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z01
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@bp.zcr07.findhere.org:2096?encryption=none&security=tls&sni=bP.ZCR07.FiNdHERE.org&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bp.ZcR07.fInDhere.oRg&path=%2F9Gzx8xlyvZ1lZJwN%2FdHMuaHBjLnR3%3Fed%3D2560#z02
+vless://034b0d4e-8903-497c-87e1-d4c5b924994b@ziz.zcr07.us.kg:2053?encryption=none&security=tls&sni=kJ8.zBB07.uS.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=KJ8.zBB07.US.kg&path=%2Fc2zh68oMc7147FpP%2FdHMuaHBjLnR3%3Fed%3D2560#z03
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@xb.zcr07.rr.nu:443?encryption=none&security=tls&sni=zyh.z07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.Kg&path=%2FCMzIq2kkkyHmhYLB%2FdHMuaHBjLnR3%3Fed%3D2560#z04
+vless://37691131-db68-49bc-b1bb-840277c54390@ff.r08.us.kg:2083?encryption=none&security=tls&sni=Xb.zCR07.rr.Nu&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=xB.ZcR07.rR.NU&path=%2FkilOrcevyZYzK4BJ%2FdHMuaHBjLnR3%3Fed%3D2560#z05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@www.jubt4.xyz:2096?encryption=none&security=tls&sni=bPb.ZCR07.Us.KG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=Bpb.zCr07.uS.Kg&path=%2Ff8wj65S6c1DOdZyl%2FdHMuaHBjLnR3%3Fed%3D2560#z06
+vless://c0b15b55-80dc-4afb-b49d-c109175c9bd6@cl.3269x.xyz:2096?encryption=none&security=tls&sni=jP.zCr07.CloudNS.BiZ&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=JP.ZCr07.cloudNs.BIz&path=%2F5LpTDLyPfSr5b4yX%2FdHMuaHBjLnR3%3Fed%3D2560#z07
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@11863.com:2053?encryption=none&security=tls&sni=zyh.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@www.4hu12k.com:2053?encryption=none&security=tls&sni=zyh.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z09
+
+
+
+`
+
+let urls = [];
+let subconverter = 'SUBAPI.fxxk.dedyn.io'; //在线订阅转换后端，目前使用CM的订阅转换功能。">
+<meta property="og:title" content="混淆脚本">
+<meta property="og:description" content="## A.js 未混淆脚本
+
+
+```
+
+// 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
+
+let mytoken = 'zbb'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
+let ChatID =''; //可以为空，或者@userinfobot中获取，/start
+let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
+let FileName = 'CF-Workers-SUB';
+let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
+let total = 99;//TB
+let timestamp = 4102329600000;//2099-12-31
+
+let cacheTTL = 24 ;//小时，缓存时长
+
+//节点链接 + 订阅链接
+let MainData = `
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:90d7::3243:fde]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#ggg01
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:9a62::1952:6bc2]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg02
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:99e8::4f8d:2f35]:443?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg03
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:f4::3f7b:2155]:443?encryption=none&security=tls&sni=Xb.zCr07.Rr.NU&fp=random&type=ws&host=Xb.Zcr07.rr.nu&path=%2FproxyIP%3D146.70.175.174#ggg04
+trojan://zbb@[2a06:98c1:3120::1747:2177]:443?security=tls&type=ws&host=afei.zb9.us.kg&path=%2F%3Fed%3D2560#ggg05
+trojan://trojan@[2606:4700:9aeb::2993:8fe]:2087?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#ggg06
+trojan://zbb@[2606:4700:8399::200b:cee]:443?security=tls&type=ws&host=afei.zb9.us.kg&path=%2F%3Fed%3D2560#ggg07
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:90c7::5db9:316a]:2053?encryption=none&security=tls&sni=xb.zcr07.isgre.at&fp=random&type=ws&host=xb.zcr07.isgre.at&path=%2FproxyIP%3Dproxyip.multacom.fxxk.dedyn.io#ggg08
+trojan://trojan@[2606:4700:99e5::6e41:33c0]:2087?security=tls&sni=ygtrj.zcr07.us.kg&fp=randomized&type=ws&host=ygtrj.zcr07.us.kg&path=%2F%3Fed%3D2560#ggg09
+trojan://trojan@172.67.144.252:2096?security=tls&sni=ygtrj.zcr07.us.kg&fp=randomized&type=ws&host=ygtrj.zcr07.us.kg&path=%2F%3Fed%3D2560#gggg01
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@172.67.74.24:443?encryption=none&security=tls&sni=ddd.zcr07.us.KG&alpn=h2&fp=randomized&type=ws&host=ddd.zcr07.us.KG&path=vless-ws%2F%3Fed%3D2048#gggg02
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@104.19.32.166:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg03
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@213.232.115.234:444?encryption=none&security=tls&sni=edg.w07.us.kg&alpn=h3&fp=random&type=ws&host=edg.w07.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#gggg04
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@69.84.182.31:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg05
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.114:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg06
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@104.21.26.89:443?encryption=none&security=tls&sni=ddd.zcr07.uS.KG&alpn=h2&fp=safari&type=ws&host=ddd.zcr07.uS.KG&path=vless-ws%2F%3Fed%3D2048#gggg07
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.152:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#gggg08
+trojan://trojan@104.17.225.135:2053?security=tls&sni=ygt.z07.rr.nu&fp=randomized&type=ws&host=ygt.z07.rr.nu&path=%2F%3Fed%3D2560#gggg09
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@md631.xyz:8443?encryption=none&security=tls&sni=zbpB.R07.cLouDNS.BE&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zBPb.R07.cloUdNs.Be&path=%2FV4hx2LWdjbfCJLLI%2FdHMuaHBjLnR3%3Fed%3D2560#u01
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@solairaheaters.com:2087?encryption=none&security=tls&sni=BPB.ZcR07.Us.kG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=Bpb.zCR07.US.kg&path=%2F7u07kA0qyMqxpN17%2FdHMuaHBjLnR3%3Fed%3D2560#u02
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.sjtoyota.com:2083?encryption=none&security=tls&sni=ZBPb.R07.ClOUDnS.be&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ZBpB.r07.cLoUdnS.BE&path=%2FgTk4KMYgJfYDm72J%2FdHMuaHBjLnR3%3Fed%3D2560#u03
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@wikiwiki.t7t7i7.com:443?encryption=none&security=tls&sni=bp.zcr07.findhERE.oRg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bP.Zcr07.fINDhEre.org&path=%2FLZzA2TPulz9om2vO%2FdHMuaHBjLnR3%3Fed%3D2560#u04
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@42zzz.com:2083?encryption=none&security=tls&sni=bp.ZcR07.FINdHEre.OrG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bp.ZCr07.findHerE.oRg&path=%2F346aDJvgAYLhcrX7%2FdHMuaHBjLnR3%3Fed%3D2560#u05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@h4p9z1.t7t7i7.com:2053?encryption=none&security=tls&sni=bPb.zcr07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bpB.ZcR07.uS.Kg&path=%2FjKcPyo636Nbs0Tdb%2FdHMuaHBjLnR3%3Fed%3D2560#u06
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.18fu.com:2096?encryption=none&security=tls&sni=zBpB.R07.clOudns.bE&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ZbPb.R07.CloUdNS.bE&path=%2FRNsJpvGkhFeSBXL2%2FdHMuaHBjLnR3%3Fed%3D2560#u07
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@www.heibi100.com:443?encryption=none&security=tls&sni=bPB.Zcr07.cOM.Mp&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bpB.ZCR07.COM.mP&path=%2F08CEIjl9rygvryCo%2FdHMuaHBjLnR3%3Fed%3D2560#u08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@18fu.com:443?encryption=none&security=tls&sni=zyH.Z07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zYh.z07.uS.Kg&path=%2F0ln3z8nMGP6CGZFN%2FdHMuaHBjLnR3%3Fed%3D2560#u09
+vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@www.zcr07.us.kg:2053?encryption=none&security=tls&sni=ygc.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ygc.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z01
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@bp.zcr07.findhere.org:2096?encryption=none&security=tls&sni=bP.ZCR07.FiNdHERE.org&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bp.ZcR07.fInDhere.oRg&path=%2F9Gzx8xlyvZ1lZJwN%2FdHMuaHBjLnR3%3Fed%3D2560#z02
+vless://034b0d4e-8903-497c-87e1-d4c5b924994b@ziz.zcr07.us.kg:2053?encryption=none&security=tls&sni=kJ8.zBB07.uS.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=KJ8.zBB07.US.kg&path=%2Fc2zh68oMc7147FpP%2FdHMuaHBjLnR3%3Fed%3D2560#z03
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@xb.zcr07.rr.nu:443?encryption=none&security=tls&sni=zyh.z07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.Kg&path=%2FCMzIq2kkkyHmhYLB%2FdHMuaHBjLnR3%3Fed%3D2560#z04
+vless://37691131-db68-49bc-b1bb-840277c54390@ff.r08.us.kg:2083?encryption=none&security=tls&sni=Xb.zCR07.rr.Nu&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=xB.ZcR07.rR.NU&path=%2FkilOrcevyZYzK4BJ%2FdHMuaHBjLnR3%3Fed%3D2560#z05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@www.jubt4.xyz:2096?encryption=none&security=tls&sni=bPb.ZCR07.Us.KG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=Bpb.zCr07.uS.Kg&path=%2Ff8wj65S6c1DOdZyl%2FdHMuaHBjLnR3%3Fed%3D2560#z06
+vless://c0b15b55-80dc-4afb-b49d-c109175c9bd6@cl.3269x.xyz:2096?encryption=none&security=tls&sni=jP.zCr07.CloudNS.BiZ&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=JP.ZCr07.cloudNs.BIz&path=%2F5LpTDLyPfSr5b4yX%2FdHMuaHBjLnR3%3Fed%3D2560#z07
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@11863.com:2053?encryption=none&security=tls&sni=zyh.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@www.4hu12k.com:2053?encryption=none&security=tls&sni=zyh.z07.us.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.kg&path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z09
+
+
+
+`
+
+let urls = [];
+let subconverter = 'SUBAPI.fxxk.dedyn.io'; //在线订阅转换后端，目前使用CM的订阅转换功能。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://9.zcr3.ddns-ip.net/post/hun-yao-jiao-ben.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
+<title>混淆脚本</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">混淆脚本</h1>
+<div class="title-right">
+    <a href="http://9.zcr3.ddns-ip.net" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/zb9678/zb9678.github.io/issues/125" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2>A.js 未混淆脚本</h2>
+<pre class="notranslate"><code class="notranslate">
+// 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
+
+let mytoken = 'zbb'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
+let ChatID =''; //可以为空，或者@userinfobot中获取，/start
+let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
+let FileName = 'CF-Workers-SUB';
+let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
+let total = 99;//TB
+let timestamp = 4102329600000;//2099-12-31
+
+let cacheTTL = 24 ;//小时，缓存时长
+
+//节点链接 + 订阅链接
+let MainData = `
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:90d7::3243:fde]:443?encryption=none&amp;security=tls&amp;sni=edg.w07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.w07.us.kg&amp;path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#ggg01
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:9a62::1952:6bc2]:443?encryption=none&amp;security=tls&amp;sni=edg.w07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.w07.us.kg&amp;path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg02
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@[2606:4700:99e8::4f8d:2f35]:443?encryption=none&amp;security=tls&amp;sni=edg.w07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.w07.us.kg&amp;path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#ggg03
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:f4::3f7b:2155]:443?encryption=none&amp;security=tls&amp;sni=Xb.zCr07.Rr.NU&amp;fp=random&amp;type=ws&amp;host=Xb.Zcr07.rr.nu&amp;path=%2FproxyIP%3D146.70.175.174#ggg04
+trojan://zbb@[2a06:98c1:3120::1747:2177]:443?security=tls&amp;type=ws&amp;host=afei.zb9.us.kg&amp;path=%2F%3Fed%3D2560#ggg05
+trojan://trojan@[2606:4700:9aeb::2993:8fe]:2087?security=tls&amp;sni=ygt.n06.us.kg&amp;fp=randomized&amp;type=ws&amp;host=ygt.n06.us.kg&amp;path=%2Fpyip%3Dts.hpc.tw#ggg06
+trojan://zbb@[2606:4700:8399::200b:cee]:443?security=tls&amp;type=ws&amp;host=afei.zb9.us.kg&amp;path=%2F%3Fed%3D2560#ggg07
+vless://37691131-db68-49bc-b1bb-840277c54390@[2606:4700:90c7::5db9:316a]:2053?encryption=none&amp;security=tls&amp;sni=xb.zcr07.isgre.at&amp;fp=random&amp;type=ws&amp;host=xb.zcr07.isgre.at&amp;path=%2FproxyIP%3Dproxyip.multacom.fxxk.dedyn.io#ggg08
+trojan://trojan@[2606:4700:99e5::6e41:33c0]:2087?security=tls&amp;sni=ygtrj.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=ygtrj.zcr07.us.kg&amp;path=%2F%3Fed%3D2560#ggg09
+trojan://trojan@172.67.144.252:2096?security=tls&amp;sni=ygtrj.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=ygtrj.zcr07.us.kg&amp;path=%2F%3Fed%3D2560#gggg01
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@172.67.74.24:443?encryption=none&amp;security=tls&amp;sni=ddd.zcr07.us.KG&amp;alpn=h2&amp;fp=randomized&amp;type=ws&amp;host=ddd.zcr07.us.KG&amp;path=vless-ws%2F%3Fed%3D2048#gggg02
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@104.19.32.166:443?encryption=none&amp;security=tls&amp;sni=edg.zbb07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#gggg03
+vless://b4c6b261-922d-4732-b634-1cfdba80ec50@213.232.115.234:444?encryption=none&amp;security=tls&amp;sni=edg.w07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.w07.us.kg&amp;path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#gggg04
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@69.84.182.31:443?encryption=none&amp;security=tls&amp;sni=edg.zbb07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#gggg05
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.114:443?encryption=none&amp;security=tls&amp;sni=edg.zbb07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#gggg06
+vless://1c8a3fb4-1662-5649-a04f-0195d7ad24cb@104.21.26.89:443?encryption=none&amp;security=tls&amp;sni=ddd.zcr07.uS.KG&amp;alpn=h2&amp;fp=safari&amp;type=ws&amp;host=ddd.zcr07.uS.KG&amp;path=vless-ws%2F%3Fed%3D2048#gggg07
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@198.62.62.152:443?encryption=none&amp;security=tls&amp;sni=edg.zbb07.us.kg&amp;alpn=h3&amp;fp=random&amp;type=ws&amp;host=edg.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#gggg08
+trojan://trojan@104.17.225.135:2053?security=tls&amp;sni=ygt.z07.rr.nu&amp;fp=randomized&amp;type=ws&amp;host=ygt.z07.rr.nu&amp;path=%2F%3Fed%3D2560#gggg09
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@md631.xyz:8443?encryption=none&amp;security=tls&amp;sni=zbpB.R07.cLouDNS.BE&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=zBPb.R07.cloUdNs.Be&amp;path=%2FV4hx2LWdjbfCJLLI%2FdHMuaHBjLnR3%3Fed%3D2560#u01
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@solairaheaters.com:2087?encryption=none&amp;security=tls&amp;sni=BPB.ZcR07.Us.kG&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=Bpb.zCR07.US.kg&amp;path=%2F7u07kA0qyMqxpN17%2FdHMuaHBjLnR3%3Fed%3D2560#u02
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.sjtoyota.com:2083?encryption=none&amp;security=tls&amp;sni=ZBPb.R07.ClOUDnS.be&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=ZBpB.r07.cLoUdnS.BE&amp;path=%2FgTk4KMYgJfYDm72J%2FdHMuaHBjLnR3%3Fed%3D2560#u03
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@wikiwiki.t7t7i7.com:443?encryption=none&amp;security=tls&amp;sni=bp.zcr07.findhERE.oRg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=bP.Zcr07.fINDhEre.org&amp;path=%2FLZzA2TPulz9om2vO%2FdHMuaHBjLnR3%3Fed%3D2560#u04
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@42zzz.com:2083?encryption=none&amp;security=tls&amp;sni=bp.ZcR07.FINdHEre.OrG&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=bp.ZCr07.findHerE.oRg&amp;path=%2F346aDJvgAYLhcrX7%2FdHMuaHBjLnR3%3Fed%3D2560#u05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@h4p9z1.t7t7i7.com:2053?encryption=none&amp;security=tls&amp;sni=bPb.zcr07.us.Kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=bpB.ZcR07.uS.Kg&amp;path=%2FjKcPyo636Nbs0Tdb%2FdHMuaHBjLnR3%3Fed%3D2560#u06
+vless://8abf406e-95c3-4886-aba4-dae9dd66124a@www.18fu.com:2096?encryption=none&amp;security=tls&amp;sni=zBpB.R07.clOudns.bE&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=ZbPb.R07.CloUdNS.bE&amp;path=%2FRNsJpvGkhFeSBXL2%2FdHMuaHBjLnR3%3Fed%3D2560#u07
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@www.heibi100.com:443?encryption=none&amp;security=tls&amp;sni=bPB.Zcr07.cOM.Mp&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=bpB.ZCR07.COM.mP&amp;path=%2F08CEIjl9rygvryCo%2FdHMuaHBjLnR3%3Fed%3D2560#u08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@18fu.com:443?encryption=none&amp;security=tls&amp;sni=zyH.Z07.us.Kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=zYh.z07.uS.Kg&amp;path=%2F0ln3z8nMGP6CGZFN%2FdHMuaHBjLnR3%3Fed%3D2560#u09
+vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@www.zcr07.us.kg:2053?encryption=none&amp;security=tls&amp;sni=ygc.z07.us.kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=ygc.z07.us.kg&amp;path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z01
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@bp.zcr07.findhere.org:2096?encryption=none&amp;security=tls&amp;sni=bP.ZCR07.FiNdHERE.org&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=bp.ZcR07.fInDhere.oRg&amp;path=%2F9Gzx8xlyvZ1lZJwN%2FdHMuaHBjLnR3%3Fed%3D2560#z02
+vless://034b0d4e-8903-497c-87e1-d4c5b924994b@ziz.zcr07.us.kg:2053?encryption=none&amp;security=tls&amp;sni=kJ8.zBB07.uS.Kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=KJ8.zBB07.US.kg&amp;path=%2Fc2zh68oMc7147FpP%2FdHMuaHBjLnR3%3Fed%3D2560#z03
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@xb.zcr07.rr.nu:443?encryption=none&amp;security=tls&amp;sni=zyh.z07.us.Kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=zyh.z07.us.Kg&amp;path=%2FCMzIq2kkkyHmhYLB%2FdHMuaHBjLnR3%3Fed%3D2560#z04
+vless://37691131-db68-49bc-b1bb-840277c54390@ff.r08.us.kg:2083?encryption=none&amp;security=tls&amp;sni=Xb.zCR07.rr.Nu&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=xB.ZcR07.rR.NU&amp;path=%2FkilOrcevyZYzK4BJ%2FdHMuaHBjLnR3%3Fed%3D2560#z05
+vless://2f0afcf4-5b46-49c7-8d15-5aa08edf9226@www.jubt4.xyz:2096?encryption=none&amp;security=tls&amp;sni=bPb.ZCR07.Us.KG&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=Bpb.zCr07.uS.Kg&amp;path=%2Ff8wj65S6c1DOdZyl%2FdHMuaHBjLnR3%3Fed%3D2560#z06
+vless://c0b15b55-80dc-4afb-b49d-c109175c9bd6@cl.3269x.xyz:2096?encryption=none&amp;security=tls&amp;sni=jP.zCr07.CloudNS.BiZ&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=JP.ZCr07.cloudNs.BIz&amp;path=%2F5LpTDLyPfSr5b4yX%2FdHMuaHBjLnR3%3Fed%3D2560#z07
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@11863.com:2053?encryption=none&amp;security=tls&amp;sni=zyh.z07.us.kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=zyh.z07.us.kg&amp;path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z08
+vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@www.4hu12k.com:2053?encryption=none&amp;security=tls&amp;sni=zyh.z07.us.kg&amp;alpn=h2%2Chttp%2F1.1&amp;fp=randomized&amp;type=ws&amp;host=zyh.z07.us.kg&amp;path=%2Fi8PcVNuzXhd1sENh%2FdHMuaHBjLnR3%3Fed%3D2560#z09
+
+
+
+`
+
+let urls = [];
+let subconverter = "SUBAPI.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_MultiCountry.ini"; //订阅配置文件
+let subProtocol = 'https';
+
+export default {
+	async fetch (request,env) {
+		const userAgentHeader = request.headers.get('User-Agent');
+		const userAgent = userAgentHeader ? userAgentHeader.toLowerCase() : "null";
+		const url = new URL(request.url);
+		const token = url.searchParams.get('token');
+		mytoken = env.TOKEN || mytoken;
+		BotToken = env.TGTOKEN || BotToken;
+		ChatID = env.TGID || ChatID; 
+		TG =  env.TG || TG; 
+		subconverter = env.SUBAPI || subconverter;
+		if( subconverter.includes("http://") ){
+			subconverter = subconverter.split("//")[1];
+			subProtocol = 'http';
+		} else {
+			subconverter = subconverter.split("//")[1] || subconverter;
+		}
+		subconfig = env.SUBCONFIG || subconfig;
+		FileName = env.SUBNAME || FileName;
+		MainData = env.LINK || MainData;
+		if(env.LINKSUB) urls = await ADD(env.LINKSUB);
+
+		const currentDate = new Date();
+		currentDate.setHours(0, 0, 0, 0); 
+		const timeTemp = Math.ceil(currentDate.getTime() / 1000);
+		const fakeToken = await MD5MD5(`${mytoken}${timeTemp}`);
+		//console.log(`${fakeUserID}\n${fakeHostName}`); // 打印fakeID
+
+		let UD = Math.floor(((timestamp - Date.now())/timestamp * total * 1099511627776 )/2);
+		total = total * 1099511627776 ;
+		let expire= Math.floor(timestamp / 1000) ;
+		SUBUpdateTime = env.SUBUPTIME || SUBUpdateTime;
+
+		let 重新汇总所有链接 = await ADD(MainData + '\n' + urls.join('\n'));
+		let 自建节点 ="";
+		let 订阅链接 ="";
+		for (let x of 重新汇总所有链接) {
+			if (x.toLowerCase().startsWith('http')) {
+				订阅链接 += x + '\n';
+			} else {
+				自建节点 += x + '\n';
+			}
+		}
+		MainData = 自建节点;
+		urls = await ADD(订阅链接);
+
+		if ( !(token == mytoken || token == fakeToken || url.pathname == ("/"+ mytoken) || url.pathname.includes("/"+ mytoken + "?")) ) {
+			if ( TG == 1 &amp;&amp; url.pathname !== "/" &amp;&amp; url.pathname !== "/favicon.ico" ) await sendMessage(`#异常访问 ${FileName}`, request.headers.get('CF-Connecting-IP'), `UA: ${userAgent}&lt;/tg-spoiler&gt;\n域名: ${url.hostname}\n&lt;tg-spoiler&gt;入口: ${url.pathname + url.search}&lt;/tg-spoiler&gt;`);
+			const envKey = env.URL302 ? 'URL302' : (env.URL ? 'URL' : null);
+			if (envKey) {
+				const URLs = await ADD(env[envKey]);
+				const URL = URLs[Math.floor(Math.random() * URLs.length)];
+				return envKey === 'URL302' ? Response.redirect(URL, 302) : fetch(new Request(URL, request));
+			}
+			return new Response(await nginx(), { 
+				status: 200 ,
+				headers: {
+					'Content-Type': 'text/html; charset=UTF-8',
+				},
+			});
+		} else {
+			await sendMessage(`#获取订阅 ${FileName}`, request.headers.get('CF-Connecting-IP'), `UA: ${userAgentHeader}&lt;/tg-spoiler&gt;\n域名: ${url.hostname}\n&lt;tg-spoiler&gt;入口: ${url.pathname + url.search}&lt;/tg-spoiler&gt;`);
+			let 订阅格式 = 'base64';
+			if (userAgent.includes('null') || userAgent.includes('subconverter') || userAgent.includes('nekobox') || userAgent.includes(('CF-Workers-SUB').toLowerCase())){
+				订阅格式 = 'base64';
+			} else if (userAgent.includes('clash') || ( url.searchParams.has('clash') &amp;&amp; !userAgent.includes('subconverter'))){
+				订阅格式 = 'clash';
+			} else if (userAgent.includes('sing-box') || userAgent.includes('singbox') || ( (url.searchParams.has('sb') || url.searchParams.has('singbox')) &amp;&amp; !userAgent.includes('subconverter'))){
+				订阅格式 = 'singbox';
+			} else if (userAgent.includes('surge') || ( url.searchParams.has('surge') &amp;&amp; !userAgent.includes('subconverter'))){
+				订阅格式 = 'surge';
+			}
+
+			let subconverterUrl ;
+			let 订阅转换URL = `${url.origin}/${await MD5MD5(fakeToken)}?token=${fakeToken}`;
+			//console.log(订阅转换URL);
+			let req_data = MainData;
+
+			// 初始化缓存
+			const cache = caches.default;
+
+			let 追加UA = 'v2rayn';
+			if (url.searchParams.has('clash')){
+				追加UA = 'clash';
+			} else if(url.searchParams.has('singbox')){
+				追加UA = 'singbox';
+			} else if(url.searchParams.has('surge')){
+				追加UA = 'surge';
+			}
+			
+			try {
+				const responses = await Promise.all(urls.map(async url =&gt; {
+					const cacheKey = new Request(url);
+					
+					try {
+						// 设置2秒超时
+						const controller = new AbortController();
+						const timeoutId = setTimeout(() =&gt; controller.abort(), 2000);
+	
+						const response = await fetch(url, {
+							method: 'get',
+							headers: {
+								'Accept': 'text/html,application/xhtml+xml,application/xml;',
+								'User-Agent': `${追加UA} cmliu/CF-Workers-SUB ${userAgentHeader}`
+							},
+							signal: controller.signal
+						});
+	
+						clearTimeout(timeoutId);
+	
+						if (response.ok) {
+							const content = await response.text();
+							
+							// 请求成功，写入缓存，设置24小时的缓存时间
+							const cacheResponse = new Response(content, {
+								headers: {
+									...response.headers,
+									'Cache-Control': `public, max-age=${cacheTTL * 60 * 60}`
+								}
+							});
+							await cache.put(cacheKey, cacheResponse);
+							console.log(`更新缓存 ${url}:\n${content.slice(0, 10)}...`);
+							if (content.includes('dns') &amp;&amp; content.includes('proxies') &amp;&amp; content.includes('proxy-groups')) {
+								// Clash 配置
+								订阅转换URL += "|" + url;
+								return ""; // 返回空字符串，因为这种情况下我们不需要内容
+							} else if (content.includes('dns') &amp;&amp; content.includes('outbounds') &amp;&amp; content.includes('inbounds')){
+								// Singbox 配置
+								订阅转换URL += "|" + url;
+								return ""; // 返回空字符串，因为这种情况下我们不需要内容
+							} else {
+								return content;
+							}
+						} else {
+							throw new Error('请求失败');
+						}
+					} catch (error) {
+						// 请求失败或超时，尝试从缓存读取
+						const cachedResponse = await cache.match(cacheKey);
+						if (cachedResponse) {
+							const cachedContent = await cachedResponse.text();
+							console.log(`使用缓存内容 ${url}:\n${cachedContent.slice(0, 10)}...`);
+							return cachedResponse.text();
+						} else {
+							console.log(`无缓存可用 ${url}`);
+							return ""; // 缓存中也没有，返回空字符串
+						}
+					}
+				}));	
+			
+				for (const response of responses) {
+					if (response) {
+						req_data += base64Decode(response) + '\n';
+					}
+				}
+			
+			} catch (error) {
+				console.error('处理 URL 时发生错误：', error);
+			}
+			if(env.WARP) 订阅转换URL += "|" + (await ADD(env.WARP)).join("|");
+			//修复中文错误
+			const utf8Encoder = new TextEncoder();
+			const encodedData = utf8Encoder.encode(req_data);
+			const text = String.fromCharCode.apply(null, encodedData);
+			
+			//去重
+			const uniqueLines = new Set(text.split('\n'));
+			const result = [...uniqueLines].join('\n');
+			//console.log(result);
+			
+			const base64Data = btoa(result);
+
+			if (订阅格式 == 'base64' || token == fakeToken){
+				return new Response(base64Data ,{
+					headers: { 
+						"content-type": "text/plain; charset=utf-8",
+						"Profile-Update-Interval": `${SUBUpdateTime}`,
+						"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
+					}
+				});
+			} else if (订阅格式 == 'clash'){
+				subconverterUrl = `${subProtocol}://${subconverter}/sub?target=clash&amp;url=${encodeURIComponent(订阅转换URL)}&amp;insert=false&amp;config=${encodeURIComponent(subconfig)}&amp;emoji=true&amp;list=false&amp;tfo=false&amp;scv=true&amp;fdn=false&amp;sort=false&amp;new_name=true`;
+			} else if (订阅格式 == 'singbox'){
+				subconverterUrl = `${subProtocol}://${subconverter}/sub?target=singbox&amp;url=${encodeURIComponent(订阅转换URL)}&amp;insert=false&amp;config=${encodeURIComponent(subconfig)}&amp;emoji=true&amp;list=false&amp;tfo=false&amp;scv=true&amp;fdn=false&amp;sort=false&amp;new_name=true`;
+			} else if (订阅格式 == 'surge'){
+				subconverterUrl = `${subProtocol}://${subconverter}/sub?target=surge&amp;url=${encodeURIComponent(订阅转换URL)}&amp;insert=false&amp;config=${encodeURIComponent(subconfig)}&amp;emoji=true&amp;list=false&amp;tfo=false&amp;scv=true&amp;fdn=false&amp;sort=false&amp;new_name=true`;
+			}
+			//console.log(订阅转换URL);
+			try {
+				const subconverterResponse = await fetch(subconverterUrl);
+				
+				if (!subconverterResponse.ok) {
+					return new Response(base64Data ,{
+						headers: { 
+							"content-type": "text/plain; charset=utf-8",
+							"Profile-Update-Interval": `${SUBUpdateTime}`,
+							"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
+						}
+					});
+					//throw new Error(`Error fetching subconverterUrl: ${subconverterResponse.status} ${subconverterResponse.statusText}`);
+				}
+				let subconverterContent = await subconverterResponse.text();
+				if (订阅格式 == 'clash') subconverterContent =await clashFix(subconverterContent);
+				return new Response(subconverterContent, {
+					headers: { 
+						"Content-Disposition": `attachment; filename*=utf-8''${encodeURIComponent(FileName)}; filename=${FileName}`,
+						"content-type": "text/plain; charset=utf-8",
+						"Profile-Update-Interval": `${SUBUpdateTime}`,
+						"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
+
+					},
+				});
+			} catch (error) {
+				return new Response(base64Data ,{
+					headers: { 
+						"content-type": "text/plain; charset=utf-8",
+						"Profile-Update-Interval": `${SUBUpdateTime}`,
+						"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
+					}
+				});
+			}
+		}
+	}
+};
+
+async function ADD(envadd) {
+	var addtext = envadd.replace(/[	"'|\r\n]+/g, ',').replace(/,+/g, ',');  // 将空格、双引号、单引号和换行符替换为逗号
+	//console.log(addtext);
+	if (addtext.charAt(0) == ',') addtext = addtext.slice(1);
+	if (addtext.charAt(addtext.length -1) == ',') addtext = addtext.slice(0, addtext.length - 1);
+	const add = addtext.split(',');
+	//console.log(add);
+	return add ;
+}
+
+async function nginx() {
+	const text = `
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Welcome to nginx!&lt;/title&gt;
+	&lt;style&gt;
+		body {
+			width: 35em;
+			margin: 0 auto;
+			font-family: Tahoma, Verdana, Arial, sans-serif;
+		}
+	&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;h1&gt;Welcome to nginx!&lt;/h1&gt;
+	&lt;p&gt;If you see this page, the nginx web server is successfully installed and
+	working. Further configuration is required.&lt;/p&gt;
+	
+	&lt;p&gt;For online documentation and support please refer to
+	&lt;a href="http://nginx.org/"&gt;nginx.org&lt;/a&gt;.&lt;br/&gt;
+	Commercial support is available at
+	&lt;a href="http://nginx.com/"&gt;nginx.com&lt;/a&gt;.&lt;/p&gt;
+	
+	&lt;p&gt;&lt;em&gt;Thank you for using nginx.&lt;/em&gt;&lt;/p&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+	`
+	return text ;
+}
+
+async function sendMessage(type, ip, add_data = "") {
+	if ( BotToken !== '' &amp;&amp; ChatID !== ''){
+		let msg = "";
+		const response = await fetch(`http://ip-api.com/json/${ip}?lang=zh-CN`);
+		if (response.status == 200) {
+			const ipInfo = await response.json();
+			msg = `${type}\nIP: ${ip}\n国家: ${ipInfo.country}\n&lt;tg-spoiler&gt;城市: ${ipInfo.city}\n组织: ${ipInfo.org}\nASN: ${ipInfo.as}\n${add_data}`;
+		} else {
+			msg = `${type}\nIP: ${ip}\n&lt;tg-spoiler&gt;${add_data}`;
+		}
+	
+		let url = "https://api.telegram.org/bot"+ BotToken +"/sendMessage?chat_id=" + ChatID + "&amp;parse_mode=HTML&amp;text=" + encodeURIComponent(msg);
+		return fetch(url, {
+			method: 'get',
+			headers: {
+				'Accept': 'text/html,application/xhtml+xml,application/xml;',
+				'Accept-Encoding': 'gzip, deflate, br',
+				'User-Agent': 'Mozilla/5.0 Chrome/90.0.4430.72'
+			}
+		});
+	}
+}
+
+function base64Decode(str) {
+	const bytes = new Uint8Array(atob(str).split('').map(c =&gt; c.charCodeAt(0)));
+	const decoder = new TextDecoder('utf-8');
+	return decoder.decode(bytes);
+}
+
+async function MD5MD5(text) {
+	const encoder = new TextEncoder();
+  
+	const firstPass = await crypto.subtle.digest('MD5', encoder.encode(text));
+	const firstPassArray = Array.from(new Uint8Array(firstPass));
+	const firstHex = firstPassArray.map(b =&gt; b.toString(16).padStart(2, '0')).join('');
+
+	const secondPass = await crypto.subtle.digest('MD5', encoder.encode(firstHex.slice(7, 27)));
+	const secondPassArray = Array.from(new Uint8Array(secondPass));
+	const secondHex = secondPassArray.map(b =&gt; b.toString(16).padStart(2, '0')).join('');
+  
+	return secondHex.toLowerCase();
+}
+
+function clashFix(content) {
+	if(content.includes('wireguard') &amp;&amp; !content.includes('remote-dns-resolve')){
+		let lines;
+		if (content.includes('\r\n')){
+			lines = content.split('\r\n');
+		} else {
+			lines = content.split('\n');
+		}
+	
+		let result = "";
+		for (let line of lines) {
+			if (line.includes('type: wireguard')) {
+				const 备改内容 = `, mtu: 1280, udp: true`;
+				const 正确内容 = `, mtu: 1280, remote-dns-resolve: true, udp: true`;
+				result += line.replace(new RegExp(备改内容, 'g'), 正确内容) + '\n';
+			} else {
+				result += line + '\n';
+			}
+		}
+
+		content = result;
+	}
+	return content;
+}
+</code></pre>
+<h2>混淆后脚本</h2>
+<ul>
+<li><a href="https://toolonline.net/js-obfuscator" rel="nofollow">https://toolonline.net/js-obfuscator</a></li>
+</ul>
+<pre class="notranslate"><code class="notranslate">const _0x4a158b=_0x59fa;(function(_0x45f480,_0x3a80de){const _0x5e480d=_0x59fa,_0x23119e=_0x45f480();while(!![]){try{const _0x12bafc=-parseInt(_0x5e480d(0x108))/0x1+-parseInt(_0x5e480d(0x15c))/0x2+-parseInt(_0x5e480d(0xfc))/0x3+parseInt(_0x5e480d(0xef))/0x4*(parseInt(_0x5e480d(0x11a))/0x5)+parseInt(_0x5e480d(0xf8))/0x6*(-parseInt(_0x5e480d(0x13a))/0x7)+-parseInt(_0x5e480d(0xf5))/0x8+parseInt(_0x5e480d(0x144))/0x9;if(_0x12bafc===_0x3a80de)break;else _0x23119e['push'](_0x23119e['shift']());}catch(_0x5ded5f){_0x23119e['push'](_0x23119e['shift']());}}}(_0x338e,0x76126));let mytoken='zbb',BotToken='',ChatID='',TG=0x0,FileName=_0x4a158b(0x13b),SUBUpdateTime=0x6,total=0x63,timestamp=0x3bb25e60800,cacheTTL=0x18,MainData='\x0atrojan://zbb@www.wto.org:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000001\x0atrojan://zbb@ai.cloudflare.com:443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000002\x0atrojan://zbb@visa.com.ai:443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000003\x0atrojan://zbb@support.cloudflare.com:443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000004\x0atrojan://zbb@caribbean.visa.com:8443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000005\x0atrojan://zbb@challenge.developers.cloudflare.com:8443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000006\x0atrojan://zbb@ppc.land:2096?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000007\x0atrojan://zbb@pages.cloudflare.com:2096?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000008\x0atrojan://zbb@portal.cloudflarepartners.com:2083?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00000009\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.181:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#0000001\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.182:2083?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#0000002\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.183:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#0000003\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.180:2087?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#0000004\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@198.41.221.5:2087?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#0000004-clone\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.185:2096?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=edgetunnel.anycast.eu.org#0000005\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.186:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#0000006\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.187:2096?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=proxy.xxxxxxxx.tk#0000007\x0atrojan://zbb@104.17.110.188:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0000008\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.189:2087?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#0000009\x0atrojan://zbb@[2606:4700::6811:6eb1]:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000001\x0atrojan://zbb@[2606:4700::6811:6eb2]:2096?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000002\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6eb3]:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#000003\x0atrojan://zbb@[2606:4700::6811:6eb4]:8443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000004\x0atrojan://zbb@[2606:4700::6811:6eb5]:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000005\x0atrojan://zbb@[2606:4700::6811:6eb6]:2083?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000006\x0atrojan://zbb@[2606:4700::6811:6eb7]:443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000007\x0atrojan://zbb@[2606:4700::6811:6eb0]:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000008\x0atrojan://zbb@[2606:4700::6811:6eb9]:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#000009\x0atrojan://zbb@www.visaeurope.at:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00001\x0atrojan://zbb@www.visa.com.mt:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00002\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@qa.visamiddleeast.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#00003\x0atrojan://zbb@time.is:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#00004\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@icook.hk:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#00005\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@icook.tw:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#00006\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visamiddleeast.com:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#00007\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.com.hk:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#00008\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.co.id:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#00009\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.16.192.100:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#0001\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@store.ubisoft.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#0002\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns4.cloudflare.com:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#0003\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.sg:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#0004\x0atrojan://zbb@visa.co.ke:8443?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0005\x0atrojan://zbb@visa.co.in:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0006\x0atrojan://zbb@workers.cloudflare.com:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0007\x0atrojan://zbb@visa.ca:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0008\x0atrojan://zbb@radar.cloudflare.com:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#0009\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@try.cloudflare.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=proxy.xxxxxxxx.tk#001\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@blog.cloudflare.com:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#002\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@community.cloudflare.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#003\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@abuse.cloudflare.com:2096?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s10.serv00.com%3A15661#004\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@sso.cloudflare.dev:2087?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=cdn.xn--b6gac.eu.org#005\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns5.cloudflare.com:2083?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=proxyip.tk#006\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns6.cloudflare.com:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#007\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns7.cloudflare.com:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2603%3Ac025%3A0%3A2f89%3A9%5D%3A8800#008\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns3.cloudflare.com:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=edgetunnel.anycast.eu.org#009\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@cdnjs.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=proxy.xxxxxxxx.tk#01\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.racknerd.com:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#02\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@store.epicgames.com:2053?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s14.serv00.com%3A15661#03\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.epicgames.com:2096?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=s10.serv00.com%3A15661#04\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.cn:2087?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=cdn.xn--b6gac.eu.org#05\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.fortnite.com:2083?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=proxyip.tk#06\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.tw:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#07\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.tw:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2603%3Ac025%3A0%3A2f89%3A9%5D%3A8800#08\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@africa.visa.com:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=edgetunnel.anycast.eu.org#09\x0atrojan://zbb@ns.cloudflare.com:2083?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#1\x0atrojan://zbb@support.cloudflarewarp.com:2053?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#2\x0atrojan://zbb@developers.cloudflare.com:2087?security=tls&amp;sni=yyy.zbb07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyy.zbb07.us.kg&amp;path=%2F%3Fed%3D2560#3\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.190:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#4\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.199:8443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#5\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6ec3]:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#6\x0avless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6eff]:443?encryption=none&amp;security=tls&amp;sni=yyyty.zcr07.us.kg&amp;fp=randomized&amp;type=ws&amp;host=yyyty.zcr07.us.kg&amp;path=104.26.0.0#7\x0a\x0a\x0a\x0a',urls=[],subconverter='SUBAPI.fxxk.dedyn.io',subconfig=_0x4a158b(0x101),subProtocol='https';export default{async 'fetch'(_0x4726b9,_0x14cb08){const _0x3acaa1=_0x4a158b,_0x318ffa=_0x4726b9[_0x3acaa1(0x146)][_0x3acaa1(0x143)](_0x3acaa1(0x128)),_0x3cb562=_0x318ffa?_0x318ffa[_0x3acaa1(0x135)]():_0x3acaa1(0x14d),_0x48a6c6=new URL(_0x4726b9['url']),_0x5bc7a9=_0x48a6c6[_0x3acaa1(0x162)][_0x3acaa1(0x143)]('token');mytoken=_0x14cb08['TOKEN']||mytoken,BotToken=_0x14cb08['TGTOKEN']||BotToken,ChatID=_0x14cb08[_0x3acaa1(0x11e)]||ChatID,TG=_0x14cb08['TG']||TG,subconverter=_0x14cb08[_0x3acaa1(0x109)]||subconverter;subconverter['includes'](_0x3acaa1(0x13e))?(subconverter=subconverter[_0x3acaa1(0x12f)]('//')[0x1],subProtocol='http'):subconverter=subconverter[_0x3acaa1(0x12f)]('//')[0x1]||subconverter;subconfig=_0x14cb08[_0x3acaa1(0x103)]||subconfig,FileName=_0x14cb08[_0x3acaa1(0x12e)]||FileName,MainData=_0x14cb08[_0x3acaa1(0x120)]||MainData;if(_0x14cb08[_0x3acaa1(0x157)])urls=await ADD(_0x14cb08[_0x3acaa1(0x157)]);const _0x2ca597=new Date();_0x2ca597[_0x3acaa1(0x129)](0x0,0x0,0x0,0x0);const _0x588727=Math[_0x3acaa1(0x158)](_0x2ca597['getTime']()/0x3e8),_0x1b332d=await MD5MD5(''+mytoken+_0x588727);let _0x1ef4e4=Math['floor']((timestamp-Date[_0x3acaa1(0x164)]())/timestamp*total*0x10000000000/0x2);total=total*0x10000000000;let _0x35689c=Math['floor'](timestamp/0x3e8);SUBUpdateTime=_0x14cb08['SUBUPTIME']||SUBUpdateTime;let _0x43e94a=await ADD(MainData+'\x0a'+urls[_0x3acaa1(0x13d)]('\x0a')),_0x59a1b9='',_0x54baa4='';for(let _0x4df5ca of _0x43e94a){_0x4df5ca[_0x3acaa1(0x135)]()['startsWith'](_0x3acaa1(0x10d))?_0x54baa4+=_0x4df5ca+'\x0a':_0x59a1b9+=_0x4df5ca+'\x0a';}MainData=_0x59a1b9,urls=await ADD(_0x54baa4);if(!(_0x5bc7a9==mytoken||_0x5bc7a9==_0x1b332d||_0x48a6c6[_0x3acaa1(0x10e)]=='/'+mytoken||_0x48a6c6[_0x3acaa1(0x10e)][_0x3acaa1(0x12b)]('/'+mytoken+'?'))){if(TG==0x1&amp;&amp;_0x48a6c6[_0x3acaa1(0x10e)]!=='/'&amp;&amp;_0x48a6c6[_0x3acaa1(0x10e)]!==_0x3acaa1(0x11b))await sendMessage('#异常访问\x20'+FileName,_0x4726b9['headers'][_0x3acaa1(0x143)](_0x3acaa1(0x10f)),_0x3acaa1(0xf9)+_0x3cb562+'&lt;/tg-spoiler&gt;\x0a域名:\x20'+_0x48a6c6[_0x3acaa1(0x13f)]+'\x0a&lt;tg-spoiler&gt;入口:\x20'+(_0x48a6c6[_0x3acaa1(0x10e)]+_0x48a6c6[_0x3acaa1(0x12d)])+'&lt;/tg-spoiler&gt;');const _0x47fc46=_0x14cb08[_0x3acaa1(0x12a)]?_0x3acaa1(0x12a):_0x14cb08[_0x3acaa1(0x152)]?_0x3acaa1(0x152):null;if(_0x47fc46){const _0xedf553=await ADD(_0x14cb08[_0x47fc46]),_0x110866=_0xedf553[Math['floor'](Math[_0x3acaa1(0x115)]()*_0xedf553['length'])];return _0x47fc46===_0x3acaa1(0x12a)?Response[_0x3acaa1(0xfb)](_0x110866,0x12e):fetch(new Request(_0x110866,_0x4726b9));}return new Response(await nginx(),{'status':0xc8,'headers':{'Content-Type':_0x3acaa1(0x10a)}});}else{await sendMessage(_0x3acaa1(0x148)+FileName,_0x4726b9[_0x3acaa1(0x146)][_0x3acaa1(0x143)]('CF-Connecting-IP'),'UA:\x20'+_0x318ffa+_0x3acaa1(0x15b)+_0x48a6c6['hostname']+_0x3acaa1(0x141)+(_0x48a6c6[_0x3acaa1(0x10e)]+_0x48a6c6[_0x3acaa1(0x12d)])+_0x3acaa1(0x10b));let _0x46e4f3=_0x3acaa1(0x160);if(_0x3cb562['includes'](_0x3acaa1(0x14d))||_0x3cb562[_0x3acaa1(0x12b)]('subconverter')||_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x15a))||_0x3cb562['includes'](_0x3acaa1(0x13b)[_0x3acaa1(0x135)]()))_0x46e4f3=_0x3acaa1(0x160);else{if(_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x10c))||_0x48a6c6['searchParams']['has'](_0x3acaa1(0x10c))&amp;&amp;!_0x3cb562[_0x3acaa1(0x12b)]('subconverter'))_0x46e4f3='clash';else{if(_0x3cb562[_0x3acaa1(0x12b)]('sing-box')||_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x104))||(_0x48a6c6['searchParams']['has']('sb')||_0x48a6c6[_0x3acaa1(0x162)][_0x3acaa1(0x14e)]('singbox'))&amp;&amp;!_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x137)))_0x46e4f3=_0x3acaa1(0x104);else(_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x13c))||_0x48a6c6['searchParams'][_0x3acaa1(0x14e)]('surge')&amp;&amp;!_0x3cb562[_0x3acaa1(0x12b)](_0x3acaa1(0x137)))&amp;&amp;(_0x46e4f3=_0x3acaa1(0x13c));}}let _0x166290,_0x3f27c3=_0x48a6c6[_0x3acaa1(0x142)]+'/'+await MD5MD5(_0x1b332d)+_0x3acaa1(0x155)+_0x1b332d,_0x2c9381=MainData;const _0x2a9b57=caches['default'];let _0x571724=_0x3acaa1(0x116);if(_0x48a6c6[_0x3acaa1(0x162)]['has'](_0x3acaa1(0x10c)))_0x571724=_0x3acaa1(0x10c);else{if(_0x48a6c6[_0x3acaa1(0x162)][_0x3acaa1(0x14e)](_0x3acaa1(0x104)))_0x571724='singbox';else _0x48a6c6[_0x3acaa1(0x162)][_0x3acaa1(0x14e)]('surge')&amp;&amp;(_0x571724='surge');}try{const _0x138aa2=await Promise[_0x3acaa1(0x126)](urls[_0x3acaa1(0x136)](async _0x22b222=&gt;{const _0x340254=_0x3acaa1,_0x207a21=new Request(_0x22b222);try{const _0x26f641=new AbortController(),_0x3d36b9=setTimeout(()=&gt;_0x26f641[_0x340254(0x105)](),0x7d0),_0x20b084=await fetch(_0x22b222,{'method':_0x340254(0x143),'headers':{'Accept':_0x340254(0x154),'User-Agent':_0x571724+'\x20cmliu/CF-Workers-SUB\x20'+_0x318ffa},'signal':_0x26f641[_0x340254(0x130)]});clearTimeout(_0x3d36b9);if(_0x20b084['ok']){const _0x4d237f=await _0x20b084[_0x340254(0x119)](),_0x297399=new Response(_0x4d237f,{'headers':{..._0x20b084[_0x340254(0x146)],'Cache-Control':_0x340254(0x111)+cacheTTL*0x3c*0x3c}});await _0x2a9b57['put'](_0x207a21,_0x297399),console[_0x340254(0x14b)](_0x340254(0x11d)+_0x22b222+':\x0a'+_0x4d237f[_0x340254(0x131)](0x0,0xa)+'...');if(_0x4d237f[_0x340254(0x12b)]('dns')&amp;&amp;_0x4d237f[_0x340254(0x12b)](_0x340254(0x102))&amp;&amp;_0x4d237f[_0x340254(0x12b)](_0x340254(0x151)))return _0x3f27c3+='|'+_0x22b222,'';else return _0x4d237f[_0x340254(0x12b)](_0x340254(0x14a))&amp;&amp;_0x4d237f['includes']('outbounds')&amp;&amp;_0x4d237f[_0x340254(0x12b)](_0x340254(0x138))?(_0x3f27c3+='|'+_0x22b222,''):_0x4d237f;}else throw new Error('请求失败');}catch(_0x3dea00){const _0x5e78e3=await _0x2a9b57[_0x340254(0x106)](_0x207a21);if(_0x5e78e3){const _0x1697b1=await _0x5e78e3['text']();return console[_0x340254(0x14b)]('使用缓存内容\x20'+_0x22b222+':\x0a'+_0x1697b1[_0x340254(0x131)](0x0,0xa)+'...'),_0x5e78e3[_0x340254(0x119)]();}else return console['log'](_0x340254(0x127)+_0x22b222),'';}}));for(const _0x526443 of _0x138aa2){_0x526443&amp;&amp;(_0x2c9381+=base64Decode(_0x526443)+'\x0a');}}catch(_0x16b67b){console['error'](_0x3acaa1(0xfd),_0x16b67b);}if(_0x14cb08[_0x3acaa1(0xf0)])_0x3f27c3+='|'+(await ADD(_0x14cb08[_0x3acaa1(0xf0)]))[_0x3acaa1(0x13d)]('|');const _0x24528e=new TextEncoder(),_0x1ee6fd=_0x24528e[_0x3acaa1(0x159)](_0x2c9381),_0x34981c=String['fromCharCode'][_0x3acaa1(0x12c)](null,_0x1ee6fd),_0x3060ca=new Set(_0x34981c[_0x3acaa1(0x12f)]('\x0a')),_0x447130=[..._0x3060ca][_0x3acaa1(0x13d)]('\x0a'),_0x124589=btoa(_0x447130);if(_0x46e4f3=='base64'||_0x5bc7a9==_0x1b332d)return new Response(_0x124589,{'headers':{'content-type':'text/plain;\x20charset=utf-8','Profile-Update-Interval':''+SUBUpdateTime,'Subscription-Userinfo':_0x3acaa1(0x156)+_0x1ef4e4+_0x3acaa1(0x161)+_0x1ef4e4+_0x3acaa1(0xff)+total+_0x3acaa1(0x15d)+_0x35689c}});else{if(_0x46e4f3==_0x3acaa1(0x10c))_0x166290=subProtocol+_0x3acaa1(0xf3)+subconverter+_0x3acaa1(0x113)+encodeURIComponent(_0x3f27c3)+'&amp;insert=false&amp;config='+encodeURIComponent(subconfig)+_0x3acaa1(0x133);else{if(_0x46e4f3=='singbox')_0x166290=subProtocol+_0x3acaa1(0xf3)+subconverter+'/sub?target=singbox&amp;url='+encodeURIComponent(_0x3f27c3)+_0x3acaa1(0x150)+encodeURIComponent(subconfig)+'&amp;emoji=true&amp;list=false&amp;tfo=false&amp;scv=true&amp;fdn=false&amp;sort=false&amp;new_name=true';else _0x46e4f3==_0x3acaa1(0x13c)&amp;&amp;(_0x166290=subProtocol+_0x3acaa1(0xf3)+subconverter+_0x3acaa1(0x11c)+encodeURIComponent(_0x3f27c3)+'&amp;insert=false&amp;config='+encodeURIComponent(subconfig)+_0x3acaa1(0x133));}}try{const _0x2a5451=await fetch(_0x166290);if(!_0x2a5451['ok'])return new Response(_0x124589,{'headers':{'content-type':'text/plain;\x20charset=utf-8','Profile-Update-Interval':''+SUBUpdateTime,'Subscription-Userinfo':_0x3acaa1(0x156)+_0x1ef4e4+_0x3acaa1(0x161)+_0x1ef4e4+_0x3acaa1(0xff)+total+_0x3acaa1(0x15d)+_0x35689c}});let _0x4e5cb7=await _0x2a5451[_0x3acaa1(0x119)]();if(_0x46e4f3==_0x3acaa1(0x10c))_0x4e5cb7=await clashFix(_0x4e5cb7);return new Response(_0x4e5cb7,{'headers':{'Content-Disposition':_0x3acaa1(0xfe)+encodeURIComponent(FileName)+_0x3acaa1(0x14c)+FileName,'content-type':'text/plain;\x20charset=utf-8','Profile-Update-Interval':''+SUBUpdateTime,'Subscription-Userinfo':'upload='+_0x1ef4e4+_0x3acaa1(0x161)+_0x1ef4e4+_0x3acaa1(0xff)+total+_0x3acaa1(0x15d)+_0x35689c}});}catch(_0x21d085){return new Response(_0x124589,{'headers':{'content-type':_0x3acaa1(0x140),'Profile-Update-Interval':''+SUBUpdateTime,'Subscription-Userinfo':_0x3acaa1(0x156)+_0x1ef4e4+_0x3acaa1(0x161)+_0x1ef4e4+_0x3acaa1(0xff)+total+';\x20expire='+_0x35689c}});}}}};async function ADD(_0x5339b2){const _0x9f744f=_0x4a158b;var _0x41e245=_0x5339b2[_0x9f744f(0x11f)](/[	"'|\r\n]+/g,',')[_0x9f744f(0x11f)](/,+/g,',');if(_0x41e245['charAt'](0x0)==',')_0x41e245=_0x41e245[_0x9f744f(0x131)](0x1);if(_0x41e245[_0x9f744f(0xf6)](_0x41e245[_0x9f744f(0x15f)]-0x1)==',')_0x41e245=_0x41e245['slice'](0x0,_0x41e245[_0x9f744f(0x15f)]-0x1);const _0x21fac4=_0x41e245['split'](',');return _0x21fac4;}async function nginx(){const _0x116a21=_0x4a158b,_0x57f79f=_0x116a21(0x139);return _0x57f79f;}function _0x338e(){const _0x359cf1=['search','SUBNAME','split','signal','slice','toString','&amp;emoji=true&amp;list=false&amp;tfo=false&amp;scv=true&amp;fdn=false&amp;sort=false&amp;new_name=true','MD5','toLowerCase','map','subconverter','inbounds','\x0a\x09&lt;!DOCTYPE\x20html&gt;\x0a\x09&lt;html&gt;\x0a\x09&lt;head&gt;\x0a\x09&lt;title&gt;Welcome\x20to\x20nginx!&lt;/title&gt;\x0a\x09&lt;style&gt;\x0a\x09\x09body\x20{\x0a\x09\x09\x09width:\x2035em;\x0a\x09\x09\x09margin:\x200\x20auto;\x0a\x09\x09\x09font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20sans-serif;\x0a\x09\x09}\x0a\x09&lt;/style&gt;\x0a\x09&lt;/head&gt;\x0a\x09&lt;body&gt;\x0a\x09&lt;h1&gt;Welcome\x20to\x20nginx!&lt;/h1&gt;\x0a\x09&lt;p&gt;If\x20you\x20see\x20this\x20page,\x20the\x20nginx\x20web\x20server\x20is\x20successfully\x20installed\x20and\x0a\x09working.\x20Further\x20configuration\x20is\x20required.&lt;/p&gt;\x0a\x09\x0a\x09&lt;p&gt;For\x20online\x20documentation\x20and\x20support\x20please\x20refer\x20to\x0a\x09&lt;a\x20href=\x22http://nginx.org/\x22&gt;nginx.org&lt;/a&gt;.&lt;br/&gt;\x0a\x09Commercial\x20support\x20is\x20available\x20at\x0a\x09&lt;a\x20href=\x22http://nginx.com/\x22&gt;nginx.com&lt;/a&gt;.&lt;/p&gt;\x0a\x09\x0a\x09&lt;p&gt;&lt;em&gt;Thank\x20you\x20for\x20using\x20nginx.&lt;/em&gt;&lt;/p&gt;\x0a\x09&lt;/body&gt;\x0a\x09&lt;/html&gt;\x0a\x09','3357473mRmLjQ','CF-Workers-SUB','surge','join','http://','hostname','text/plain;\x20charset=utf-8','\x0a&lt;tg-spoiler&gt;入口:\x20','origin','get','23497659XnHqIv','?lang=zh-CN','headers','decode','#获取订阅\x20','status','dns','log',';\x20filename=','null','has','charCodeAt','&amp;insert=false&amp;config=','proxy-groups','URL','type:\x20wireguard','text/html,application/xhtml+xml,application/xml;','?token=','upload=','LINKSUB','ceil','encode','nekobox','&lt;/tg-spoiler&gt;\x0a域名:\x20','189130Pdkwtf',';\x20expire=','\x0a组织:\x20','length','base64',';\x20download=','searchParams','\x0a&lt;tg-spoiler&gt;城市:\x20','now','digest','9148YGgixm','WARP','Mozilla/5.0\x20Chrome/90.0.4430.72','padStart','://','org','3499280vaagae','charAt','wireguard','6mcGvmM','UA:\x20','\x0aASN:\x20','redirect','1437378xvejKI','处理\x20URL\x20时发生错误：','attachment;\x20filename*=utf-8\x27\x27',';\x20total=','country','https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_MultiCountry.ini','proxies','SUBCONFIG','singbox','abort','match',',\x20mtu:\x201280,\x20remote-dns-resolve:\x20true,\x20udp:\x20true','670794uIBlUN','SUBAPI','text/html;\x20charset=UTF-8','&lt;/tg-spoiler&gt;','clash','http','pathname','CF-Connecting-IP','subtle','public,\x20max-age=','utf-8','/sub?target=clash&amp;url=','remote-dns-resolve','random','v2rayn','\x0a&lt;tg-spoiler&gt;','\x0a国家:\x20','text','75SCtOJS','/favicon.ico','/sub?target=surge&amp;url=','更新缓存\x20','TGID','replace','LINK','from','https://api.telegram.org/bot','&amp;parse_mode=HTML&amp;text=','city',',\x20mtu:\x201280,\x20udp:\x20true','all','无缓存可用\x20','User-Agent','setHours','URL302','includes','apply'];_0x338e=function(){return _0x359cf1;};return _0x338e();}async function sendMessage(_0x201eab,_0x1f342b,_0x4e1edb=''){const _0x3d12f7=_0x4a158b;if(BotToken!==''&amp;&amp;ChatID!==''){let _0x1172d5='';const _0x1c512b=await fetch('http://ip-api.com/json/'+_0x1f342b+_0x3d12f7(0x145));if(_0x1c512b[_0x3d12f7(0x149)]==0xc8){const _0x472955=await _0x1c512b['json']();_0x1172d5=_0x201eab+'\x0aIP:\x20'+_0x1f342b+_0x3d12f7(0x118)+_0x472955[_0x3d12f7(0x100)]+_0x3d12f7(0x163)+_0x472955[_0x3d12f7(0x124)]+_0x3d12f7(0x15e)+_0x472955[_0x3d12f7(0xf4)]+_0x3d12f7(0xfa)+_0x472955['as']+'\x0a'+_0x4e1edb;}else _0x1172d5=_0x201eab+'\x0aIP:\x20'+_0x1f342b+_0x3d12f7(0x117)+_0x4e1edb;let _0x51afa2=_0x3d12f7(0x122)+BotToken+'/sendMessage?chat_id='+ChatID+_0x3d12f7(0x123)+encodeURIComponent(_0x1172d5);return fetch(_0x51afa2,{'method':_0x3d12f7(0x143),'headers':{'Accept':_0x3d12f7(0x154),'Accept-Encoding':'gzip,\x20deflate,\x20br','User-Agent':_0x3d12f7(0xf1)}});}}function base64Decode(_0x30c4d4){const _0x3a9aaf=_0x4a158b,_0x5e76d0=new Uint8Array(atob(_0x30c4d4)[_0x3a9aaf(0x12f)]('')[_0x3a9aaf(0x136)](_0x24caa6=&gt;_0x24caa6[_0x3a9aaf(0x14f)](0x0))),_0x56d728=new TextDecoder(_0x3a9aaf(0x112));return _0x56d728[_0x3a9aaf(0x147)](_0x5e76d0);}function _0x59fa(_0x24358f,_0x2b2969){const _0x338e4a=_0x338e();return _0x59fa=function(_0x59fa53,_0x4852ee){_0x59fa53=_0x59fa53-0xef;let _0x3fcc38=_0x338e4a[_0x59fa53];return _0x3fcc38;},_0x59fa(_0x24358f,_0x2b2969);}async function MD5MD5(_0x838eb2){const _0x529ffc=_0x4a158b,_0x16601e=new TextEncoder(),_0x423323=await crypto[_0x529ffc(0x110)][_0x529ffc(0x165)](_0x529ffc(0x134),_0x16601e[_0x529ffc(0x159)](_0x838eb2)),_0x36af18=Array[_0x529ffc(0x121)](new Uint8Array(_0x423323)),_0x3429b7=_0x36af18[_0x529ffc(0x136)](_0x2e21ba=&gt;_0x2e21ba[_0x529ffc(0x132)](0x10)[_0x529ffc(0xf2)](0x2,'0'))[_0x529ffc(0x13d)](''),_0x412e26=await crypto[_0x529ffc(0x110)][_0x529ffc(0x165)](_0x529ffc(0x134),_0x16601e[_0x529ffc(0x159)](_0x3429b7[_0x529ffc(0x131)](0x7,0x1b))),_0x292467=Array[_0x529ffc(0x121)](new Uint8Array(_0x412e26)),_0x770478=_0x292467[_0x529ffc(0x136)](_0x177541=&gt;_0x177541[_0x529ffc(0x132)](0x10)[_0x529ffc(0xf2)](0x2,'0'))[_0x529ffc(0x13d)]('');return _0x770478[_0x529ffc(0x135)]();}function clashFix(_0xd0524){const _0x29b2af=_0x4a158b;if(_0xd0524[_0x29b2af(0x12b)](_0x29b2af(0xf7))&amp;&amp;!_0xd0524[_0x29b2af(0x12b)](_0x29b2af(0x114))){let _0x5df3f9;_0xd0524[_0x29b2af(0x12b)]('\x0d\x0a')?_0x5df3f9=_0xd0524[_0x29b2af(0x12f)]('\x0d\x0a'):_0x5df3f9=_0xd0524[_0x29b2af(0x12f)]('\x0a');let _0x3faaba='';for(let _0x410185 of _0x5df3f9){if(_0x410185[_0x29b2af(0x12b)](_0x29b2af(0x153))){const _0x2d6488=_0x29b2af(0x125),_0x27b182=_0x29b2af(0x107);_0x3faaba+=_0x410185[_0x29b2af(0x11f)](new RegExp(_0x2d6488,'g'),_0x27b182)+'\x0a';}else _0x3faaba+=_0x410185+'\x0a';}_0xd0524=_0x3faaba;}return _0xd0524;}
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="http://9.zcr3.ddns-ip.net">琶琶🔭啙</a></div>
+<div id="footer2"><span id="filingNum"><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备20250105号</a> • </span>
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2015"!=""){
+    var startSite=new Date("02/16/2015");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
+
+</html>
