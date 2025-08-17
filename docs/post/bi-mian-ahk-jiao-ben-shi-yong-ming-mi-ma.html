@@ -10,87 +10,35 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## 打开系统属性/高级/环境变量/系统变量
+<meta name="description" content="## 设置新环境变量
 
-- 运行 control.exe sysdm.cpl
+打开命令提示符 CMD
 
-## 新建系统变量 KeePassPassword
-
-![image](https://github.com/user-attachments/assets/8a9f592a-9170-41b6-8084-9d2f64546abe)
-
-## AHK脚本
+输入以下命令刷新环境变量：
 
 ```
-; 定义全局标志变量
-Global ClipboardLock := false
-
-Rctrl & s::
-    ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
-    clipboard := 'o0o0o0'  ; 修改剪贴板内容以迷惑监控程序
-    
-    ; 启动目标程序
-    Run, 'D:\ahk1.0\Lib\0 tool\9KeePass-2.52\KeePass.exe'
-    Sleep, 100
-    
-    ; 等待释放按键
-    KeyWait, s , D
-    
-    ; 获取密码（假设从环境变量中获取）
-    EnvGet, password, KeePassPassword
-    
-    ; 直接发送密码而不使用剪贴板
-    SendInput, %password%{Enter}
-return
+setx zf8 '@zb8'
+setx zf7 'Zb8'
+setx zf6 '@Zb8'
+setx zf5 '0712'
 ```
 
-## 说明
-
-迷惑剪贴板监控程序：
-在脚本中设置 clipboard := '.' 是为了迷惑监控程序
-
-避免剪贴板暴露密码：
-替代 clipboard := password 然后 ^v 粘贴，使用 SendInput，直接将密码键入，避免在剪贴板中留下痕迹。">
+注意：  `设置环境变量后 需要重启电脑。">
 <meta property="og:title" content="避免ahk脚本使用明密码">
-<meta property="og:description" content="## 打开系统属性/高级/环境变量/系统变量
+<meta property="og:description" content="## 设置新环境变量
 
-- 运行 control.exe sysdm.cpl
+打开命令提示符 CMD
 
-## 新建系统变量 KeePassPassword
-
-![image](https://github.com/user-attachments/assets/8a9f592a-9170-41b6-8084-9d2f64546abe)
-
-## AHK脚本
+输入以下命令刷新环境变量：
 
 ```
-; 定义全局标志变量
-Global ClipboardLock := false
-
-Rctrl & s::
-    ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
-    clipboard := 'o0o0o0'  ; 修改剪贴板内容以迷惑监控程序
-    
-    ; 启动目标程序
-    Run, 'D:\ahk1.0\Lib\0 tool\9KeePass-2.52\KeePass.exe'
-    Sleep, 100
-    
-    ; 等待释放按键
-    KeyWait, s , D
-    
-    ; 获取密码（假设从环境变量中获取）
-    EnvGet, password, KeePassPassword
-    
-    ; 直接发送密码而不使用剪贴板
-    SendInput, %password%{Enter}
-return
+setx zf8 '@zb8'
+setx zf7 'Zb8'
+setx zf6 '@Zb8'
+setx zf5 '0712'
 ```
 
-## 说明
-
-迷惑剪贴板监控程序：
-在脚本中设置 clipboard := '.' 是为了迷惑监控程序
-
-避免剪贴板暴露密码：
-替代 clipboard := password 然后 ^v 粘贴，使用 SendInput，直接将密码键入，避免在剪贴板中留下痕迹。">
+注意：  `设置环境变量后 需要重启电脑。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://9.zcr3.ddns-ip.net/post/bi-mian-ahk-jiao-ben-shi-yong-ming-mi-ma.html">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zb9678/img@main/up1/01.05:23:31:04.png">
@@ -161,33 +109,73 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>打开系统属性/高级/环境变量/系统变量</h2>
+<div class="markdown-body" id="postBody"><h2>设置新环境变量</h2>
+<p>打开命令提示符 CMD</p>
+<p>输入以下命令刷新环境变量：</p>
+<pre class="notranslate"><code class="notranslate">setx zf8 "@zb8"
+setx zf7 "Zb8"
+setx zf6 "@Zb8"
+setx zf5 "0712"
+</code></pre>
+<p>注意：  <code class="notranslate">设置环境变量后 需要重启电脑。</code></p>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d71e87d69f719bc5328e723fb375c229620c17de5a79a7c9b56820ad4aa7d822/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33333a34312e706e67"><img src="https://camo.githubusercontent.com/d71e87d69f719bc5328e723fb375c229620c17de5a79a7c9b56820ad4aa7d822/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33333a34312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img9@main/im2/08.17:11:33:41.png" style="max-width: 100%;"></a></p><br>
+<hr>
+<p>或者  如下操作</p>
+<h2>打开系统属性/高级/环境变量/系统变量</h2>
 <ul>
 <li>运行 control.exe sysdm.cpl</li>
 </ul>
-<h2>新建系统变量 KeePassPassword</h2>
+<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/78b421eaec658a90d4127699ffae675fd4046800fbb8089bbe8998f9772f7cae/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33363a31302e706e67"><img src="https://camo.githubusercontent.com/78b421eaec658a90d4127699ffae675fd4046800fbb8089bbe8998f9772f7cae/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33363a31302e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img9@main/im2/08.17:11:36:10.png" style="max-width: 100%;"></a></p><br>
+<h2>新建z的用户变量 KeePassPassword</h2>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8a9f592a-9170-41b6-8084-9d2f64546abe"><img src="https://github.com/user-attachments/assets/8a9f592a-9170-41b6-8084-9d2f64546abe" alt="image" style="max-width: 100%;"></a></p>
+<hr>
 <h2>AHK脚本</h2>
-<pre class="notranslate"><code class="notranslate">; 定义全局标志变量
-Global ClipboardLock := false
+<pre class="notranslate"><code class="notranslate">    Global ClipboardLock := false                         ; 定义全局标志变量
 
-Rctrl &amp; s::
-    ClipboardLock := true  ; 设置标志为 true，锁定剪贴板监控
-    clipboard := "o0o0o0"  ; 修改剪贴板内容以迷惑监控程序
-    
-    ; 启动目标程序
+F1 &amp; r::
+    ClipboardLock := true                                      ; 设置标志为 true，锁定剪贴板监控
+    clipboard := "."                                     ; 修改剪贴板内容以迷惑监控程序
+
     Run, "D:\ahk1.0\Lib\0 tool\9KeePass-2.52\KeePass.exe"
     Sleep, 100
-    
-    ; 等待释放按键
-    KeyWait, s , D
-    
-    ; 获取密码（假设从环境变量中获取）
-    EnvGet, password, KeePassPassword
-    
-    ; 直接发送密码而不使用剪贴板
-    SendInput, %password%{Enter}
+    KeyWait, r , D       			        ; 等待释放按键
+    EnvGet, password, zf5             ; 获取密码（从环境变量中获取）
+    SendInput, %password%{Enter}                      ; 直接发送密码而不使用剪贴板
 return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ  F1 &amp; r  Keebass.exe   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 26-499
+
+F1 &amp; F6::
+    	EnvGet, password, zf6                    ; 环境变量设置后需重启电脑  
+
+    	; 切换到英文输入法
+    	Send, {Shift} ; 根据你的设置可能需要调整，不设置会输出乱码
+
+    	; 使用 SendInput 发送密码
+    	SendInput, %password%{Shift}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; F6 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 29--538
+
+F1 &amp; F7::
+    	EnvGet, password, zf7                   ; 环境变量设置后需重启电脑  
+
+    	; 切换到英文输入法
+    	Send, {Shift} ; 根据你的设置可能需要调整
+
+    	; 使用 SendInput 发送密码
+    	SendInput, %password%{Shift}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; F7 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 29--538
+
+F1 &amp; F8::
+	EnvGet, password, zf8                 ; 环境变量设置后需重启电脑
+
+   	; 切换到英文输入法
+    	Send, #{Shift} ; 根据你的设置可能需要调整
+
+    	; 使用 SendInput 发送密码
+    	SendInput, %password%{Shift}
+return
+;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ   F1 &amp; F8 获取系统变量中密码   ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 28-527
 </code></pre>
 <h2>说明</h2>
 <p>迷惑剪贴板监控程序：<br>
@@ -197,18 +185,7 @@ return
 <h2>KeePassPassword命名规范</h2>
 <p>仅使用字母、数字和下划线（_）。<br>
 名称应以字母或下划线开头（例如 _MyVar 或 App_Var）。<br>
-避免使用特殊字符或空格。</p>
-<pre class="notranslate"><code class="notranslate">                                                              `设置环境变量后 需要重启电脑。`
-</code></pre>
-<p>可通过 PowerShell 或 CMD 刷新环境变量</p>
-<p>打开命令提示符CMD或 PowerShell</p>
-<p>输入以下命令刷新环境变量：</p>
-<pre class="notranslate"><code class="notranslate">setx zf8 "@zb8"
-setx zf7 "Zb8"
-setx zf6 "@Zb8"
-setx zf5 "0712"
-</code></pre>
-<p align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d71e87d69f719bc5328e723fb375c229620c17de5a79a7c9b56820ad4aa7d822/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33333a34312e706e67"><img src="https://camo.githubusercontent.com/d71e87d69f719bc5328e723fb375c229620c17de5a79a7c9b56820ad4aa7d822/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f7a62393637382f696d6739406d61696e2f696d322f30382e31373a31313a33333a34312e706e67" data-canonical-src="https://cdn.jsdelivr.net/gh/zb9678/img9@main/im2/08.17:11:33:41.png" style="max-width: 100%;"></a></p><br></div>
+避免使用特殊字符或空格。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 
 </div>
