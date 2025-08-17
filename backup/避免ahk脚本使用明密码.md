@@ -51,8 +51,21 @@ return
 
 
 可通过 PowerShell 或 CMD 刷新环境变量
-打开命令提示符或 PowerShell。
+
+打开命令提示符CMD或 PowerShell
+
 输入以下命令刷新环境变量：
-cmd
-复制代码
-`setx KeePassPassword "1234"`
+
+```
+setx zf8 "@zb8"
+setx zf7 "Zb8"
+setx zf6 "@Zb8"
+setx zf5 "0712"
+```
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/zb9678/img9@main/im2/08.17:11:33:41.png" style="width:400px;"></p><br>
+
+
+
+
+
